@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dmitry Avtonomov</title>
-    <link>http://dmtavt.github.io/</link>
+    <link>https://dmtavt.github.io/</link>
     <description>Recent content on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dmitry Avtonomov</copyright>
     <lastBuildDate>Wed, 13 Jul 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://dmtavt.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dmtavt.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>BatMass</title>
-      <link>http://dmtavt.github.io/project/batmass/</link>
+      <link>https://dmtavt.github.io/project/batmass/</link>
       <pubDate>Wed, 13 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://dmtavt.github.io/project/batmass/</guid>
+      <guid>https://dmtavt.github.io/project/batmass/</guid>
       <description>
 
 &lt;p&gt;BatMass is a mass-spectrometry data visualization tool, with the main focus on being fast and interactive while providing comprehensive visualizations without any parameter tweaking. It is written in pure Java and built on top of the &lt;a href=&#34;https://netbeans.org/features/platform/all-docs.html&#34;&gt;NetBeans Platform&lt;/a&gt;.&lt;/p&gt;
@@ -34,10 +34,10 @@ DOI: 10.1021/acs.jproteome.6b00021.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
     
     <item>
       <title>MSFTBX</title>
-      <link>http://dmtavt.github.io/project/msftbx/</link>
+      <link>https://dmtavt.github.io/project/msftbx/</link>
       <pubDate>Tue, 12 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://dmtavt.github.io/project/msftbx/</guid>
+      <guid>https://dmtavt.github.io/project/msftbx/</guid>
       <description>
 
 &lt;p&gt;The acronym stands for &lt;code&gt;Mass Spectrometry File Toolbox&lt;/code&gt;.&lt;br /&gt;
@@ -91,10 +91,10 @@ DOI: 10.1021/acs.jproteome.6b00021.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
     
     <item>
       <title>DIA-Umpire GUI</title>
-      <link>http://dmtavt.github.io/project/dia-umpire-gui/</link>
+      <link>https://dmtavt.github.io/project/dia-umpire-gui/</link>
       <pubDate>Mon, 11 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://dmtavt.github.io/project/dia-umpire-gui/</guid>
+      <guid>https://dmtavt.github.io/project/dia-umpire-gui/</guid>
       <description>
 
 &lt;p&gt;This is a very simple java GUI for running &lt;a href=&#34;http://diaumpire.sourceforge.net/&#34;&gt;DIA-Umpire&lt;/a&gt;. It not only runs Umpire itself, but can run the whole downstream processing as well, including Comet database search,&lt;/p&gt;
@@ -139,20 +139,20 @@ will they be parsed.&lt;/li&gt;
     
     <item>
       <title>BatMass: a Java Software Platform for LC–MS Data Visualization in Proteomics and Metabolomics</title>
-      <link>http://dmtavt.github.io/publication/batmass/</link>
+      <link>https://dmtavt.github.io/publication/batmass/</link>
       <pubDate>Thu, 16 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://dmtavt.github.io/publication/batmass/</guid>
+      <guid>https://dmtavt.github.io/publication/batmass/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>about</title>
-      <link>http://dmtavt.github.io/home/about/</link>
+      <link>https://dmtavt.github.io/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://dmtavt.github.io/home/about/</guid>
+      <guid>https://dmtavt.github.io/home/about/</guid>
       <description>
 
 &lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;
@@ -195,20 +195,20 @@ During this period the primary research projects included:&lt;/p&gt;
     
     <item>
       <title>DIA-Umpire: comprehensive computational framework for data-independent acquisition proteomics</title>
-      <link>http://dmtavt.github.io/publication/dia-umpire/</link>
+      <link>https://dmtavt.github.io/publication/dia-umpire/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://dmtavt.github.io/publication/dia-umpire/</guid>
+      <guid>https://dmtavt.github.io/publication/dia-umpire/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>LuciPHOr2: Site localization of generic post-translational modifications from tandem mass spectrometry data.</title>
-      <link>http://dmtavt.github.io/publication/luciphor2/</link>
+      <link>https://dmtavt.github.io/publication/luciphor2/</link>
       <pubDate>Sat, 25 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://dmtavt.github.io/publication/luciphor2/</guid>
+      <guid>https://dmtavt.github.io/publication/luciphor2/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>

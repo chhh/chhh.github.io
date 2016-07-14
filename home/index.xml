@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Dmitry Avtonomov</title>
-    <link>http://dmtavt.github.io/home/</link>
+    <link>https://dmtavt.github.io/home/</link>
     <description>Recent content in Homes on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dmitry Avtonomov</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://dmtavt.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dmtavt.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
-      <link>http://dmtavt.github.io/home/about/</link>
+      <link>https://dmtavt.github.io/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://dmtavt.github.io/home/about/</guid>
+      <guid>https://dmtavt.github.io/home/about/</guid>
       <description>
 
 &lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;

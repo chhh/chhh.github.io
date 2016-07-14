@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Dmitry Avtonomov</title>
-    <link>http://dmtavt.github.io/project/</link>
+    <link>https://dmtavt.github.io/project/</link>
     <description>Recent content in Projects on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dmitry Avtonomov</copyright>
     <lastBuildDate>Wed, 13 Jul 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://dmtavt.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dmtavt.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>BatMass</title>
-      <link>http://dmtavt.github.io/project/batmass/</link>
+      <link>https://dmtavt.github.io/project/batmass/</link>
       <pubDate>Wed, 13 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://dmtavt.github.io/project/batmass/</guid>
+      <guid>https://dmtavt.github.io/project/batmass/</guid>
       <description>
 
 &lt;p&gt;BatMass is a mass-spectrometry data visualization tool, with the main focus on being fast and interactive while providing comprehensive visualizations without any parameter tweaking. It is written in pure Java and built on top of the &lt;a href=&#34;https://netbeans.org/features/platform/all-docs.html&#34;&gt;NetBeans Platform&lt;/a&gt;.&lt;/p&gt;
@@ -34,10 +34,10 @@ DOI: 10.1021/acs.jproteome.6b00021.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
     
     <item>
       <title>MSFTBX</title>
-      <link>http://dmtavt.github.io/project/msftbx/</link>
+      <link>https://dmtavt.github.io/project/msftbx/</link>
       <pubDate>Tue, 12 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://dmtavt.github.io/project/msftbx/</guid>
+      <guid>https://dmtavt.github.io/project/msftbx/</guid>
       <description>
 
 &lt;p&gt;The acronym stands for &lt;code&gt;Mass Spectrometry File Toolbox&lt;/code&gt;.&lt;br /&gt;
@@ -91,10 +91,10 @@ DOI: 10.1021/acs.jproteome.6b00021.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
     
     <item>
       <title>DIA-Umpire GUI</title>
-      <link>http://dmtavt.github.io/project/dia-umpire-gui/</link>
+      <link>https://dmtavt.github.io/project/dia-umpire-gui/</link>
       <pubDate>Mon, 11 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://dmtavt.github.io/project/dia-umpire-gui/</guid>
+      <guid>https://dmtavt.github.io/project/dia-umpire-gui/</guid>
       <description>
 
 &lt;p&gt;This is a very simple java GUI for running &lt;a href=&#34;http://diaumpire.sourceforge.net/&#34;&gt;DIA-Umpire&lt;/a&gt;. It not only runs Umpire itself, but can run the whole downstream processing as well, including Comet database search,&lt;/p&gt;
