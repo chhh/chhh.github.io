@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Dmitry Avtonomov</title>
+    <link>http://dmtavt.github.io/home/</link>
+    <description>Recent content in Homes on Dmitry Avtonomov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Dmitry Avtonomov</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://dmtavt.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>http://dmtavt.github.io/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://dmtavt.github.io/home/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;
+
+&lt;p&gt;I started my scientific career at Prof. Eugene Nikolaev&amp;rsquo;s Ion Physics lab in Moscow. The lab hosted a slew of mass-spectrometers, including a mostly home-built 4.7T FT-ICR, Thermo LTQ-FT Ultra, Bruker Microflex, Bruker Apex QE and multiple ion traps.&lt;br /&gt;
+During this period the primary research projects included:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Setting up the lab for routine proteomics operations:
+
+&lt;ul&gt;
+&lt;li&gt;in-house designed and manufactured Nano-ESI ion source&lt;/li&gt;
+&lt;li&gt;manufacturing of spraying columns for HPLC (ESI spraying tip integrated with the chromatographic column)&lt;/li&gt;
+&lt;li&gt;setting up database search resources (Mascot server at the time)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Negative ion source development for ETD (Electron Transfer Dissociation)
+
+&lt;ul&gt;
+&lt;li&gt;in-house designed and installed into Finningan LCQ Deca XP&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Supercomputer modeling of ion cloud movement in electric and magnetic field
+
+&lt;ul&gt;
+&lt;li&gt;for simulation of ion cloud motion in ICR mass spectrometers&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Development of algorithms for peptide retention time alignment across multiple runs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After finishing PhD at Ion Physics lab, joined &lt;a href=&#34;http://nesvilab.org&#34;&gt;Alexey Neshvizhskii&amp;rsquo;s lab&lt;/a&gt; at University of Michgan with a shift from hardware to software. I develop in Java with occasional pieces in C# and C++.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;BatMass - mass spectrometry data visualization and processing tool on NetBeans platform&lt;/li&gt;
+&lt;li&gt;MSFTBX - a fast Java library for mass spectrometry data files access&lt;/li&gt;
+&lt;li&gt;DIA-Umpire - a tool for Data Independent Acquisition (DIA) data processing. Detects features in MS1 and MS2, correlates precursors to fragments based on elution profile similarity and compiles pseudo-MS/MS spectra from these groups, which can later be searched with standard proteomic search tools.&lt;/li&gt;
+&lt;li&gt;Efficient calculation of isotopic fine structure up to predefined aggregated probability&lt;/li&gt;
+&lt;li&gt;Better signal processing for Ion Mobility (IM) / Liquid Chromatography (LC) mass spectrometry. Multidimensional feature detection (ion mobility, retention time, m/z).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

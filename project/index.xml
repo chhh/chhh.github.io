@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Dmitry Avtonomov</title>
+    <link>http://dmtavt.github.io/project/</link>
+    <description>Recent content in Projects on Dmitry Avtonomov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Dmitry Avtonomov</copyright>
+    <lastBuildDate>Wed, 13 Jul 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://dmtavt.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>BatMass</title>
+      <link>http://dmtavt.github.io/project/batmass/</link>
+      <pubDate>Wed, 13 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://dmtavt.github.io/project/batmass/</guid>
+      <description>
+
+&lt;p&gt;BatMass is a mass-spectrometry data visualization tool, with the main focus on being fast and interactive while providing comprehensive visualizations without any parameter tweaking. It is written in pure Java and built on top of the &lt;a href=&#34;https://netbeans.org/features/platform/all-docs.html&#34;&gt;NetBeans Platform&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.batmass.org/images/about-batmass/free-layout.png&#34; alt=&#34;BatMass UI&#34; /&gt;
+&lt;img src=&#34;http://www.batmass.org/images/about-batmass/comparison-6-runs-1-blank.png&#34; alt=&#34;BatMass Multiple syncronized runs&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;referencing-the-work&#34;&gt;Referencing the work&lt;/h3&gt;
+
+&lt;p&gt;If you use BatMass for your research or work, please cite the following paper:&lt;br /&gt;
+&lt;strong&gt;&lt;a href=&#34;https://dx.doi.org/10.1021/acs.jproteome.6b00021&#34;&gt;Avtonomov D.M. et al:
+J. Proteome Res. June 16, 2016.
+DOI: 10.1021/acs.jproteome.6b00021.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MSFTBX</title>
+      <link>http://dmtavt.github.io/project/msftbx/</link>
+      <pubDate>Tue, 12 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://dmtavt.github.io/project/msftbx/</guid>
+      <description>
+
+&lt;p&gt;The acronym stands for &lt;code&gt;Mass Spectrometry File Toolbox&lt;/code&gt;.&lt;br /&gt;
+This is a library for access to some common mass-spectrometry/proteomics data formats from Java.&lt;br /&gt;
+This library is what drives &lt;a href=&#34;http://batmass.org&#34;&gt;BatMass&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Parsers for mzML/mzXML with unified API
+
+&lt;ul&gt;
+&lt;li&gt;Very fast, multi-threaded&lt;/li&gt;
+&lt;li&gt;Rich standardized API for contents of those files (scan and run meta-info, not just spectra).&lt;/li&gt;
+&lt;li&gt;msNumpress compression support for mzML&lt;/li&gt;
+&lt;li&gt;Automated LC/MS run structure determination:&lt;/li&gt;
+&lt;li&gt;Data structures for parent-child relationship between spectra&lt;/li&gt;
+&lt;li&gt;Indexes for scans based on scan numbers, retention times both globally
+and for each MS level separately&lt;/li&gt;
+&lt;li&gt;Convenient methods to get next-previous scans at the same MS level&lt;/li&gt;
+&lt;li&gt;Tolerant to malformed data&lt;/li&gt;
+&lt;li&gt;Can handle MS2 scan tags nested inside MS1 scans&lt;/li&gt;
+&lt;li&gt;Tolerant to missing or broken file index&lt;/li&gt;
+&lt;li&gt;Reindexing on the fly&lt;/li&gt;
+&lt;li&gt;Memory management&lt;/li&gt;
+&lt;li&gt;Automated spectra parsing on demand
+
+&lt;ul&gt;
+&lt;li&gt;You can parse just the structure of an LC/MS run without the spectral data, the memory footprint in this case will be very small. Only when spectra are requested
+will they be parsed.&lt;/li&gt;
+&lt;li&gt;Soft referencing of spectral data for GC&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Tracking of which loaded data is not being used by any components with automated unloading.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Upcoming support for Thermo RAW files on Windows&lt;/li&gt;
+&lt;li&gt;pepXML parser and writer&lt;/li&gt;
+&lt;li&gt;protXML parser and writer&lt;/li&gt;
+&lt;li&gt;mzIdentML parser&lt;/li&gt;
+&lt;li&gt;GPMdb XML files parser&lt;/li&gt;
+&lt;li&gt;Agilent .cef files parser&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;referencing-the-work&#34;&gt;Referencing the work&lt;/h3&gt;
+
+&lt;p&gt;If you use BatMass for your research or work, please cite the following paper:&lt;br /&gt;
+&lt;strong&gt;&lt;a href=&#34;https://dx.doi.org/10.1021/acs.jproteome.6b00021&#34;&gt;Avtonomov D.M. et al:
+J. Proteome Res. June 16, 2016.
+DOI: 10.1021/acs.jproteome.6b00021.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DIA-Umpire GUI</title>
+      <link>http://dmtavt.github.io/project/dia-umpire-gui/</link>
+      <pubDate>Mon, 11 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://dmtavt.github.io/project/dia-umpire-gui/</guid>
+      <description>
+
+&lt;p&gt;This is a very simple java GUI for running &lt;a href=&#34;http://diaumpire.sourceforge.net/&#34;&gt;DIA-Umpire&lt;/a&gt;. It not only runs Umpire itself, but can run the whole downstream processing as well, including Comet database search,&lt;/p&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Parsers for mzML/mzXML with unified API
+
+&lt;ul&gt;
+&lt;li&gt;Very fast, multi-threaded&lt;/li&gt;
+&lt;li&gt;Rich standardized API for contents of those files (scan and run meta-info, not just spectra).&lt;/li&gt;
+&lt;li&gt;msNumpress compression support for mzML&lt;/li&gt;
+&lt;li&gt;Automated LC/MS run structure determination:&lt;/li&gt;
+&lt;li&gt;Data structures for parent-child relationship between spectra&lt;/li&gt;
+&lt;li&gt;Indexes for scans based on scan numbers, retention times both globally
+and for each MS level separately&lt;/li&gt;
+&lt;li&gt;Convenient methods to get next-previous scans at the same MS level&lt;/li&gt;
+&lt;li&gt;Tolerant to malformed data&lt;/li&gt;
+&lt;li&gt;Can handle MS2 scan tags nested inside MS1 scans&lt;/li&gt;
+&lt;li&gt;Tolerant to missing or broken file index&lt;/li&gt;
+&lt;li&gt;Reindexing on the fly&lt;/li&gt;
+&lt;li&gt;Memory management&lt;/li&gt;
+&lt;li&gt;Automated spectra parsing on demand
+
+&lt;ul&gt;
+&lt;li&gt;You can parse just the structure of an LC/MS run without the spectral data, the memory footprint in this case will be very small. Only when spectra are requested
+will they be parsed.&lt;/li&gt;
+&lt;li&gt;Soft referencing of spectral data for GC&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Tracking of which loaded data is not being used by any components with automated unloading.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Upcoming support for Thermo RAW files on Windows&lt;/li&gt;
+&lt;li&gt;pepXML parser and writer&lt;/li&gt;
+&lt;li&gt;protXML parser and writer&lt;/li&gt;
+&lt;li&gt;mzIdentML parser&lt;/li&gt;
+&lt;li&gt;GPMdb XML files parser&lt;/li&gt;
+&lt;li&gt;Agilent .cef files parser&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

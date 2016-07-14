@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Dmitry Avtonomov</title>
+    <link>http://dmtavt.github.io/publication/</link>
+    <description>Recent content in Publications on Dmitry Avtonomov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Dmitry Avtonomov</copyright>
+    <lastBuildDate>Thu, 16 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://dmtavt.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>BatMass: a Java Software Platform for LC–MS Data Visualization in Proteomics and Metabolomics</title>
+      <link>http://dmtavt.github.io/publication/batmass/</link>
+      <pubDate>Thu, 16 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://dmtavt.github.io/publication/batmass/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DIA-Umpire: comprehensive computational framework for data-independent acquisition proteomics</title>
+      <link>http://dmtavt.github.io/publication/dia-umpire/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://dmtavt.github.io/publication/dia-umpire/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LuciPHOr2: Site localization of generic post-translational modifications from tandem mass spectrometry data.</title>
+      <link>http://dmtavt.github.io/publication/luciphor2/</link>
+      <pubDate>Sat, 25 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://dmtavt.github.io/publication/luciphor2/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
