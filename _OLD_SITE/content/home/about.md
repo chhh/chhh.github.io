@@ -8,7 +8,10 @@ weight = 0
 
 # Biography
 
-I started my scientific career at Prof. Eugene Nikolaev's Ion Physics lab in Moscow. The lab hosted a slew of mass-spectrometers, including a mostly home-built 4.7T FT-ICR, Thermo LTQ-FT Ultra, Bruker Microflex, Bruker Apex QE and multiple ion traps.  
+Dmitry Avtonomov is a Postdoc at [Alexey Neshvizhskii's Lab](http://nesvilab.org) at the University of Michgan. The main area of research is everything related to mass spectrometry data processing
+
+
+I started my scientific career at Prof. Eugene Nikolaev's Ion Physics lab in Moscow. The lab hosted a slew of mass-spectrometers, including Thermo LTQ-FT Ultra, Bruker Microflex, Bruker Apex QE, an in-house built 4.7T ICR and multiple ion traps.  
 During this period the primary research projects included:
 
 - Setting up the lab for routine proteomics operations:
@@ -21,7 +24,7 @@ During this period the primary research projects included:
   - for simulation of ion cloud motion in ICR mass spectrometers
 - Development of algorithms for peptide retention time alignment across multiple runs
 
-After finishing PhD at Ion Physics lab, joined [Alexey Neshvizhskii's lab](http://nesvilab.org) at University of Michgan with a shift from hardware to software. I develop in Java with occasional pieces in C# and C++.
+After finishing PhD at the Ion Physics lab, joined [Alexey Neshvizhskii's Lab](http://nesvilab.org) at the University of Michgan with a shift from hardware to software. I develop Java applications with occasional pieces in C#, Python and C++.
 
 - BatMass - mass spectrometry data visualization and processing tool on NetBeans platform
 - MSFTBX - a fast Java library for mass spectrometry data files access
