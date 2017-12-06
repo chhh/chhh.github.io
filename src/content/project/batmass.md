@@ -44,48 +44,6 @@ DOI: 10.1021/acs.jproteome.6b00021.](https://dx.doi.org/10.1021/acs.jproteome.6b
 
 - Data access layer. For the Java developers out there, the highly optimized mzML/mzXML parsers can be used in any standalone Java program as a simple _jar_ dependency. Parsing has been manually tuned to produce few garbage objects, thus minimizing time spent in GC (Garbage Collection), the speed is comparable to or better than in C/C++ implementations. The API for LC/MS data files gives access to most of the features supported by mzML/mzXML standards.
 
-See the [getting started guide]({{< relref "getting-started/index.md" >}}) for instructions how to get
-it up and running.
-
-<!-- BatMass development is kindly supported by
-<span style='margin-right:5px'>
-  <a href='https://www.yourkit.com/java/profiler/index.jsp'>YourKit Java Profiler</a>
-</span>
-<img src='/images/yklogo-114x27.png' style='vertical-align:text-bottom'/>
-and is built with
-<span style='margin-right:5px'>
-  <a href=''>Intellij IDEA</a>
-</span>
-<img src='/images/intellij-idea-40x40.png' style='vertical-align:text-bottom'/>
-<span style='margin-right:5px'>
-  ,
-  <a href='https://netbeans.org/features/platform/all-docs.html'>NetBeans Platform</a>
-</span>
-<img src='/images/netbeans-logo-40x40.png'/>
-
-<table >
-  <tr>
-    <td style='vertical-align:middle'><img src='/images/yklogo-114x27.png'/></td>
-    <td style='vertical-align:middle'><a href='https://www.yourkit.com/java/profiler/index.jsp'>YourKit Java Profiler</a></td>
-  </tr>
-  <tr>
-    <td style='vertical-align:middle'><img src='/images/intellij-idea-40x40.png'/></td>
-    <td style='vertical-align:middle'><a href='https://www.jetbrains.com/idea/'>Intellij IDEA</a> IDE</td>
-  </tr>
-  <tr>
-    <td style='vertical-align:middle align:right'><img src='/images/netbeans-logo-40x40.png'/></td>
-    <td style='vertical-align:middle'><a href='https://netbeans.org/features/platform/all-docs.html'>NetBeans Platform</a> community</td>
-  </tr>
-</table> -->
-
-<!-- <img src='/images/yklogo-114x27.png' style='vertical-align:middle'/><span style='vertical-align:middle'>&nbsp;<a href='https://www.yourkit.com/java/profiler/index.jsp'>YourKit Java Profiler</a></span>   -->
-
-<!-- ![YourKit logo](/images/yklogo-114x27.png) [YourKit Java Profiler](https://www.yourkit.com/java/profiler/index.jsp)  
-![IDEA logo](/images/intellij-idea-40x40.png) [Intellij IDEA](https://www.jetbrains.com/idea/) IDE from [JetBrains](https://www.jetbrains.com/)  
-![NetBeans logo](/images/netbeans-logo-40x40.png) [NetBeans Platform](https://netbeans.org/features/platform/all-docs.html) community   -->
-
-
-
 ## Demo Video
 Here's a short demo video of BatMass in action.
 
