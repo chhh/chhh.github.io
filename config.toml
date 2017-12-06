@@ -50,8 +50,7 @@ defaultContentLanguageInSubdir = false
   avatar = "dima-color.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "dmitriya@umich.edu"
   address = ""
-  office_hours = "email for appointment"
-  phone = "215 459 88 27"
+
   skype = "dmitriy.avtonomov"
   telegram = "pteech"
 
@@ -164,7 +163,7 @@ defaultContentLanguageInSubdir = false
   # Configuration of talk pages.
   [params.talks]
     # Show talk time?
-    time = true
+    time = false
 
   # Configuration of publication pages.
   [params.publications]
@@ -238,18 +237,18 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Publications"
-  url = "#publications_selected"
+  url = "#publications"
   weight = 2
-
-[[menu.main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 3
 
 [[menu.main]]
   name = "Projects"
   url = "#projects"
-  weight = 4
+  weight = 3
+
+# [[menu.main]]
+#   name = "Posts"
+#   url = "#posts"
+#   weight = 4
 
 # [[menu.main]]
 #   name = "Teaching"

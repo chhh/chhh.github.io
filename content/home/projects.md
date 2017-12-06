@@ -9,7 +9,7 @@ title = "Projects"
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 50
+weight = 20
 
 # View.
 # Customize how projects are displayed.
@@ -22,19 +22,22 @@ view = 1
 filter_default = 0
 
 # Add or remove as many filters (`[[filter]]` instances) as you like.
-# Use "*" tag to show all projects or an existing tag prefixed with "." to filter by specific tag.
+# Use "\*" tag to show all projects or an existing tag prefixed with "." to filter by specific tag.
 # To remove toolbar, delete/comment all instances of `[[filter]]` below.
 [[filter]]
   name = "All"
   tag = "*"
-  
+
 [[filter]]
-  name = "Deep Learning"
-  tag = ".deep-learning"
+  name = "Data Viz"
+  tag = ".data-viz"
+
+[[filter]]
+  name = "Libraries"
+  tag = ".library"
 
 [[filter]]
   name = "Other"
-  tag = ".demo"
+  tag = ".other"
 
 +++
-

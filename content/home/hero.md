@@ -24,7 +24,7 @@ weight = 3
   label = '<i class="fa fa-download"></i> Download'
 +++
 
-A framework for LC-MS data visualization and exploration. Can show single spectra, extracted ion chromatograms and 2D ion maps of LC-MS experiments. Supports overlays over a 2D map of locations of MS-MS spectra, identifications via pepXML or mzId files or custom data via delimited text files. :rocket:
+A framework for LC-MS data visualization and exploration. View spectra, extracted ion chromatograms and 2D ion maps of LC-MS experiments. Synchronized viewers. Visualize DIA experiments. Overlay MS/MS events, peptide identifications or custom data (via delimited text files) over a 2D map. :rocket:
 <br>
 <small><a id="academic-release" href="https://github.com/chhh/batmass/releases/latest">Latest release</a></small>
 <br><br>
