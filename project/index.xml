@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Dmitry Avtonomov</title>
-    <link>https://dmtavt.github.io/project/</link>
+    <link>https://chhh.github.io/project/</link>
     <description>Recent content in Projects on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>BatMass</title>
-      <link>https://dmtavt.github.io/project/batmass/</link>
+      <link>https://chhh.github.io/project/batmass/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://dmtavt.github.io/project/batmass/</guid>
+      <guid>https://chhh.github.io/project/batmass/</guid>
       <description>
 
 &lt;p&gt;BatMass is a mass-spectrometry data visualization tool, with the main focus on being fast and interactive while providing comprehensive visualizations without any parameter tweaking. It is written in Java and built on top of the &lt;a href=&#34;https://netbeans.org/features/platform/all-docs.html&#34; target=&#34;_blank&#34;&gt;NetBeans Platform&lt;/a&gt;.&lt;/p&gt;
@@ -50,13 +50,13 @@ DOI: 10.1021/acs.jproteome.6b00021.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;some-examples&#34;&gt;Some Examples&lt;/h2&gt;
 
 &lt;p&gt;The layout of windows is free and customizable by dragging.
-&lt;img src=&#34;https://dmtavt.github.io/img/about-batmass/free-layout.png&#34; alt=&#34;Free window layoyt&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://chhh.github.io/img/about-batmass/free-layout.png&#34; alt=&#34;Free window layoyt&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Compare multiple experiments at once. The bottom-middle run in this figure is a blank (no sample was injected), while the other 5 were runs with some sample. Amazing how much stuff comes from the background.
-&lt;img src=&#34;https://dmtavt.github.io/img/about-batmass/comparison-6-runs-1-blank.png&#34; alt=&#34;Multi experiment comparison in Map2D&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://chhh.github.io/img/about-batmass/comparison-6-runs-1-blank.png&#34; alt=&#34;Multi experiment comparison in Map2D&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And here are the same runs but zoomed in to a small region of m/z and retentino time. Look at the color-marked regions. Let&amp;rsquo;s just accept that zero-values are a thing, there is no need to try extracting noise to do gap-filling in data.
-&lt;img src=&#34;https://dmtavt.github.io/img/about-batmass/comparison-6-runs-1-blank-02-zoom-marked.png&#34; alt=&#34;Multi experiment comparison in Map2D zoomed&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://chhh.github.io/img/about-batmass/comparison-6-runs-1-blank-02-zoom-marked.png&#34; alt=&#34;Multi experiment comparison in Map2D zoomed&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;contacts&#34;&gt;Contacts&lt;/h2&gt;
 
@@ -77,40 +77,40 @@ Email: nesvi@umich.edu&lt;br /&gt;
     
     <item>
       <title>MSFTBX: MS File Toolbox</title>
-      <link>https://dmtavt.github.io/project/msftbx/</link>
+      <link>https://chhh.github.io/project/msftbx/</link>
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://dmtavt.github.io/project/msftbx/</guid>
+      <guid>https://chhh.github.io/project/msftbx/</guid>
       <description>&lt;p&gt;A fast Java library for mass spectrometry data files access (mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc). Writers for some formats are also available. Available on &lt;a href=&#34;http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22msftbx%22&#34; target=&#34;_blank&#34;&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>IMTBX&#43;Grppr</title>
-      <link>https://dmtavt.github.io/project/imtbx/</link>
+      <link>https://chhh.github.io/project/imtbx/</link>
       <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://dmtavt.github.io/project/imtbx/</guid>
+      <guid>https://chhh.github.io/project/imtbx/</guid>
       <description>&lt;p&gt;A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>MSFragger</title>
-      <link>https://dmtavt.github.io/project/msfragger/</link>
+      <link>https://chhh.github.io/project/msfragger/</link>
       <pubDate>Sun, 24 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://dmtavt.github.io/project/msfragger/</guid>
+      <guid>https://chhh.github.io/project/msfragger/</guid>
       <description>&lt;p&gt;Ultra-fast proteomics search engine. Regular searches - when the precursor mass is limited to a narrow window of several ppm - are done within a few seconds. An \&amp;ldquo;open-search\&amp;rdquo; (with large precursor mass range tolerance, e.g. +/-500 Da) for a 2 hour LC gradient bottom-up proteomics experiment can be done in a minute or so on a laptop.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>DIA-Umpire</title>
-      <link>https://dmtavt.github.io/project/dia-umpire/</link>
+      <link>https://chhh.github.io/project/dia-umpire/</link>
       <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://dmtavt.github.io/project/dia-umpire/</guid>
+      <guid>https://chhh.github.io/project/dia-umpire/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://diaumpire.sourceforge.net/&#34; target=&#34;_blank&#34;&gt;DIA-Umpire&lt;/a&gt; - Data Independent Acquisition (DIA) data processing tool that doens&amp;rsquo;t require a spectral library. Detects features in MS1 and MS2, correlates precursors to fragments based on elution profile similarity and compiles pseudo-MS/MS spectra from these groups, which can later be searched with standard proteomic search tools.
 - Efficient calculation of isotopic fine structure up to predefined aggregated probability.&lt;/p&gt;
 </description>
