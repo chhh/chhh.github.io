@@ -13,7 +13,7 @@ image_preview = "imtbx-preview.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["mass-spectrometry", "ion-mobility", "lc-ms", "library", "raw-processing"]
+tags = ["mass-spectrometry", "ion-mobility", "data-viz", "lc-ms", "library", "raw-processing"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "http://chhh.github.io/IMTBX"

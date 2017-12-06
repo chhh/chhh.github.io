@@ -3,26 +3,28 @@
 allowed_dir="chhh.github.io"
 
 if [ ${PWD##*/} != "src" ]; then
-	echo "You must be in 'src' direcotry to execute this script"
+	 printf"\n\nYou must be in 'src' direcotry to execute this script.\n"
 	exit 1
 fi
 
 cd ..
 cur_dir=${PWD##*/}
 
-printf "Upper level dir: %s\n" $cur_dir
+printf "\nUpper level dir: %s\n" $cur_dir
 if [ $cur_dir == "$allowed_dir" ]; then
-	echo "Removing old content:"
+	printf "\n\nRemoving old content:\n"
 	ls | grep -v src 
 	ls | grep -v src | xargs rm -rf
 	cd src
-	echo "Copying new contenst:"
+	printf "\n\nBuilding new content...\n"
+	rm -rf public
+	hugo
+	printf "\n\nCopying new content:\n"
 	ls public/*
 	cp -r public/* ..
+	printf "\n\nRemoving temporary files.\n"
+	rm -rf public
 else
-	echo "You must be in $allowed_dir/src to execute this script"
+	printf "\n\nYou must be in $allowed_dir/src to execute this script\n"
 fi
-
-
-# cp public/* ..
 
