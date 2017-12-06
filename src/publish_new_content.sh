@@ -1,6 +1,6 @@
 #!/bin/bash
 
-allowed_dir="dmtavt.github.io"
+allowed_dir="chhh.github.io"
 
 if [ ${PWD##*/} != "src" ]; then
 	echo "You must be in 'src' direcotry to execute this script"
