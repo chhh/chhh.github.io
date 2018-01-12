@@ -28,4 +28,4 @@ math = false
 
 +++
 
-Ultra-fast proteomics search engine. Regular searches - when the precursor mass is limited to a narrow window of several ppm - are done within a few seconds. An \"open-search\" (with large precursor mass range tolerance, e.g. +/-500 Da) for a 2 hour LC gradient bottom-up proteomics experiment can be done in a minute or so on a laptop.
+Ultra-fast proteomics search engine. Regular searches - when the precursor mass is limited to a narrow window of several ppm - are done within a few seconds. An "open-search" (with large precursor mass range tolerance, e.g. +/-500 Da) for a 2 hour LC gradient bottom-up proteomics experiment can be done in a minute or so on a laptop.

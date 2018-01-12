@@ -16,7 +16,7 @@ image_preview = "imtbx-preview.png"
 tags = ["mass-spectrometry", "ion-mobility", "data-viz", "lc-ms", "library", "raw-processing"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "http://chhh.github.io/IMTBX"
+external_link = "https://chhh.github.io/IMTBX"
 
 # Does the project detail page use math formatting?
 math = false
