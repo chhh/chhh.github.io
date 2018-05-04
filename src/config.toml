@@ -1,6 +1,6 @@
 baseurl = "https://chhh.github.io/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 title = "Dmitry Avtonomov"
-copyright = "&copy; 2017 Dmitry Avtonomov"
+copyright = "&copy; 2018 Dmitry Avtonomov"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -237,7 +237,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Publications"
-  url = "#publications"
+  url = "publication"
   weight = 2
 
 [[menu.main]]
@@ -245,10 +245,10 @@ defaultContentLanguageInSubdir = false
   url = "#projects"
   weight = 3
 
-# [[menu.main]]
-#   name = "Posts"
-#   url = "#posts"
-#   weight = 4
+[[menu.main]]
+  name = "Posts"
+  url = "post"
+  weight = 4
 
 # [[menu.main]]
 #   name = "Teaching"
