@@ -1,6 +1,6 @@
 +++
 date = 2014-03-10
-draft = false
+draft = true
 tags = ["jekyll"]
 title = "Migrate from Jekyll to Hugo"
 summary = """

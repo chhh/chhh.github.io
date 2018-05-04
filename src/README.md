@@ -1,5 +1,7 @@
 # Notes
 
+## Updating the repo
+
 If you want to clone the source of the site, you should know that the theme
 ([Academic](https://github.com/gcushen/hugo-academic)) is a submodule, so to
 clone: `git clone --recurse-submodules https://github.com/dmtavt/dmtavt.github.io.git`
@@ -11,3 +13,15 @@ Use `git submodule update --remote` to automatically pull in all the changes fro
 upstream and update the local refs.
 
 To test locally just run `hugo serve` from the _/src_ directory.
+
+## Configuring custom domain name
+
+This GitHub repo is named `chhh.github.io` and is owned by user `chhh`.
+On GitHub this convention (repo named `<username>.github.io`) means that it will
+automatically be hosted as a website for the user.  
+
+Custom domain name forwarding is controlled by the file `CNAME` at the root
+level of the repo.
+
+Here with Hugo, it is put into `src/static` folder, which is copied to top level
+at the build event.

@@ -1,7 +1,7 @@
 +++
 title = "Post 01"
 date = 2018-05-03T16:35:17-07:00
-draft = false
+draft = true
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
@@ -19,3 +19,6 @@ caption = ""
 preview = true
 
 +++
+
+
+This post was automatically generated with `hugo new posts/post-01.md`
