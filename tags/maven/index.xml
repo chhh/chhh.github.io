@@ -6,7 +6,7 @@
     <description>Recent content in Maven on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018 Dmitry Avtonomov</copyright>
+    <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Wed, 25 Jan 2017 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="https://chhh.github.io/tags/maven/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,7 @@
       <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
       
       <guid>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</guid>
-      <description>What is Sonatype and why is it needed? Sonatype provides a staging repository, which performs validation and allows to push the builds that pass all checks to the Central repo. Without it, basically, you can&amp;rsquo;t easily publish anything to the Central easily, unless you&amp;rsquo;re an Apache project or similar.
-Getting started Follow their getting started guide to set up the needed credentials. This should be easy - you create a JIRA account and you create a ticket in JIRA to claim your namespace (groupId in Maven terms).</description>
+      <description>Table of Contents    What is Sonatype and why is it needed? Getting started GPG signing  Windows caveat  Configuring Maven to know where to get the signing key Configuring Maven to know the credentials for Sonatype servers Satisfying requirements to pass all checks upon submission to Sonatype Publishing parent POM project to Central Publishing the project to Central    What is Sonatype and why is it needed?</description>
     </item>
     
   </channel>

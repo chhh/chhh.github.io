@@ -18,7 +18,7 @@
     
   
   <meta name="description" content="Intellij IDEA IDE has a nice feature of live templates. You type several symbols, press tab (by default) and it expands the symbols into full expressions. E.g. you can type fori, press Tab and get a full for loop created for you, or type iter, press Tab and if you have iterables in scope, you&rsquo;ll be presented with a choice of available ones to iterate over.
-Slf4j logger in each class It&rsquo;s a super common thing to type at the beginning of each class:">
+Example: slf4j logger in each class It&rsquo;s a super common thing to type at the beginning of each class:">
 
   
   <link rel="alternate" hreflang="en-us" href="https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/">
@@ -30,7 +30,7 @@ Slf4j logger in each class It&rsquo;s a super common thing to type at the beginn
 
   
   
-  <meta name="theme-color" content="#0095eb">
+  <meta name="theme-color" content="#3f51b5">
   
   
   
@@ -95,7 +95,7 @@ Slf4j logger in each class It&rsquo;s a super common thing to type at the beginn
   <meta property="og:url" content="https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/">
   <meta property="og:title" content="Intellij IDEA live templates | Dmitry Avtonomov">
   <meta property="og:description" content="Intellij IDEA IDE has a nice feature of live templates. You type several symbols, press tab (by default) and it expands the symbols into full expressions. E.g. you can type fori, press Tab and get a full for loop created for you, or type iter, press Tab and if you have iterables in scope, you&rsquo;ll be presented with a choice of available ones to iterate over.
-Slf4j logger in each class It&rsquo;s a super common thing to type at the beginning of each class:">
+Example: slf4j logger in each class It&rsquo;s a super common thing to type at the beginning of each class:">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2017-01-26T00:00:00-08:00">
@@ -325,17 +325,24 @@ Slf4j logger in each class It&rsquo;s a super common thing to type at the beginn
     <div class="article-style" itemprop="articleBody">
       
 
-<p><a href="https://www.jetbrains.com/idea/features/" target="_blank">Intellij IDEA</a> IDE has a nice feature of live templates. You type several symbols, press tab (by default) and it expands the symbols into full expressions. E.g. you can type <code>fori</code>, press <kbd>Tab</kbd> and get a full <em>for</em> loop created for you, or type <code>iter</code>, press <kbd>Tab</kbd> and if you have <code>iterable</code>s in scope, you&rsquo;ll be presented with a choice of available ones to iterate over.</p>
+<p><a href="https://www.jetbrains.com/idea/features/" target="_blank">Intellij IDEA</a> IDE has a nice feature
+of live templates. You type several symbols, press tab (by default) and it
+expands the symbols into full expressions. E.g. you can type <code>fori</code>, press
+<kbd>Tab</kbd> and get a full <em>for</em> loop created for you, or type <code>iter</code>, press
+<kbd>Tab</kbd> and if you have <code>iterable</code>s in scope, you&rsquo;ll be presented with a
+choice of available ones to iterate over.</p>
 
-<h2 id="slf4j-logger-in-each-class">Slf4j logger in each class</h2>
+<h2 id="example-slf4j-logger-in-each-class">Example: slf4j logger in each class</h2>
 
 <p>It&rsquo;s a super common thing to type at the beginning of each class:</p>
 
 <pre><code class="language-java">private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(MyClassName.class);
 </code></pre>
 
-<p>pretty tedious even with IDE&rsquo;s help.<br />
-Live templates to the rescue, you can define your own one to create the whole line for you!</p>
+<p>pretty tedious even with IDE&rsquo;s help.</p>
+
+<p>Live templates to the rescue, you can define your own one to create the whole
+line for you! You</p>
 
 <h2 id="how-to-define-a-live-template">How to define a live template</h2>
 
@@ -348,9 +355,12 @@ Live templates to the rescue, you can define your own one to create the whole li
 <ul>
 <li>Abbreviation: <code>log</code></li>
 <li>Description: <code>Inserts private static Logger for slf4j</code></li>
-<li>Template text: <code>private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger($CLASS_NAME$.class);$END$</code></li>
+<li>Template text: <code>private static final org.slf4j.Logger logger =
+org.slf4j.LoggerFactory.getLogger($CLASS_NAME$.class);$END$</code></li>
 </ul></li>
-<li>Now click the <em>Edit Variables</em> button, we will tell the IDE what <code>$CLASS_NAME$</code> means here. <code>$END$</code> means where to place the cursor after template expansion.
+<li>Now click the <em>Edit Variables</em> button, we will tell the IDE what
+<code>$CLASS_NAME$</code> means here. <code>$END$</code> means where to place the cursor after
+template expansion.
 
 <ul>
 <li>Name: <code>CLASS_NAME</code></li>
@@ -358,11 +368,12 @@ Live templates to the rescue, you can define your own one to create the whole li
 <li>Default value: leave empty</li>
 <li>Skip if defined: true (check the checkbox)</li>
 </ul></li>
-<li>At the very bottom look for text <em>Applicable in</em> with a link <em>Change</em> next to it, click it. Select <em>Java</em>-&gt;<em>declaration</em>.<br /></li>
+<li>At the very bottom look for text <em>Applicable in</em> with a link <em>Change</em> next to
+it, click it. Select <em>Java</em>-&gt;<em>declaration</em>.<br /></li>
 </ul>
 
-<p>Congratulations, you&rsquo;re done!
-Just type <code>log</code> and press <kbd>Tab</kbd> anywhere in the class declaration.</p>
+<p>Congratulations, you&rsquo;re done! Just type <code>log</code> and press <kbd>Tab</kbd> anywhere
+in the class declaration.</p>
 
     </div>
 
@@ -387,7 +398,7 @@ Just type <code>log</code> and press <kbd>Tab</kbd> anywhere in the class declar
   <div class="container">
     <p class="powered-by">
 
-      &copy; 2018 Dmitry Avtonomov &middot; 
+      &copy; 2016-present Dmitry Avtonomov &middot; 
 
       Powered by the
       <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

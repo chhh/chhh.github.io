@@ -6,7 +6,7 @@
     <description>Recent content in Dmitry Avtonomov on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018 Dmitry Avtonomov</copyright>
+    <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
@@ -48,25 +48,26 @@ Here&amp;rsquo;s mine currently: &lt;a href=&#34;scoop-export.txt&#34; target=&#
 
 &lt;h3 id=&#34;cmd-exe&#34;&gt;cmd.exe&lt;/h3&gt;
 
-&lt;p&gt;To get auto-completion support similar to what you get in bash, install
+&lt;p&gt;To get auto-completion support similar to what you get in &lt;em&gt;bash&lt;/em&gt;, install
 &lt;a href=&#34;https://mridgers.github.io/clink/&#34; target=&#34;_blank&#34;&gt;clink&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;conemu&#34;&gt;ConEmu&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;Win + Alt + P&lt;/code&gt; to open Properties. &lt;code&gt;Startup -&amp;gt; Tasks&lt;/code&gt; and set shortcuts for
+&lt;p&gt;&lt;kbd&gt;Win + Alt + P&lt;/kbd&gt; to open Properties. &lt;code&gt;Startup -&amp;gt; Tasks&lt;/code&gt; and set shortcuts for
 shells you&amp;rsquo;ll be using.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Alt + C&lt;/code&gt; for cmd.exe&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Alt + Shift + C&lt;/code&gt; for elevated cmd.exe&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Alt + W&lt;/code&gt; for MINGW fron git&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Alt + Y&lt;/code&gt; for Cygwin
-The full config is &lt;a href=&#34;ConEmu_chhh-2018-03-07.xml&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, can be imported at installation time.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + C&lt;/code&gt; for &lt;em&gt;cmd.exe&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + Shift + C&lt;/code&gt; for elevated &lt;em&gt;cmd.exe&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + W&lt;/code&gt; for &lt;em&gt;MINGW&lt;/em&gt; from &lt;em&gt;git&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + Y&lt;/code&gt; for &lt;em&gt;Cygwin&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;The full config is &lt;a href=&#34;ConEmu_chhh-2018-03-07.xml&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, can be imported at installation time.&lt;/p&gt;
 
 &lt;h3 id=&#34;cygwin&#34;&gt;Cygwin&lt;/h3&gt;
 
-&lt;p&gt;Basic packages to install throught setup.exe:&lt;/p&gt;
+&lt;p&gt;Basic packages to install throught &lt;em&gt;setup.exe&lt;/em&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;wget&lt;/li&gt;
@@ -76,8 +77,8 @@ The full config is &lt;a href=&#34;ConEmu_chhh-2018-03-07.xml&#34; target=&#34;_
 &lt;li&gt;unzip&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Package manager that can be used from inside cygwin without having
-to run setup.exe all the time: &lt;a href=&#34;https://github.com/transcode-open/apt-cyg&#34; target=&#34;_blank&#34;&gt;apt-cyg&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There is little known package manager that can be used from inside cygwin without having
+to run &lt;em&gt;setup.exe&lt;/em&gt; all the time: &lt;a href=&#34;https://github.com/transcode-open/apt-cyg&#34; target=&#34;_blank&#34;&gt;apt-cyg&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Installation&lt;/em&gt;:&lt;/p&gt;
 
@@ -129,17 +130,24 @@ ipconfig /flushdns
       <guid>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/features/&#34; target=&#34;_blank&#34;&gt;Intellij IDEA&lt;/a&gt; IDE has a nice feature of live templates. You type several symbols, press tab (by default) and it expands the symbols into full expressions. E.g. you can type &lt;code&gt;fori&lt;/code&gt;, press &lt;kbd&gt;Tab&lt;/kbd&gt; and get a full &lt;em&gt;for&lt;/em&gt; loop created for you, or type &lt;code&gt;iter&lt;/code&gt;, press &lt;kbd&gt;Tab&lt;/kbd&gt; and if you have &lt;code&gt;iterable&lt;/code&gt;s in scope, you&amp;rsquo;ll be presented with a choice of available ones to iterate over.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/features/&#34; target=&#34;_blank&#34;&gt;Intellij IDEA&lt;/a&gt; IDE has a nice feature
+of live templates. You type several symbols, press tab (by default) and it
+expands the symbols into full expressions. E.g. you can type &lt;code&gt;fori&lt;/code&gt;, press
+&lt;kbd&gt;Tab&lt;/kbd&gt; and get a full &lt;em&gt;for&lt;/em&gt; loop created for you, or type &lt;code&gt;iter&lt;/code&gt;, press
+&lt;kbd&gt;Tab&lt;/kbd&gt; and if you have &lt;code&gt;iterable&lt;/code&gt;s in scope, you&amp;rsquo;ll be presented with a
+choice of available ones to iterate over.&lt;/p&gt;
 
-&lt;h2 id=&#34;slf4j-logger-in-each-class&#34;&gt;Slf4j logger in each class&lt;/h2&gt;
+&lt;h2 id=&#34;example-slf4j-logger-in-each-class&#34;&gt;Example: slf4j logger in each class&lt;/h2&gt;
 
 &lt;p&gt;It&amp;rsquo;s a super common thing to type at the beginning of each class:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(MyClassName.class);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;pretty tedious even with IDE&amp;rsquo;s help.&lt;br /&gt;
-Live templates to the rescue, you can define your own one to create the whole line for you!&lt;/p&gt;
+&lt;p&gt;pretty tedious even with IDE&amp;rsquo;s help.&lt;/p&gt;
+
+&lt;p&gt;Live templates to the rescue, you can define your own one to create the whole
+line for you! You&lt;/p&gt;
 
 &lt;h2 id=&#34;how-to-define-a-live-template&#34;&gt;How to define a live template&lt;/h2&gt;
 
@@ -152,9 +160,12 @@ Live templates to the rescue, you can define your own one to create the whole li
 &lt;ul&gt;
 &lt;li&gt;Abbreviation: &lt;code&gt;log&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Description: &lt;code&gt;Inserts private static Logger for slf4j&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Template text: &lt;code&gt;private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger($CLASS_NAME$.class);$END$&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Template text: &lt;code&gt;private static final org.slf4j.Logger logger =
+org.slf4j.LoggerFactory.getLogger($CLASS_NAME$.class);$END$&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Now click the &lt;em&gt;Edit Variables&lt;/em&gt; button, we will tell the IDE what &lt;code&gt;$CLASS_NAME$&lt;/code&gt; means here. &lt;code&gt;$END$&lt;/code&gt; means where to place the cursor after template expansion.
+&lt;li&gt;Now click the &lt;em&gt;Edit Variables&lt;/em&gt; button, we will tell the IDE what
+&lt;code&gt;$CLASS_NAME$&lt;/code&gt; means here. &lt;code&gt;$END$&lt;/code&gt; means where to place the cursor after
+template expansion.
 
 &lt;ul&gt;
 &lt;li&gt;Name: &lt;code&gt;CLASS_NAME&lt;/code&gt;&lt;/li&gt;
@@ -162,11 +173,12 @@ Live templates to the rescue, you can define your own one to create the whole li
 &lt;li&gt;Default value: leave empty&lt;/li&gt;
 &lt;li&gt;Skip if defined: true (check the checkbox)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;At the very bottom look for text &lt;em&gt;Applicable in&lt;/em&gt; with a link &lt;em&gt;Change&lt;/em&gt; next to it, click it. Select &lt;em&gt;Java&lt;/em&gt;-&amp;gt;&lt;em&gt;declaration&lt;/em&gt;.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;At the very bottom look for text &lt;em&gt;Applicable in&lt;/em&gt; with a link &lt;em&gt;Change&lt;/em&gt; next to
+it, click it. Select &lt;em&gt;Java&lt;/em&gt;-&amp;gt;&lt;em&gt;declaration&lt;/em&gt;.&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Congratulations, you&amp;rsquo;re done!
-Just type &lt;code&gt;log&lt;/code&gt; and press &lt;kbd&gt;Tab&lt;/kbd&gt; anywhere in the class declaration.&lt;/p&gt;
+&lt;p&gt;Congratulations, you&amp;rsquo;re done! Just type &lt;code&gt;log&lt;/code&gt; and press &lt;kbd&gt;Tab&lt;/kbd&gt; anywhere
+in the class declaration.&lt;/p&gt;
 </description>
     </item>
     
@@ -178,21 +190,58 @@ Just type &lt;code&gt;log&lt;/code&gt; and press &lt;kbd&gt;Tab&lt;/kbd&gt; anyw
       <guid>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</guid>
       <description>
 
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#what-is-sonatype-and-why-is-it-needed&#34;&gt;What is Sonatype and why is it needed?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#getting-started&#34;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#gpg-signing&#34;&gt;GPG signing&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#windows-caveat&#34;&gt;Windows caveat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configuring-maven-to-know-where-to-get-the-signing-key&#34;&gt;Configuring Maven to know where to get the signing key&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configuring-maven-to-know-the-credentials-for-sonatype-servers&#34;&gt;Configuring Maven to know the credentials for Sonatype servers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#satisfying-requirements-to-pass-all-checks-upon-submission-to-sonatype&#34;&gt;Satisfying requirements to pass all checks upon submission to Sonatype&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#publishing-parent-pom-project-to-central&#34;&gt;Publishing parent POM project to Central&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#publishing-the-project-to-central&#34;&gt;Publishing the project to Central&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+
 &lt;h2 id=&#34;what-is-sonatype-and-why-is-it-needed&#34;&gt;What is Sonatype and why is it needed?&lt;/h2&gt;
 
-&lt;p&gt;Sonatype provides a staging repository, which performs validation and allows to push the builds that pass all checks to the Central repo. Without it, basically, you can&amp;rsquo;t easily publish anything to the Central easily, unless you&amp;rsquo;re an Apache project or similar.&lt;/p&gt;
+&lt;p&gt;Sonatypeis a company that  provides a staging repository, which performs
+validation and allows to push the builds that pass all checks to the Central
+repo. Without it, basically, you can&amp;rsquo;t easily publish anything to the Central
+easily, unless you&amp;rsquo;re an Apache project or similar.&lt;/p&gt;
 
 &lt;h2 id=&#34;getting-started&#34;&gt;Getting started&lt;/h2&gt;
 
-&lt;p&gt;Follow their getting started &lt;a href=&#34;http://central.sonatype.org/pages/ossrh-guide.html&#34; target=&#34;_blank&#34;&gt;guide&lt;/a&gt; to set up the needed credentials. This should be easy - you create a JIRA account and you create a ticket in JIRA to claim your namespace (groupId in Maven terms). If you have a github account, for example, &lt;strong&gt;&lt;a href=&#34;http://github.com/chhh&#34; target=&#34;_blank&#34;&gt;http://github.com/chhh&lt;/a&gt;&lt;/strong&gt;, you&amp;rsquo;ll want to claim &lt;strong&gt;com.github.chhh&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Follow their getting started
+&lt;a href=&#34;http://central.sonatype.org/pages/ossrh-guide.html&#34; target=&#34;_blank&#34;&gt;guide&lt;/a&gt; to set up the needed
+credentials. This should be easy - you create a JIRA account and you create a
+ticket in JIRA to claim your namespace (groupId in Maven terms). If you have a
+github account, for example,
+&lt;strong&gt;&lt;a href=&#34;http://github.com/chhh&#34; target=&#34;_blank&#34;&gt;http://github.com/chhh&lt;/a&gt;&lt;/strong&gt;, you&amp;rsquo;ll want to claim
+&lt;strong&gt;com.github.chhh&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;gpg-signing&#34;&gt;GPG signing&lt;/h2&gt;
 
-&lt;p&gt;You&amp;rsquo;ll need to set up and publish your GPG key for signing artifacts. This is described &lt;a href=&#34;http://central.sonatype.org/pages/working-with-pgp-signatures.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll need to set up and publish your GPG key for signing artifacts. This is
+described
+&lt;a href=&#34;http://central.sonatype.org/pages/working-with-pgp-signatures.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;In short you&amp;rsquo;ll need to install gpg or gpg2. I did it on Windows and already had a working gpg that came with git installation. So I happily used that to generate my key with (create it with a passphrase!):
-&lt;code&gt;gpg --gen-key&lt;/code&gt;&lt;br /&gt;
-&lt;strong&gt;Make sure to check&lt;/strong&gt; that the generated key does not have sub keys for signing. First issue &lt;code&gt;gpg --list-keys&lt;/code&gt;, the output should be like:&lt;/p&gt;
+&lt;p&gt;In short you&amp;rsquo;ll need to install gpg or gpg2. I did it on Windows and already had
+a working gpg that came with git installation. So I happily used that to
+generate my key with (create it with a passphrase!):&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gpg --gen-key&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Make sure to check&lt;/strong&gt; that the generated key does not have sub keys for
+signing. First issue &lt;code&gt;gpg --list-keys&lt;/code&gt;, the output should be like:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;$ gpg --list-keys
 /c/Users/&amp;lt;username&amp;gt;/.gnupg/pubring.gpg
@@ -202,7 +251,8 @@ uid                  Dmitry Avtonomov (chhh) &amp;lt;email@gmail.com&amp;gt;
 sub   2048R/3E123123 2012-01-24
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Notice, that there is one &lt;em&gt;pub&lt;/em&gt; key and one &lt;em&gt;sub&lt;/em&gt; key. You want this &lt;em&gt;sub&lt;/em&gt; key to not be &lt;em&gt;Usage: C&lt;/em&gt; type.
+&lt;p&gt;Notice, that there is one &lt;em&gt;pub&lt;/em&gt; key and one &lt;em&gt;sub&lt;/em&gt; key. You want this &lt;em&gt;sub&lt;/em&gt; key
+to not be &lt;em&gt;Usage: C&lt;/em&gt; type.
 &lt;code&gt;gpg --edit-key DA123C12&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;gpg (GnuPG) 1.4.20; Copyright (C) 2015 Free Software Foundation, Inc.
@@ -218,18 +268,27 @@ sub  2048R/3E123123  created: 2012-01-24  expires: never       usage: E
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;In this case the &lt;em&gt;sub&lt;/em&gt; key is &lt;em&gt;usage: E&lt;/em&gt;, it&amp;rsquo;s used for encryption only, so we&amp;rsquo;re good to go, otherwise you&amp;rsquo;d need to delete or revoke it.
-Published the key with:&lt;/p&gt;
+&lt;p&gt;In this case the &lt;em&gt;sub&lt;/em&gt; key is &lt;em&gt;usage: E&lt;/em&gt;, it&amp;rsquo;s used for encryption only, so
+we&amp;rsquo;re good to go, otherwise you&amp;rsquo;d need to delete or revoke it. Published the key
+with:&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;gpg --keyserver hkp://pool.sks-keyservers.net --send-keys &amp;lt;key-id&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;windows-caveat&#34;&gt;Windows caveat&lt;/h3&gt;
 
-&lt;p&gt;The previous steps created the keychain file in &lt;code&gt;c:/Users/&amp;lt;username&amp;gt;/.gnupg&lt;/code&gt;. However, when I later installed the native windows gpg from &lt;a href=&#34;https://www.gnupg.org/download/&#34; target=&#34;_blank&#34;&gt;https://www.gnupg.org/download/&lt;/a&gt; I&amp;rsquo;ve found that it used a different default path and I could not list the key anymore. Addind a new environment variable &lt;code&gt;GNUPGHOME&lt;/code&gt; and set it to &lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\.gnupg&lt;/code&gt;. Now the gpg that was installed in windows could read the old keychain, which meant maven could now use that key to sign files.&lt;/p&gt;
+&lt;p&gt;The previous steps created the keychain file in &lt;code&gt;c:/Users/&amp;lt;username&amp;gt;/.gnupg&lt;/code&gt;.
+However, when I later installed the native windows gpg from
+&lt;a href=&#34;https://www.gnupg.org/download/&#34; target=&#34;_blank&#34;&gt;https://www.gnupg.org/download/&lt;/a&gt; I&amp;rsquo;ve found
+that it used a different default path and I could not list the key anymore.
+Addind a new environment variable &lt;code&gt;GNUPGHOME&lt;/code&gt; and set it to
+&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\.gnupg&lt;/code&gt;. Now the gpg that was installed in windows could
+read the old keychain, which meant maven could now use that key to sign files.&lt;/p&gt;
 
 &lt;h2 id=&#34;configuring-maven-to-know-where-to-get-the-signing-key&#34;&gt;Configuring Maven to know where to get the signing key&lt;/h2&gt;
 
-&lt;p&gt;Check out your &lt;code&gt;&amp;lt;maven-install-apth&amp;gt;/conf&lt;/code&gt; directory. There should be a &lt;code&gt;settings.xml&lt;/code&gt; file. Copy that over to your &lt;code&gt;&amp;lt;user-home&amp;gt;/.m2&lt;/code&gt;, unless you already have it there. Add the following to &lt;code&gt;&amp;lt;profiles&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Check out your &lt;code&gt;&amp;lt;maven-install-apth&amp;gt;/conf&lt;/code&gt; directory. There should be a
+&lt;code&gt;settings.xml&lt;/code&gt; file. Copy that over to your &lt;code&gt;&amp;lt;user-home&amp;gt;/.m2&lt;/code&gt;, unless you
+already have it there. Add the following to &lt;code&gt;&amp;lt;profiles&amp;gt;&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;profiles&amp;gt;
     &amp;lt;profile&amp;gt;
@@ -245,11 +304,19 @@ Published the key with:&lt;/p&gt;
 &amp;lt;/profiles&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;It&amp;rsquo;s ok to have your passphrase set here as this is your user-specific configuration file. If you don&amp;rsquo;t want to specify that, however, there will be an option for you to provide that passphrase every time you publish.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s ok to have your passphrase set here as this is your user-specific
+configuration file. If you don&amp;rsquo;t want to specify that, however, there will be an
+option for you to provide that passphrase every time you publish.&lt;/p&gt;
 
 &lt;h2 id=&#34;configuring-maven-to-know-the-credentials-for-sonatype-servers&#34;&gt;Configuring Maven to know the credentials for Sonatype servers&lt;/h2&gt;
 
-&lt;p&gt;You&amp;rsquo;ll provide the log-in credentials in the same &lt;code&gt;settings.xml&lt;/code&gt; maven file in &lt;code&gt;~/.m2&lt;/code&gt; directory. If you don&amp;rsquo;t want to provide the actual username and password, log in to your account at &lt;a href=&#34;https://oss.sonatype.org&#34; target=&#34;_blank&#34;&gt;https://oss.sonatype.org&lt;/a&gt;. In the top right corner click &lt;code&gt;Log-In&lt;/code&gt;, then click your username and select &lt;code&gt;Profile&lt;/code&gt;. On the new screen there&amp;rsquo;s a dropdown with two choices: &lt;em&gt;Summary&lt;/em&gt; and &lt;em&gt;User Token&lt;/em&gt;. Select the user token, it will give you the info. In the &lt;code&gt;settings.xml&lt;/code&gt; file add:&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll provide the log-in credentials in the same &lt;code&gt;settings.xml&lt;/code&gt; maven file in
+&lt;code&gt;~/.m2&lt;/code&gt; directory. If you don&amp;rsquo;t want to provide the actual username and
+password, log in to your account at
+&lt;a href=&#34;https://oss.sonatype.org&#34; target=&#34;_blank&#34;&gt;https://oss.sonatype.org&lt;/a&gt;. In the top right corner
+click &lt;code&gt;Log-In&lt;/code&gt;, then click your username and select &lt;code&gt;Profile&lt;/code&gt;. On the new screen
+there&amp;rsquo;s a dropdown with two choices: &lt;em&gt;Summary&lt;/em&gt; and &lt;em&gt;User Token&lt;/em&gt;. Select the user
+token, it will give you the info. In the &lt;code&gt;settings.xml&lt;/code&gt; file add:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;  &amp;lt;servers&amp;gt;
     &amp;lt;server&amp;gt;
@@ -262,9 +329,18 @@ Published the key with:&lt;/p&gt;
 
 &lt;h2 id=&#34;satisfying-requirements-to-pass-all-checks-upon-submission-to-sonatype&#34;&gt;Satisfying requirements to pass all checks upon submission to Sonatype&lt;/h2&gt;
 
-&lt;p&gt;There&amp;rsquo;s a lot of meta-info required to satisfy all the requirements. As you will be using the same &lt;code&gt;groupId&lt;/code&gt; for all your artifacts, it&amp;rsquo;s easier to put all the extra information to a parent POM. You can find an example parent project here: &lt;a href=&#34;https://github.com/chhh/sonatype-ossrh-parent&#34; target=&#34;_blank&#34;&gt;https://github.com/chhh/sonatype-ossrh-parent&lt;/a&gt;. This project consists only of the POM file, specifying the credentials, basic info and publishing locations. It adds some to the &lt;code&gt;release&lt;/code&gt; target as well.
-It&amp;rsquo;s ok to just clone that repo and change the information to what you like.
-&lt;strong&gt;You will set this POM as the &lt;code&gt;&amp;lt;parent&amp;gt;&lt;/code&gt; of the projects you wish to publish to Central.&lt;/strong&gt; As it will be the parent POM, anyone who will want to build your artifacts will need to have that POM, so the first thing is to publish this project to Central by itself.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a lot of meta-info required to satisfy all the requirements. As you will
+be using the same &lt;code&gt;groupId&lt;/code&gt; for all your artifacts, it&amp;rsquo;s easier to put all the
+extra information to a parent POM. You can find an example parent project here:
+&lt;a href=&#34;https://github.com/chhh/sonatype-ossrh-parent&#34; target=&#34;_blank&#34;&gt;https://github.com/chhh/sonatype-ossrh-parent&lt;/a&gt;.
+This project consists only of the POM file, specifying the credentials, basic
+info and publishing locations. It adds some to the &lt;code&gt;release&lt;/code&gt; target as well.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s ok to just clone that repo and change the information to what you like.
+&lt;strong&gt;You will set this POM as the &lt;code&gt;&amp;lt;parent&amp;gt;&lt;/code&gt; of the projects you wish to publish to
+Central.&lt;/strong&gt; As it will be the parent POM, anyone who will want to build your
+artifacts will need to have that POM, so the first thing is to publish this
+project to Central by itself.&lt;/p&gt;
 
 &lt;h2 id=&#34;publishing-parent-pom-project-to-central&#34;&gt;Publishing parent POM project to Central&lt;/h2&gt;
 
@@ -275,8 +351,10 @@ It&amp;rsquo;s ok to just clone that repo and change the information to what you
 &lt;li&gt;In this parent POM you set the &lt;code&gt;version&lt;/code&gt; to something like &lt;code&gt;0.1-SNAPSHOT&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The release plugin will use that information to create the build. It will remove the &lt;code&gt;SNAPSHOT&lt;/code&gt; part, build the project, create a new tag in SCM, push everything to remote, bump up the version in POM and re-add SNAPSHOT back to it.
-Now execute:
+&lt;p&gt;The release plugin will use that information to create the build. It will remove
+the &lt;code&gt;SNAPSHOT&lt;/code&gt; part, build the project, create a new tag in SCM, push everything
+to remote, bump up the version in POM and re-add SNAPSHOT back to it. Now
+execute:
 &lt;code&gt;mvn release:prepare&lt;/code&gt;
 &lt;code&gt;mvn release:perform&lt;/code&gt;
 If you encounter any problems with &lt;code&gt;release:perform&lt;/code&gt; you can always do
@@ -294,7 +372,10 @@ If you encounter any problems with &lt;code&gt;release:perform&lt;/code&gt; you 
 &amp;lt;/parent&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Notice how we used &lt;code&gt;relativePath&lt;/code&gt; to give maven a hint at where to search for this POM. The parent project was resiging in a sibling directory next to the project directory in this case. Otherwise the POM would have to be in the parent directory of your project.&lt;/p&gt;
+&lt;p&gt;Notice how we used &lt;code&gt;relativePath&lt;/code&gt; to give maven a hint at where to search for
+this POM. The parent project was resiging in a sibling directory next to the
+project directory in this case. Otherwise the POM would have to be in the parent
+directory of your project.&lt;/p&gt;
 </description>
     </item>
     
@@ -429,6 +510,28 @@ Email: nesvi@umich.edu&lt;br /&gt;
       
       <guid>https://chhh.github.io/publication/dia-umpire/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://chhh.github.io/imtbx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chhh.github.io/imtbx/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+    &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;ie=edge&#34;&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://chhh.github.io/IMTBX/&#34;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Go to the intended page:&lt;a href=&#34;https://chhh.github.io/IMTBX/&#34;&gt;https://chhh.github.io/IMTBX/&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;You will be redirected automatically.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</description>
     </item>
     
   </channel>

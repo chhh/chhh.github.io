@@ -17,8 +17,7 @@
       
     
   
-  <meta name="description" content="What is Sonatype and why is it needed? Sonatype provides a staging repository, which performs validation and allows to push the builds that pass all checks to the Central repo. Without it, basically, you can&rsquo;t easily publish anything to the Central easily, unless you&rsquo;re an Apache project or similar.
-Getting started Follow their getting started guide to set up the needed credentials. This should be easy - you create a JIRA account and you create a ticket in JIRA to claim your namespace (groupId in Maven terms).">
+  <meta name="description" content="Table of Contents    What is Sonatype and why is it needed? Getting started GPG signing  Windows caveat  Configuring Maven to know where to get the signing key Configuring Maven to know the credentials for Sonatype servers Satisfying requirements to pass all checks upon submission to Sonatype Publishing parent POM project to Central Publishing the project to Central    What is Sonatype and why is it needed?">
 
   
   <link rel="alternate" hreflang="en-us" href="https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/">
@@ -30,7 +29,7 @@ Getting started Follow their getting started guide to set up the needed credenti
 
   
   
-  <meta name="theme-color" content="#0095eb">
+  <meta name="theme-color" content="#3f51b5">
   
   
   
@@ -94,8 +93,7 @@ Getting started Follow their getting started guide to set up the needed credenti
   <meta property="og:site_name" content="Dmitry Avtonomov">
   <meta property="og:url" content="https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/">
   <meta property="og:title" content="Publishing java libraries to Maven Central | Dmitry Avtonomov">
-  <meta property="og:description" content="What is Sonatype and why is it needed? Sonatype provides a staging repository, which performs validation and allows to push the builds that pass all checks to the Central repo. Without it, basically, you can&rsquo;t easily publish anything to the Central easily, unless you&rsquo;re an Apache project or similar.
-Getting started Follow their getting started guide to set up the needed credentials. This should be easy - you create a JIRA account and you create a ticket in JIRA to claim your namespace (groupId in Maven terms).">
+  <meta property="og:description" content="Table of Contents    What is Sonatype and why is it needed? Getting started GPG signing  Windows caveat  Configuring Maven to know where to get the signing key Configuring Maven to know the credentials for Sonatype servers Satisfying requirements to pass all checks upon submission to Sonatype Publishing parent POM project to Central Publishing the project to Central    What is Sonatype and why is it needed?">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2017-01-25T00:00:00-08:00">
@@ -325,21 +323,58 @@ Getting started Follow their getting started guide to set up the needed credenti
     <div class="article-style" itemprop="articleBody">
       
 
+<h2>Table of Contents</h2>
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#what-is-sonatype-and-why-is-it-needed">What is Sonatype and why is it needed?</a></li>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#gpg-signing">GPG signing</a>
+<ul>
+<li><a href="#windows-caveat">Windows caveat</a></li>
+</ul></li>
+<li><a href="#configuring-maven-to-know-where-to-get-the-signing-key">Configuring Maven to know where to get the signing key</a></li>
+<li><a href="#configuring-maven-to-know-the-credentials-for-sonatype-servers">Configuring Maven to know the credentials for Sonatype servers</a></li>
+<li><a href="#satisfying-requirements-to-pass-all-checks-upon-submission-to-sonatype">Satisfying requirements to pass all checks upon submission to Sonatype</a></li>
+<li><a href="#publishing-parent-pom-project-to-central">Publishing parent POM project to Central</a></li>
+<li><a href="#publishing-the-project-to-central">Publishing the project to Central</a></li>
+</ul></li>
+</ul>
+</nav>
+
+
 <h2 id="what-is-sonatype-and-why-is-it-needed">What is Sonatype and why is it needed?</h2>
 
-<p>Sonatype provides a staging repository, which performs validation and allows to push the builds that pass all checks to the Central repo. Without it, basically, you can&rsquo;t easily publish anything to the Central easily, unless you&rsquo;re an Apache project or similar.</p>
+<p>Sonatypeis a company that  provides a staging repository, which performs
+validation and allows to push the builds that pass all checks to the Central
+repo. Without it, basically, you can&rsquo;t easily publish anything to the Central
+easily, unless you&rsquo;re an Apache project or similar.</p>
 
 <h2 id="getting-started">Getting started</h2>
 
-<p>Follow their getting started <a href="http://central.sonatype.org/pages/ossrh-guide.html" target="_blank">guide</a> to set up the needed credentials. This should be easy - you create a JIRA account and you create a ticket in JIRA to claim your namespace (groupId in Maven terms). If you have a github account, for example, <strong><a href="http://github.com/chhh" target="_blank">http://github.com/chhh</a></strong>, you&rsquo;ll want to claim <strong>com.github.chhh</strong>.</p>
+<p>Follow their getting started
+<a href="http://central.sonatype.org/pages/ossrh-guide.html" target="_blank">guide</a> to set up the needed
+credentials. This should be easy - you create a JIRA account and you create a
+ticket in JIRA to claim your namespace (groupId in Maven terms). If you have a
+github account, for example,
+<strong><a href="http://github.com/chhh" target="_blank">http://github.com/chhh</a></strong>, you&rsquo;ll want to claim
+<strong>com.github.chhh</strong>.</p>
 
 <h2 id="gpg-signing">GPG signing</h2>
 
-<p>You&rsquo;ll need to set up and publish your GPG key for signing artifacts. This is described <a href="http://central.sonatype.org/pages/working-with-pgp-signatures.html" target="_blank">here</a>.</p>
+<p>You&rsquo;ll need to set up and publish your GPG key for signing artifacts. This is
+described
+<a href="http://central.sonatype.org/pages/working-with-pgp-signatures.html" target="_blank">here</a>.</p>
 
-<p>In short you&rsquo;ll need to install gpg or gpg2. I did it on Windows and already had a working gpg that came with git installation. So I happily used that to generate my key with (create it with a passphrase!):
-<code>gpg --gen-key</code><br />
-<strong>Make sure to check</strong> that the generated key does not have sub keys for signing. First issue <code>gpg --list-keys</code>, the output should be like:</p>
+<p>In short you&rsquo;ll need to install gpg or gpg2. I did it on Windows and already had
+a working gpg that came with git installation. So I happily used that to
+generate my key with (create it with a passphrase!):</p>
+
+<p><code>gpg --gen-key</code></p>
+
+<p><strong>Make sure to check</strong> that the generated key does not have sub keys for
+signing. First issue <code>gpg --list-keys</code>, the output should be like:</p>
 
 <pre><code class="language-text">$ gpg --list-keys
 /c/Users/&lt;username&gt;/.gnupg/pubring.gpg
@@ -349,7 +384,8 @@ uid                  Dmitry Avtonomov (chhh) &lt;email@gmail.com&gt;
 sub   2048R/3E123123 2012-01-24
 </code></pre>
 
-<p>Notice, that there is one <em>pub</em> key and one <em>sub</em> key. You want this <em>sub</em> key to not be <em>Usage: C</em> type.
+<p>Notice, that there is one <em>pub</em> key and one <em>sub</em> key. You want this <em>sub</em> key
+to not be <em>Usage: C</em> type.
 <code>gpg --edit-key DA123C12</code></p>
 
 <pre><code class="language-text">gpg (GnuPG) 1.4.20; Copyright (C) 2015 Free Software Foundation, Inc.
@@ -365,18 +401,27 @@ sub  2048R/3E123123  created: 2012-01-24  expires: never       usage: E
 
 </code></pre>
 
-<p>In this case the <em>sub</em> key is <em>usage: E</em>, it&rsquo;s used for encryption only, so we&rsquo;re good to go, otherwise you&rsquo;d need to delete or revoke it.
-Published the key with:</p>
+<p>In this case the <em>sub</em> key is <em>usage: E</em>, it&rsquo;s used for encryption only, so
+we&rsquo;re good to go, otherwise you&rsquo;d need to delete or revoke it. Published the key
+with:</p>
 
 <p><code>gpg --keyserver hkp://pool.sks-keyservers.net --send-keys &lt;key-id&gt;</code></p>
 
 <h3 id="windows-caveat">Windows caveat</h3>
 
-<p>The previous steps created the keychain file in <code>c:/Users/&lt;username&gt;/.gnupg</code>. However, when I later installed the native windows gpg from <a href="https://www.gnupg.org/download/" target="_blank">https://www.gnupg.org/download/</a> I&rsquo;ve found that it used a different default path and I could not list the key anymore. Addind a new environment variable <code>GNUPGHOME</code> and set it to <code>C:\Users\&lt;username&gt;\.gnupg</code>. Now the gpg that was installed in windows could read the old keychain, which meant maven could now use that key to sign files.</p>
+<p>The previous steps created the keychain file in <code>c:/Users/&lt;username&gt;/.gnupg</code>.
+However, when I later installed the native windows gpg from
+<a href="https://www.gnupg.org/download/" target="_blank">https://www.gnupg.org/download/</a> I&rsquo;ve found
+that it used a different default path and I could not list the key anymore.
+Addind a new environment variable <code>GNUPGHOME</code> and set it to
+<code>C:\Users\&lt;username&gt;\.gnupg</code>. Now the gpg that was installed in windows could
+read the old keychain, which meant maven could now use that key to sign files.</p>
 
 <h2 id="configuring-maven-to-know-where-to-get-the-signing-key">Configuring Maven to know where to get the signing key</h2>
 
-<p>Check out your <code>&lt;maven-install-apth&gt;/conf</code> directory. There should be a <code>settings.xml</code> file. Copy that over to your <code>&lt;user-home&gt;/.m2</code>, unless you already have it there. Add the following to <code>&lt;profiles&gt;</code>:</p>
+<p>Check out your <code>&lt;maven-install-apth&gt;/conf</code> directory. There should be a
+<code>settings.xml</code> file. Copy that over to your <code>&lt;user-home&gt;/.m2</code>, unless you
+already have it there. Add the following to <code>&lt;profiles&gt;</code>:</p>
 
 <pre><code class="language-xml">&lt;profiles&gt;
     &lt;profile&gt;
@@ -392,11 +437,19 @@ Published the key with:</p>
 &lt;/profiles&gt;
 </code></pre>
 
-<p>It&rsquo;s ok to have your passphrase set here as this is your user-specific configuration file. If you don&rsquo;t want to specify that, however, there will be an option for you to provide that passphrase every time you publish.</p>
+<p>It&rsquo;s ok to have your passphrase set here as this is your user-specific
+configuration file. If you don&rsquo;t want to specify that, however, there will be an
+option for you to provide that passphrase every time you publish.</p>
 
 <h2 id="configuring-maven-to-know-the-credentials-for-sonatype-servers">Configuring Maven to know the credentials for Sonatype servers</h2>
 
-<p>You&rsquo;ll provide the log-in credentials in the same <code>settings.xml</code> maven file in <code>~/.m2</code> directory. If you don&rsquo;t want to provide the actual username and password, log in to your account at <a href="https://oss.sonatype.org" target="_blank">https://oss.sonatype.org</a>. In the top right corner click <code>Log-In</code>, then click your username and select <code>Profile</code>. On the new screen there&rsquo;s a dropdown with two choices: <em>Summary</em> and <em>User Token</em>. Select the user token, it will give you the info. In the <code>settings.xml</code> file add:</p>
+<p>You&rsquo;ll provide the log-in credentials in the same <code>settings.xml</code> maven file in
+<code>~/.m2</code> directory. If you don&rsquo;t want to provide the actual username and
+password, log in to your account at
+<a href="https://oss.sonatype.org" target="_blank">https://oss.sonatype.org</a>. In the top right corner
+click <code>Log-In</code>, then click your username and select <code>Profile</code>. On the new screen
+there&rsquo;s a dropdown with two choices: <em>Summary</em> and <em>User Token</em>. Select the user
+token, it will give you the info. In the <code>settings.xml</code> file add:</p>
 
 <pre><code class="language-xml">  &lt;servers&gt;
     &lt;server&gt;
@@ -409,9 +462,18 @@ Published the key with:</p>
 
 <h2 id="satisfying-requirements-to-pass-all-checks-upon-submission-to-sonatype">Satisfying requirements to pass all checks upon submission to Sonatype</h2>
 
-<p>There&rsquo;s a lot of meta-info required to satisfy all the requirements. As you will be using the same <code>groupId</code> for all your artifacts, it&rsquo;s easier to put all the extra information to a parent POM. You can find an example parent project here: <a href="https://github.com/chhh/sonatype-ossrh-parent" target="_blank">https://github.com/chhh/sonatype-ossrh-parent</a>. This project consists only of the POM file, specifying the credentials, basic info and publishing locations. It adds some to the <code>release</code> target as well.
-It&rsquo;s ok to just clone that repo and change the information to what you like.
-<strong>You will set this POM as the <code>&lt;parent&gt;</code> of the projects you wish to publish to Central.</strong> As it will be the parent POM, anyone who will want to build your artifacts will need to have that POM, so the first thing is to publish this project to Central by itself.</p>
+<p>There&rsquo;s a lot of meta-info required to satisfy all the requirements. As you will
+be using the same <code>groupId</code> for all your artifacts, it&rsquo;s easier to put all the
+extra information to a parent POM. You can find an example parent project here:
+<a href="https://github.com/chhh/sonatype-ossrh-parent" target="_blank">https://github.com/chhh/sonatype-ossrh-parent</a>.
+This project consists only of the POM file, specifying the credentials, basic
+info and publishing locations. It adds some to the <code>release</code> target as well.</p>
+
+<p>It&rsquo;s ok to just clone that repo and change the information to what you like.
+<strong>You will set this POM as the <code>&lt;parent&gt;</code> of the projects you wish to publish to
+Central.</strong> As it will be the parent POM, anyone who will want to build your
+artifacts will need to have that POM, so the first thing is to publish this
+project to Central by itself.</p>
 
 <h2 id="publishing-parent-pom-project-to-central">Publishing parent POM project to Central</h2>
 
@@ -422,8 +484,10 @@ It&rsquo;s ok to just clone that repo and change the information to what you lik
 <li>In this parent POM you set the <code>version</code> to something like <code>0.1-SNAPSHOT</code>.</li>
 </ul>
 
-<p>The release plugin will use that information to create the build. It will remove the <code>SNAPSHOT</code> part, build the project, create a new tag in SCM, push everything to remote, bump up the version in POM and re-add SNAPSHOT back to it.
-Now execute:
+<p>The release plugin will use that information to create the build. It will remove
+the <code>SNAPSHOT</code> part, build the project, create a new tag in SCM, push everything
+to remote, bump up the version in POM and re-add SNAPSHOT back to it. Now
+execute:
 <code>mvn release:prepare</code>
 <code>mvn release:perform</code>
 If you encounter any problems with <code>release:perform</code> you can always do
@@ -441,7 +505,10 @@ If you encounter any problems with <code>release:perform</code> you can always d
 &lt;/parent&gt;
 </code></pre>
 
-<p>Notice how we used <code>relativePath</code> to give maven a hint at where to search for this POM. The parent project was resiging in a sibling directory next to the project directory in this case. Otherwise the POM would have to be in the parent directory of your project.</p>
+<p>Notice how we used <code>relativePath</code> to give maven a hint at where to search for
+this POM. The parent project was resiging in a sibling directory next to the
+project directory in this case. Otherwise the POM would have to be in the parent
+directory of your project.</p>
 
     </div>
 
@@ -474,7 +541,7 @@ If you encounter any problems with <code>release:perform</code> you can always d
   <div class="container">
     <p class="powered-by">
 
-      &copy; 2018 Dmitry Avtonomov &middot; 
+      &copy; 2016-present Dmitry Avtonomov &middot; 
 
       Powered by the
       <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

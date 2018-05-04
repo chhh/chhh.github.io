@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018 Dmitry Avtonomov</copyright>
+    <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chhh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -144,6 +144,15 @@
       <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
       
       <guid>https://chhh.github.io/tags/sonatype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tethering</title>
+      <link>https://chhh.github.io/tags/tethering/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
+      
+      <guid>https://chhh.github.io/tags/tethering/</guid>
       <description></description>
     </item>
     
