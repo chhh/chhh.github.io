@@ -43,21 +43,25 @@ Here's mine currently: [scoop-export.txt](scoop-export.txt).
 ## Tweaks to shells
 
 ### cmd.exe
-To get auto-completion support similar to what you get in bash, install
+
+To get auto-completion support similar to what you get in _bash_, install
 [clink](https://mridgers.github.io/clink/).
 
 ### ConEmu
-`Win + Alt + P` to open Properties. `Startup -> Tasks` and set shortcuts for
+
+<kbd>Win + Alt + P</kbd> to open Properties. `Startup -> Tasks` and set shortcuts for
 shells you'll be using.
 
-- `Alt + C` for cmd.exe
-- `Alt + Shift + C` for elevated cmd.exe
-- `Alt + W` for MINGW fron git
-- `Alt + Y` for Cygwin
+- `Alt + C` for _cmd.exe_
+- `Alt + Shift + C` for elevated _cmd.exe_
+- `Alt + W` for _MINGW_ from _git_
+- `Alt + Y` for _Cygwin_
+
 The full config is [here](ConEmu_chhh-2018-03-07.xml), can be imported at installation time.
 
 ### Cygwin
-Basic packages to install throught setup.exe:
+
+Basic packages to install throught _setup.exe_:
 
 - wget
 - curl
@@ -65,10 +69,11 @@ Basic packages to install throught setup.exe:
 - zip
 - unzip
 
-Package manager that can be used from inside cygwin without having
-to run setup.exe all the time: [apt-cyg](https://github.com/transcode-open/apt-cyg).
+There is little known package manager that can be used from inside cygwin without having
+to run _setup.exe_ all the time: [apt-cyg](https://github.com/transcode-open/apt-cyg).
 
 *Installation*:
+
 ```
 lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
 install apt-cyg /bin

@@ -2,7 +2,7 @@
 date = 2018-02-19
 lastmod = 2018-02-19
 draft = false
-tags = ["windows", "android", "wifi"]
+tags = ["windows", "android", "wifi", "tethering"]
 title = "Tethering WiFi from Android DNS problems"
 math = true
 summary = """

@@ -25,7 +25,7 @@ abstract = "As a result of recent improvements in mass spectrometry (MS), there 
 abstract_short = "DIA-Umpire (http://diaumpire.sourceforge.net/), a comprehensive computational workflow and open-source software for DIA data, detects precursor and fragment chromatographic features and assembles them into pseudo–tandem MS spectra. These spectra can be identified with conventional database-searching and protein-inference tools, allowing sensitive, untargeted analysis of DIA data without the need for a spectral library. Quantification is done with both precursor- and fragment-ion intensities. We demonstrated the performance of the method with control samples of varying complexity and publicly available glycoproteomics and affinity purification–MS data."
 
 # Featured image thumbnail (optional)
-image_preview = "umpire_logo_v2.4_150.png"
+image_preview = "umpire_logo_v2.4_full.png"
 
 # Is this a selected publication? (true/false)
 selected = true
