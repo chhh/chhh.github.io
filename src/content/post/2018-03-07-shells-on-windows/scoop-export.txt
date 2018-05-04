@@ -1,0 +1,6 @@
+figlet (v:1.0-go)
+go (v:1.10.2)
+gradle (v:4.7)
+hugo (v:0.40.2)
+nodejs (v:10.0.0)
+vim (v:8.0.1789)
