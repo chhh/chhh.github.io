@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dia on Dmitry Avtonomov</title>
+    <link>https://chhh.github.io/tags/dia/</link>
+    <description>Recent content in Dia on Dmitry Avtonomov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Dmitry Avtonomov</copyright>
+    <lastBuildDate>Sat, 23 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://chhh.github.io/tags/dia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DIA-Umpire</title>
+      <link>https://chhh.github.io/project/dia-umpire/</link>
+      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://chhh.github.io/project/dia-umpire/</guid>
+      <description>DIA-Umpire - Data Independent Acquisition (DIA) data processing tool that doens&amp;rsquo;t require a spectral library. Detects features in MS1 and MS2, correlates precursors to fragments based on elution profile similarity and compiles pseudo-MS/MS spectra from these groups, which can later be searched with standard proteomic search tools. - Efficient calculation of isotopic fine structure up to predefined aggregated probability.</description>
+    </item>
+    
+  </channel>
+</rss>

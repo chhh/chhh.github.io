@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.31.1" />
+  <meta name="generator" content="Hugo 0.40.2" />
   <meta name="author" content="Dmitry Avtonomov">
 
   
@@ -42,8 +42,9 @@
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
   
   
   
@@ -57,6 +58,7 @@
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-5572974-14', 'auto');
+      
       ga('require', 'eventTracker');
       ga('require', 'outboundLinkTracker');
       ga('require', 'urlChangeTracker');
@@ -93,6 +95,7 @@
   <meta property="og:updated_time" content="2017-10-15T00:00:00-07:00">
   
 
+  
   
 
   <title>Dmitry Avtonomov</title>
@@ -153,7 +156,7 @@
         
 
         <li class="nav-item">
-          <a href="/#publications" data-target="#publications">
+          <a href="/publication" data-target="publication">
             
             <span>Publications</span>
             
@@ -175,6 +178,23 @@
           <a href="/#projects" data-target="#projects">
             
             <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a href="/post" data-target="post">
+            
+            <span>Posts</span>
             
           </a>
         </li>
@@ -297,7 +317,7 @@ url('https://chhh.github.io/img/batmass-map2d.jpg');
     <div id="profile">
 
       
-      <div class="portrait" style="background-image: url('https://chhh.github.io/img/dima-color.jpg');"></div>
+      <div class="portrait" style="background-image: url('/img/dima-color.jpg');"></div>
       <meta itemprop="image" content="https://chhh.github.io/img/dima-color.jpg">
       
 
@@ -464,17 +484,15 @@ url('https://chhh.github.io/img/batmass-map2d.jpg');
   
   
   
-  <section id="publications" class="home-section">
+  <section id="publications_selected" class="home-section">
     <div class="container">
       
 
 
 
-
 <div class="row">
   <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Recent Publications</h1>
-    
+    <h1>Selected Publications</h1>
     
   </div>
   <div class="col-xs-12 col-md-8">
@@ -485,18 +503,49 @@ url('https://chhh.github.io/img/batmass-map2d.jpg');
     
 
     
-
-    
     
       
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Dmitry M. Avtonomov, Daniel A. Polasky, Brandon T. Ruotolo, Alexey I. Nesvizhskii</span>.
-  <a href="https://chhh.github.io/publication/imtbx/" itemprop="name">IMTBX and Grppr: Software for Top-Down Proteomics Utilizing Ion Mobility-Mass Spectrometry</a>.
-  In <em>Analytical Chemistry</em>,
-  2017.
-  <p>
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://chhh.github.io/publication/imtbx/">
+      
+      
+        <img src="/img/about-imtbx/toc-entry_v2.png" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://chhh.github.io/publication/imtbx/" itemprop="url">IMTBX and Grppr: Software for Top-Down Proteomics Utilizing Ion Mobility-Mass Spectrometry</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    Top-down proteomics has emerged as a transformative method for the analysis of protein sequence and post-translational modifications (PTMs). Top-down experiments have historically been performed primarily on ultra-high resolution mass spectrometers due to the complexity of spectra resulting from fragmentation of intact proteins, but recent advances in coupling ion mobility separations to faster, lower resolution mass analyzers now offer a viable alternative. However, software capable of interpreting the highly complex 2-dimensional spectra that result from coupling ion mobility separation to top-down experiments is currently lacking. In this manuscript we present a software suite consisting of 2 programs, IMTBX (IM Toolbox) and Grppr (Grouper), which enable fully automated processing of such data. We demonstrate the capabilities of this software suite by examining a series of intact proteins on a Waters Synapt G2 ion-mobility equipped mass spectrometer, and compare the results to the manual and semi-automated data analysis procedures we have used previously.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Dmitry M. Avtonomov, Daniel A. Polasky, Brandon T. Ruotolo, Alexey I. Nesvizhskii
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    In <em>Analytical Chemistry</em>,
+    
+    2017
+  </div>
+
+  <div class="pub-links">
+    
 
 
 
@@ -531,20 +580,55 @@ url('https://chhh.github.io/img/batmass-map2d.jpg');
 
 
 
-</p>
+
+  </div>
+
 </div>
 
       
     
       
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Andy T. Kong, Felipe V. Leprevost, Dmitry M. Avtonomov, Dattatreya Mellacheruvu, Alexey I. Nesvizhskii</span>.
-  <a href="https://chhh.github.io/publication/msfragger/" itemprop="name">MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry–based proteomics</a>.
-  In <em>Nature Methods</em>,
-  2017.
-  <p>
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://chhh.github.io/publication/msfragger/">
+      
+      
+        <img src="/img/msfragger-logo_transparent-bg.png" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://chhh.github.io/publication/msfragger/" itemprop="url">MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry–based proteomics</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    We present a fragment-ion indexing method, and its implementation in peptide identification tool MSFragger, that enables a more than 100-fold improvement in speed over most existing proteome database search tools. Using several large proteomic data sets, we demonstrate how MSFragger empowers the open database search concept for comprehensive identification of peptides and all their modified forms, uncovering dramatic differences in modification rates across experimental samples and conditions.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Andy T. Kong, Felipe V. Leprevost, Dmitry M. Avtonomov, Dattatreya Mellacheruvu, Alexey I. Nesvizhskii
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    In <em>Nature Methods</em>,
+    
+    2017
+  </div>
+
+  <div class="pub-links">
+    
 
 
 
@@ -565,7 +649,7 @@ url('https://chhh.github.io/img/batmass-map2d.jpg');
 
 
 
-<a class="btn btn-primary btn-outline btn-xs" href="/project/msfragger/">
+<a class="btn btn-primary btn-outline btn-xs" href="https://chhh.github.io/project/msfragger/">
   Project
 </a>
 
@@ -575,20 +659,55 @@ url('https://chhh.github.io/img/batmass-map2d.jpg');
 
 
 
-</p>
+
+  </div>
+
 </div>
 
       
     
       
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Dmitry M. Avtonomov, Alexander Raskind, Alexey I. Nesvizhskii</span>.
-  <a href="https://chhh.github.io/publication/batmass/" itemprop="name">BatMass: a Java Software Platform for LC–MS Data Visualization in Proteomics and Metabolomics</a>.
-  In <em>Journal of Proteome Research</em>,
-  2016.
-  <p>
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://chhh.github.io/publication/batmass/">
+      
+      
+        <img src="/img/batmass-map2d-slice.png" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://chhh.github.io/publication/batmass/" itemprop="url">BatMass: a Java Software Platform for LC–MS Data Visualization in Proteomics and Metabolomics</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    The human brain interprets visual data much better than plain text, hence the saying “a picture is worth a thousand words”. Here, we present the BatMass software package, which allows for performing quick quality control of raw LC–MS data through its fast visualization capabilities. It also serves as a testbed for developers of LC–MS data processing algorithms by providing a data access library for open mass spectrometry file formats and a means of visually mapping processing results back to the original data. We illustrate the utility of BatMass with several use cases of quality control and data exploration.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Dmitry M. Avtonomov, Alexander Raskind, Alexey I. Nesvizhskii
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    In <em>Journal of Proteome Research</em>,
+    
+    2016
+  </div>
+
+  <div class="pub-links">
+    
 
 
 
@@ -627,20 +746,55 @@ url('https://chhh.github.io/img/batmass-map2d.jpg');
 
 
 
-</p>
+
+  </div>
+
 </div>
 
       
     
       
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Chih-Chiang Tsou, Dmitry M Avtonomov, Brett Larsen, Monika Tucholska, Hyungwon Choi, Anne-Claude Gingras, Alexey I Nesvizhskii</span>.
-  <a href="https://chhh.github.io/publication/dia-umpire/" itemprop="name">DIA-Umpire: comprehensive computational framework for data-independent acquisition proteomics</a>.
-  In <em>Nature Methods</em>,
-  2015.
-  <p>
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://chhh.github.io/publication/dia-umpire/">
+      
+      
+        <img src="/img/umpire_logo_v2.4_150.png" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://chhh.github.io/publication/dia-umpire/" itemprop="url">DIA-Umpire: comprehensive computational framework for data-independent acquisition proteomics</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    DIA-Umpire (<a href="http://diaumpire.sourceforge.net/" target="_blank">http://diaumpire.sourceforge.net/</a>), a comprehensive computational workflow and open-source software for DIA data, detects precursor and fragment chromatographic features and assembles them into pseudo–tandem MS spectra. These spectra can be identified with conventional database-searching and protein-inference tools, allowing sensitive, untargeted analysis of DIA data without the need for a spectral library. Quantification is done with both precursor- and fragment-ion intensities. We demonstrated the performance of the method with control samples of varying complexity and publicly available glycoproteomics and affinity purification–MS data.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Chih-Chiang Tsou, Dmitry M Avtonomov, Brett Larsen, Monika Tucholska, Hyungwon Choi, Anne-Claude Gingras, Alexey I Nesvizhskii
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    In <em>Nature Methods</em>,
+    
+    2015
+  </div>
+
+  <div class="pub-links">
+    
 
 
 
@@ -671,7 +825,9 @@ url('https://chhh.github.io/img/batmass-map2d.jpg');
 
 
 
-</p>
+
+  </div>
+
 </div>
 
       
@@ -928,7 +1084,7 @@ url('https://chhh.github.io/img/batmass-map2d.jpg');
   <div class="container">
     <p class="powered-by">
 
-      &copy; 2017 Dmitry Avtonomov &middot; 
+      &copy; 2018 Dmitry Avtonomov &middot; 
 
       Powered by the
       <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -982,6 +1138,7 @@ url('https://chhh.github.io/img/batmass-map2d.jpg');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
     
     
     <script src="/js/hugo-academic.js"></script>

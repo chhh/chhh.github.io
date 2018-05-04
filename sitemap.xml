@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>https://chhh.github.io/post/2018-03-07-shells-on-windows/</loc>
+      <lastmod>2018-05-03T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</loc>
+      <lastmod>2018-02-19T00:00:00-08:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://chhh.github.io/publication/imtbx/</loc>
       <lastmod>2017-12-27T00:00:00+00:00</lastmod>
     </url>
@@ -14,8 +32,8 @@
     
     <url>
     
-      <loc>https://chhh.github.io/publication/msfragger/</loc>
-      <lastmod>2017-01-19T00:00:00+00:00</lastmod>
+      <loc>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</loc>
+      <lastmod>2017-01-26T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -23,8 +41,17 @@
     
     <url>
     
-      <loc>https://chhh.github.io/talk/example-talk/</loc>
-      <lastmod>2017-01-01T00:00:00-08:00</lastmod>
+      <loc>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</loc>
+      <lastmod>2017-01-25T00:00:00-08:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://chhh.github.io/publication/msfragger/</loc>
+      <lastmod>2017-01-19T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -51,15 +78,6 @@
     <url>
     
       <loc>https://chhh.github.io/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://chhh.github.io/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -122,51 +140,6 @@
     
     <url>
     
-      <loc>https://chhh.github.io/post/getting-started/</loc>
-      <lastmod>2017-09-03T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://chhh.github.io/post/widgets/</loc>
-      <lastmod>2016-04-19T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://chhh.github.io/post/managing-content/</loc>
-      <lastmod>2016-04-18T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://chhh.github.io/post/writing-markdown-latex/</loc>
-      <lastmod>2016-04-17T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://chhh.github.io/post/faq/</loc>
-      <lastmod>2016-04-10T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://chhh.github.io/publication/dia-umpire/</loc>
       <lastmod>2015-01-19T00:00:00+00:00</lastmod>
     </url>
@@ -176,8 +149,9 @@
     
     <url>
     
-      <loc>https://chhh.github.io/post/migrate-from-jekyll/</loc>
-      <lastmod>2014-03-10T00:00:00-07:00</lastmod>
+      <loc>https://chhh.github.io/tags/android/</loc>
+      <lastmod>2018-02-19T00:00:00-08:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -224,28 +198,8 @@
     
     <url>
     
-      <loc>https://chhh.github.io/tags/hugo/</loc>
-      <lastmod>2017-09-03T00:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://chhh.github.io/tags/ion-mobility/</loc>
       <lastmod>2016-04-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://chhh.github.io/tags/jekyll/</loc>
-      <lastmod>2014-03-10T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -276,6 +230,16 @@
     
       <loc>https://chhh.github.io/tags/mass-spectrometry/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://chhh.github.io/tags/maven/</loc>
+      <lastmod>2017-01-25T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -334,8 +298,48 @@
     
     <url>
     
+      <loc>https://chhh.github.io/tags/shell/</loc>
+      <lastmod>2018-05-03T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://chhh.github.io/tags/sonatype/</loc>
+      <lastmod>2017-01-25T00:00:00-08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://chhh.github.io/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://chhh.github.io/tags/wifi/</loc>
+      <lastmod>2018-02-19T00:00:00-08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://chhh.github.io/tags/windows/</loc>
+      <lastmod>2018-05-03T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     

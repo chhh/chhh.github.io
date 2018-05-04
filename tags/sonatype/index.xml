@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sonatype on Dmitry Avtonomov</title>
+    <link>https://chhh.github.io/tags/sonatype/</link>
+    <description>Recent content in Sonatype on Dmitry Avtonomov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Dmitry Avtonomov</copyright>
+    <lastBuildDate>Wed, 25 Jan 2017 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://chhh.github.io/tags/sonatype/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Publishing java libraries to Maven Central</title>
+      <link>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</link>
+      <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</guid>
+      <description>What is Sonatype and why is it needed? Sonatype provides a staging repository, which performs validation and allows to push the builds that pass all checks to the Central repo. Without it, basically, you can&amp;rsquo;t easily publish anything to the Central easily, unless you&amp;rsquo;re an Apache project or similar.
+Getting started Follow their getting started guide to set up the needed credentials. This should be easy - you create a JIRA account and you create a ticket in JIRA to claim your namespace (groupId in Maven terms).</description>
+    </item>
+    
+  </channel>
+</rss>

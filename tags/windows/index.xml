@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on Dmitry Avtonomov</title>
+    <link>https://chhh.github.io/tags/windows/</link>
+    <description>Recent content in Windows on Dmitry Avtonomov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Dmitry Avtonomov</copyright>
+    <lastBuildDate>Wed, 07 Mar 2018 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://chhh.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using multiple different shells/subsystems on Windows</title>
+      <link>https://chhh.github.io/post/2018-03-07-shells-on-windows/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
+      
+      <guid>https://chhh.github.io/post/2018-03-07-shells-on-windows/</guid>
+      <description>Shells to be used:
+ cmd.exe MINGW from Git Cygwin Optionally MSYS2  All of the above are managed through one shell manager - ConEmu.
+First install all the shells, then ConEmu.
+Easy installation of useful dev tools Use scoop to install basic utilities and languages. Install from powershell (without admin rights):
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)  Using command scoop export you can get an importable list of all installed packages.</description>
+    </item>
+    
+    <item>
+      <title>Tethering WiFi from Android DNS problems</title>
+      <link>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
+      
+      <guid>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
+      <description>So I tried to connect from Win10 to a hotspot running off Google Pixel 2 (Android 8.1.0) connected to T-Mobile (tethering) and it worked for a while, but one day it just broke. Connection would work for 5-10 seconds allowing to load one website maybe, but then it threw some DNS errors. Setting DNS server manually didn&amp;rsquo;t help, also ping 8.8.8.8 timed out.
+The solution (from elevated cmd prompt):
+netsh int ip reset c:\resetlog.</description>
+    </item>
+    
+  </channel>
+</rss>
