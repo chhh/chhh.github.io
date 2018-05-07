@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</loc>
+      <lastmod>2018-05-07T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://chhh.github.io/post/2018-03-07-shells-on-windows/</loc>
       <lastmod>2018-05-03T00:00:00-07:00</lastmod>
     </url>
@@ -198,6 +207,16 @@
     
       <loc>https://chhh.github.io/</loc>
       <lastmod>2017-10-15T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://chhh.github.io/tags/github/</loc>
+      <lastmod>2018-05-07T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     

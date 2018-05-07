@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Set up custom domain name with GitHub pages</title>
+      <link>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</link>
+      <pubDate>Mon, 07 May 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</guid>
+      <description>Intro The whole process for various situations is described in GitHub documentation. This is just a reminder for myself how to properly configure top-level apex domain redirect with GitHub Pages.
+All of your &amp;lt;username&amp;gt;.github.io or &amp;lt;orgname&amp;gt;.github.io pages will be redirected to the new custom domain, so your project pages can benefit from this automatically. If you already have a project page like &amp;lt;username&amp;gt;.github.io/projectname, this will become &amp;lt;custom.domain&amp;gt;/projectname.
+Sequence of actions Let&amp;rsquo;s say you own domain.</description>
+    </item>
+    
+    <item>
       <title>Using multiple different shells/subsystems on Windows</title>
       <link>https://chhh.github.io/post/2018-03-07-shells-on-windows/</link>
       <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
