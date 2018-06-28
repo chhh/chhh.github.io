@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
-    <lastBuildDate>Wed, 07 Mar 2018 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 Jun 2018 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://chhh.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bring back &#34;Open command window here&#34; context menu item in Windows</title>
+      <link>https://chhh.github.io/post/2018-06-27-command-prompt-here/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://chhh.github.io/post/2018-06-27-command-prompt-here/</guid>
+      <description>It&amp;rsquo;s a simple registry hack.
+ Strat registry editor: Run -&amp;gt; regedit. Go to HKEY_CLASSES_ROOT\Directory\shell\cmd. Right-click the cmd (folder) key, and click Permissions. Click the Advanced button. Advanced Security Settings dialog will open, at the top next to Owner click Change. Put in your account name, click Check Names to make sure domain etc is set up correctly, click OK. Check the Replace owner on subcontainers and objects check box near Owner field.</description>
+    </item>
     
     <item>
       <title>Using multiple different shells/subsystems on Windows</title>

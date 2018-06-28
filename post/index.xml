@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Bring back &#34;Open command window here&#34; context menu item in Windows</title>
+      <link>https://chhh.github.io/post/2018-06-27-command-prompt-here/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://chhh.github.io/post/2018-06-27-command-prompt-here/</guid>
+      <description>It&amp;rsquo;s a simple registry hack.
+ Strat registry editor: Run -&amp;gt; regedit. Go to HKEY_CLASSES_ROOT\Directory\shell\cmd. Right-click the cmd (folder) key, and click Permissions. Click the Advanced button. Advanced Security Settings dialog will open, at the top next to Owner click Change. Put in your account name, click Check Names to make sure domain etc is set up correctly, click OK. Check the Replace owner on subcontainers and objects check box near Owner field.</description>
+    </item>
+    
+    <item>
       <title>Set up custom domain name with GitHub pages</title>
       <link>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</link>
       <pubDate>Mon, 07 May 2018 00:00:00 -0700</pubDate>
