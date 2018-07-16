@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Bring back &#34;Open command window here&#34; context menu item in Windows</title>
       <link>https://chhh.github.io/post/2018-06-27-command-prompt-here/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 -0400</pubDate>
       
       <guid>https://chhh.github.io/post/2018-06-27-command-prompt-here/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s a simple registry hack.&lt;/p&gt;
@@ -44,7 +44,7 @@
     <item>
       <title>Set up custom domain name with GitHub pages</title>
       <link>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</link>
-      <pubDate>Mon, 07 May 2018 00:00:00 -0700</pubDate>
+      <pubDate>Mon, 07 May 2018 00:00:00 -0400</pubDate>
       
       <guid>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</guid>
       <description>
@@ -111,7 +111,7 @@ the net and become accessible everywhere.&lt;/p&gt;
     <item>
       <title>Using multiple different shells/subsystems on Windows</title>
       <link>https://chhh.github.io/post/2018-03-07-shells-on-windows/</link>
-      <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2018-03-07-shells-on-windows/</guid>
       <description>
@@ -189,7 +189,7 @@ install apt-cyg /bin
     <item>
       <title>Solving problems with tethering wifi from an Android phone</title>
       <link>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
-      <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
       <description>&lt;p&gt;Once I tried to connect from Win10 to a hotspot running off Google Pixel 2
@@ -223,7 +223,7 @@ ipconfig /flushdns
     <item>
       <title>Intellij IDEA live templates</title>
       <link>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</link>
-      <pubDate>Thu, 26 Jan 2017 00:00:00 -0800</pubDate>
+      <pubDate>Thu, 26 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</guid>
       <description>
@@ -283,7 +283,7 @@ in the class declaration.&lt;/p&gt;
     <item>
       <title>Publishing java libraries to Maven Central, the manual</title>
       <link>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</link>
-      <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 25 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</guid>
       <description>

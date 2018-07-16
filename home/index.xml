@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://chhh.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>BatMass</title>
       <link>https://chhh.github.io/home/hero/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 -0700</pubDate>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 -0400</pubDate>
       
       <guid>https://chhh.github.io/home/hero/</guid>
       <description>A framework for LC-MS data visualization and exploration. View spectra, extracted ion chromatograms and 2D ion maps of LC-MS experiments. Synchronized viewers. Visualize DIA experiments. Overlay MS/MS events, peptide identifications or custom data (via delimited text files) over a 2D map. 🚀 Latest release  
@@ -35,7 +35,7 @@
     <item>
       <title>Recent Publications</title>
       <link>https://chhh.github.io/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://chhh.github.io/home/publications/</guid>
       <description></description>
@@ -44,7 +44,7 @@
     <item>
       <title>Selected Publications</title>
       <link>https://chhh.github.io/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://chhh.github.io/home/publications_selected/</guid>
       <description></description>
@@ -91,7 +91,7 @@ I am a teaching instructor for the following courses at University X:
     <item>
       <title>Tags</title>
       <link>https://chhh.github.io/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
       
       <guid>https://chhh.github.io/home/tags/</guid>
       <description></description>

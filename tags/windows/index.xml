@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
-    <lastBuildDate>Wed, 27 Jun 2018 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 27 Jun 2018 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://chhh.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Bring back &#34;Open command window here&#34; context menu item in Windows</title>
       <link>https://chhh.github.io/post/2018-06-27-command-prompt-here/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 -0400</pubDate>
       
       <guid>https://chhh.github.io/post/2018-06-27-command-prompt-here/</guid>
       <description>It&amp;rsquo;s a simple registry hack.
@@ -25,7 +25,7 @@
     <item>
       <title>Using multiple different shells/subsystems on Windows</title>
       <link>https://chhh.github.io/post/2018-03-07-shells-on-windows/</link>
-      <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2018-03-07-shells-on-windows/</guid>
       <description>Shells to be used:
@@ -38,7 +38,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser iex (new-object net.webclien
     <item>
       <title>Solving problems with tethering wifi from an Android phone</title>
       <link>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
-      <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
       <description>Once I tried to connect from Win10 to a hotspot running off Google Pixel 2 (Android 8.1.0) connected to T-Mobile (tethering) and it worked for a while, but one day it just broke. Connection would work for 5-10 seconds allowing to load one website maybe, but then it threw some DNS errors. Setting DNS server manually didn&amp;rsquo;t help, also ping 8.8.8.8 timed out.

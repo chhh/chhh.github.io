@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
-    <lastBuildDate>Mon, 19 Feb 2018 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Feb 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://chhh.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Solving problems with tethering wifi from an Android phone</title>
       <link>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
-      <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
       <description>Once I tried to connect from Win10 to a hotspot running off Google Pixel 2 (Android 8.1.0) connected to T-Mobile (tethering) and it worked for a while, but one day it just broke. Connection would work for 5-10 seconds allowing to load one website maybe, but then it threw some DNS errors. Setting DNS server manually didn&amp;rsquo;t help, also ping 8.8.8.8 timed out.

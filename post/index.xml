@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://chhh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Bring back &#34;Open command window here&#34; context menu item in Windows</title>
       <link>https://chhh.github.io/post/2018-06-27-command-prompt-here/</link>
-      <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 -0400</pubDate>
       
       <guid>https://chhh.github.io/post/2018-06-27-command-prompt-here/</guid>
       <description>It&amp;rsquo;s a simple registry hack.
@@ -25,7 +25,7 @@
     <item>
       <title>Set up custom domain name with GitHub pages</title>
       <link>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</link>
-      <pubDate>Mon, 07 May 2018 00:00:00 -0700</pubDate>
+      <pubDate>Mon, 07 May 2018 00:00:00 -0400</pubDate>
       
       <guid>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</guid>
       <description>Intro The whole process for various situations is described in GitHub documentation. This is just a reminder for myself how to properly configure top-level apex domain redirect with GitHub Pages.
@@ -36,7 +36,7 @@ Sequence of actions Let&amp;rsquo;s say you own domain.</description>
     <item>
       <title>Using multiple different shells/subsystems on Windows</title>
       <link>https://chhh.github.io/post/2018-03-07-shells-on-windows/</link>
-      <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2018-03-07-shells-on-windows/</guid>
       <description>Shells to be used:
@@ -49,7 +49,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser iex (new-object net.webclien
     <item>
       <title>Solving problems with tethering wifi from an Android phone</title>
       <link>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
-      <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
       <description>Once I tried to connect from Win10 to a hotspot running off Google Pixel 2 (Android 8.1.0) connected to T-Mobile (tethering) and it worked for a while, but one day it just broke. Connection would work for 5-10 seconds allowing to load one website maybe, but then it threw some DNS errors. Setting DNS server manually didn&amp;rsquo;t help, also ping 8.8.8.8 timed out.
@@ -60,7 +60,7 @@ netsh int ip reset c:\resetlog.</description>
     <item>
       <title>Intellij IDEA live templates</title>
       <link>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</link>
-      <pubDate>Thu, 26 Jan 2017 00:00:00 -0800</pubDate>
+      <pubDate>Thu, 26 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</guid>
       <description>Intellij IDEA IDE has a nice feature of live templates. You type several symbols, press tab (by default) and it expands the symbols into full expressions. E.g. you can type fori, press Tab and get a full for loop created for you, or type iter, press Tab and if you have iterables in scope, you&amp;rsquo;ll be presented with a choice of available ones to iterate over.
@@ -70,7 +70,7 @@ Example: slf4j logger in each class It&amp;rsquo;s a super common thing to type 
     <item>
       <title>Publishing java libraries to Maven Central, the manual</title>
       <link>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</link>
-      <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 25 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</guid>
       <description>Table of Contents    What is Sonatype and why is it needed? Getting started GPG signing  Windows caveat  Configuring Maven to know where to get the signing key Configuring Maven to know the credentials for Sonatype servers Satisfying requirements to pass all checks upon submission to Sonatype Publishing parent POM project to Central Publishing the project to Central    What is Sonatype and why is it needed?</description>

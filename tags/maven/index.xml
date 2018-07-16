@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
-    <lastBuildDate>Wed, 25 Jan 2017 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jan 2017 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://chhh.github.io/tags/maven/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Publishing java libraries to Maven Central, the manual</title>
       <link>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</link>
-      <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 25 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</guid>
       <description>Table of Contents    What is Sonatype and why is it needed? Getting started GPG signing  Windows caveat  Configuring Maven to know where to get the signing key Configuring Maven to know the credentials for Sonatype servers Satisfying requirements to pass all checks upon submission to Sonatype Publishing parent POM project to Central Publishing the project to Central    What is Sonatype and why is it needed?</description>

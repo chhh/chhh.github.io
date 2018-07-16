@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
-    <lastBuildDate>Wed, 07 Mar 2018 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 Mar 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://chhh.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Using multiple different shells/subsystems on Windows</title>
       <link>https://chhh.github.io/post/2018-03-07-shells-on-windows/</link>
-      <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 -0500</pubDate>
       
       <guid>https://chhh.github.io/post/2018-03-07-shells-on-windows/</guid>
       <description>Shells to be used:
