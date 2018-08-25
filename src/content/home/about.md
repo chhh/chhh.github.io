@@ -39,8 +39,6 @@ weight = 5
 
 I am a Postdoc at [Alexey Neshvizhskii's Lab](http://nesvilab.org) at the University of Michgan. The main area of research is anything related to mass spectrometry data processing, especially liquid chromatography (LC) and ion mobility (IM) mass spectrometry (LC-MS, IM-MS). I develop mostly in Java, with occasional pieces in C#, Python and C++, some of the projects include:  
 
-<i class="fas fa-tshirt"></i>
-
 - [BatMass](http://batmass.org) - Mass spectrometry data visualization and processing.
 - [MSFragger](https://github.com/chhh/msfragger-gui) - Ultra-fast proteomics search engine for Closed and Open searches.
 - [MSFTBX](https://github.com/chhh/msftbx) - Java library for MS data files access (mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc).
