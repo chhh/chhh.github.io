@@ -204,13 +204,13 @@ defaultContentLanguageInSubdir = false
   #   Full list: https://jpswalsh.github.io/academicons/
 
   [[params.social]]
-    icon = "envelope"
-    icon_pack = "fa"
+    icon = "fa-envelope"
+    icon_pack = "fas"
     link = "mailto:dmitriya@umich.edu"
 
   [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
+    icon = "fa-twitter"
+    icon_pack = "fab"
     link = "//twitter.com/dmtavt"
 
   [[params.social]]
@@ -219,9 +219,14 @@ defaultContentLanguageInSubdir = false
     link = "https://scholar.google.com/citations?user=UJL1jgQAAAAJ&hl=en"
 
   [[params.social]]
-    icon = "github"
-    icon_pack = "fa"
+    icon = "fa-github"
+    icon_pack = "fab"
     link = "//github.com/chhh"
+  
+  [[params.social]]
+    icon = "fa-tshirt"
+    icon_pack = "fas"
+    link = "https://www.designbyhumans.com/shop/chhh/"
 
 
 # Navigation Links
@@ -256,6 +261,11 @@ defaultContentLanguageInSubdir = false
 #   name = "Teaching"
 #   url = "#teaching"
 #   weight = 5
+
+[[menu.main]]
+  name = "Designs"
+  url = "#tees-and-mugs"
+  weight = 5
 
 [[menu.main]]
   name = "Contact"
