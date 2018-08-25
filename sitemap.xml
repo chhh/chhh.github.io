@@ -6,7 +6,7 @@
     <url>
     
       <loc>https://chhh.github.io/post/2018-06-27-command-prompt-here/</loc>
-      <lastmod>2018-06-27T00:00:00-04:00</lastmod>
+      <lastmod>2018-06-27T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -15,7 +15,7 @@
     <url>
     
       <loc>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</loc>
-      <lastmod>2018-05-07T00:00:00-04:00</lastmod>
+      <lastmod>2018-05-07T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -24,7 +24,7 @@
     <url>
     
       <loc>https://chhh.github.io/post/2018-03-07-shells-on-windows/</loc>
-      <lastmod>2018-05-03T00:00:00-04:00</lastmod>
+      <lastmod>2018-05-03T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -33,7 +33,7 @@
     <url>
     
       <loc>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</loc>
-      <lastmod>2018-02-19T00:00:00-05:00</lastmod>
+      <lastmod>2018-02-19T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -51,7 +51,7 @@
     <url>
     
       <loc>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</loc>
-      <lastmod>2017-01-26T00:00:00-05:00</lastmod>
+      <lastmod>2017-01-26T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -60,7 +60,7 @@
     <url>
     
       <loc>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</loc>
-      <lastmod>2017-01-25T00:00:00-05:00</lastmod>
+      <lastmod>2017-01-25T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -78,7 +78,7 @@
     <url>
     
       <loc>https://chhh.github.io/post/</loc>
-      <lastmod>2017-01-01T00:00:00-05:00</lastmod>
+      <lastmod>2017-01-01T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -176,7 +176,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/android/</loc>
-      <lastmod>2018-02-19T00:00:00-05:00</lastmod>
+      <lastmod>2018-02-19T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -215,7 +215,7 @@
     <url>
     
       <loc>https://chhh.github.io/</loc>
-      <lastmod>2017-10-15T00:00:00-04:00</lastmod>
+      <lastmod>2017-10-15T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -225,7 +225,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/github/</loc>
-      <lastmod>2018-05-07T00:00:00-04:00</lastmod>
+      <lastmod>2018-05-07T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -235,7 +235,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/intellij/</loc>
-      <lastmod>2017-01-26T00:00:00-05:00</lastmod>
+      <lastmod>2017-01-26T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -275,7 +275,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/manual/</loc>
-      <lastmod>2017-01-25T00:00:00-05:00</lastmod>
+      <lastmod>2017-01-25T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -295,7 +295,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/maven/</loc>
-      <lastmod>2017-01-25T00:00:00-05:00</lastmod>
+      <lastmod>2017-01-25T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -355,7 +355,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/shell/</loc>
-      <lastmod>2018-05-03T00:00:00-04:00</lastmod>
+      <lastmod>2018-05-03T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -365,7 +365,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/sonatype/</loc>
-      <lastmod>2017-01-25T00:00:00-05:00</lastmod>
+      <lastmod>2017-01-25T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -385,7 +385,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/tethering/</loc>
-      <lastmod>2018-02-19T00:00:00-05:00</lastmod>
+      <lastmod>2018-02-19T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -395,7 +395,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/wifi/</loc>
-      <lastmod>2018-02-19T00:00:00-05:00</lastmod>
+      <lastmod>2018-02-19T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -405,7 +405,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/windows/</loc>
-      <lastmod>2018-06-27T00:00:00-04:00</lastmod>
+      <lastmod>2018-06-27T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
