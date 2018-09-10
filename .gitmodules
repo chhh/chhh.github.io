@@ -1,3 +1,7 @@
 [submodule "theme-academic"]
 	path = src/themes/academic
 	url = https://github.com/gcushen/hugo-academic.git
+[submodule "src/hugo-addons/hugo-easy-gallery"]
+	path = src/hugo-addons/hugo-easy-gallery
+	url = https://github.com/liwenyip/hugo-easy-gallery.git
+	branch = master

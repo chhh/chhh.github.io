@@ -144,9 +144,9 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = []
-  custom_js  = []
-  custom_js_async  = ["//static.dbh.la/widget.js"]
+  custom_css = ["custom-extras.css"]
+  custom_js  = ["load-photoswipe.js"]
+  custom_js_async  = [] # "//static.dbh.la/widget.js"
 
   # Publication types.
   #   Used to categorize publications.
@@ -271,7 +271,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Designs"
-  url = "design"
+  url = "#designs"
   weight = 5
 
 [[menu.main]]
