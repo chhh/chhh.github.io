@@ -1,4 +1,5 @@
-baseurl = "https://chhh.github.io/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
+#baseurl = "https://chhh.github.io/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
+baseurl = "localhost/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 title = "Dmitry Avtonomov"
 copyright = "&copy; 2016-present Dmitry Avtonomov"
 theme = "academic"
@@ -135,7 +136,7 @@ defaultContentLanguageInSubdir = false
   #   For more info on the highlighting options, see:
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
-  highlight_languages = []
+  highlight_languages = ["powershell"]
   # highlight_style = "github"
 
   # Enable native social sharing buttons?
@@ -143,8 +144,9 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = ["custom-extras.css"]
+  custom_css = []
   custom_js  = []
+  custom_js_async  = ["//static.dbh.la/widget.js"]
 
   # Publication types.
   #   Used to categorize publications.
@@ -204,14 +206,14 @@ defaultContentLanguageInSubdir = false
   #   Full list: https://jpswalsh.github.io/academicons/
 
   [[params.social]]
-    icon = "fa-envelope"
-    icon_pack = "fas"
+    icon = "envelope"
+    icon_pack = "fa"
     link = "mailto:dmitriya@umich.edu"
 
-  [[params.social]]
-    icon = "fa-twitter"
-    icon_pack = "fab"
-    link = "//twitter.com/dmtavt"
+  # [[params.social]]
+  #   icon = "twitter"
+  #   icon_pack = "fab"
+  #   link = "//twitter.com/dmtavt"
 
   [[params.social]]
     icon = "google-scholar"
@@ -219,13 +221,18 @@ defaultContentLanguageInSubdir = false
     link = "https://scholar.google.com/citations?user=UJL1jgQAAAAJ&hl=en"
 
   [[params.social]]
-    icon = "fa-github"
+    icon = "github"
     icon_pack = "fab"
     link = "//github.com/chhh"
   
   [[params.social]]
-    icon = "fa-tshirt"
-    icon_pack = "fas"
+    icon = "linkedin"
+    icon_pack = "fab"
+    link = "https://www.linkedin.com/in/dmitry-avtonomov-91aab02b/"
+  
+  [[params.social]]
+    icon = "tshirt"
+    icon_pack = "fa"
     link = "https://www.designbyhumans.com/shop/chhh/"
 
 
@@ -264,13 +271,18 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Designs"
-  url = "#tees-and-mugs"
+  url = "design"
   weight = 5
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
   weight = 6
+
+[[menu.main]]
+  name = "Search"
+  url = "#search"
+  weight = 7
 
 # # Taxonomies.
 # [taxonomies]
@@ -284,3 +296,18 @@ defaultContentLanguageInSubdir = false
 # Configure the English version of the website.
 [Languages.en]
   languageCode = "en-us"
+
+# Search.
+[params.search]
+  # Search provider:
+  #   0: No search engine
+  #   1: Built-in (Fuse)
+  #   2: Algolia (https://www.algolia.com)
+  engine = 1
+
+# Link to a PDF of your resume/CV from the About widget.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+[[params.social]]
+  icon = "cv"
+  icon_pack = "ai"
+  link = "files/cv-dmitry-avtonomov.pdf"
