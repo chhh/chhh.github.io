@@ -144,7 +144,7 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = ["custom-extras.css"]
+  custom_css = ["custom-extras.css", "hugo-easy-gallery.css"]
   custom_js  = ["load-photoswipe.js"]
   custom_js_async  = [] # "//static.dbh.la/widget.js"
 
@@ -279,10 +279,10 @@ defaultContentLanguageInSubdir = false
   url = "#contact"
   weight = 6
 
-[[menu.main]]
-  name = "Search"
-  url = "#search"
-  weight = 7
+# [[menu.main]]
+#   name = "Search"
+#   url = "#search"
+#   weight = 7
 
 # # Taxonomies.
 # [taxonomies]

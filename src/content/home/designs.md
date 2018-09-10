@@ -13,9 +13,9 @@ weight = 99
 +++
 
 {{< gallery >}}
-  {{< figure src="/img/dbh/mushroom-mug.png" link="https://www.designbyhumans.com/shop/mug/mushroom-wave-cat-duality-and-the-principle-of-cat-teleportation/995692/" >}}
-  {{< figure src="/img/dbh/so-hood-03.png" link="https://www.designbyhumans.com/shop/t-shirt/men/so-hood-night-opaque/791552/" >}}
-  {{< figure src="/img/dbh/the-principle-tee-light.png" link="https://www.designbyhumans.com/shop/t-shirt/men/the-principle-of-cat-teleportation/995684/" >}}
+  {{< figure src="/img/dbh/mushroom-mug.png" >}}
+  {{< figure src="/img/dbh/so-hood-03.png" >}}
+  {{< figure src="/img/dbh/the-principle-tee-light.png" >}}
 {{< /gallery >}}
 
 - [My store at Design-by-Humans](https://www.designbyhumans.com/shop/chhh/)  
