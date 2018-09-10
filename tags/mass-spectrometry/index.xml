@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mass-spectrometry on Dmitry Avtonomov</title>
-    <link>https://chhh.github.io/tags/mass-spectrometry/</link>
+    <link>localhost/tags/mass-spectrometry/</link>
     <description>Recent content in Mass-spectrometry on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://chhh.github.io/tags/mass-spectrometry/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="localhost/tags/mass-spectrometry/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>BatMass</title>
-      <link>https://chhh.github.io/project/batmass/</link>
+      <link>localhost/project/batmass/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/project/batmass/</guid>
+      <guid>localhost/project/batmass/</guid>
       <description>BatMass is a mass-spectrometry data visualization tool, with the main focus on being fast and interactive while providing comprehensive visualizations without any parameter tweaking. It is written in Java and built on top of the NetBeans Platform.
 Referencing the work If you use BatMass for your research or work, please cite the following paper:
 Avtonomov D.M. et al: J. Proteome Res. June 16, 2016. DOI: 10.1021/acs.jproteome.6b00021.
@@ -26,37 +26,37 @@ Features  Support for the open standard mzML and mzXML mass spectrometry data ty
     
     <item>
       <title>MSFTBX: MS File Toolbox</title>
-      <link>https://chhh.github.io/project/msftbx/</link>
+      <link>localhost/project/msftbx/</link>
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/project/msftbx/</guid>
+      <guid>localhost/project/msftbx/</guid>
       <description>A fast Java library for mass spectrometry data files access (mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc). Writers for some formats are also available. Available on Maven Central.</description>
     </item>
     
     <item>
       <title>IMTBX&#43;Grppr</title>
-      <link>https://chhh.github.io/project/imtbx/</link>
+      <link>localhost/project/imtbx/</link>
       <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/project/imtbx/</guid>
+      <guid>localhost/project/imtbx/</guid>
       <description>A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection.</description>
     </item>
     
     <item>
       <title>MSFragger</title>
-      <link>https://chhh.github.io/project/msfragger/</link>
+      <link>localhost/project/msfragger/</link>
       <pubDate>Sun, 24 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/project/msfragger/</guid>
+      <guid>localhost/project/msfragger/</guid>
       <description>Ultra-fast proteomics search engine. Regular searches - when the precursor mass is limited to a narrow window of several ppm - are done within a few seconds. An &amp;ldquo;open-search&amp;rdquo; (with large precursor mass range tolerance, e.g. +/-500 Da) for a 2 hour LC gradient bottom-up proteomics experiment can be done in a minute or so on a laptop.</description>
     </item>
     
     <item>
       <title>DIA-Umpire</title>
-      <link>https://chhh.github.io/project/dia-umpire/</link>
+      <link>localhost/project/dia-umpire/</link>
       <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/project/dia-umpire/</guid>
+      <guid>localhost/project/dia-umpire/</guid>
       <description>DIA-Umpire - Data Independent Acquisition (DIA) data processing tool that doens&amp;rsquo;t require a spectral library. Detects features in MS1 and MS2, correlates precursors to fragments based on elution profile similarity and compiles pseudo-MS/MS spectra from these groups, which can later be searched with standard proteomic search tools. - Efficient calculation of isotopic fine structure up to predefined aggregated probability.</description>
     </item>
     

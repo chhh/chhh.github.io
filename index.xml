@@ -2,20 +2,125 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dmitry Avtonomov on Dmitry Avtonomov</title>
-    <link>https://chhh.github.io/</link>
+    <link>localhost/</link>
     <description>Recent content in Dmitry Avtonomov on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <atom:link href="localhost/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Search asd</title>
+      <link>localhost/search/search/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 -0700</pubDate>
+      
+      <guid>localhost/search/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>So hood 02, he he</title>
+      <link>localhost/design/so-hood-02/</link>
+      <pubDate>Sat, 08 Sep 2018 16:36:17 -0700</pubDate>
+      
+      <guid>localhost/design/so-hood-02/</guid>
+      <description>&lt;p&gt;So hood-02 is also here!&lt;/p&gt;
+
+&lt;p&gt;And the image: &lt;img src=&#34;dbh/so-hood-02.png&#34; alt=&#34;so hoood&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>So hood 01, ho ho</title>
+      <link>localhost/design/so-hood-01/</link>
+      <pubDate>Sat, 08 Sep 2018 16:35:17 -0700</pubDate>
+      
+      <guid>localhost/design/so-hood-01/</guid>
+      <description>&lt;p&gt;So hood-01 is here!&lt;/p&gt;
+
+&lt;p&gt;And the image: &lt;img src=&#34;dbh/so-hood-01.png&#34; alt=&#34;so hoood&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Use p4merge from Perforce as default git mergetool</title>
+      <link>localhost/post/2018-09-07-p4merge-as-git-merge-tool/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
+      
+      <guid>localhost/post/2018-09-07-p4merge-as-git-merge-tool/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;p4merge-conflict-resolution.png&#34; alt=&#34;p4merge-conflict-resolution-screenshot&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A while ago this took more effort as described &lt;a href=&#34;https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration&#34; target=&#34;_blank&#34;&gt;in this
+link&lt;/a&gt; (scroll
+to section  &amp;lsquo;External Merge and Diff Tools&amp;rsquo;).&lt;/p&gt;
+
+&lt;p&gt;Not anymore. Now git natively supports p4merge. So you only need to modify your
+global git config (&lt;code&gt;~/.gitconfig&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ini&#34;&gt;[merge]
+    tool = p4merge
+[mergetool &amp;quot;p4merge&amp;quot;]
+    path = p4merge.exe
+[diff]
+    tool = p4merge
+[difftool &amp;quot;p4merge&amp;quot;]
+    path = p4merge.exe
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can provide the absolute path to the p4merge binary, but I have it on PATH
+because I installed it with &lt;a href=&#34;https://scoop.sh/&#34; target=&#34;_blank&#34;&gt;scoop&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;install-p4merge-with-scoop&#34;&gt;Install p4merge with scoop&lt;/h2&gt;
+
+&lt;p&gt;To get scoop, from the PowerShell execute:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;p4merge&lt;/em&gt; is in the &lt;a href=&#34;https://github.com/lukesampson/scoop-extras&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;extras&lt;/strong&gt;
+scoop bucket&lt;/a&gt;, add the bucket first
+to be able to install it easily:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;scoop bucket add extras
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then you can install p4merge&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;scoop update
+scoop search p4merge
+scoop install p4merge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To list all you installed scoop apps with PowerShell:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;(scoop list) | sls &#39;^  (\w+)&#39; |% { $_.matches.groups[1].value }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;full-gitconfig&#34;&gt;Full .gitconfig&lt;/h2&gt;
+
+&lt;p&gt;My full &lt;code&gt;.gitconfig&lt;/code&gt; is below. It &lt;code&gt;[include]&lt;/code&gt;s two paths &lt;code&gt;.gitaliases&lt;/code&gt; and
+&lt;code&gt;.gitmorealiases&lt;/code&gt;, they are both just text files in my home directory, i.e.
+they are siblings of my global &lt;code&gt;.gitconfig&lt;/code&gt; file. They contain, you guessed
+it, &lt;strong&gt;git aliases&lt;/strong&gt;.
+A large collection of aliases is &lt;a href=&#34;https://github.com/GitAlias/gitalias&#34; target=&#34;_blank&#34;&gt;available
+here&lt;/a&gt;. And &lt;a href=&#34;https://haacked.com/archive/2014/07/28/github-flow-aliases/&#34; target=&#34;_blank&#34;&gt;here is a very useful blog
+post / tutorial&lt;/a&gt;
+introducing you to the usefulness of aliases.&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/chhh/c226cd37725ee6deb7a0.js&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
     
     <item>
       <title>Bring back &#34;Open command window here&#34; context menu item in Windows</title>
-      <link>https://chhh.github.io/post/2018-06-27-command-prompt-here/</link>
+      <link>localhost/post/2018-06-27-command-prompt-here/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
       
-      <guid>https://chhh.github.io/post/2018-06-27-command-prompt-here/</guid>
+      <guid>localhost/post/2018-06-27-command-prompt-here/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s a simple registry hack.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -43,10 +148,10 @@
     
     <item>
       <title>Set up custom domain name with GitHub pages</title>
-      <link>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</link>
+      <link>localhost/post/2018-05-07-custom-domain-name-with-github-pages/</link>
       <pubDate>Mon, 07 May 2018 00:00:00 -0700</pubDate>
       
-      <guid>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</guid>
+      <guid>localhost/post/2018-05-07-custom-domain-name-with-github-pages/</guid>
       <description>
 
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
@@ -110,10 +215,10 @@ the net and become accessible everywhere.&lt;/p&gt;
     
     <item>
       <title>Using multiple different shells/subsystems on Windows</title>
-      <link>https://chhh.github.io/post/2018-03-07-shells-on-windows/</link>
+      <link>localhost/post/2018-03-07-shells-on-windows/</link>
       <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
       
-      <guid>https://chhh.github.io/post/2018-03-07-shells-on-windows/</guid>
+      <guid>localhost/post/2018-03-07-shells-on-windows/</guid>
       <description>
 
 &lt;p&gt;Shells to be used:&lt;/p&gt;
@@ -188,10 +293,10 @@ install apt-cyg /bin
     
     <item>
       <title>Solving problems with tethering wifi from an Android phone</title>
-      <link>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
+      <link>localhost/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
       
-      <guid>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
+      <guid>localhost/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
       <description>&lt;p&gt;Once I tried to connect from Win10 to a hotspot running off Google Pixel 2
 (Android 8.1.0)  connected to T-Mobile (tethering) and it worked for a while,
 but one day it just broke. Connection would work for 5-10 seconds allowing
@@ -213,19 +318,19 @@ ipconfig /flushdns
     
     <item>
       <title>IMTBX and Grppr: Software for Top-Down Proteomics Utilizing Ion Mobility-Mass Spectrometry</title>
-      <link>https://chhh.github.io/publication/imtbx/</link>
+      <link>localhost/publication/imtbx/</link>
       <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/publication/imtbx/</guid>
+      <guid>localhost/publication/imtbx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intellij IDEA live templates</title>
-      <link>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</link>
+      <link>localhost/post/2017-01-26-intellij-idea-live-templates-slf4j/</link>
       <pubDate>Thu, 26 Jan 2017 00:00:00 -0800</pubDate>
       
-      <guid>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</guid>
+      <guid>localhost/post/2017-01-26-intellij-idea-live-templates-slf4j/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/features/&#34; target=&#34;_blank&#34;&gt;Intellij IDEA&lt;/a&gt; IDE has a nice feature
@@ -282,10 +387,10 @@ in the class declaration.&lt;/p&gt;
     
     <item>
       <title>Publishing java libraries to Maven Central, the manual</title>
-      <link>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</link>
+      <link>localhost/post/2017-01-25-publishing-to-maven-central/</link>
       <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
       
-      <guid>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</guid>
+      <guid>localhost/post/2017-01-25-publishing-to-maven-central/</guid>
       <description>
 
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -479,28 +584,28 @@ directory of your project.&lt;/p&gt;
     
     <item>
       <title>MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry–based proteomics</title>
-      <link>https://chhh.github.io/publication/msfragger/</link>
+      <link>localhost/publication/msfragger/</link>
       <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/publication/msfragger/</guid>
+      <guid>localhost/publication/msfragger/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BatMass: a Java Software Platform for LC–MS Data Visualization in Proteomics and Metabolomics</title>
-      <link>https://chhh.github.io/publication/batmass/</link>
+      <link>localhost/publication/batmass/</link>
       <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/publication/batmass/</guid>
+      <guid>localhost/publication/batmass/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BatMass</title>
-      <link>https://chhh.github.io/project/batmass/</link>
+      <link>localhost/project/batmass/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/project/batmass/</guid>
+      <guid>localhost/project/batmass/</guid>
       <description>
 
 &lt;p&gt;BatMass is a mass-spectrometry data visualization tool, with the main focus on being fast and interactive while providing comprehensive visualizations without any parameter tweaking. It is written in Java and built on top of the &lt;a href=&#34;https://netbeans.org/features/platform/all-docs.html&#34; target=&#34;_blank&#34;&gt;NetBeans Platform&lt;/a&gt;.&lt;/p&gt;
@@ -527,21 +632,21 @@ DOI: 10.1021/acs.jproteome.6b00021.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a short demo video of BatMass in action.&lt;/p&gt;
 
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/EY9wvd6ckb0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
- &lt;/div&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/EY9wvd6ckb0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 
 &lt;h2 id=&#34;some-examples&#34;&gt;Some Examples&lt;/h2&gt;
 
 &lt;p&gt;The layout of windows is free and customizable by dragging.
-&lt;img src=&#34;https://chhh.github.io/img/about-batmass/free-layout.png&#34; alt=&#34;Free window layoyt&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;localhost/img/about-batmass/free-layout.png&#34; alt=&#34;Free window layoyt&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Compare multiple experiments at once. The bottom-middle run in this figure is a blank (no sample was injected), while the other 5 were runs with some sample. Amazing how much stuff comes from the background.
-&lt;img src=&#34;https://chhh.github.io/img/about-batmass/comparison-6-runs-1-blank.png&#34; alt=&#34;Multi experiment comparison in Map2D&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;localhost/img/about-batmass/comparison-6-runs-1-blank.png&#34; alt=&#34;Multi experiment comparison in Map2D&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And here are the same runs but zoomed in to a small region of m/z and retentino time. Look at the color-marked regions. Let&amp;rsquo;s just accept that zero-values are a thing, there is no need to try extracting noise to do gap-filling in data.
-&lt;img src=&#34;https://chhh.github.io/img/about-batmass/comparison-6-runs-1-blank-02-zoom-marked.png&#34; alt=&#34;Multi experiment comparison in Map2D zoomed&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;localhost/img/about-batmass/comparison-6-runs-1-blank-02-zoom-marked.png&#34; alt=&#34;Multi experiment comparison in Map2D zoomed&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;contacts&#34;&gt;Contacts&lt;/h2&gt;
 
@@ -562,52 +667,12 @@ Email: nesvi@umich.edu&lt;br /&gt;
     
     <item>
       <title>MSFTBX: MS File Toolbox</title>
-      <link>https://chhh.github.io/project/msftbx/</link>
+      <link>localhost/project/msftbx/</link>
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/project/msftbx/</guid>
+      <guid>localhost/project/msftbx/</guid>
       <description>&lt;p&gt;A fast Java library for mass spectrometry data files access (mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc). Writers for some formats are also available. Available on &lt;a href=&#34;http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22msftbx%22&#34; target=&#34;_blank&#34;&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>IMTBX&#43;Grppr</title>
-      <link>https://chhh.github.io/project/imtbx/</link>
-      <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://chhh.github.io/project/imtbx/</guid>
-      <description>&lt;p&gt;A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>MSFragger</title>
-      <link>https://chhh.github.io/project/msfragger/</link>
-      <pubDate>Sun, 24 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://chhh.github.io/project/msfragger/</guid>
-      <description>&lt;p&gt;Ultra-fast proteomics search engine. Regular searches - when the precursor mass is limited to a narrow window of several ppm - are done within a few seconds. An &amp;ldquo;open-search&amp;rdquo; (with large precursor mass range tolerance, e.g. +/-500 Da) for a 2 hour LC gradient bottom-up proteomics experiment can be done in a minute or so on a laptop.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>DIA-Umpire</title>
-      <link>https://chhh.github.io/project/dia-umpire/</link>
-      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://chhh.github.io/project/dia-umpire/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://diaumpire.sourceforge.net/&#34; target=&#34;_blank&#34;&gt;DIA-Umpire&lt;/a&gt; - Data Independent Acquisition (DIA) data processing tool that doens&amp;rsquo;t require a spectral library. Detects features in MS1 and MS2, correlates precursors to fragments based on elution profile similarity and compiles pseudo-MS/MS spectra from these groups, which can later be searched with standard proteomic search tools.
-- Efficient calculation of isotopic fine structure up to predefined aggregated probability.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>DIA-Umpire: comprehensive computational framework for data-independent acquisition proteomics</title>
-      <link>https://chhh.github.io/publication/dia-umpire/</link>
-      <pubDate>Mon, 19 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chhh.github.io/publication/dia-umpire/</guid>
-      <description></description>
     </item>
     
   </channel>

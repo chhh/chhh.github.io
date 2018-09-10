@@ -2,409 +2,480 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
+  
     
     <url>
     
-      <loc>https://chhh.github.io/post/2018-06-27-command-prompt-here/</loc>
+      <loc>localhost/design/so-hood-02/</loc>
+      <lastmod>2018-09-08T16:36:17-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>localhost/design/so-hood-01/</loc>
+      <lastmod>2018-09-08T16:35:17-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>localhost/design/</loc>
+      <lastmod>2018-09-08T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>localhost/post/2018-09-07-p4merge-as-git-merge-tool/</loc>
+      <lastmod>2018-09-07T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>localhost/post/2018-06-27-command-prompt-here/</loc>
       <lastmod>2018-06-27T00:00:00-07:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</loc>
+      <loc>localhost/post/2018-05-07-custom-domain-name-with-github-pages/</loc>
       <lastmod>2018-05-07T00:00:00-07:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/post/2018-03-07-shells-on-windows/</loc>
+      <loc>localhost/post/2018-03-07-shells-on-windows/</loc>
       <lastmod>2018-05-03T00:00:00-07:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</loc>
+      <loc>localhost/post/2018-02-19-tethering-wifi-from-android-dns-problems/</loc>
       <lastmod>2018-02-19T00:00:00-08:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/publication/imtbx/</loc>
+      <loc>localhost/publication/imtbx/</loc>
       <lastmod>2017-12-27T00:00:00+00:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</loc>
+      <loc>localhost/post/2017-01-26-intellij-idea-live-templates-slf4j/</loc>
       <lastmod>2017-01-26T00:00:00-08:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</loc>
+      <loc>localhost/post/2017-01-25-publishing-to-maven-central/</loc>
       <lastmod>2017-01-25T00:00:00-08:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/publication/msfragger/</loc>
+      <loc>localhost/publication/msfragger/</loc>
       <lastmod>2017-01-19T00:00:00+00:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/post/</loc>
+      <loc>localhost/post/</loc>
       <lastmod>2017-01-01T00:00:00-08:00</lastmod>
     </url>
     
   
     
+    <url>
+    
+      <loc>localhost/search/</loc>
+      <lastmod>2017-01-01T00:00:00-08:00</lastmod>
+    </url>
+    
+  
     
     <url>
     
-      <loc>https://chhh.github.io/tags/academic/</loc>
+      <loc>localhost/tags/academic/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/publication/</loc>
+      <loc>localhost/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/publication/batmass/</loc>
+      <loc>localhost/publication/batmass/</loc>
       <lastmod>2016-08-01T00:00:00+00:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/project/batmass/</loc>
+      <loc>localhost/project/batmass/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/project/msftbx/</loc>
+      <loc>localhost/project/msftbx/</loc>
       <lastmod>2016-04-26T00:00:00+00:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/project/imtbx/</loc>
+      <loc>localhost/project/imtbx/</loc>
       <lastmod>2016-04-25T00:00:00+00:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/project/msfragger/</loc>
+      <loc>localhost/project/msfragger/</loc>
       <lastmod>2016-04-24T00:00:00+00:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/project/dia-umpire/</loc>
+      <loc>localhost/project/dia-umpire/</loc>
       <lastmod>2016-04-23T00:00:00+00:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/publication/dia-umpire/</loc>
+      <loc>localhost/publication/dia-umpire/</loc>
       <lastmod>2015-01-19T00:00:00+00:00</lastmod>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/imtbx/</loc>
+      <loc>localhost/imtbx/</loc>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/android/</loc>
+      <loc>localhost/tags/android/</loc>
       <lastmod>2018-02-19T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/categories/</loc>
+      <loc>localhost/categories/</loc>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/data-viz/</loc>
+      <loc>localhost/tags/data-viz/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
+    <url>
+    
+      <loc>localhost/categories/design/</loc>
+      <lastmod>2018-09-08T16:36:17-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
     
     <url>
     
-      <loc>https://chhh.github.io/tags/dia/</loc>
+      <loc>localhost/tags/dia/</loc>
       <lastmod>2016-04-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
+    <url>
+    
+      <loc>localhost/tags/difftool/</loc>
+      <lastmod>2018-09-07T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
     
     <url>
     
-      <loc>https://chhh.github.io/</loc>
+      <loc>localhost/</loc>
       <lastmod>2017-10-15T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
+    <url>
+    
+      <loc>localhost/tags/git/</loc>
+      <lastmod>2018-09-07T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
     
     <url>
     
-      <loc>https://chhh.github.io/tags/github/</loc>
+      <loc>localhost/tags/gitconfig/</loc>
+      <lastmod>2018-09-07T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>localhost/tags/github/</loc>
       <lastmod>2018-05-07T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
+    <url>
+    
+      <loc>localhost/tags/hood/</loc>
+      <lastmod>2018-09-08T16:36:17-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
     
     <url>
     
-      <loc>https://chhh.github.io/tags/intellij/</loc>
+      <loc>localhost/tags/intellij/</loc>
       <lastmod>2017-01-26T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/ion-mobility/</loc>
+      <loc>localhost/tags/ion-mobility/</loc>
       <lastmod>2016-04-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/lc-ms/</loc>
+      <loc>localhost/tags/lc-ms/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/library/</loc>
+      <loc>localhost/tags/library/</loc>
       <lastmod>2016-04-26T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/manual/</loc>
+      <loc>localhost/tags/manual/</loc>
       <lastmod>2017-01-25T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/mass-spectrometry/</loc>
+      <loc>localhost/tags/mass-spectrometry/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/maven/</loc>
+      <loc>localhost/tags/maven/</loc>
       <lastmod>2017-01-25T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
+    <url>
+    
+      <loc>localhost/tags/mergetool/</loc>
+      <lastmod>2018-09-07T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
     
     <url>
     
-      <loc>https://chhh.github.io/tags/other/</loc>
+      <loc>localhost/tags/other/</loc>
       <lastmod>2016-04-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/project/</loc>
+      <loc>localhost/project/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/proteomics/</loc>
+      <loc>localhost/tags/proteomics/</loc>
       <lastmod>2016-04-26T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/raw-processing/</loc>
+      <loc>localhost/tags/raw-processing/</loc>
       <lastmod>2016-04-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/search-engine/</loc>
+      <loc>localhost/tags/search-engine/</loc>
       <lastmod>2016-04-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/shell/</loc>
+      <loc>localhost/tags/shell/</loc>
       <lastmod>2018-05-03T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/sonatype/</loc>
+      <loc>localhost/tags/sonatype/</loc>
       <lastmod>2017-01-25T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/</loc>
+      <loc>localhost/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
+    <url>
+    
+      <loc>localhost/tags/tee/</loc>
+      <lastmod>2018-09-08T16:36:17-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
     
     <url>
     
-      <loc>https://chhh.github.io/tags/tethering/</loc>
+      <loc>localhost/categories/tee/</loc>
+      <lastmod>2018-09-08T16:36:17-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>localhost/tags/tethering/</loc>
       <lastmod>2018-02-19T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/wifi/</loc>
+      <loc>localhost/tags/wifi/</loc>
       <lastmod>2018-02-19T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>https://chhh.github.io/tags/windows/</loc>
+      <loc>localhost/tags/windows/</loc>
       <lastmod>2018-06-27T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>

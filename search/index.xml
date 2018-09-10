@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Search on Dmitry Avtonomov</title>
+    <link>localhost/search/</link>
+    <description>Recent content in Search on Dmitry Avtonomov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="localhost/search/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Search asd</title>
+      <link>localhost/search/search/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 -0700</pubDate>
+      
+      <guid>localhost/search/search/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

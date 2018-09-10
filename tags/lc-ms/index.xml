@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lc-ms on Dmitry Avtonomov</title>
-    <link>https://chhh.github.io/tags/lc-ms/</link>
+    <link>localhost/tags/lc-ms/</link>
     <description>Recent content in Lc-ms on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://chhh.github.io/tags/lc-ms/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="localhost/tags/lc-ms/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>BatMass</title>
-      <link>https://chhh.github.io/project/batmass/</link>
+      <link>localhost/project/batmass/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/project/batmass/</guid>
+      <guid>localhost/project/batmass/</guid>
       <description>BatMass is a mass-spectrometry data visualization tool, with the main focus on being fast and interactive while providing comprehensive visualizations without any parameter tweaking. It is written in Java and built on top of the NetBeans Platform.
 Referencing the work If you use BatMass for your research or work, please cite the following paper:
 Avtonomov D.M. et al: J. Proteome Res. June 16, 2016. DOI: 10.1021/acs.jproteome.6b00021.
@@ -26,19 +26,19 @@ Features  Support for the open standard mzML and mzXML mass spectrometry data ty
     
     <item>
       <title>MSFTBX: MS File Toolbox</title>
-      <link>https://chhh.github.io/project/msftbx/</link>
+      <link>localhost/project/msftbx/</link>
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/project/msftbx/</guid>
+      <guid>localhost/project/msftbx/</guid>
       <description>A fast Java library for mass spectrometry data files access (mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc). Writers for some formats are also available. Available on Maven Central.</description>
     </item>
     
     <item>
       <title>IMTBX&#43;Grppr</title>
-      <link>https://chhh.github.io/project/imtbx/</link>
+      <link>localhost/project/imtbx/</link>
       <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/project/imtbx/</guid>
+      <guid>localhost/project/imtbx/</guid>
       <description>A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection.</description>
     </item>
     

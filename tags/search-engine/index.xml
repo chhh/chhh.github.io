@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Search-engine on Dmitry Avtonomov</title>
-    <link>https://chhh.github.io/tags/search-engine/</link>
+    <link>localhost/tags/search-engine/</link>
     <description>Recent content in Search-engine on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Sun, 24 Apr 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://chhh.github.io/tags/search-engine/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="localhost/tags/search-engine/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MSFragger</title>
-      <link>https://chhh.github.io/project/msfragger/</link>
+      <link>localhost/project/msfragger/</link>
       <pubDate>Sun, 24 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://chhh.github.io/project/msfragger/</guid>
+      <guid>localhost/project/msfragger/</guid>
       <description>Ultra-fast proteomics search engine. Regular searches - when the precursor mass is limited to a narrow window of several ppm - are done within a few seconds. An &amp;ldquo;open-search&amp;rdquo; (with large precursor mass range tolerance, e.g. +/-500 Da) for a 2 hour LC gradient bottom-up proteomics experiment can be done in a minute or so on a laptop.</description>
     </item>
     

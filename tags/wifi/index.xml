@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wifi on Dmitry Avtonomov</title>
-    <link>https://chhh.github.io/tags/wifi/</link>
+    <link>localhost/tags/wifi/</link>
     <description>Recent content in Wifi on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Mon, 19 Feb 2018 00:00:00 -0800</lastBuildDate>
     
-	<atom:link href="https://chhh.github.io/tags/wifi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="localhost/tags/wifi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Solving problems with tethering wifi from an Android phone</title>
-      <link>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
+      <link>localhost/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
       
-      <guid>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
+      <guid>localhost/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
       <description>Once I tried to connect from Win10 to a hotspot running off Google Pixel 2 (Android 8.1.0) connected to T-Mobile (tethering) and it worked for a while, but one day it just broke. Connection would work for 5-10 seconds allowing to load one website maybe, but then it threw some DNS errors. Setting DNS server manually didn&amp;rsquo;t help, also ping 8.8.8.8 timed out.
 The solution (from elevated cmd prompt):
 netsh int ip reset c:\resetlog.</description>

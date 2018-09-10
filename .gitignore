@@ -5,7 +5,7 @@ src_old/public
 
 ### Hugo ###
 # Hugo binary
-hugo*
+#hugo*
 
 # Generated files at default location
 /public/
