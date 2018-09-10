@@ -2,256 +2,256 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Dmitry Avtonomov</title>
-    <link>localhost/tags/</link>
+    <link>https://chhh.github.io/tags/</link>
     <description>Recent content in Tags on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="localhost/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chhh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Content tagged as &#39;Academic&#39;</title>
-      <link>localhost/tags/academic/</link>
+      <link>https://chhh.github.io/tags/academic/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/academic/</guid>
+      <guid>https://chhh.github.io/tags/academic/</guid>
       <description>Here is a list of all the content that has been tagged as academic.</description>
     </item>
     
     <item>
       <title>Android</title>
-      <link>localhost/tags/android/</link>
+      <link>https://chhh.github.io/tags/android/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
       
-      <guid>localhost/tags/android/</guid>
+      <guid>https://chhh.github.io/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data-viz</title>
-      <link>localhost/tags/data-viz/</link>
+      <link>https://chhh.github.io/tags/data-viz/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/data-viz/</guid>
+      <guid>https://chhh.github.io/tags/data-viz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dia</title>
-      <link>localhost/tags/dia/</link>
+      <link>https://chhh.github.io/tags/dia/</link>
       <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/dia/</guid>
+      <guid>https://chhh.github.io/tags/dia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Difftool</title>
-      <link>localhost/tags/difftool/</link>
+      <link>https://chhh.github.io/tags/difftool/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/tags/difftool/</guid>
+      <guid>https://chhh.github.io/tags/difftool/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>localhost/tags/git/</link>
+      <link>https://chhh.github.io/tags/git/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/tags/git/</guid>
+      <guid>https://chhh.github.io/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gitconfig</title>
-      <link>localhost/tags/gitconfig/</link>
+      <link>https://chhh.github.io/tags/gitconfig/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/tags/gitconfig/</guid>
+      <guid>https://chhh.github.io/tags/gitconfig/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>localhost/tags/github/</link>
+      <link>https://chhh.github.io/tags/github/</link>
       <pubDate>Mon, 07 May 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/tags/github/</guid>
+      <guid>https://chhh.github.io/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hood</title>
-      <link>localhost/tags/hood/</link>
+      <link>https://chhh.github.io/tags/hood/</link>
       <pubDate>Sat, 08 Sep 2018 16:36:17 -0700</pubDate>
       
-      <guid>localhost/tags/hood/</guid>
+      <guid>https://chhh.github.io/tags/hood/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intellij</title>
-      <link>localhost/tags/intellij/</link>
+      <link>https://chhh.github.io/tags/intellij/</link>
       <pubDate>Thu, 26 Jan 2017 00:00:00 -0800</pubDate>
       
-      <guid>localhost/tags/intellij/</guid>
+      <guid>https://chhh.github.io/tags/intellij/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ion-mobility</title>
-      <link>localhost/tags/ion-mobility/</link>
+      <link>https://chhh.github.io/tags/ion-mobility/</link>
       <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/ion-mobility/</guid>
+      <guid>https://chhh.github.io/tags/ion-mobility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lc-ms</title>
-      <link>localhost/tags/lc-ms/</link>
+      <link>https://chhh.github.io/tags/lc-ms/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/lc-ms/</guid>
+      <guid>https://chhh.github.io/tags/lc-ms/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Library</title>
-      <link>localhost/tags/library/</link>
+      <link>https://chhh.github.io/tags/library/</link>
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/library/</guid>
+      <guid>https://chhh.github.io/tags/library/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Manual</title>
-      <link>localhost/tags/manual/</link>
+      <link>https://chhh.github.io/tags/manual/</link>
       <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
       
-      <guid>localhost/tags/manual/</guid>
+      <guid>https://chhh.github.io/tags/manual/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mass-spectrometry</title>
-      <link>localhost/tags/mass-spectrometry/</link>
+      <link>https://chhh.github.io/tags/mass-spectrometry/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/mass-spectrometry/</guid>
+      <guid>https://chhh.github.io/tags/mass-spectrometry/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maven</title>
-      <link>localhost/tags/maven/</link>
+      <link>https://chhh.github.io/tags/maven/</link>
       <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
       
-      <guid>localhost/tags/maven/</guid>
+      <guid>https://chhh.github.io/tags/maven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mergetool</title>
-      <link>localhost/tags/mergetool/</link>
+      <link>https://chhh.github.io/tags/mergetool/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/tags/mergetool/</guid>
+      <guid>https://chhh.github.io/tags/mergetool/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Other</title>
-      <link>localhost/tags/other/</link>
+      <link>https://chhh.github.io/tags/other/</link>
       <pubDate>Sun, 24 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/other/</guid>
+      <guid>https://chhh.github.io/tags/other/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Proteomics</title>
-      <link>localhost/tags/proteomics/</link>
+      <link>https://chhh.github.io/tags/proteomics/</link>
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/proteomics/</guid>
+      <guid>https://chhh.github.io/tags/proteomics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Raw-processing</title>
-      <link>localhost/tags/raw-processing/</link>
+      <link>https://chhh.github.io/tags/raw-processing/</link>
       <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/raw-processing/</guid>
+      <guid>https://chhh.github.io/tags/raw-processing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Search-engine</title>
-      <link>localhost/tags/search-engine/</link>
+      <link>https://chhh.github.io/tags/search-engine/</link>
       <pubDate>Sun, 24 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/search-engine/</guid>
+      <guid>https://chhh.github.io/tags/search-engine/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shell</title>
-      <link>localhost/tags/shell/</link>
+      <link>https://chhh.github.io/tags/shell/</link>
       <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
       
-      <guid>localhost/tags/shell/</guid>
+      <guid>https://chhh.github.io/tags/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sonatype</title>
-      <link>localhost/tags/sonatype/</link>
+      <link>https://chhh.github.io/tags/sonatype/</link>
       <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
       
-      <guid>localhost/tags/sonatype/</guid>
+      <guid>https://chhh.github.io/tags/sonatype/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tee</title>
-      <link>localhost/tags/tee/</link>
+      <link>https://chhh.github.io/tags/tee/</link>
       <pubDate>Sat, 08 Sep 2018 16:36:17 -0700</pubDate>
       
-      <guid>localhost/tags/tee/</guid>
+      <guid>https://chhh.github.io/tags/tee/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tethering</title>
-      <link>localhost/tags/tethering/</link>
+      <link>https://chhh.github.io/tags/tethering/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
       
-      <guid>localhost/tags/tethering/</guid>
+      <guid>https://chhh.github.io/tags/tethering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wifi</title>
-      <link>localhost/tags/wifi/</link>
+      <link>https://chhh.github.io/tags/wifi/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
       
-      <guid>localhost/tags/wifi/</guid>
+      <guid>https://chhh.github.io/tags/wifi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>localhost/tags/windows/</link>
+      <link>https://chhh.github.io/tags/windows/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/tags/windows/</guid>
+      <guid>https://chhh.github.io/tags/windows/</guid>
       <description></description>
     </item>
     

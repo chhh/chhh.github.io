@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dmitry Avtonomov on Dmitry Avtonomov</title>
-    <link>localhost/</link>
+    <link>https://chhh.github.io/</link>
     <description>Recent content in Dmitry Avtonomov on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
-    <atom:link href="localhost/" rel="self" type="application/rss+xml" />
+    <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Search asd</title>
-      <link>localhost/search/search/</link>
+      <link>https://chhh.github.io/search/search/</link>
       <pubDate>Mon, 23 Jul 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/search/search/</guid>
+      <guid>https://chhh.github.io/search/search/</guid>
       <description></description>
     </item>
     
     <item>
       <title>So hood 02, he he</title>
-      <link>localhost/design/so-hood-02/</link>
+      <link>https://chhh.github.io/design/so-hood-02/</link>
       <pubDate>Sat, 08 Sep 2018 16:36:17 -0700</pubDate>
       
-      <guid>localhost/design/so-hood-02/</guid>
+      <guid>https://chhh.github.io/design/so-hood-02/</guid>
       <description>&lt;p&gt;So hood-02 is also here!&lt;/p&gt;
 
 &lt;p&gt;And the image: &lt;img src=&#34;dbh/so-hood-02.png&#34; alt=&#34;so hoood&#34; /&gt;&lt;/p&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>So hood 01, ho ho</title>
-      <link>localhost/design/so-hood-01/</link>
+      <link>https://chhh.github.io/design/so-hood-01/</link>
       <pubDate>Sat, 08 Sep 2018 16:35:17 -0700</pubDate>
       
-      <guid>localhost/design/so-hood-01/</guid>
+      <guid>https://chhh.github.io/design/so-hood-01/</guid>
       <description>&lt;p&gt;So hood-01 is here!&lt;/p&gt;
 
 &lt;p&gt;And the image: &lt;img src=&#34;dbh/so-hood-01.png&#34; alt=&#34;so hoood&#34; /&gt;&lt;/p&gt;
@@ -45,10 +45,10 @@
     
     <item>
       <title>Use p4merge from Perforce as default git mergetool</title>
-      <link>localhost/post/2018-09-07-p4merge-as-git-merge-tool/</link>
+      <link>https://chhh.github.io/post/2018-09-07-p4merge-as-git-merge-tool/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/post/2018-09-07-p4merge-as-git-merge-tool/</guid>
+      <guid>https://chhh.github.io/post/2018-09-07-p4merge-as-git-merge-tool/</guid>
       <description>
 
 &lt;p&gt;&lt;img src=&#34;p4merge-conflict-resolution.png&#34; alt=&#34;p4merge-conflict-resolution-screenshot&#34; /&gt;&lt;/p&gt;
@@ -117,10 +117,10 @@ introducing you to the usefulness of aliases.&lt;/p&gt;
     
     <item>
       <title>Bring back &#34;Open command window here&#34; context menu item in Windows</title>
-      <link>localhost/post/2018-06-27-command-prompt-here/</link>
+      <link>https://chhh.github.io/post/2018-06-27-command-prompt-here/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/post/2018-06-27-command-prompt-here/</guid>
+      <guid>https://chhh.github.io/post/2018-06-27-command-prompt-here/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s a simple registry hack.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -148,10 +148,10 @@ introducing you to the usefulness of aliases.&lt;/p&gt;
     
     <item>
       <title>Set up custom domain name with GitHub pages</title>
-      <link>localhost/post/2018-05-07-custom-domain-name-with-github-pages/</link>
+      <link>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</link>
       <pubDate>Mon, 07 May 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/post/2018-05-07-custom-domain-name-with-github-pages/</guid>
+      <guid>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</guid>
       <description>
 
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
@@ -215,10 +215,10 @@ the net and become accessible everywhere.&lt;/p&gt;
     
     <item>
       <title>Using multiple different shells/subsystems on Windows</title>
-      <link>localhost/post/2018-03-07-shells-on-windows/</link>
+      <link>https://chhh.github.io/post/2018-03-07-shells-on-windows/</link>
       <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
       
-      <guid>localhost/post/2018-03-07-shells-on-windows/</guid>
+      <guid>https://chhh.github.io/post/2018-03-07-shells-on-windows/</guid>
       <description>
 
 &lt;p&gt;Shells to be used:&lt;/p&gt;
@@ -293,10 +293,10 @@ install apt-cyg /bin
     
     <item>
       <title>Solving problems with tethering wifi from an Android phone</title>
-      <link>localhost/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
+      <link>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
       
-      <guid>localhost/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
+      <guid>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
       <description>&lt;p&gt;Once I tried to connect from Win10 to a hotspot running off Google Pixel 2
 (Android 8.1.0)  connected to T-Mobile (tethering) and it worked for a while,
 but one day it just broke. Connection would work for 5-10 seconds allowing
@@ -318,19 +318,19 @@ ipconfig /flushdns
     
     <item>
       <title>IMTBX and Grppr: Software for Top-Down Proteomics Utilizing Ion Mobility-Mass Spectrometry</title>
-      <link>localhost/publication/imtbx/</link>
+      <link>https://chhh.github.io/publication/imtbx/</link>
       <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>localhost/publication/imtbx/</guid>
+      <guid>https://chhh.github.io/publication/imtbx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intellij IDEA live templates</title>
-      <link>localhost/post/2017-01-26-intellij-idea-live-templates-slf4j/</link>
+      <link>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</link>
       <pubDate>Thu, 26 Jan 2017 00:00:00 -0800</pubDate>
       
-      <guid>localhost/post/2017-01-26-intellij-idea-live-templates-slf4j/</guid>
+      <guid>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/features/&#34; target=&#34;_blank&#34;&gt;Intellij IDEA&lt;/a&gt; IDE has a nice feature
@@ -387,10 +387,10 @@ in the class declaration.&lt;/p&gt;
     
     <item>
       <title>Publishing java libraries to Maven Central, the manual</title>
-      <link>localhost/post/2017-01-25-publishing-to-maven-central/</link>
+      <link>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</link>
       <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
       
-      <guid>localhost/post/2017-01-25-publishing-to-maven-central/</guid>
+      <guid>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</guid>
       <description>
 
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -584,28 +584,28 @@ directory of your project.&lt;/p&gt;
     
     <item>
       <title>MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry–based proteomics</title>
-      <link>localhost/publication/msfragger/</link>
+      <link>https://chhh.github.io/publication/msfragger/</link>
       <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>localhost/publication/msfragger/</guid>
+      <guid>https://chhh.github.io/publication/msfragger/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BatMass: a Java Software Platform for LC–MS Data Visualization in Proteomics and Metabolomics</title>
-      <link>localhost/publication/batmass/</link>
+      <link>https://chhh.github.io/publication/batmass/</link>
       <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/publication/batmass/</guid>
+      <guid>https://chhh.github.io/publication/batmass/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BatMass</title>
-      <link>localhost/project/batmass/</link>
+      <link>https://chhh.github.io/project/batmass/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/project/batmass/</guid>
+      <guid>https://chhh.github.io/project/batmass/</guid>
       <description>
 
 &lt;p&gt;BatMass is a mass-spectrometry data visualization tool, with the main focus on being fast and interactive while providing comprehensive visualizations without any parameter tweaking. It is written in Java and built on top of the &lt;a href=&#34;https://netbeans.org/features/platform/all-docs.html&#34; target=&#34;_blank&#34;&gt;NetBeans Platform&lt;/a&gt;.&lt;/p&gt;
@@ -640,13 +640,13 @@ DOI: 10.1021/acs.jproteome.6b00021.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;some-examples&#34;&gt;Some Examples&lt;/h2&gt;
 
 &lt;p&gt;The layout of windows is free and customizable by dragging.
-&lt;img src=&#34;localhost/img/about-batmass/free-layout.png&#34; alt=&#34;Free window layoyt&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://chhh.github.io/img/about-batmass/free-layout.png&#34; alt=&#34;Free window layoyt&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Compare multiple experiments at once. The bottom-middle run in this figure is a blank (no sample was injected), while the other 5 were runs with some sample. Amazing how much stuff comes from the background.
-&lt;img src=&#34;localhost/img/about-batmass/comparison-6-runs-1-blank.png&#34; alt=&#34;Multi experiment comparison in Map2D&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://chhh.github.io/img/about-batmass/comparison-6-runs-1-blank.png&#34; alt=&#34;Multi experiment comparison in Map2D&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And here are the same runs but zoomed in to a small region of m/z and retentino time. Look at the color-marked regions. Let&amp;rsquo;s just accept that zero-values are a thing, there is no need to try extracting noise to do gap-filling in data.
-&lt;img src=&#34;localhost/img/about-batmass/comparison-6-runs-1-blank-02-zoom-marked.png&#34; alt=&#34;Multi experiment comparison in Map2D zoomed&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://chhh.github.io/img/about-batmass/comparison-6-runs-1-blank-02-zoom-marked.png&#34; alt=&#34;Multi experiment comparison in Map2D zoomed&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;contacts&#34;&gt;Contacts&lt;/h2&gt;
 
@@ -667,10 +667,10 @@ Email: nesvi@umich.edu&lt;br /&gt;
     
     <item>
       <title>MSFTBX: MS File Toolbox</title>
-      <link>localhost/project/msftbx/</link>
+      <link>https://chhh.github.io/project/msftbx/</link>
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/project/msftbx/</guid>
+      <guid>https://chhh.github.io/project/msftbx/</guid>
       <description>&lt;p&gt;A fast Java library for mass spectrometry data files access (mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc). Writers for some formats are also available. Available on &lt;a href=&#34;http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22msftbx%22&#34; target=&#34;_blank&#34;&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>

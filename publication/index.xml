@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Dmitry Avtonomov</title>
-    <link>localhost/publication/</link>
+    <link>https://chhh.github.io/publication/</link>
     <description>Recent content in Publications on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="localhost/publication/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chhh.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>IMTBX and Grppr: Software for Top-Down Proteomics Utilizing Ion Mobility-Mass Spectrometry</title>
-      <link>localhost/publication/imtbx/</link>
+      <link>https://chhh.github.io/publication/imtbx/</link>
       <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>localhost/publication/imtbx/</guid>
+      <guid>https://chhh.github.io/publication/imtbx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry–based proteomics</title>
-      <link>localhost/publication/msfragger/</link>
+      <link>https://chhh.github.io/publication/msfragger/</link>
       <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>localhost/publication/msfragger/</guid>
+      <guid>https://chhh.github.io/publication/msfragger/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BatMass: a Java Software Platform for LC–MS Data Visualization in Proteomics and Metabolomics</title>
-      <link>localhost/publication/batmass/</link>
+      <link>https://chhh.github.io/publication/batmass/</link>
       <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/publication/batmass/</guid>
+      <guid>https://chhh.github.io/publication/batmass/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DIA-Umpire: comprehensive computational framework for data-independent acquisition proteomics</title>
-      <link>localhost/publication/dia-umpire/</link>
+      <link>https://chhh.github.io/publication/dia-umpire/</link>
       <pubDate>Mon, 19 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>localhost/publication/dia-umpire/</guid>
+      <guid>https://chhh.github.io/publication/dia-umpire/</guid>
       <description></description>
     </item>
     

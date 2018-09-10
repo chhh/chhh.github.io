@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Random pieces of information on Dmitry Avtonomov</title>
-    <link>localhost/post/</link>
+    <link>https://chhh.github.io/post/</link>
     <description>Recent content in Random pieces of information on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0800</lastBuildDate>
     
-	<atom:link href="localhost/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chhh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Use p4merge from Perforce as default git mergetool</title>
-      <link>localhost/post/2018-09-07-p4merge-as-git-merge-tool/</link>
+      <link>https://chhh.github.io/post/2018-09-07-p4merge-as-git-merge-tool/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/post/2018-09-07-p4merge-as-git-merge-tool/</guid>
+      <guid>https://chhh.github.io/post/2018-09-07-p4merge-as-git-merge-tool/</guid>
       <description>A while ago this took more effort as described in this link (scroll to section &amp;lsquo;External Merge and Diff Tools&amp;rsquo;).
 Not anymore. Now git natively supports p4merge. So you only need to modify your global git config (~/.gitconfig):
 [merge] tool = p4merge [mergetool &amp;quot;p4merge&amp;quot;] path = p4merge.exe [diff] tool = p4merge [difftool &amp;quot;p4merge&amp;quot;] path = p4merge.exe  You can provide the absolute path to the p4merge binary, but I have it on PATH because I installed it with scoop.</description>
@@ -25,20 +25,20 @@ Not anymore. Now git natively supports p4merge. So you only need to modify your 
     
     <item>
       <title>Bring back &#34;Open command window here&#34; context menu item in Windows</title>
-      <link>localhost/post/2018-06-27-command-prompt-here/</link>
+      <link>https://chhh.github.io/post/2018-06-27-command-prompt-here/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/post/2018-06-27-command-prompt-here/</guid>
+      <guid>https://chhh.github.io/post/2018-06-27-command-prompt-here/</guid>
       <description>It&amp;rsquo;s a simple registry hack.
  Strat registry editor: Run -&amp;gt; regedit. Go to HKEY_CLASSES_ROOT\Directory\shell\cmd. Right-click the cmd (folder) key, and click Permissions. Click the Advanced button. Advanced Security Settings dialog will open, at the top next to Owner click Change. Put in your account name, click Check Names to make sure domain etc is set up correctly, click OK. Check the Replace owner on subcontainers and objects check box near Owner field.</description>
     </item>
     
     <item>
       <title>Set up custom domain name with GitHub pages</title>
-      <link>localhost/post/2018-05-07-custom-domain-name-with-github-pages/</link>
+      <link>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</link>
       <pubDate>Mon, 07 May 2018 00:00:00 -0700</pubDate>
       
-      <guid>localhost/post/2018-05-07-custom-domain-name-with-github-pages/</guid>
+      <guid>https://chhh.github.io/post/2018-05-07-custom-domain-name-with-github-pages/</guid>
       <description>Intro The whole process for various situations is described in GitHub documentation. This is just a reminder for myself how to properly configure top-level apex domain redirect with GitHub Pages.
 All of your &amp;lt;username&amp;gt;.github.io or &amp;lt;orgname&amp;gt;.github.io pages will be redirected to the new custom domain, so your project pages can benefit from this automatically. If you already have a project page like &amp;lt;username&amp;gt;.github.io/projectname, this will become &amp;lt;custom.domain&amp;gt;/projectname.
 Sequence of actions Let&amp;rsquo;s say you own domain.</description>
@@ -46,10 +46,10 @@ Sequence of actions Let&amp;rsquo;s say you own domain.</description>
     
     <item>
       <title>Using multiple different shells/subsystems on Windows</title>
-      <link>localhost/post/2018-03-07-shells-on-windows/</link>
+      <link>https://chhh.github.io/post/2018-03-07-shells-on-windows/</link>
       <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
       
-      <guid>localhost/post/2018-03-07-shells-on-windows/</guid>
+      <guid>https://chhh.github.io/post/2018-03-07-shells-on-windows/</guid>
       <description>Shells to be used:
  cmd.exe MINGW from Git Cygwin Optionally MSYS2  All of the above are managed through one shell manager - ConEmu.
 First install all the shells, then ConEmu.
@@ -59,10 +59,10 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser iex (new-object net.webclien
     
     <item>
       <title>Solving problems with tethering wifi from an Android phone</title>
-      <link>localhost/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
+      <link>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
       
-      <guid>localhost/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
+      <guid>https://chhh.github.io/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
       <description>Once I tried to connect from Win10 to a hotspot running off Google Pixel 2 (Android 8.1.0) connected to T-Mobile (tethering) and it worked for a while, but one day it just broke. Connection would work for 5-10 seconds allowing to load one website maybe, but then it threw some DNS errors. Setting DNS server manually didn&amp;rsquo;t help, also ping 8.8.8.8 timed out.
 The solution (from elevated cmd prompt):
 netsh int ip reset c:\resetlog.</description>
@@ -70,20 +70,20 @@ netsh int ip reset c:\resetlog.</description>
     
     <item>
       <title>Intellij IDEA live templates</title>
-      <link>localhost/post/2017-01-26-intellij-idea-live-templates-slf4j/</link>
+      <link>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</link>
       <pubDate>Thu, 26 Jan 2017 00:00:00 -0800</pubDate>
       
-      <guid>localhost/post/2017-01-26-intellij-idea-live-templates-slf4j/</guid>
+      <guid>https://chhh.github.io/post/2017-01-26-intellij-idea-live-templates-slf4j/</guid>
       <description>Intellij IDEA IDE has a nice feature of live templates. You type several symbols, press tab (by default) and it expands the symbols into full expressions. E.g. you can type fori, press Tab and get a full for loop created for you, or type iter, press Tab and if you have iterables in scope, you&amp;rsquo;ll be presented with a choice of available ones to iterate over.
 Example: slf4j logger in each class It&amp;rsquo;s a super common thing to type at the beginning of each class:</description>
     </item>
     
     <item>
       <title>Publishing java libraries to Maven Central, the manual</title>
-      <link>localhost/post/2017-01-25-publishing-to-maven-central/</link>
+      <link>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</link>
       <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
       
-      <guid>localhost/post/2017-01-25-publishing-to-maven-central/</guid>
+      <guid>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</guid>
       <description>Table of Contents    What is Sonatype and why is it needed? Getting started GPG signing  Windows caveat  Configuring Maven to know where to get the signing key Configuring Maven to know the credentials for Sonatype servers Satisfying requirements to pass all checks upon submission to Sonatype Publishing parent POM project to Central Publishing the project to Central    What is Sonatype and why is it needed?</description>
     </item>
     

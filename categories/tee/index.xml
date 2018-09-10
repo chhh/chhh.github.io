@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tee on Dmitry Avtonomov</title>
-    <link>localhost/categories/tee/</link>
+    <link>https://chhh.github.io/categories/tee/</link>
     <description>Recent content in Tee on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Sat, 08 Sep 2018 16:36:17 -0700</lastBuildDate>
     
-	<atom:link href="localhost/categories/tee/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chhh.github.io/categories/tee/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>So hood 02, he he</title>
-      <link>localhost/design/so-hood-02/</link>
+      <link>https://chhh.github.io/design/so-hood-02/</link>
       <pubDate>Sat, 08 Sep 2018 16:36:17 -0700</pubDate>
       
-      <guid>localhost/design/so-hood-02/</guid>
+      <guid>https://chhh.github.io/design/so-hood-02/</guid>
       <description>So hood-02 is also here!
 And the image: </description>
     </item>
     
     <item>
       <title>So hood 01, ho ho</title>
-      <link>localhost/design/so-hood-01/</link>
+      <link>https://chhh.github.io/design/so-hood-01/</link>
       <pubDate>Sat, 08 Sep 2018 16:35:17 -0700</pubDate>
       
-      <guid>localhost/design/so-hood-01/</guid>
+      <guid>https://chhh.github.io/design/so-hood-01/</guid>
       <description>So hood-01 is here!
 And the image: </description>
     </item>

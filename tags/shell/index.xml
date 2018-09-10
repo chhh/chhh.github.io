@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shell on Dmitry Avtonomov</title>
-    <link>localhost/tags/shell/</link>
+    <link>https://chhh.github.io/tags/shell/</link>
     <description>Recent content in Shell on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Wed, 07 Mar 2018 00:00:00 -0800</lastBuildDate>
     
-	<atom:link href="localhost/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chhh.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using multiple different shells/subsystems on Windows</title>
-      <link>localhost/post/2018-03-07-shells-on-windows/</link>
+      <link>https://chhh.github.io/post/2018-03-07-shells-on-windows/</link>
       <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
       
-      <guid>localhost/post/2018-03-07-shells-on-windows/</guid>
+      <guid>https://chhh.github.io/post/2018-03-07-shells-on-windows/</guid>
       <description>Shells to be used:
  cmd.exe MINGW from Git Cygwin Optionally MSYS2  All of the above are managed through one shell manager - ConEmu.
 First install all the shells, then ConEmu.

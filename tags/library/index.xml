@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Library on Dmitry Avtonomov</title>
-    <link>localhost/tags/library/</link>
+    <link>https://chhh.github.io/tags/library/</link>
     <description>Recent content in Library on Dmitry Avtonomov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
     <lastBuildDate>Tue, 26 Apr 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="localhost/tags/library/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chhh.github.io/tags/library/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MSFTBX: MS File Toolbox</title>
-      <link>localhost/project/msftbx/</link>
+      <link>https://chhh.github.io/project/msftbx/</link>
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/project/msftbx/</guid>
+      <guid>https://chhh.github.io/project/msftbx/</guid>
       <description>A fast Java library for mass spectrometry data files access (mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc). Writers for some formats are also available. Available on Maven Central.</description>
     </item>
     
     <item>
       <title>IMTBX&#43;Grppr</title>
-      <link>localhost/project/imtbx/</link>
+      <link>https://chhh.github.io/project/imtbx/</link>
       <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>localhost/project/imtbx/</guid>
+      <guid>https://chhh.github.io/project/imtbx/</guid>
       <description>A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection.</description>
     </item>
     
