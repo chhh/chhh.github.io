@@ -1,5 +1,5 @@
-#baseurl = "https://chhh.github.io/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "localhost/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
+baseurl = "https://chhh.github.io/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
+#baseurl = "localhost/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 title = "Dmitry Avtonomov"
 copyright = "&copy; 2016-present Dmitry Avtonomov"
 theme = "academic"
