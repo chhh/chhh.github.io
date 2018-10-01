@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Installing OMV 4 (Open Media Vault) to Raspberry Pi 3&#43;</title>
+      <link>https://chhh.github.io/post/2018-10-01-install-omv-on-pi/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://chhh.github.io/post/2018-10-01-install-omv-on-pi/</guid>
+      <description>Setting up Raspberry Pi Download the OMV image (yes, the binaries are hosted at sourceforge still) and burn it to an SD card using Etcher.
+Default loing/password is (IIRC): admin/openmediavault. I highly recommend setting up a preferred fixed IP address for you Pi on the router.
+Using all the space on the system SD card I used a 64GB card, but OMV only needs a gig or so. Reboot once, the partition for OMV will be be auto-resized.</description>
+    </item>
+    
+    <item>
       <title>Use p4merge from Perforce as default git mergetool</title>
       <link>https://chhh.github.io/post/2018-09-07-p4merge-as-git-merge-tool/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>

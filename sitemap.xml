@@ -6,6 +6,14 @@
     
     <url>
     
+      <loc>https://chhh.github.io/post/2018-10-01-install-omv-on-pi/</loc>
+      <lastmod>2018-10-01T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://chhh.github.io/design/so-hood-02/</loc>
       <lastmod>2018-09-08T16:36:17-07:00</lastmod>
     </url>
@@ -197,8 +205,7 @@
     
     <url>
     
-      <loc>https://chhh.github.io/tags/android/</loc>
-      <lastmod>2018-02-19T00:00:00-08:00</lastmod>
+      <loc>https://chhh.github.io/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -206,7 +213,35 @@
     
     <url>
     
-      <loc>https://chhh.github.io/categories/</loc>
+      <loc>https://chhh.github.io/</loc>
+      <lastmod>2017-10-15T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://chhh.github.io/project/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://chhh.github.io/tags/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://chhh.github.io/tags/android/</loc>
+      <lastmod>2018-02-19T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -243,15 +278,6 @@
     
       <loc>https://chhh.github.io/tags/difftool/</loc>
       <lastmod>2018-09-07T00:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://chhh.github.io/</loc>
-      <lastmod>2017-10-15T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -367,6 +393,24 @@
     
     <url>
     
+      <loc>https://chhh.github.io/tags/omv/</loc>
+      <lastmod>2018-10-01T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://chhh.github.io/tags/openmediavault/</loc>
+      <lastmod>2018-10-01T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://chhh.github.io/tags/other/</loc>
       <lastmod>2016-04-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -376,8 +420,8 @@
     
     <url>
     
-      <loc>https://chhh.github.io/project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <loc>https://chhh.github.io/tags/pi/</loc>
+      <lastmod>2018-10-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -387,6 +431,15 @@
     
       <loc>https://chhh.github.io/tags/proteomics/</loc>
       <lastmod>2016-04-26T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://chhh.github.io/tags/raspberry-pi/</loc>
+      <lastmod>2018-10-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -423,15 +476,6 @@
     
       <loc>https://chhh.github.io/tags/sonatype/</loc>
       <lastmod>2017-01-25T00:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://chhh.github.io/tags/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

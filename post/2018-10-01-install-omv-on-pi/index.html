@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -15,10 +13,15 @@
   
   
   
-  <meta name="description" content="Postdoctoral Research Fellow">
+    
+  
+  <meta name="description" content="
+Walkthrough reminder for myself how to install OMV on Pi and set 
+up backup to an external HDD.
+">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://chhh.github.io/tags/mass-spectrometry/">
+  <link rel="alternate" hreflang="en-us" href="https://chhh.github.io/post/2018-10-01-install-omv-on-pi/">
 
   
 
@@ -92,32 +95,37 @@
   
 
   
-  <link rel="alternate" href="https://chhh.github.io/tags/mass-spectrometry/index.xml" type="application/rss+xml" title="Dmitry Avtonomov">
-  <link rel="feed" href="https://chhh.github.io/tags/mass-spectrometry/index.xml" type="application/rss+xml" title="Dmitry Avtonomov">
+  <link rel="alternate" href="https://chhh.github.io/index.xml" type="application/rss+xml" title="Dmitry Avtonomov">
+  <link rel="feed" href="https://chhh.github.io/index.xml" type="application/rss+xml" title="Dmitry Avtonomov">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://chhh.github.io/tags/mass-spectrometry/">
+  <link rel="canonical" href="https://chhh.github.io/post/2018-10-01-install-omv-on-pi/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Dmitry Avtonomov">
-  <meta property="og:url" content="https://chhh.github.io/tags/mass-spectrometry/">
-  <meta property="og:title" content="mass-spectrometry | Dmitry Avtonomov">
-  <meta property="og:description" content="Postdoctoral Research Fellow">
+  <meta property="og:url" content="https://chhh.github.io/post/2018-10-01-install-omv-on-pi/">
+  <meta property="og:title" content="Installing OMV 4 (Open Media Vault) to Raspberry Pi 3&#43; | Dmitry Avtonomov">
+  <meta property="og:description" content="
+Walkthrough reminder for myself how to install OMV on Pi and set 
+up backup to an external HDD.
+">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2016-04-27T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2018-10-01T00:00:00-07:00">
+  
+  <meta property="article:modified_time" content="2018-10-01T00:00:00-07:00">
   
 
   
 
   
 
-  <title>mass-spectrometry | Dmitry Avtonomov</title>
+  <title>Installing OMV 4 (Open Media Vault) to Raspberry Pi 3&#43; | Dmitry Avtonomov</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -263,67 +271,194 @@
 </nav>
 
 
-
-
-
-<div class="article-container">
-
-  <h1 class="my-4">mass-spectrometry</h1>
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
+
+  <div class="article-container">
+    <h1 itemprop="name">Installing OMV 4 (Open Media Vault) to Raspberry Pi 3&#43;</h1>
+
+    
+
+<div class="article-metadata">
+
   
   
-  <div>
-    <h2><a href="https://chhh.github.io/project/batmass/">BatMass</a></h2>
-    <div class="article-style">
-      
-      A framework for LC-MS data visualization and exploration. View spectra, extracted ion chromatograms and 2D ion maps of LC-MS experiments. Synchronized viewers.
-      
-    </div>
-  </div>
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Dmitry Avtonomov">
+  </span>
   
-  <div>
-    <h2><a href="https://chhh.github.io/project/msftbx/">MSFTBX: MS File Toolbox</a></h2>
-    <div class="article-style">
-      
-      A fast Java library for mass spectrometry data files access (mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc). Writers for some formats are also available. Available on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22msftbx%22).
-      
-    </div>
-  </div>
+
+  <span class="article-date">
+    
+    <meta content="2018-10-01 00:00:00 -0700 PDT" itemprop="datePublished">
+    <time datetime="2018-10-01 00:00:00 -0700 PDT" itemprop="dateModified">
+      2018-10-01
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Dmitry Avtonomov">
+  </span>
+
   
-  <div>
-    <h2><a href="https://chhh.github.io/project/imtbx/">IMTBX&#43;Grppr</a></h2>
-    <div class="article-style">
-      
-      A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection.
-      
-    </div>
-  </div>
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
   
-  <div>
-    <h2><a href="https://chhh.github.io/project/msfragger/">MSFragger</a></h2>
-    <div class="article-style">
-      
-      Ultra-fast proteomics search engine. Regular searches - when the precursor mass is limited to a narrow window of several ppm - are done within a few seconds. An "open-search" (with large precursor mass range tolerance, e.g. +/-500 Da) for a 2 hour LC gradient bottom-up proteomics experiment can be done in a minute or so on a laptop.
-      
-    </div>
-  </div>
+
   
-  <div>
-    <h2><a href="https://chhh.github.io/project/dia-umpire/">DIA-Umpire</a></h2>
-    <div class="article-style">
-      
-      Data Independent Acquisition (DIA) data processing tool that doens't require a spectral library. Detects features in MS1 and MS2, correlates precursors to fragments based on elution profile and compiles pseudo-MS/MS spectra which can be searched with standard proteomic search tools.
-      
-    </div>
-  </div>
   
 
   
 
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Installing%20OMV%204%20%28Open%20Media%20Vault%29%20to%20Raspberry%20Pi%203%2b&amp;url=https%3a%2f%2fchhh.github.io%2fpost%2f2018-10-01-install-omv-on-pi%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchhh.github.io%2fpost%2f2018-10-01-install-omv-on-pi%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fchhh.github.io%2fpost%2f2018-10-01-install-omv-on-pi%2f&amp;title=Installing%20OMV%204%20%28Open%20Media%20Vault%29%20to%20Raspberry%20Pi%203%2b"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fchhh.github.io%2fpost%2f2018-10-01-install-omv-on-pi%2f&amp;title=Installing%20OMV%204%20%28Open%20Media%20Vault%29%20to%20Raspberry%20Pi%203%2b"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Installing%20OMV%204%20%28Open%20Media%20Vault%29%20to%20Raspberry%20Pi%203%2b&amp;body=https%3a%2f%2fchhh.github.io%2fpost%2f2018-10-01-install-omv-on-pi%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
 
 </div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h2 id="setting-up-raspberry-pi">Setting up Raspberry Pi</h2>
+
+<p>Download the <a href="https://www.openmediavault.org" target="_blank">OMV</a> image (yes, <a href="https://sourceforge.net/projects/openmediavault/files/" target="_blank">the binaries are
+hosted at sourceforge</a>
+still) and burn it to an SD card using <a href="https://etcher.io/" target="_blank">Etcher</a>.</p>
+
+<p>Default loing/password is (IIRC): admin/openmediavault. I highly recommend
+setting up a preferred fixed IP address for you Pi on the router.</p>
+
+<h2 id="using-all-the-space-on-the-system-sd-card">Using all the space on the system SD card</h2>
+
+<p>I used a 64GB card, but OMV only needs a gig or so. Reboot once, the partition
+for OMV will be be auto-resized. A third partition on the SD card will be
+created, but without a filesystem, check it out with <code>lsblk</code> command. Remember
+the name of the partition.</p>
+
+<p>To add a filesystem to this partition use :</p>
+
+<pre><code class="language-shell">mkfs.ext4 -L &lt;your-label&gt; /dev/&lt;the-partition-name&gt;
+</code></pre>
+
+<p>You can now go to the <code>Web Console -&gt; Storage -&gt; File Systems</code>, locate the new
+partition and Mount it. It can now be used to store the data.</p>
+
+<h2 id="setting-up-an-hdd">Setting up an HDD</h2>
+
+<p>I have a 1TB 2.5&rdquo; HDD (HGST Travelstar 7K1000, <a href="http://a.co/d/3vifPYg" target="_blank">Amazon
+link</a>) in a simple USB 3 enclosure. The Pi struggled to
+power the HDD though, so I bought an powered USB hub (Anker 4-port powered USB
+hub, <a href="http://a.co/d/bqRz17R" target="_blank">Amazon link</a>). Haven&rsquo;t tried it yet, but it&rsquo;s quite
+possible you can power up to 4 HDDs this way and use them all with a single Pi.</p>
+
+<p>Just plug the HDD in the hub, the hub into wall power and the Pi - you&rsquo;re ready
+to go. Reboot the Pi. Go to the web admin console. <code>Storage -&gt; Disks</code>, check
+that you see the new HDD there, probably as <code>/dev/sda1</code>.<code>Storage -&gt; File Systems
+-&gt; +Create</code> (there&rsquo;s a button in the top row), create a new <em>ext4</em> filesystem on
+the HDD.</p>
+
+<h2 id="creating-a-shared-folder-available-from-your-local-network">Creating a shared folder available from your local network</h2>
+
+<p>To enable file sharing using this HDD check that <code>Services -&gt; SMB/CIFS</code> is
+enabled. <code>Access Right Management -&gt; Shared Folders -&gt; +Add</code> and add a folder on
+the hard drive. You might also need to go to <code>Access Right Management -&gt; User</code>
+and add a new user, click <code>Privileges</code> and grant the new user access to the
+shared folder.</p>
+
+<p>On Windows you can now open Explorer and <code>Map network drive</code>. Put in an address
+like <code>\\192.168.1.176\my-share</code>. If all was right, it should ask you for
+login/password. Check the box <em>log in using different credentials</em> and supply
+the username and password for the user that you&rsquo;ve just created through OMV
+admin web page.</p>
+
+<h2 id="setting-up-backup-of-your-cloud-based-storage-to-the-local-hdd-connected-to-pi">Setting up backup of your cloud-based storage to the local HDD connected to Pi</h2>
+
+<p>Log in to RPi from ssh. Install RClone (<a href="https://rclone.org" target="_blank">https://rclone.org</a>). Worked fine from
+the script installation for me. Run <code>rclone configure</code> to set up Google Drive
+integration. When asked to do &ldquo;interactive&rdquo; setup, say No. Then you can just
+copy the given link and follow it on another computer with an actual browser.
+Lynx won&rsquo;t do, as the Google authentication page needs javascript.</p>
+
+<p>Give it a go while ssh&rsquo;ed into the Pi. When everything works, you can go to the
+OMV admin panel <code>System -&gt; Scheduled Jobs</code>, which is basically a UI for adding
+cron jobs, and add your <code>rclone sync</code> or <code>rclone copy</code> command to run, e.g.
+every night at 3AM.</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="https://chhh.github.io/tags/omv/">omv</a>
+  
+  <a class="badge badge-light" href="https://chhh.github.io/tags/openmediavault/">openmediavault</a>
+  
+  <a class="badge badge-light" href="https://chhh.github.io/tags/pi/">pi</a>
+  
+  <a class="badge badge-light" href="https://chhh.github.io/tags/raspberry-pi/">raspberry-pi</a>
+  
+</div>
+
+
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
 <footer class="site-footer">
   <div class="container">
 
@@ -448,6 +583,4 @@
 
 </body>
 </html>
-
-
 
