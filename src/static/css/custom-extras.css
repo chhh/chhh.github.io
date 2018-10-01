@@ -24,3 +24,7 @@ width: 2rem; /* Match `fa-2x` icon size. */
 top: 0.14285714em; /* Default FA value. */
 text-align: center;
 }
+
+div.article-style, div.pub-abstract, p {
+    text-align: justify
+}
