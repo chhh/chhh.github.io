@@ -6,6 +6,14 @@
     
     <url>
     
+      <loc>https://chhh.github.io/post/2018-10-11-custom-colors-in-win-shells/</loc>
+      <lastmod>2018-10-11T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://chhh.github.io/post/2018-10-01-install-omv-on-pi/</loc>
       <lastmod>2018-10-01T00:00:00-07:00</lastmod>
     </url>
@@ -249,6 +257,15 @@
     
     <url>
     
+      <loc>https://chhh.github.io/tags/colors/</loc>
+      <lastmod>2018-10-11T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://chhh.github.io/tags/data-viz/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -466,7 +483,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/shell/</loc>
-      <lastmod>2018-05-03T00:00:00-07:00</lastmod>
+      <lastmod>2018-10-11T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -520,7 +537,7 @@
     <url>
     
       <loc>https://chhh.github.io/tags/windows/</loc>
-      <lastmod>2018-06-27T00:00:00-07:00</lastmod>
+      <lastmod>2018-10-11T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     

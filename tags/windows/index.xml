@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
-    <lastBuildDate>Wed, 27 Jun 2018 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 11 Oct 2018 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://chhh.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Custom nice colors in Windows shells</title>
+      <link>https://chhh.github.io/post/2018-10-11-custom-colors-in-win-shells/</link>
+      <pubDate>Thu, 11 Oct 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://chhh.github.io/post/2018-10-11-custom-colors-in-win-shells/</guid>
+      <description>We&amp;rsquo;ll be using scoop to install the necessary tools.
+Quickstart with scoop  Install git separately. Here&amp;rsquo;s the link: https://gitforwindows.org. I recommend the following customizations in the installer:
+ Use Notepad++ as default editor Use True Type fonts in all console windows Check out as-is, commit as-is  Win+ R -&amp;gt; powershell. In PowerShell (answer &amp;lsquo;Y&amp;rsquo; when asked):  Set-ExecutionPolicy RemoteSigned -scope CurrentUser iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)   scoop is now installed, if you had any open cmd windows - close them now.</description>
+    </item>
     
     <item>
       <title>Bring back &#34;Open command window here&#34; context menu item in Windows</title>
