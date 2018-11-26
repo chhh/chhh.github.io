@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Adding all existing submodules to a git repo</title>
+      <link>https://chhh.github.io/post/2018-11-25-adding-all-git-submodules/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
+      
+      <guid>https://chhh.github.io/post/2018-11-25-adding-all-git-submodules/</guid>
+      <description>You have a git repo (a directory) which contains sub-directories which are git repos themselves and now you want them to become submodules. Here&amp;rsquo;s a quick automatic way to add them all.
+ Remove -maxdepth if you want to recursively dig deeper than 1 level. Assumes that each submodule has a remote named origin, uses that remote&amp;rsquo;s url.  Preview command for x in $(find . -mindepth 1 -maxdepth 1 -type d) ; do if [ -d &amp;quot;${x}/.</description>
+    </item>
+    
+    <item>
       <title>Custom nice colors in Windows shells</title>
       <link>https://chhh.github.io/post/2018-10-11-custom-colors-in-win-shells/</link>
       <pubDate>Thu, 11 Oct 2018 00:00:00 -0700</pubDate>

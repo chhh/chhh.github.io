@@ -69,9 +69,18 @@
     <item>
       <title>git</title>
       <link>https://chhh.github.io/tags/git/</link>
-      <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
       
       <guid>https://chhh.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git-submodule</title>
+      <link>https://chhh.github.io/tags/git-submodule/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
+      
+      <guid>https://chhh.github.io/tags/git-submodule/</guid>
       <description></description>
     </item>
     
@@ -99,6 +108,15 @@
       <pubDate>Sat, 08 Sep 2018 16:36:17 -0700</pubDate>
       
       <guid>https://chhh.github.io/tags/hood/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>howto</title>
+      <link>https://chhh.github.io/tags/howto/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
+      
+      <guid>https://chhh.github.io/tags/howto/</guid>
       <description></description>
     </item>
     
@@ -261,6 +279,15 @@
       <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
       
       <guid>https://chhh.github.io/tags/sonatype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>submodule</title>
+      <link>https://chhh.github.io/tags/submodule/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
+      
+      <guid>https://chhh.github.io/tags/submodule/</guid>
       <description></description>
     </item>
     

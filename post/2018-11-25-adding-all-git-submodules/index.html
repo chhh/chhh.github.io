@@ -15,10 +15,14 @@
   
     
   
-  <meta name="description" content="There is a need to better understand and handle the &#39;dark matter&#39; of proteomics-the vast diversity of post-translational and chemical modifications that are unaccounted in a typical mass spectrometry-based analysis and thus remain unidentified. We present a fragment-ion indexing method, and its implementation in peptide identification tool MSFragger, that enables a more than 100-fold improvement in speed over most existing proteome database search tools. Using several large proteomic data sets, we demonstrate how MSFragger empowers the open database search concept for comprehensive identification of peptides and all their modified forms, uncovering dramatic differences in modification rates across experimental samples and conditions. We further illustrate its utility using protein-RNA cross-linked peptide data and using affinity purification experiments where we observe, on average, a 300% increase in the number of identified spectra for enriched proteins. We also discuss the benefits of open searching for improved false discovery rate estimation in proteomics.">
+  <meta name="description" content="
+You have a git repo which contains sub-directories which are git repos
+themselves and now you want them to become submodules. Here&#39;s a quick automatic
+way to add them all.
+">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://chhh.github.io/publication/msfragger/">
+  <link rel="alternate" hreflang="en-us" href="https://chhh.github.io/post/2018-11-25-adding-all-git-submodules/">
 
   
 
@@ -46,6 +50,13 @@
     
       
     
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
     
 
     
@@ -93,26 +104,30 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://chhh.github.io/publication/msfragger/">
+  <link rel="canonical" href="https://chhh.github.io/post/2018-11-25-adding-all-git-submodules/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Dmitry Avtonomov">
-  <meta property="og:url" content="https://chhh.github.io/publication/msfragger/">
-  <meta property="og:title" content="MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry–based proteomics | Dmitry Avtonomov">
-  <meta property="og:description" content="There is a need to better understand and handle the &#39;dark matter&#39; of proteomics-the vast diversity of post-translational and chemical modifications that are unaccounted in a typical mass spectrometry-based analysis and thus remain unidentified. We present a fragment-ion indexing method, and its implementation in peptide identification tool MSFragger, that enables a more than 100-fold improvement in speed over most existing proteome database search tools. Using several large proteomic data sets, we demonstrate how MSFragger empowers the open database search concept for comprehensive identification of peptides and all their modified forms, uncovering dramatic differences in modification rates across experimental samples and conditions. We further illustrate its utility using protein-RNA cross-linked peptide data and using affinity purification experiments where we observe, on average, a 300% increase in the number of identified spectra for enriched proteins. We also discuss the benefits of open searching for improved false discovery rate estimation in proteomics."><meta property="og:image" content="https://chhh.github.io/img/about-msfragger/nmeth.4256-F3.jpg">
+  <meta property="og:url" content="https://chhh.github.io/post/2018-11-25-adding-all-git-submodules/">
+  <meta property="og:title" content="Adding all existing submodules to a git repo | Dmitry Avtonomov">
+  <meta property="og:description" content="
+You have a git repo which contains sub-directories which are git repos
+themselves and now you want them to become submodules. Here&#39;s a quick automatic
+way to add them all.
+">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2017-01-19T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2018-11-25T00:00:00-08:00">
   
-  <meta property="article:modified_time" content="2017-01-19T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2018-11-25T00:00:00-08:00">
   
 
   
 
-  <title>MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry–based proteomics | Dmitry Avtonomov</title>
+  
+
+  <title>Adding all existing submodules to a git repo | Dmitry Avtonomov</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -257,62 +272,84 @@
   </div>
 </nav>
 
-<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
-<div class="article-header">
-  
-  
-    <img src="/img/about-msfragger/nmeth.4256-F3.jpg" class="article-banner" itemprop="image">
-  
-
-  <span class="article-header-caption">Modification profiles in large-scale HeLa, HEK293, and TNBC shotgun proteomics experiments. (a) Examples of common modifications showing differences in modification rates. (b) Examples of abundant modifications that were unique to particular experiments. &copy; Examples of abundant mass features where the mass difference could not be effectively localized.</span>
-</div>
-
 
 
   <div class="article-container">
-    <h1 itemprop="name">MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry–based proteomics</h1>
-    <span class="pub-authors" itemprop="author">
-      
-      Andy T. Kong, Felipe V. Leprevost, Dmitry M. Avtonomov, Dattatreya Mellacheruvu, Alexey I. Nesvizhskii
-      
-    </span>
-    <span class="float-right">
-      
+    <h1 itemprop="name">Adding all existing submodules to a git repo</h1>
+
+    
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Dmitry Avtonomov">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-11-25 00:00:00 -0800 PST" itemprop="datePublished">
+    <time datetime="2018-11-25 00:00:00 -0800 PST" itemprop="dateModified">
+      2018-11-25
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Dmitry Avtonomov">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+  
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=MSFragger%3a%20ultrafast%20and%20comprehensive%20peptide%20identification%20in%20mass%20spectrometry%e2%80%93based%20proteomics&amp;url=https%3a%2f%2fchhh.github.io%2fpublication%2fmsfragger%2f"
+         href="https://twitter.com/intent/tweet?text=Adding%20all%20existing%20submodules%20to%20a%20git%20repo&amp;url=https%3a%2f%2fchhh.github.io%2fpost%2f2018-11-25-adding-all-git-submodules%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchhh.github.io%2fpublication%2fmsfragger%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchhh.github.io%2fpost%2f2018-11-25-adding-all-git-submodules%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fchhh.github.io%2fpublication%2fmsfragger%2f&amp;title=MSFragger%3a%20ultrafast%20and%20comprehensive%20peptide%20identification%20in%20mass%20spectrometry%e2%80%93based%20proteomics"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fchhh.github.io%2fpost%2f2018-11-25-adding-all-git-submodules%2f&amp;title=Adding%20all%20existing%20submodules%20to%20a%20git%20repo"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fchhh.github.io%2fpublication%2fmsfragger%2f&amp;title=MSFragger%3a%20ultrafast%20and%20comprehensive%20peptide%20identification%20in%20mass%20spectrometry%e2%80%93based%20proteomics"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fchhh.github.io%2fpost%2f2018-11-25-adding-all-git-submodules%2f&amp;title=Adding%20all%20existing%20submodules%20to%20a%20git%20repo"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=MSFragger%3a%20ultrafast%20and%20comprehensive%20peptide%20identification%20in%20mass%20spectrometry%e2%80%93based%20proteomics&amp;body=https%3a%2f%2fchhh.github.io%2fpublication%2fmsfragger%2f">
+         href="mailto:?subject=Adding%20all%20existing%20submodules%20to%20a%20git%20repo&amp;body=https%3a%2f%2fchhh.github.io%2fpost%2f2018-11-25-adding-all-git-submodules%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -320,123 +357,111 @@
 </div>
 
 
-    </span>
-
-    
-
-    
-    <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">There is a need to better understand and handle the &lsquo;dark matter&rsquo; of proteomics-the vast diversity of post-translational and chemical modifications that are unaccounted in a typical mass spectrometry-based analysis and thus remain unidentified. We present a fragment-ion indexing method, and its implementation in peptide identification tool MSFragger, that enables a more than 100-fold improvement in speed over most existing proteome database search tools. Using several large proteomic data sets, we demonstrate how MSFragger empowers the open database search concept for comprehensive identification of peptides and all their modified forms, uncovering dramatic differences in modification rates across experimental samples and conditions. We further illustrate its utility using protein-RNA cross-linked peptide data and using affinity purification experiments where we observe, on average, a 300% increase in the number of identified spectra for enriched proteins. We also discuss the benefits of open searching for improved false discovery rate estimation in proteomics.</p>
-    
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Type</div>
-          <div class="col-12 col-md-9">
-            
-            <a href="https://chhh.github.io/publication/#2">
-              Journal
-            </a>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>Nature Methods</em></div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Date</div>
-          <div class="col-12 col-md-9" itemprop="datePublished">
-            19019-01-1919
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-sm-none space-below"></div>
-
-    <div class="row" style="padding-top: 10px">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading" style="line-height:34px;">Links</div>
-          <div class="col-12 col-md-9">
-
-            
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="http://dx.doi.org/10.1038/nmeth.4256" target="_blank" rel="noopener">
-  Preprint
-</a>
-
-
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/files/citations/msfragger.bib">
-  Cite
-</button>
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://chhh.github.io/project/msfragger/">
-    Project
-  </a>
   
 
+</div>
 
 
+    <div class="article-style" itemprop="articleBody">
+      
 
+<p>You have a git repo (a directory) which contains sub-directories which are git
+repos themselves and now you want them to become submodules. Here&rsquo;s a quick
+automatic way to add them all.</p>
 
+<ul>
+<li>Remove <code>-maxdepth</code> if you want to recursively dig deeper than 1 level.</li>
+<li>Assumes that each submodule has a remote named <code>origin</code>, uses that remote&rsquo;s
+url.</li>
+</ul>
 
+<h3 id="preview-command">Preview command</h3>
 
+<pre><code class="language-bash">for x in $(find . -mindepth 1 -maxdepth 1 -type d) ; do if [ -d &quot;${x}/.git&quot; ] ; then cd &quot;${x}&quot; ; origin=&quot;$(git config --get remote.origin.url)&quot; ; cd - 1&gt;/dev/null; echo git submodule add &quot;${origin}&quot; &quot;${x}&quot; ; fi ; done
+</code></pre>
 
+<p>Will <strong>only print</strong> the submodule commands to be executed, but NOT execute them.</p>
 
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
+<h3 id="actual-command">Actual command</h3>
+
+<pre><code class="language-bash">for x in $(find . -mindepth 1 -maxdepth 1 -type d) ; do if [ -d &quot;${x}/.git&quot; ] ; then cd &quot;${x}&quot; ; origin=&quot;$(git config --get remote.origin.url)&quot; ; cd - 1&gt;/dev/null; git submodule add &quot;${origin}&quot; &quot;${x}&quot; ; fi ; done
+</code></pre>
+
+<p>Will <strong>execute</strong> the actual submodule commands.</p>
+
+<h2 id="readable-versions">Readable versions</h2>
+
+<ul>
+<li>Preview</li>
+</ul>
+
+<pre><code class="language-bash">for x in $(find . -mindepth 1 -maxdepth 1 -type d) ; do 
+  if [ -d &quot;${x}/.git&quot; ] ;
+    then cd &quot;${x}&quot; ;
+    origin=&quot;$(git config --get remote.origin.url)&quot; ;
+    cd - 1&gt;/dev/null;
+    echo git submodule add &quot;${origin}&quot; &quot;${x}&quot; ;
+  fi ;
+done
+</code></pre>
+
+<ul>
+<li>Execute</li>
+</ul>
+
+<pre><code class="language-bash">for x in $(find . -mindepth 1 -maxdepth 1 -type d) ; do 
+  if [ -d &quot;${x}/.git&quot; ] ; 
+    then cd &quot;${x}&quot; ; 
+    origin=&quot;$(git config --get remote.origin.url)&quot; ; 
+    cd - 1&gt;/dev/null; 
+    git submodule add &quot;${origin}&quot; &quot;${x}&quot; ; 
+  fi ; 
+done
+</code></pre>
+
+<p><em>Credit (modified from an answer here)</em>:<br />
+<a href="https://stackoverflow.com/questions/10606101/automatically-add-all-submodules-to-a-repo" target="_blank">https://stackoverflow.com/questions/10606101/automatically-add-all-submodules-to-a-repo</a></p>
+
     </div>
-    <div class="d-sm-none space-below"></div>
 
-    <div class="space-below"></div>
+    
 
-    <div class="article-style"></div>
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="https://chhh.github.io/tags/git/">git</a>
+  
+  <a class="badge badge-light" href="https://chhh.github.io/tags/submodule/">submodule</a>
+  
+  <a class="badge badge-light" href="https://chhh.github.io/tags/git-submodule/">git-submodule</a>
+  
+  <a class="badge badge-light" href="https://chhh.github.io/tags/howto/">howto</a>
+  
+</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/post/2018-09-07-p4merge-as-git-merge-tool/">Use p4merge from Perforce as default git mergetool</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
 
     
 
 
   </div>
-</div>
-
-
+</article>
 
 <footer class="site-footer">
   <div class="container">
@@ -504,6 +529,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/powershell.min.js"></script>
+    
+  
 
   
   
@@ -523,6 +554,8 @@
 
 
 
+
+<script>hljs.initHighlightingOnLoad();</script>
 
 
 
