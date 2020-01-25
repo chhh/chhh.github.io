@@ -1,19 +1,19 @@
-+++
-date = 2018-09-07
-draft = false
-tags = ["git", "gitconfig", "mergetool", "difftool"]
-title = "Use p4merge from Perforce as default git mergetool"
-math = false
-summary = """
-Resolving merge conflicts is one the things that I hate most. 
-Lets make it a little easier with p4merge.
-"""
-
-[header]
-image = ""
-caption = ""
-
-+++
+---
+date: "2018-09-07T00:00:00-07:00"
+draft: false
+header:
+  caption: ""
+  image: ""
+math: false
+summary: "\r\nResolving merge conflicts is one the things that I hate most. \r\nLets
+  make it a little easier with p4merge.\r\n"
+tags:
+- git
+- gitconfig
+- mergetool
+- difftool
+title: Use p4merge from Perforce as default git mergetool
+---
 
 ![p4merge-conflict-resolution-screenshot](p4merge-conflict-resolution.png)
 

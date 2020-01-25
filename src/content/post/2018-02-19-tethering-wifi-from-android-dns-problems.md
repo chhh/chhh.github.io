@@ -1,20 +1,19 @@
-+++
-date = 2018-02-19
-lastmod = 2018-02-19
-draft = false
-tags = ["windows", "android", "wifi", "tethering"]
-title = "Solving problems with tethering wifi from an Android phone"
-math = true
-summary = """
-If your tethered (from a phone to a *windows* computer) internet connection
-drops after a few seconds of being established, this post might be for you.
-"""
-
-[header]
-image = ""
-caption = ""
-
-+++
+---
+date: "2018-02-19T00:00:00-08:00"
+draft: false
+header:
+  caption: ""
+  image: ""
+lastmod: "2018-02-19T00:00:00-08:00"
+math: true
+summary: "\r\nIf your tethered (from a phone to a *windows* computer) internet connection\r\ndrops
+  after a few seconds of being established, this post might be for you.\r\n"
+tags:
+- android
+- wifi
+- tethering
+title: Solving problems with tethering wifi from an Android phone
+---
 
 Once I tried to connect from Win10 to a hotspot running off Google Pixel 2
 (Android 8.1.0)  connected to T-Mobile (tethering) and it worked for a while,

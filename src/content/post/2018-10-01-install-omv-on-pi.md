@@ -1,19 +1,19 @@
-+++
-date = 2018-10-01
-draft = false
-tags = ["omv", "openmediavault", "pi", "raspberry-pi"]
-title = "Installing OMV 4 (Open Media Vault) to Raspberry Pi 3+"
-math = false
-summary = """
-Walkthrough reminder for myself how to install OMV on Pi and set 
-up backup to an external HDD.
-"""
-
-[header]
-image = ""
-caption = ""
-
-+++
+---
+date: "2018-10-01T00:00:00-07:00"
+draft: false
+header:
+  caption: ""
+  image: ""
+math: false
+summary: "\r\nWalkthrough reminder for myself how to install OMV on Pi and set \r\nup
+  backup to an external HDD.\r\n"
+tags:
+- omv
+- openmediavault
+- pi
+- raspberry-pi
+title: Installing OMV 4 (Open Media Vault) to Raspberry Pi 3+
+---
 
 ## Setting up Raspberry Pi
 Download the [OMV](https://www.openmediavault.org) image (yes, [the binaries are

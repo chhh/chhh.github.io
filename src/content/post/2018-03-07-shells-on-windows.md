@@ -1,19 +1,18 @@
-+++
-date = 2018-03-07
-lastmod = 2018-05-03
-draft = false
-tags = ["windows", "shell"]
-title = "Using multiple different shells/subsystems on Windows"
-math = true
-summary = """
-Configuring various shells and convenient dev environments on Windows with ConEmu.
-"""
-
-[header]
-image = ""
-caption = ""
-
-+++
+---
+date: "2018-03-07T00:00:00-08:00"
+draft: false
+header:
+  caption: ""
+  image: ""
+lastmod: "2018-05-03T00:00:00-07:00"
+math: true
+summary: "\r\nConfiguring various shells and convenient dev environments on Windows
+  with ConEmu.\r\n"
+tags:
+- shell
+- windows-tooling
+title: Using multiple different shells/subsystems on Windows
+---
 
 Shells to be used:
 

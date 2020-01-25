@@ -1,21 +1,18 @@
-+++
-date = 2018-05-07
-draft = false
-tags = ["github"]
-title = "Set up custom domain name with GitHub pages"
-math = true
-summary = """
-If you host a user/org website on github-pages you might want to change the
-default `username.github.io` to something nicer, like `username.com`.
-This is a short instruction how to set up the repo and DNS configuration
-with your DNS provider to achieve this.
-"""
-
-[header]
-image = ""
-caption = ""
-
-+++
+---
+date: "2018-05-07T00:00:00-07:00"
+draft: false
+header:
+  caption: ""
+  image: ""
+math: true
+summary: "\r\nIf you host a user/org website on github-pages you might want to change
+  the\r\ndefault `username.github.io` to something nicer, like `username.com`.\r\nThis
+  is a short instruction how to set up the repo and DNS configuration\r\nwith your
+  DNS provider to achieve this.\r\n"
+tags:
+- github
+title: Set up custom domain name with GitHub pages
+---
 
 ## Intro
 

@@ -1,21 +1,20 @@
-+++
-date = 2018-05-04
-draft = true
-tags = ["jekyll", "minimal-mistakes", "github-pages"]
-title = "Starter guide for Minimal Mistakes theme for Jekyll hosted on github pages"
-math = true
-summary = """
-The theme does provides quick-start instructions, but I found them to be
-confusing at times for people who know nothing about Jekyll, Ruby, themes etc.
-So I'm documenting my experience of using the theme. The emphasis is on being
-able to do everything without a local installation of Jekyll, thus Ruby.
-"""
-
-[header]
-image = ""
-caption = ""
-
-+++
+---
+date: "2018-05-04T00:00:00-07:00"
+draft: true
+header:
+  caption: ""
+  image: ""
+math: true
+summary: "\r\nThe theme does provides quick-start instructions, but I found them to
+  be\r\nconfusing at times for people who know nothing about Jekyll, Ruby, themes
+  etc.\r\nSo I'm documenting my experience of using the theme. The emphasis is on
+  being\r\nable to do everything without a local installation of Jekyll, thus Ruby.\r\n"
+tags:
+- jekyll
+- minimal-mistakes
+- github-pages
+title: Starter guide for Minimal Mistakes theme for Jekyll hosted on github pages
+---
 
 My account on GitHub is [chhh](http://github.com/chhh) and account-level
 GitHub-Pages page was already [in use](https://chhh.github.io). So the first

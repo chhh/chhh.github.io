@@ -1,24 +1,184 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>maven on Dmitry Avtonomov</title>
-    <link>https://chhh.github.io/tags/maven/</link>
-    <description>Recent content in maven on Dmitry Avtonomov</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
-    <lastBuildDate>Wed, 25 Jan 2017 00:00:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://chhh.github.io/tags/maven/index.xml" rel="self" type="application/rss+xml" />
-    
+    <title>maven | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tags/maven/</link>
+      <atom:link href="https://dmtavt.com/tags/maven/index.xml" rel="self" type="application/rss+xml" />
+    <description>maven</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Wed, 25 Jan 2017 00:00:00 -0800</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>maven</title>
+      <link>https://dmtavt.com/tags/maven/</link>
+    </image>
     
     <item>
       <title>Publishing java libraries to Maven Central, the manual</title>
-      <link>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</link>
+      <link>https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/</link>
       <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
-      
-      <guid>https://chhh.github.io/post/2017-01-25-publishing-to-maven-central/</guid>
-      <description>Table of Contents    What is Sonatype and why is it needed? Getting started GPG signing  Windows caveat  Configuring Maven to know where to get the signing key Configuring Maven to know the credentials for Sonatype servers Satisfying requirements to pass all checks upon submission to Sonatype Publishing parent POM project to Central Publishing the project to Central    What is Sonatype and why is it needed?</description>
+      <guid>https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#what-is-sonatype-and-why-is-it-needed&#34;&gt;What is Sonatype and why is it needed?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#getting-started&#34;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#gpg-signing&#34;&gt;GPG signing&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#windows-caveat&#34;&gt;Windows caveat&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#configuring-maven-to-know-where-to-get-the-signing-key&#34;&gt;Configuring Maven to know where to get the signing key&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#configuring-maven-to-know-the-credentials-for-sonatype-servers&#34;&gt;Configuring Maven to know the credentials for Sonatype servers&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#satisfying-requirements-to-pass-all-checks-upon-submission-to-sonatype&#34;&gt;Satisfying requirements to pass all checks upon submission to Sonatype&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#publishing-parent-pom-project-to-central&#34;&gt;Publishing parent POM project to Central&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#publishing-the-project-to-central&#34;&gt;Publishing the project to Central&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id=&#34;what-is-sonatype-and-why-is-it-needed&#34;&gt;What is Sonatype and why is it needed?&lt;/h2&gt;
+&lt;p&gt;Sonatypeis a company that  provides a staging repository, which performs
+validation and allows to push the builds that pass all checks to the Central
+repo. Without it, basically, you can&#39;t easily publish anything to the Central
+easily, unless you&#39;re an Apache project or similar.&lt;/p&gt;
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting started&lt;/h2&gt;
+&lt;p&gt;Follow their getting started
+
+&lt;a href=&#34;http://central.sonatype.org/pages/ossrh-guide.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;guide&lt;/a&gt;
+ to set up the needed
+credentials. This should be easy - you create a JIRA account and you create a
+ticket in JIRA to claim your namespace (groupId in Maven terms). If you have a
+github account, for example,
+&lt;strong&gt;
+&lt;a href=&#34;http://github.com/chhh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://github.com/chhh&lt;/a&gt;
+&lt;/strong&gt;, you&#39;ll want to claim
+&lt;strong&gt;com.github.chhh&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;gpg-signing&#34;&gt;GPG signing&lt;/h2&gt;
+&lt;p&gt;You&#39;ll need to set up and publish your GPG key for signing artifacts. This is
+described
+
+&lt;a href=&#34;http://central.sonatype.org/pages/working-with-pgp-signatures.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;In short you&#39;ll need to install gpg or gpg2. I did it on Windows and already had
+a working gpg that came with git installation. So I happily used that to
+generate my key with (create it with a passphrase!):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gpg --gen-key&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Make sure to check&lt;/strong&gt; that the generated key does not have sub keys for
+signing. First issue &lt;code&gt;gpg --list-keys&lt;/code&gt;, the output should be like:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;$ gpg --list-keys
+/c/Users/&amp;lt;username&amp;gt;/.gnupg/pubring.gpg
+---------------------------------
+pub   2048R/DA123C12 2012-01-24
+uid                  Dmitry Avtonomov (chhh) &amp;lt;email@gmail.com&amp;gt;
+sub   2048R/3E123123 2012-01-24
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Notice, that there is one &lt;em&gt;pub&lt;/em&gt; key and one &lt;em&gt;sub&lt;/em&gt; key. You want this &lt;em&gt;sub&lt;/em&gt; key
+to not be &lt;em&gt;Usage: C&lt;/em&gt; type.
+&lt;code&gt;gpg --edit-key DA123C12&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;gpg (GnuPG) 1.4.20; Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Secret key is available.
+
+pub  2048R/DA100C23  created: 2012-01-24  expires: never       usage: SC
+                     trust: ultimate      validity: ultimate
+sub  2048R/3E123123  created: 2012-01-24  expires: never       usage: E
+[ultimate] (1). Dmitry Avtonomov (chhh) &amp;lt;email@gmail.com&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this case the &lt;em&gt;sub&lt;/em&gt; key is &lt;em&gt;usage: E&lt;/em&gt;, it&#39;s used for encryption only, so
+we&#39;re good to go, otherwise you&#39;d need to delete or revoke it. Published the key
+with:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gpg --keyserver hkp://pool.sks-keyservers.net --send-keys &amp;lt;key-id&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;windows-caveat&#34;&gt;Windows caveat&lt;/h3&gt;
+&lt;p&gt;The previous steps created the keychain file in &lt;code&gt;c:/Users/&amp;lt;username&amp;gt;/.gnupg&lt;/code&gt;.
+However, when I later installed the native windows gpg from
+
+&lt;a href=&#34;https://www.gnupg.org/download/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.gnupg.org/download/&lt;/a&gt;
+ I&#39;ve found
+that it used a different default path and I could not list the key anymore.
+Addind a new environment variable &lt;code&gt;GNUPGHOME&lt;/code&gt; and set it to
+&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\.gnupg&lt;/code&gt;. Now the gpg that was installed in windows could
+read the old keychain, which meant maven could now use that key to sign files.&lt;/p&gt;
+&lt;h2 id=&#34;configuring-maven-to-know-where-to-get-the-signing-key&#34;&gt;Configuring Maven to know where to get the signing key&lt;/h2&gt;
+&lt;p&gt;Check out your &lt;code&gt;&amp;lt;maven-install-apth&amp;gt;/conf&lt;/code&gt; directory. There should be a
+&lt;code&gt;settings.xml&lt;/code&gt; file. Copy that over to your &lt;code&gt;&amp;lt;user-home&amp;gt;/.m2&lt;/code&gt;, unless you
+already have it there. Add the following to &lt;code&gt;&amp;lt;profiles&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;profiles&amp;gt;
+    &amp;lt;profile&amp;gt;
+      &amp;lt;id&amp;gt;ossrh&amp;lt;/id&amp;gt;
+      &amp;lt;activation&amp;gt;
+        &amp;lt;activeByDefault&amp;gt;true&amp;lt;/activeByDefault&amp;gt;
+      &amp;lt;/activation&amp;gt;
+      &amp;lt;properties&amp;gt;
+        &amp;lt;gpg.executable&amp;gt;gpg&amp;lt;/gpg.executable&amp;gt;
+        &amp;lt;gpg.passphrase&amp;gt;passphrase-you-used-when-created-gpg-key&amp;lt;/gpg.passphrase&amp;gt;
+      &amp;lt;/properties&amp;gt;
+    &amp;lt;/profile&amp;gt;
+&amp;lt;/profiles&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&#39;s ok to have your passphrase set here as this is your user-specific
+configuration file. If you don&#39;t want to specify that, however, there will be an
+option for you to provide that passphrase every time you publish.&lt;/p&gt;
+&lt;h2 id=&#34;configuring-maven-to-know-the-credentials-for-sonatype-servers&#34;&gt;Configuring Maven to know the credentials for Sonatype servers&lt;/h2&gt;
+&lt;p&gt;You&#39;ll provide the log-in credentials in the same &lt;code&gt;settings.xml&lt;/code&gt; maven file in
+&lt;code&gt;~/.m2&lt;/code&gt; directory. If you don&#39;t want to provide the actual username and
+password, log in to your account at
+
+&lt;a href=&#34;https://oss.sonatype.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://oss.sonatype.org&lt;/a&gt;
+. In the top right corner
+click &lt;code&gt;Log-In&lt;/code&gt;, then click your username and select &lt;code&gt;Profile&lt;/code&gt;. On the new screen
+there&#39;s a dropdown with two choices: &lt;em&gt;Summary&lt;/em&gt; and &lt;em&gt;User Token&lt;/em&gt;. Select the user
+token, it will give you the info. In the &lt;code&gt;settings.xml&lt;/code&gt; file add:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;  &amp;lt;servers&amp;gt;
+    &amp;lt;server&amp;gt;
+      &amp;lt;id&amp;gt;ossrh&amp;lt;/id&amp;gt;
+      &amp;lt;username&amp;gt;user-name-token&amp;lt;/username&amp;gt;
+      &amp;lt;password&amp;gt;password-for-token&amp;lt;/password&amp;gt;
+    &amp;lt;/server&amp;gt;
+  &amp;lt;/servers&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;satisfying-requirements-to-pass-all-checks-upon-submission-to-sonatype&#34;&gt;Satisfying requirements to pass all checks upon submission to Sonatype&lt;/h2&gt;
+&lt;p&gt;There&#39;s a lot of meta-info required to satisfy all the requirements. As you will
+be using the same &lt;code&gt;groupId&lt;/code&gt; for all your artifacts, it&#39;s easier to put all the
+extra information to a parent POM. You can find an example parent project here:
+
+&lt;a href=&#34;https://github.com/chhh/sonatype-ossrh-parent&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/chhh/sonatype-ossrh-parent&lt;/a&gt;
+.
+This project consists only of the POM file, specifying the credentials, basic
+info and publishing locations. It adds some to the &lt;code&gt;release&lt;/code&gt; target as well.&lt;/p&gt;
+&lt;p&gt;It&#39;s ok to just clone that repo and change the information to what you like.
+&lt;strong&gt;You will set this POM as the &lt;code&gt;&amp;lt;parent&amp;gt;&lt;/code&gt; of the projects you wish to publish to
+Central.&lt;/strong&gt; As it will be the parent POM, anyone who will want to build your
+artifacts will need to have that POM, so the first thing is to publish this
+project to Central by itself.&lt;/p&gt;
+&lt;h2 id=&#34;publishing-parent-pom-project-to-central&#34;&gt;Publishing parent POM project to Central&lt;/h2&gt;
+&lt;p&gt;We&#39;ll be using maven-release plugin. Make sure that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You have SCM information configured.&lt;/li&gt;
+&lt;li&gt;In this parent POM you set the &lt;code&gt;version&lt;/code&gt; to something like &lt;code&gt;0.1-SNAPSHOT&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The release plugin will use that information to create the build. It will remove
+the &lt;code&gt;SNAPSHOT&lt;/code&gt; part, build the project, create a new tag in SCM, push everything
+to remote, bump up the version in POM and re-add SNAPSHOT back to it. Now
+execute:
+&lt;code&gt;mvn release:prepare&lt;/code&gt;
+&lt;code&gt;mvn release:perform&lt;/code&gt;
+If you encounter any problems with &lt;code&gt;release:perform&lt;/code&gt; you can always do
+&lt;code&gt;mvn release:rollback&lt;/code&gt; to undo any changes done by &lt;code&gt;release:prepare&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;publishing-the-project-to-central&#34;&gt;Publishing the project to Central&lt;/h2&gt;
+&lt;p&gt;In your actual project set the &lt;code&gt;parent&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;parent&amp;gt;
+    &amp;lt;groupId&amp;gt;com.github.chhh&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;sonatype-ossrh-parent&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;0.1&amp;lt;/version&amp;gt;
+    &amp;lt;relativePath&amp;gt;../sonatype-ossrh&amp;lt;/relativePath&amp;gt;
+&amp;lt;/parent&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Notice how we used &lt;code&gt;relativePath&lt;/code&gt; to give maven a hint at where to search for
+this POM. The parent project was resiging in a sibling directory next to the
+project directory in this case. Otherwise the POM would have to be in the parent
+directory of your project.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

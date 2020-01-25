@@ -1,19 +1,17 @@
-+++
-date = 2018-10-11
-draft = false
-tags = ["windows", "shell", "colors"]
-title = "Custom nice colors in Windows shells"
-math = false
-summary = """
-Wouldn't it be nice if you had completion and nice colors in cmd.exe
-just like what you get out of the box on most Linuxes?
-"""
-
-[header]
-image = ""
-caption = ""
-
-+++
+---
+date: "2018-10-11T00:00:00-07:00"
+draft: false
+header:
+  caption: ""
+  image: ""
+math: false
+summary: "\r\nWouldn't it be nice if you had completion and nice colors in cmd.exe\r\njust
+  like what you get out of the box on most Linuxes?\r\n"
+tags:
+- shell
+- colors
+title: Custom nice colors in Windows shells
+---
 
 We'll be using [scoop](https://scoop.sh/) to install the necessary tools.
 

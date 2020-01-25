@@ -1,20 +1,18 @@
-+++
-date = 2018-06-27
-draft = false
-tags = ["windows"]
-title = "Bring back \"Open command window here\" context menu item in Windows"
-math = true
-summary = """
-`Shift + Right Click` in an explorer window in Win10 now has the option to open
-PowerShell. If you want to have cmd.exe back instead, here's how, using the the
-registry.
-"""
-
-[header]
-image = ""
-caption = ""
-
-+++
+---
+date: "2018-06-27T00:00:00-07:00"
+draft: false
+header:
+  caption: ""
+  image: ""
+math: true
+summary: |
+  `Shift + Right Click` in an explorer window in Win10 now has the option to open
+  PowerShell. If you want to have cmd.exe back instead, here's how, using the the
+  registry.
+tags:
+- windows-tooling
+title: Bring back "Open command window here" context menu item in Windows
+---
 
 It's a simple registry hack.
 

@@ -1,123 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Homes on Dmitry Avtonomov</title>
-    <link>https://chhh.github.io/home/</link>
-    <description>Recent content in Homes on Dmitry Avtonomov</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016-present Dmitry Avtonomov</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://chhh.github.io/home/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>BatMass</title>
-      <link>https://chhh.github.io/home/hero/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 -0700</pubDate>
-      
-      <guid>https://chhh.github.io/home/hero/</guid>
-      <description>A framework for LC-MS data visualization and exploration. View spectra, extracted ion chromatograms and 2D ion maps of LC-MS experiments. Synchronized viewers. Visualize DIA experiments. Overlay MS/MS events, peptide identifications or custom data (via delimited text files) over a 2D map. 🚀 Latest release  
-(function defer() { if (window.jQuery) { jQuery(document).ready(function(){ GetLatestReleaseInfo(); }); } else { setTimeout(function() { defer() }, 50); } })(); function GetLatestReleaseInfo() { $.getJSON(&#39;https://api.github.com/repos/chhh/batmass/tags&#39;).done(function (json) { let release = json[0]; // let downloadURL = release.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://chhh.github.io/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://chhh.github.io/home/about/</guid>
-      <description>Bio I am a Postdoc at Alexey Neshvizhskii&amp;rsquo;s Lab at the University of Michgan. The main area of research is anything related to mass spectrometry data processing, especially liquid chromatography (LC) and ion mobility (IM) mass spectrometry (LC-MS, IM-MS). I develop mostly in Java, with occasional pieces in C#, Python and C++, some of the projects include:
- BatMass - Mass spectrometry data visualization and processing. MSFragger - Ultra-fast proteomics search engine for Closed and Open searches.</description>
-    </item>
-    
-    <item>
-      <title>Recent Publications</title>
-      <link>https://chhh.github.io/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
-      
-      <guid>https://chhh.github.io/home/publications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Selected Publications</title>
-      <link>https://chhh.github.io/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
-      
-      <guid>https://chhh.github.io/home/publications_selected/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>https://chhh.github.io/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://chhh.github.io/home/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent &amp; Upcoming Talks</title>
-      <link>https://chhh.github.io/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://chhh.github.io/home/talks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent Posts</title>
-      <link>https://chhh.github.io/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://chhh.github.io/home/posts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>https://chhh.github.io/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://chhh.github.io/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-I am a teaching instructor for the following courses at University X:
- CS101: An intro to computer science CS102: An intro to computer science CS103: An intro to computer science CS104: An intro to computer science CS105: An intro to computer science CS106: An intro to computer science CS107: An intro to computer science  </description>
-    </item>
-    
-    <item>
-      <title>Tags</title>
-      <link>https://chhh.github.io/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0700</pubDate>
-      
-      <guid>https://chhh.github.io/home/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Some of my printed designs</title>
-      <link>https://chhh.github.io/home/designs/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://chhh.github.io/home/designs/</guid>
-      <description> My store at Design-by-Humans
-
- My store at Threadless
-
-  </description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://chhh.github.io/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://chhh.github.io/home/contact/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss>

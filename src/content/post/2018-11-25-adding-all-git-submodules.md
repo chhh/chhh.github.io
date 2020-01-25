@@ -1,21 +1,20 @@
-
-+++
-date = 2018-11-25
-draft = false
-tags = ["git", "submodule", "git-submodule", "howto"]
-title = "Adding all existing submodules to a git repo"
-math = false
-summary = """
-You have a git repo which contains sub-directories which are git repos
-themselves and now you want them to become submodules. Here's a quick automatic
-way to add them all.
-"""
-
-[header]
-image = ""
-caption = ""
-
-+++
+---
+date: "2018-11-25T00:00:00-08:00"
+draft: false
+header:
+  caption: ""
+  image: ""
+math: false
+summary: "\r\nYou have a git repo which contains sub-directories which are git repos\r\nthemselves
+  and now you want them to become submodules. Here's a quick automatic\r\nway to add
+  them all.\r\n"
+tags:
+- git
+- submodule
+- git-submodule
+- howto
+title: Adding all existing submodules to a git repo
+---
 
 You have a git repo (a directory) which contains sub-directories which are git
 repos themselves and now you want them to become submodules. Here's a quick
