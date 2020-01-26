@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tags/</link>
+      <atom:link href="https://dmtavt.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Sun, 25 Nov 2018 00:00:00 -0800</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>Tags</title>
+      <link>https://dmtavt.com/tags/</link>
+    </image>
+    
+    <item>
+      <title>git</title>
+      <link>https://dmtavt.com/tags/git/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git-submodule</title>
+      <link>https://dmtavt.com/tags/git-submodule/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/tags/git-submodule/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>howto</title>
+      <link>https://dmtavt.com/tags/howto/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/tags/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>submodule</title>
+      <link>https://dmtavt.com/tags/submodule/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/tags/submodule/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>colors</title>
+      <link>https://dmtavt.com/tags/colors/</link>
+      <pubDate>Thu, 11 Oct 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/colors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://dmtavt.com/tags/shell/</link>
+      <pubDate>Thu, 11 Oct 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>omv</title>
+      <link>https://dmtavt.com/tags/omv/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/omv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openmediavault</title>
+      <link>https://dmtavt.com/tags/openmediavault/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/openmediavault/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pi</title>
+      <link>https://dmtavt.com/tags/pi/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry-pi</title>
+      <link>https://dmtavt.com/tags/raspberry-pi/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mug</title>
+      <link>https://dmtavt.com/tags/mug/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/mug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shirt</title>
+      <link>https://dmtavt.com/tags/shirt/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/shirt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>difftool</title>
+      <link>https://dmtavt.com/tags/difftool/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/difftool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitconfig</title>
+      <link>https://dmtavt.com/tags/gitconfig/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/gitconfig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mergetool</title>
+      <link>https://dmtavt.com/tags/mergetool/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/mergetool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows-tooling</title>
+      <link>https://dmtavt.com/tags/windows-tooling/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/windows-tooling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://dmtavt.com/tags/github/</link>
+      <pubDate>Mon, 07 May 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://dmtavt.com/tags/android/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tethering</title>
+      <link>https://dmtavt.com/tags/tethering/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/tags/tethering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wifi</title>
+      <link>https://dmtavt.com/tags/wifi/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/tags/wifi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>intellij</title>
+      <link>https://dmtavt.com/tags/intellij/</link>
+      <pubDate>Thu, 26 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/intellij/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>manual</title>
+      <link>https://dmtavt.com/tags/manual/</link>
+      <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/tags/manual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maven</title>
+      <link>https://dmtavt.com/tags/maven/</link>
+      <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/tags/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sonatype</title>
+      <link>https://dmtavt.com/tags/sonatype/</link>
+      <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/tags/sonatype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data-viz</title>
+      <link>https://dmtavt.com/tags/data-viz/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/data-viz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lc-ms</title>
+      <link>https://dmtavt.com/tags/lc-ms/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/lc-ms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mass-spectrometry</title>
+      <link>https://dmtavt.com/tags/mass-spectrometry/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/mass-spectrometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>library</title>
+      <link>https://dmtavt.com/tags/library/</link>
+      <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/library/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>proteomics</title>
+      <link>https://dmtavt.com/tags/proteomics/</link>
+      <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/proteomics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>search-engine</title>
+      <link>https://dmtavt.com/tags/search-engine/</link>
+      <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/search-engine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ion-mobility</title>
+      <link>https://dmtavt.com/tags/ion-mobility/</link>
+      <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/ion-mobility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raw-processing</title>
+      <link>https://dmtavt.com/tags/raw-processing/</link>
+      <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/raw-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dia</title>
+      <link>https://dmtavt.com/tags/dia/</link>
+      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/tags/dia/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

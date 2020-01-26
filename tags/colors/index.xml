@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>colors | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tags/colors/</link>
+      <atom:link href="https://dmtavt.com/tags/colors/index.xml" rel="self" type="application/rss+xml" />
+    <description>colors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Thu, 11 Oct 2018 00:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>colors</title>
+      <link>https://dmtavt.com/tags/colors/</link>
+    </image>
+    
+    <item>
+      <title>Custom nice colors in Windows shells</title>
+      <link>https://dmtavt.com/post/2018-10-11-custom-colors-in-win-shells/</link>
+      <pubDate>Thu, 11 Oct 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2018-10-11-custom-colors-in-win-shells/</guid>
+      <description>&lt;p&gt;We&#39;ll be using 
+&lt;a href=&#34;https://scoop.sh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scoop&lt;/a&gt;
+ to install the necessary tools.&lt;/p&gt;
+&lt;h2 id=&#34;quickstart-with-scoop&#34;&gt;Quickstart with scoop&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;code&gt;git&lt;/code&gt; separately. Here&#39;s the link: &lt;a href=&#34;https://gitforwindows.org&#34;&gt;https://gitforwindows.org&lt;/a&gt;. I recommend the following customizations in the installer:
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Use Notepad++ as default editor&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Use True Type fonts in all console windows&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Check out as-is, commit as-is&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Win+ R&lt;/code&gt; -&amp;gt; &lt;code&gt;powershell&lt;/code&gt;. In PowerShell (answer &amp;lsquo;&lt;strong&gt;Y&lt;/strong&gt;&amp;rsquo; when asked):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;scoop is now installed, if you had any open cmd windows - close them now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;colors-for-cmdexe-and-powershell&#34;&gt;Colors for cmd.exe and PowerShell&lt;/h2&gt;
+&lt;p&gt;Install &lt;code&gt;concfg&lt;/code&gt; using &lt;code&gt;scoop&lt;/code&gt; or from here: &lt;a href=&#34;https://github.com/lukesampson/concfg&#34;&gt;https://github.com/lukesampson/concfg&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;scoop install concfg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Command to import the colorscheme:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;concfg import &amp;lt;path-to-json&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Color scheme as a gihib gist:&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/chhh/9d01a3a822c7e84cd5666293b5989aaa.js&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
