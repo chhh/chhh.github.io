@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Dmitry Avtonomov">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="How to push your own libraries to Maven Central repository to make them easily available to everyone in the world.
+JCenter will also copy the libraries from Central, so they will be available from there as well.
+">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5572974-14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-5572974-14', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_32x32_fill_gaussian_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_192x192_fill_gaussian_center_2.png">
+
+  <link rel="canonical" href="https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Dmitry Avtonomov">
+  <meta property="og:url" content="https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/">
+  <meta property="og:title" content="Publishing java libraries to Maven Central, the manual | Dmitry Avtonomov">
+  <meta property="og:description" content="How to push your own libraries to Maven Central repository to make them easily available to everyone in the world.
+JCenter will also copy the libraries from Central, so they will be available from there as well.
+"><meta property="og:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png">
+  <meta property="twitter:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2017-01-25T00:00:00-08:00">
+    
+    <meta property="article:modified_time" content="2017-01-25T00:00:00-08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/"
+  },
+  "headline": "Publishing java libraries to Maven Central, the manual",
+  
+  "datePublished": "2017-01-25T00:00:00-08:00",
+  "dateModified": "2017-01-25T00:00:00-08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dmitry Avtonomov"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dmitry Avtonomov",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img/https://dmtavt.com/"
+    }
+  },
+  "description": "How to push your own libraries to Maven Central repository to make them easily available to everyone in the world.\nJCenter will also copy the libraries from Central, so they will be available from there as well.\n"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Publishing java libraries to Maven Central, the manual | Dmitry Avtonomov</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Dmitry Avtonomov</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Dmitry Avtonomov</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/post"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/project"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/designs"><span>Designs</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Publishing java libraries to Maven Central, the manual</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 25, 2017
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-sonatype-and-why-is-it-needed">What is Sonatype and why is it needed?</a></li>
+    <li><a href="#getting-started">Getting started</a></li>
+    <li><a href="#gpg-signing">GPG signing</a>
+      <ul>
+        <li><a href="#windows-caveat">Windows caveat</a></li>
+      </ul>
+    </li>
+    <li><a href="#configuring-maven-to-know-where-to-get-the-signing-key">Configuring Maven to know where to get the signing key</a></li>
+    <li><a href="#configuring-maven-to-know-the-credentials-for-sonatype-servers">Configuring Maven to know the credentials for Sonatype servers</a></li>
+    <li><a href="#satisfying-requirements-to-pass-all-checks-upon-submission-to-sonatype">Satisfying requirements to pass all checks upon submission to Sonatype</a></li>
+    <li><a href="#publishing-parent-pom-project-to-central">Publishing parent POM project to Central</a></li>
+    <li><a href="#publishing-the-project-to-central">Publishing the project to Central</a></li>
+  </ul>
+</nav>
+<h2 id="what-is-sonatype-and-why-is-it-needed">What is Sonatype and why is it needed?</h2>
+<p>Sonatypeis a company that  provides a staging repository, which performs
+validation and allows to push the builds that pass all checks to the Central
+repo. Without it, basically, you can't easily publish anything to the Central
+easily, unless you're an Apache project or similar.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>Follow their getting started
+
+<a href="http://central.sonatype.org/pages/ossrh-guide.html" target="_blank" rel="noopener">guide</a>
+ to set up the needed
+credentials. This should be easy - you create a JIRA account and you create a
+ticket in JIRA to claim your namespace (groupId in Maven terms). If you have a
+github account, for example,
+<strong>
+<a href="http://github.com/chhh" target="_blank" rel="noopener">http://github.com/chhh</a>
+</strong>, you'll want to claim
+<strong>com.github.chhh</strong>.</p>
+<h2 id="gpg-signing">GPG signing</h2>
+<p>You'll need to set up and publish your GPG key for signing artifacts. This is
+described
+
+<a href="http://central.sonatype.org/pages/working-with-pgp-signatures.html" target="_blank" rel="noopener">here</a>
+.</p>
+<p>In short you'll need to install gpg or gpg2. I did it on Windows and already had
+a working gpg that came with git installation. So I happily used that to
+generate my key with (create it with a passphrase!):</p>
+<p><code>gpg --gen-key</code></p>
+<p><strong>Make sure to check</strong> that the generated key does not have sub keys for
+signing. First issue <code>gpg --list-keys</code>, the output should be like:</p>
+<pre><code class="language-text">$ gpg --list-keys
+/c/Users/&lt;username&gt;/.gnupg/pubring.gpg
+---------------------------------
+pub   2048R/DA123C12 2012-01-24
+uid                  Dmitry Avtonomov (chhh) &lt;email@gmail.com&gt;
+sub   2048R/3E123123 2012-01-24
+</code></pre>
+<p>Notice, that there is one <em>pub</em> key and one <em>sub</em> key. You want this <em>sub</em> key
+to not be <em>Usage: C</em> type.
+<code>gpg --edit-key DA123C12</code></p>
+<pre><code class="language-text">gpg (GnuPG) 1.4.20; Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Secret key is available.
+
+pub  2048R/DA100C23  created: 2012-01-24  expires: never       usage: SC
+                     trust: ultimate      validity: ultimate
+sub  2048R/3E123123  created: 2012-01-24  expires: never       usage: E
+[ultimate] (1). Dmitry Avtonomov (chhh) &lt;email@gmail.com&gt;
+
+</code></pre>
+<p>In this case the <em>sub</em> key is <em>usage: E</em>, it's used for encryption only, so
+we're good to go, otherwise you'd need to delete or revoke it. Published the key
+with:</p>
+<p><code>gpg --keyserver hkp://pool.sks-keyservers.net --send-keys &lt;key-id&gt;</code></p>
+<h3 id="windows-caveat">Windows caveat</h3>
+<p>The previous steps created the keychain file in <code>c:/Users/&lt;username&gt;/.gnupg</code>.
+However, when I later installed the native windows gpg from
+
+<a href="https://www.gnupg.org/download/" target="_blank" rel="noopener">https://www.gnupg.org/download/</a>
+ I've found
+that it used a different default path and I could not list the key anymore.
+Addind a new environment variable <code>GNUPGHOME</code> and set it to
+<code>C:\Users\&lt;username&gt;\.gnupg</code>. Now the gpg that was installed in windows could
+read the old keychain, which meant maven could now use that key to sign files.</p>
+<h2 id="configuring-maven-to-know-where-to-get-the-signing-key">Configuring Maven to know where to get the signing key</h2>
+<p>Check out your <code>&lt;maven-install-apth&gt;/conf</code> directory. There should be a
+<code>settings.xml</code> file. Copy that over to your <code>&lt;user-home&gt;/.m2</code>, unless you
+already have it there. Add the following to <code>&lt;profiles&gt;</code>:</p>
+<pre><code class="language-xml">&lt;profiles&gt;
+    &lt;profile&gt;
+      &lt;id&gt;ossrh&lt;/id&gt;
+      &lt;activation&gt;
+        &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
+      &lt;/activation&gt;
+      &lt;properties&gt;
+        &lt;gpg.executable&gt;gpg&lt;/gpg.executable&gt;
+        &lt;gpg.passphrase&gt;passphrase-you-used-when-created-gpg-key&lt;/gpg.passphrase&gt;
+      &lt;/properties&gt;
+    &lt;/profile&gt;
+&lt;/profiles&gt;
+</code></pre>
+<p>It's ok to have your passphrase set here as this is your user-specific
+configuration file. If you don't want to specify that, however, there will be an
+option for you to provide that passphrase every time you publish.</p>
+<h2 id="configuring-maven-to-know-the-credentials-for-sonatype-servers">Configuring Maven to know the credentials for Sonatype servers</h2>
+<p>You'll provide the log-in credentials in the same <code>settings.xml</code> maven file in
+<code>~/.m2</code> directory. If you don't want to provide the actual username and
+password, log in to your account at
+
+<a href="https://oss.sonatype.org" target="_blank" rel="noopener">https://oss.sonatype.org</a>
+. In the top right corner
+click <code>Log-In</code>, then click your username and select <code>Profile</code>. On the new screen
+there's a dropdown with two choices: <em>Summary</em> and <em>User Token</em>. Select the user
+token, it will give you the info. In the <code>settings.xml</code> file add:</p>
+<pre><code class="language-xml">  &lt;servers&gt;
+    &lt;server&gt;
+      &lt;id&gt;ossrh&lt;/id&gt;
+      &lt;username&gt;user-name-token&lt;/username&gt;
+      &lt;password&gt;password-for-token&lt;/password&gt;
+    &lt;/server&gt;
+  &lt;/servers&gt;
+</code></pre>
+<h2 id="satisfying-requirements-to-pass-all-checks-upon-submission-to-sonatype">Satisfying requirements to pass all checks upon submission to Sonatype</h2>
+<p>There's a lot of meta-info required to satisfy all the requirements. As you will
+be using the same <code>groupId</code> for all your artifacts, it's easier to put all the
+extra information to a parent POM. You can find an example parent project here:
+
+<a href="https://github.com/chhh/sonatype-ossrh-parent" target="_blank" rel="noopener">https://github.com/chhh/sonatype-ossrh-parent</a>
+.
+This project consists only of the POM file, specifying the credentials, basic
+info and publishing locations. It adds some to the <code>release</code> target as well.</p>
+<p>It's ok to just clone that repo and change the information to what you like.
+<strong>You will set this POM as the <code>&lt;parent&gt;</code> of the projects you wish to publish to
+Central.</strong> As it will be the parent POM, anyone who will want to build your
+artifacts will need to have that POM, so the first thing is to publish this
+project to Central by itself.</p>
+<h2 id="publishing-parent-pom-project-to-central">Publishing parent POM project to Central</h2>
+<p>We'll be using maven-release plugin. Make sure that:</p>
+<ul>
+<li>You have SCM information configured.</li>
+<li>In this parent POM you set the <code>version</code> to something like <code>0.1-SNAPSHOT</code>.</li>
+</ul>
+<p>The release plugin will use that information to create the build. It will remove
+the <code>SNAPSHOT</code> part, build the project, create a new tag in SCM, push everything
+to remote, bump up the version in POM and re-add SNAPSHOT back to it. Now
+execute:
+<code>mvn release:prepare</code>
+<code>mvn release:perform</code>
+If you encounter any problems with <code>release:perform</code> you can always do
+<code>mvn release:rollback</code> to undo any changes done by <code>release:prepare</code>.</p>
+<h2 id="publishing-the-project-to-central">Publishing the project to Central</h2>
+<p>In your actual project set the <code>parent</code>:</p>
+<pre><code class="language-xml">&lt;parent&gt;
+    &lt;groupId&gt;com.github.chhh&lt;/groupId&gt;
+    &lt;artifactId&gt;sonatype-ossrh-parent&lt;/artifactId&gt;
+    &lt;version&gt;0.1&lt;/version&gt;
+    &lt;relativePath&gt;../sonatype-ossrh&lt;/relativePath&gt;
+&lt;/parent&gt;
+</code></pre>
+<p>Notice how we used <code>relativePath</code> to give maven a hint at where to search for
+this POM. The parent project was resiging in a sibling directory next to the
+project directory in this case. Otherwise the POM would have to be in the parent
+directory of your project.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/maven/">maven</a>
+  
+  <a class="badge badge-light" href="/tags/sonatype/">sonatype</a>
+  
+  <a class="badge badge-light" href="/tags/manual/">manual</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/&amp;text=Publishing%20java%20libraries%20to%20Maven%20Central,%20the%20manual" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/&amp;t=Publishing%20java%20libraries%20to%20Maven%20Central,%20the%20manual" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Publishing%20java%20libraries%20to%20Maven%20Central,%20the%20manual&amp;body=https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/&amp;title=Publishing%20java%20libraries%20to%20Maven%20Central,%20the%20manual" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Publishing%20java%20libraries%20to%20Maven%20Central,%20the%20manual%20https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://dmtavt.com/post/2017-01-25-publishing-to-maven-central/&amp;title=Publishing%20java%20libraries%20to%20Maven%20Central,%20the%20manual" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/chhh/avatar_hu0471d97dc9367ea1a8930d15eb089c72_901098_270x270_fill_q100_gaussian_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://dmtavt.com/">Dmitry Avtonomov</a></h5>
+      <h6 class="card-subtitle">Research Fellow</h6>
+      <p class="card-text">My main research interests are data visualization and processing for mass spectrometry.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:dmitriya@umich.edu" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/dmitry-avtonomov-91aab02b/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=UJL1jgQAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/chhh" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.designbyhumans.com/shop/chhh/" target="_blank" rel="noopener">
+        <i class="fa fa-tshirt"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/java.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2016-present Dmitry Avtonomov &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
