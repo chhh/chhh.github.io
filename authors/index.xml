@@ -24,16 +24,25 @@ a software engineer with a lot of hands on experience in mass-spectrometry
 come up with a suitable processing algorithm. In most cases this results in
 desktop GUI applications for the viz part and CLI programs to perform batch
 data processing.&lt;/p&gt;
-&lt;p&gt;Prefer writing code in Java (with Gradle and Maven) or C#, with occasional
-forays into C++. Contributing to Open Source projects like
+&lt;ul&gt;
+&lt;li&gt;Prefer writing code in Java or C#, with occasional
+forays into C++.&lt;/li&gt;
+&lt;li&gt;Contributing to Open Source projects like
 
 &lt;a href=&#34;https://netbeans.apache.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache NetBeans&lt;/a&gt;
-. Sharing through Maven Central.&lt;/p&gt;
+.&lt;/li&gt;
+&lt;li&gt;Sharing love through Maven Central.&lt;/li&gt;
+&lt;li&gt;Daily drivers: Java, Gradle, Maven, C# (NET Standard 2.0), SQL&lt;/li&gt;
+&lt;li&gt;Occasional usage: R, Python, Nodejs, React, Hugo, Gatsby and much more&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Some project links:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;http://batmass.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BatMass&lt;/a&gt;
  - Mass spectrometry data visualization and processing (&lt;strong&gt;Java, NetBeans Platform&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/chhh/msftbx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSFTBX&lt;/a&gt;
+ - Java library for unified mass-spec data access: mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc. Available through Maven Central (&lt;strong&gt;Java, gRPC&lt;/strong&gt;).&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://github.com/nesvilab/fragpipe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FragPipe&lt;/a&gt;
  - Pipelined complete LC/MS proteomic analysis with a graphical interface.
@@ -41,9 +50,6 @@ Peptide/protein search, validation, FDR estimation, quantitation, PTM analysis, 
 &lt;li&gt;
 &lt;a href=&#34;https://msfragger.nesvilab.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSFragger&lt;/a&gt;
  - Ultra-fast proteomics search engine for Closed and Open searches (&lt;strong&gt;Java&lt;/strong&gt;).&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://github.com/chhh/msftbx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSFTBX&lt;/a&gt;
- - Java library for unified mass-spec data access: mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc. Available through Maven Central (&lt;strong&gt;Java, gRPC&lt;/strong&gt;).&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://chhh.github.io/IMTBX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IMTBX+Grppr&lt;/a&gt;
  - A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection (&lt;strong&gt;C#, WinForms, Java&lt;/strong&gt;).&lt;/li&gt;
