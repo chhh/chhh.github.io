@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xiaoyu Song | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/authors/xiaoyu-song/</link>
+      <atom:link href="https://dmtavt.com/authors/xiaoyu-song/index.xml" rel="self" type="application/rss+xml" />
+    <description>Xiaoyu Song</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>Xiaoyu Song</title>
+      <link>https://dmtavt.com/authors/xiaoyu-song/</link>
+    </image>
+    
+    <item>
+      <title>Integrated proteogenomic characterization of clear cell renal cell carcinoma</title>
+      <link>https://dmtavt.com/publication/clark-2019-integrated/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/clark-2019-integrated/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

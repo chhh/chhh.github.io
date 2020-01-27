@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EN Nikolaev | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/authors/en-nikolaev/</link>
+      <atom:link href="https://dmtavt.com/authors/en-nikolaev/index.xml" rel="self" type="application/rss+xml" />
+    <description>EN Nikolaev</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>EN Nikolaev</title>
+      <link>https://dmtavt.com/authors/en-nikolaev/</link>
+    </image>
+    
+    <item>
+      <title>A new method for normalization of the peptide retention times in chromatographic/mass-spectrometric experiments</title>
+      <link>https://dmtavt.com/publication/avtonomov-2011-new/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/avtonomov-2011-new/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data filtration for more robust alignment of chromatograms of complex peptide mixtures</title>
+      <link>https://dmtavt.com/publication/avtonomov-2011-data/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/avtonomov-2011-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accurate mass tag retention time database for urine proteome analysis by chromatography-mass spectrometry</title>
+      <link>https://dmtavt.com/publication/agron-2010-accurate/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/agron-2010-accurate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database of accurate mass-timestamp for gas chromatography-mass spectrometry analysis of urine proteome</title>
+      <link>https://dmtavt.com/publication/agron-2010-database/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/agron-2010-database/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

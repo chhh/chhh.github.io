@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>Integrated proteogenomic characterization of clear cell renal cell carcinoma</title>
+      <link>https://dmtavt.com/publication/clark-2019-integrated/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/clark-2019-integrated/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Landing Page</title>
       <link>https://dmtavt.com/moar/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
@@ -452,6 +460,22 @@ ipconfig /flushdns
     </item>
     
     <item>
+      <title>DeltaMass: Automated Detection and Visualization of Mass Shifts in Proteomic Open-Search Results</title>
+      <link>https://dmtavt.com/publication/avtonomov-2018-deltamass/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/avtonomov-2018-deltamass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IMTBX and Grppr: Software for Top-Down Proteomics Utilizing Ion Mobility-Mass Spectrometry</title>
+      <link>https://dmtavt.com/publication/avtonomov-2018-imtbx/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/avtonomov-2018-imtbx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Intellij IDEA live templates</title>
       <link>https://dmtavt.com/post/2017-01-26-intellij-idea-live-templates-slf4j/</link>
       <pubDate>Thu, 26 Jan 2017 00:00:00 +0000</pubDate>
@@ -668,6 +692,14 @@ this POM. The parent project was resiging in a sibling directory next to the
 project directory in this case. Otherwise the POM would have to be in the parent
 directory of your project.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry--based proteomics</title>
+      <link>https://dmtavt.com/publication/kong-2017-msfragger/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/kong-2017-msfragger/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -977,6 +1009,62 @@ Dmitry M. Avtonomov, Andy Kong, and Alexey I. Nesvizhskii, &#34;DeltaMass: Autom
 &lt;li&gt;Efficient calculation of isotopic fine structure up to predefined aggregated probability.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>BatMass: a Java software platform for LC--MS data visualization in proteomics and metabolomics</title>
+      <link>https://dmtavt.com/publication/avtonomov-2016-batmass/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/avtonomov-2016-batmass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DIA-Umpire: comprehensive computational framework for data-independent acquisition proteomics</title>
+      <link>https://dmtavt.com/publication/tsou-2015-dia/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/tsou-2015-dia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LuciPHOr2: site localization of generic post-translational modifications from tandem mass spectrometry data</title>
+      <link>https://dmtavt.com/publication/fermin-2015-luciphor-2/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/fermin-2015-luciphor-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A new method for normalization of the peptide retention times in chromatographic/mass-spectrometric experiments</title>
+      <link>https://dmtavt.com/publication/avtonomov-2011-new/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/avtonomov-2011-new/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data filtration for more robust alignment of chromatograms of complex peptide mixtures</title>
+      <link>https://dmtavt.com/publication/avtonomov-2011-data/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/avtonomov-2011-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accurate mass tag retention time database for urine proteome analysis by chromatography-mass spectrometry</title>
+      <link>https://dmtavt.com/publication/agron-2010-accurate/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/agron-2010-accurate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database of accurate mass-timestamp for gas chromatography-mass spectrometry analysis of urine proteome</title>
+      <link>https://dmtavt.com/publication/agron-2010-database/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/agron-2010-database/</guid>
+      <description></description>
     </item>
     
     <item>

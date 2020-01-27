@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andy T Kong | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/authors/andy-t-kong/</link>
+      <atom:link href="https://dmtavt.com/authors/andy-t-kong/index.xml" rel="self" type="application/rss+xml" />
+    <description>Andy T Kong</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>Andy T Kong</title>
+      <link>https://dmtavt.com/authors/andy-t-kong/</link>
+    </image>
+    
+    <item>
+      <title>MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry--based proteomics</title>
+      <link>https://dmtavt.com/publication/kong-2017-msfragger/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/kong-2017-msfragger/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

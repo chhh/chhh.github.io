@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Damian Fermin | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/authors/damian-fermin/</link>
+      <atom:link href="https://dmtavt.com/authors/damian-fermin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Damian Fermin</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>Damian Fermin</title>
+      <link>https://dmtavt.com/authors/damian-fermin/</link>
+    </image>
+    
+    <item>
+      <title>LuciPHOr2: site localization of generic post-translational modifications from tandem mass spectrometry data</title>
+      <link>https://dmtavt.com/publication/fermin-2015-luciphor-2/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/fermin-2015-luciphor-2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

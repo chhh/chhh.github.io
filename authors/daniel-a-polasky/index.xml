@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daniel A Polasky | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/authors/daniel-a-polasky/</link>
+      <atom:link href="https://dmtavt.com/authors/daniel-a-polasky/index.xml" rel="self" type="application/rss+xml" />
+    <description>Daniel A Polasky</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>Daniel A Polasky</title>
+      <link>https://dmtavt.com/authors/daniel-a-polasky/</link>
+    </image>
+    
+    <item>
+      <title>IMTBX and Grppr: Software for Top-Down Proteomics Utilizing Ion Mobility-Mass Spectrometry</title>
+      <link>https://dmtavt.com/publication/avtonomov-2018-imtbx/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/avtonomov-2018-imtbx/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
