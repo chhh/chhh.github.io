@@ -373,6 +373,11 @@
   </url>
   
   <url>
+    <loc>https://dmtavt.com/tags/gui/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dmtavt.com/tags/lc-ms/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
@@ -413,6 +418,11 @@
   </url>
   
   <url>
+    <loc>https://dmtavt.com/tags/data-processing/</loc>
+    <lastmod>2016-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dmtavt.com/project/fragpipe/</loc>
     <lastmod>2016-04-25T00:00:00+00:00</lastmod>
   </url>
@@ -428,11 +438,6 @@
   </url>
   
   <url>
-    <loc>https://dmtavt.com/tags/raw-processing/</loc>
-    <lastmod>2016-04-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dmtavt.com/project/deltamass/</loc>
     <lastmod>2016-04-24T00:00:00+00:00</lastmod>
   </url>
@@ -444,6 +449,11 @@
   
   <url>
     <loc>https://dmtavt.com/project/dia-umpire/</loc>
+    <lastmod>2016-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/raw-processing/</loc>
     <lastmod>2016-04-23T00:00:00+00:00</lastmod>
   </url>
   
