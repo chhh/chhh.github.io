@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Dmitry Avtonomov&#39;s personal website">
+  <meta name="description" content="How to make a zip copy of all git repo files without garbage">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://dmtavt.com/post/">
+  <link rel="alternate" hreflang="en-us" href="https://dmtavt.com/post/2020-01-26-zipping-git-repo/">
 
   
 
@@ -248,14 +248,12 @@
 
 
   
-  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="Dmitry Avtonomov">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_32x32_fill_gaussian_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_192x192_fill_gaussian_center_2.png">
 
-  <link rel="canonical" href="https://dmtavt.com/post/">
+  <link rel="canonical" href="https://dmtavt.com/post/2020-01-26-zipping-git-repo/">
 
   
   
@@ -269,18 +267,65 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Dmitry Avtonomov">
-  <meta property="og:url" content="https://dmtavt.com/post/">
-  <meta property="og:title" content="Posts | Dmitry Avtonomov">
-  <meta property="og:description" content="Dmitry Avtonomov&#39;s personal website"><meta property="og:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png">
+  <meta property="og:url" content="https://dmtavt.com/post/2020-01-26-zipping-git-repo/">
+  <meta property="og:title" content="Zipping all relevant files in a git repo | Dmitry Avtonomov">
+  <meta property="og:description" content="How to make a zip copy of all git repo files without garbage"><meta property="og:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png">
   <meta property="twitter:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-01-26T18:34:18-08:00">
+    
+      <meta property="article:published_time" content="2020-01-26T18:34:18-08:00">
+    
+    <meta property="article:modified_time" content="2020-01-26T18:34:18-08:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dmtavt.com/post/2020-01-26-zipping-git-repo/"
+  },
+  "headline": "Zipping all relevant files in a git repo",
+  
+  "datePublished": "2020-01-26T18:34:18-08:00",
+  "dateModified": "2020-01-26T18:34:18-08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dmitry Avtonomov"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dmitry Avtonomov",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img/https://dmtavt.com/"
+    }
+  },
+  "description": "How to make a zip copy of all git repo files without garbage"
+}
+</script>
+
+  
 
   
 
@@ -288,10 +333,13 @@
   
 
 
+  
 
 
 
-  <title>Posts | Dmitry Avtonomov</title>
+
+
+  <title>Zipping all relevant files in a git repo | Dmitry Avtonomov</title>
 
 </head>
 
@@ -516,44 +564,12 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
-  
-  
-  
-    
-  
-<div class="universal-wrapper pt-3">
-  <h1>Posts</h1>
-
-  
-
-  
-</div>
 
 
-
-<div class="universal-wrapper">
-
-  
-
-  
-  
-    
-      
 
 
 
@@ -565,8 +581,13 @@
 
   
 
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Zipping all relevant files in a git repo</h1>
 
-<div class="card-simple">
+  
 
   
     
@@ -605,730 +626,286 @@
 
 </div>
 
-  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
-  
-  
-
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/post/2020-01-26-zipping-git-repo/">Zipping all relevant files in a git repo</a>
-  </h3>
-
-  
-  <div class="article-style">
-    <p>How to make a zip copy of all git repo files without garbage</p>
-  </div>
-  
-
-  
-
 </div>
 
-    
-  
-    
-      
 
 
+  <div class="article-container">
 
+    <div class="article-style">
+      <p>This will skip all the unnecessary stuff, like <code>.git</code> directory,
+and files ignored in the git repo itself:</p>
+<p><code>git archive --format=zip -o archive-name.zip HEAD</code></p>
+<p>You can omit <code>--format.zip</code> when you specify output files via <code>-o</code>,
+the format will be inferred.<br>
+Add <code>--prefix  subdir-name</code> to have all files in the archive be put into a folder inside the archive, e.g:</p>
+<p><code>git archive --prefix subdir-name/ -o archive-name.zip HEAD</code></p>
 
+    </div>
 
-
-
-
-
-  
-
-
-<div class="card-simple">
-
-  
     
 
 
-<div class="article-metadata">
 
-  
-  
 
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Nov 25, 2018
-  </span>
-  
 
+<div class="article-tags">
   
-
+  <a class="badge badge-light" href="/tags/git/">git</a>
   
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
+  <a class="badge badge-light" href="/tags/howto/">howto</a>
   
-
-  
-  
-  
-
-  
-  
-
 </div>
 
-  
 
-  
-  
-  
 
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/post/2018-11-25-adding-all-git-submodules/">Adding all existing submodules to a git repo</a>
-  </h3>
-
-  
-  <div class="article-style">
-    <p>You have a git repo which contains sub-directories which are git repos
-themselves and now you want them to become submodules. Here's a quick automatic
-way to add them all.</p>
-  </div>
-  
-
-  
-
-</div>
-
-    
-  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
     
       
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="card-simple">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://dmtavt.com/post/2020-01-26-zipping-git-repo/&amp;text=Zipping%20all%20relevant%20files%20in%20a%20git%20repo" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
       
-    
-    Oct 11, 2018
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/post/2018-10-11-custom-colors-in-win-shells/">Custom nice colors in Windows shells</a>
-  </h3>
-
-  
-  <div class="article-style">
-    <p>Wouldn't it be nice if you had completion and nice colors in cmd.exe
-just like what you get out of the box on most Linuxes?</p>
-  </div>
-  
-
-  
-
-</div>
-
-    
-  
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://dmtavt.com/post/2020-01-26-zipping-git-repo/&amp;t=Zipping%20all%20relevant%20files%20in%20a%20git%20repo" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
     
       
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="card-simple">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Zipping%20all%20relevant%20files%20in%20a%20git%20repo&amp;body=https://dmtavt.com/post/2020-01-26-zipping-git-repo/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
     
       
-    
-    Oct 1, 2018
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/post/2018-10-01-install-omv-on-pi/">Installing OMV 4 (Open Media Vault) to Raspberry Pi 3&#43;</a>
-  </h3>
-
-  
-  <div class="article-style">
-    <p>Walkthrough reminder for myself how to install OMV on Pi and set 
-up backup to an external HDD.</p>
-  </div>
-  
-
-  
-
-</div>
-
-    
-  
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://dmtavt.com/post/2020-01-26-zipping-git-repo/&amp;title=Zipping%20all%20relevant%20files%20in%20a%20git%20repo" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
     
       
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="card-simple">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Zipping%20all%20relevant%20files%20in%20a%20git%20repo%20https://dmtavt.com/post/2020-01-26-zipping-git-repo/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
     
       
-    
-    Sep 7, 2018
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/post/2018-09-07-p4merge-as-git-merge-tool/">Use p4merge from Perforce as default git mergetool</a>
-  </h3>
-
-  
-  <div class="article-style">
-    <p>Resolving merge conflicts is one the things that I hate most. 
-Lets make it a little easier with p4merge.</p>
-  </div>
-  
-
-  
-
-</div>
-
-    
-  
-    
       
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="card-simple">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
       
-    
-    Jun 27, 2018
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/post/2018-06-27-command-prompt-here/">Bring back &#34;Open command window here&#34; context menu item in Windows</a>
-  </h3>
-
-  
-  <div class="article-style">
-    <p><code>Shift + Right Click</code> in an explorer window in Win10 now has the option to open
-PowerShell. If you want to have cmd.exe back instead, here's how, using the the
-registry.</p>
-  </div>
-  
-
-  
-
-</div>
-
-    
-  
-    
+        
       
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="card-simple">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
       
-    
-    May 7, 2018
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/post/2018-05-07-custom-domain-name-with-github-pages/">Set up custom domain name with GitHub pages</a>
-  </h3>
-
-  
-  <div class="article-style">
-    <p>If you host a user/org website on github-pages you might want to change the
-default <code>username.github.io</code> to something nicer, like <code>username.com</code>.
-This is a short instruction how to set up the repo and DNS configuration
-with your DNS provider to achieve this.</p>
-  </div>
-  
-
-  
-
-</div>
-
-    
-  
-    
       
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="card-simple">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    May 3, 2018
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/post/2018-03-07-shells-on-windows/">Using multiple different shells/subsystems on Windows</a>
-  </h3>
-
-  
-  <div class="article-style">
-    <p>Configuring various shells and convenient dev environments on Windows with ConEmu.</p>
-  </div>
-  
-
-  
-
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="card-simple">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Feb 19, 2018
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/post/2018-02-19-tethering-wifi-from-android-dns-problems/">Solving problems with tethering wifi from an Android phone</a>
-  </h3>
-
-  
-  <div class="article-style">
-    <p>If your tethered (from a phone to a <em>windows</em> computer) internet connection
-drops after a few seconds of being established, this post might be for you.</p>
-  </div>
-  
-
-  
-
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="card-simple">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Jan 26, 2017
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/post/2017-01-26-intellij-idea-live-templates-slf4j/">Intellij IDEA live templates</a>
-  </h3>
-
-  
-  <div class="article-style">
-    <p>Configure your own templates for daunting repetitive tasks in IDEA, like defining a logger variable each time. After reading this post you'll be able to type <code>log</code> press <kbd>TAB</kbd> and get the full logger declaration for <em>slf4j</em>.</p>
-  </div>
-  
-
-  
-
-</div>
-
-    
-  
-
-  
-<nav>
-  <ul class="pagination justify-content-center">
-    
-    
-    <li class="page-item"><a class="page-link" href="/post/page/2/">&raquo;</a></li>
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://dmtavt.com/post/2020-01-26-zipping-git-repo/&amp;title=Zipping%20all%20relevant%20files%20in%20a%20git%20repo" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
     
   </ul>
-</nav>
-
-
-
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/chhh/avatar_hu0471d97dc9367ea1a8930d15eb089c72_901098_270x270_fill_q100_gaussian_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://dmtavt.com/">Dmitry Avtonomov</a></h5>
+      <h6 class="card-subtitle">Research Fellow</h6>
+      <p class="card-text">My main research interests are data visualization and processing for mass spectrometry.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:dmitriya@umich.edu" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/dmitry-avtonomov-91aab02b/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=UJL1jgQAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/chhh" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.designbyhumans.com/shop/chhh/" target="_blank" rel="noopener">
+        <i class="fa fa-tshirt"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2018-11-25-adding-all-git-submodules/">Adding all existing submodules to a git repo</a></li>
+      
+      <li><a href="/post/2018-09-07-p4merge-as-git-merge-tool/">Use p4merge from Perforce as default git mergetool</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
 
       
 

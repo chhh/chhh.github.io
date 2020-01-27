@@ -5,12 +5,27 @@
     <link>https://dmtavt.com/</link>
       <atom:link href="https://dmtavt.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Dmitry Avtonomov</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Sun, 26 Jan 2020 18:34:18 -0800</lastBuildDate>
     <image>
       <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
       <title>Dmitry Avtonomov</title>
       <link>https://dmtavt.com/</link>
     </image>
+    
+    <item>
+      <title>Zipping all relevant files in a git repo</title>
+      <link>https://dmtavt.com/post/2020-01-26-zipping-git-repo/</link>
+      <pubDate>Sun, 26 Jan 2020 18:34:18 -0800</pubDate>
+      <guid>https://dmtavt.com/post/2020-01-26-zipping-git-repo/</guid>
+      <description>&lt;p&gt;This will skip all the unnecessary stuff, like &lt;code&gt;.git&lt;/code&gt; directory,
+and files ignored in the git repo itself:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git archive --format=zip -o archive-name.zip HEAD&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can omit &lt;code&gt;--format.zip&lt;/code&gt; when you specify output files via &lt;code&gt;-o&lt;/code&gt;,
+the format will be inferred.&lt;br&gt;
+Add &lt;code&gt;--prefix  subdir-name&lt;/code&gt; to have all files in the archive be put into a folder inside the archive, e.g:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git archive --prefix subdir-name/ -o archive-name.zip HEAD&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Integrated proteogenomic characterization of clear cell renal cell carcinoma</title>

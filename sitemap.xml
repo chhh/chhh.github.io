@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dmtavt.com/</loc>
+    <lastmod>2020-01-26T18:34:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/git/</loc>
+    <lastmod>2020-01-26T18:34:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/howto/</loc>
+    <lastmod>2020-01-26T18:34:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/post/</loc>
+    <lastmod>2020-01-26T18:34:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/</loc>
+    <lastmod>2020-01-26T18:34:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/post/2020-01-26-zipping-git-repo/</loc>
+    <lastmod>2020-01-26T18:34:18-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dmtavt.com/authors/others/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -24,11 +54,6 @@
   
   <url>
     <loc>https://dmtavt.com/authors/david-j-clark/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmtavt.com/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -98,32 +123,12 @@
   </url>
   
   <url>
-    <loc>https://dmtavt.com/tags/git/</loc>
-    <lastmod>2018-11-25T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dmtavt.com/tags/git-submodule/</loc>
     <lastmod>2018-11-25T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dmtavt.com/tags/howto/</loc>
-    <lastmod>2018-11-25T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmtavt.com/post/</loc>
-    <lastmod>2018-11-25T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dmtavt.com/tags/submodule/</loc>
-    <lastmod>2018-11-25T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmtavt.com/tags/</loc>
     <lastmod>2018-11-25T00:00:00-08:00</lastmod>
   </url>
   
