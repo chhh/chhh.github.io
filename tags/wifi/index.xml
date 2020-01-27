@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wifi | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tags/wifi/</link>
+      <atom:link href="https://dmtavt.com/tags/wifi/index.xml" rel="self" type="application/rss+xml" />
+    <description>wifi</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Mon, 19 Feb 2018 00:00:00 -0800</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>wifi</title>
+      <link>https://dmtavt.com/tags/wifi/</link>
+    </image>
+    
+    <item>
+      <title>Solving problems with tethering wifi from an Android phone</title>
+      <link>https://dmtavt.com/post/2018-02-19-tethering-wifi-from-android-dns-problems/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/post/2018-02-19-tethering-wifi-from-android-dns-problems/</guid>
+      <description>&lt;p&gt;Once I tried to connect from Win10 to a hotspot running off Google Pixel 2
+(Android 8.1.0)  connected to T-Mobile (tethering) and it worked for a while,
+but one day it just broke. Connection would work for 5-10 seconds allowing
+to load one website maybe, but then it threw some DNS errors. Setting DNS
+server manually didn&#39;t help, also &lt;code&gt;ping 8.8.8.8&lt;/code&gt; timed out.&lt;/p&gt;
+&lt;p&gt;The solution (&lt;strong&gt;from elevated cmd prompt&lt;/strong&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;netsh int ip reset c:\resetlog.txt
+netsh winsock reset catalog
+ipconfig /flushdns
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And restart the computer.&lt;/p&gt;
+&lt;p&gt;Taken from 
+&lt;a href=&#34;https://answers.microsoft.com/en-us/windows/forum/windows8_1-networking/dns-server-isnt-responding-no-wifi-internet/c6bb4b4c-6d8b-4f9d-8ca4-d03e6c414363?auth=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this question @ answers.microsoft.com&lt;/a&gt;
+.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

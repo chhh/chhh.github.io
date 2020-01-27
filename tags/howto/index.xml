@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>howto | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tags/howto/</link>
+      <atom:link href="https://dmtavt.com/tags/howto/index.xml" rel="self" type="application/rss+xml" />
+    <description>howto</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Sun, 26 Jan 2020 18:34:18 -0800</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>howto</title>
+      <link>https://dmtavt.com/tags/howto/</link>
+    </image>
+    
+    <item>
+      <title>Zipping all relevant files in a git repo</title>
+      <link>https://dmtavt.com/post/2020-01-26-zipping-git-repo/</link>
+      <pubDate>Sun, 26 Jan 2020 18:34:18 -0800</pubDate>
+      <guid>https://dmtavt.com/post/2020-01-26-zipping-git-repo/</guid>
+      <description>&lt;p&gt;This will skip all the unnecessary stuff, like &lt;code&gt;.git&lt;/code&gt; directory,
+and files ignored in the git repo itself:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git archive --format=zip -o archive-name.zip HEAD&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can omit &lt;code&gt;--format.zip&lt;/code&gt; when you specify output files via &lt;code&gt;-o&lt;/code&gt;,
+the format will be inferred.&lt;br&gt;
+Add &lt;code&gt;--prefix  subdir-name&lt;/code&gt; to have all files in the archive be put into a folder inside the archive, e.g:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git archive --prefix subdir-name/ -o archive-name.zip HEAD&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adding all existing submodules to a git repo</title>
+      <link>https://dmtavt.com/post/2018-11-25-adding-all-git-submodules/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/post/2018-11-25-adding-all-git-submodules/</guid>
+      <description>&lt;p&gt;You have a git repo (a directory) which contains sub-directories which are git
+repos themselves and now you want them to become submodules. Here&#39;s a quick
+automatic way to add them all.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove &lt;code&gt;-maxdepth&lt;/code&gt; if you want to recursively dig deeper than 1 level.&lt;/li&gt;
+&lt;li&gt;Assumes that each submodule has a remote named &lt;code&gt;origin&lt;/code&gt;, uses that remote&#39;s
+url.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;preview-command&#34;&gt;Preview command&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;for x in $(find . -mindepth 1 -maxdepth 1 -type d) ; do if [ -d &amp;quot;${x}/.git&amp;quot; ] ; then cd &amp;quot;${x}&amp;quot; ; origin=&amp;quot;$(git config --get remote.origin.url)&amp;quot; ; cd - 1&amp;gt;/dev/null; echo git submodule add &amp;quot;${origin}&amp;quot; &amp;quot;${x}&amp;quot; ; fi ; done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Will &lt;strong&gt;only print&lt;/strong&gt; the submodule commands to be executed, but NOT execute them.&lt;/p&gt;
+&lt;h3 id=&#34;actual-command&#34;&gt;Actual command&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;for x in $(find . -mindepth 1 -maxdepth 1 -type d) ; do if [ -d &amp;quot;${x}/.git&amp;quot; ] ; then cd &amp;quot;${x}&amp;quot; ; origin=&amp;quot;$(git config --get remote.origin.url)&amp;quot; ; cd - 1&amp;gt;/dev/null; git submodule add &amp;quot;${origin}&amp;quot; &amp;quot;${x}&amp;quot; ; fi ; done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Will &lt;strong&gt;execute&lt;/strong&gt; the actual submodule commands.&lt;/p&gt;
+&lt;h2 id=&#34;readable-versions&#34;&gt;Readable versions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Preview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;for x in $(find . -mindepth 1 -maxdepth 1 -type d) ; do 
+  if [ -d &amp;quot;${x}/.git&amp;quot; ] ;
+    then cd &amp;quot;${x}&amp;quot; ;
+    origin=&amp;quot;$(git config --get remote.origin.url)&amp;quot; ;
+    cd - 1&amp;gt;/dev/null;
+    echo git submodule add &amp;quot;${origin}&amp;quot; &amp;quot;${x}&amp;quot; ;
+  fi ;
+done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Execute&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;for x in $(find . -mindepth 1 -maxdepth 1 -type d) ; do 
+  if [ -d &amp;quot;${x}/.git&amp;quot; ] ; 
+    then cd &amp;quot;${x}&amp;quot; ; 
+    origin=&amp;quot;$(git config --get remote.origin.url)&amp;quot; ; 
+    cd - 1&amp;gt;/dev/null; 
+    git submodule add &amp;quot;${origin}&amp;quot; &amp;quot;${x}&amp;quot; ; 
+  fi ; 
+done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Credit (modified from an answer here)&lt;/em&gt;:&lt;br&gt;
+&lt;a href=&#34;https://stackoverflow.com/questions/10606101/automatically-add-all-submodules-to-a-repo&#34;&gt;https://stackoverflow.com/questions/10606101/automatically-add-all-submodules-to-a-repo&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

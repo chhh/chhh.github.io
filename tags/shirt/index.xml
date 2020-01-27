@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shirt | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tags/shirt/</link>
+      <atom:link href="https://dmtavt.com/tags/shirt/index.xml" rel="self" type="application/rss+xml" />
+    <description>shirt</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Sat, 08 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>shirt</title>
+      <link>https://dmtavt.com/tags/shirt/</link>
+    </image>
+    
+    <item>
+      <title>So Hood (Day)</title>
+      <link>https://dmtavt.com/graphic/so-hood-day/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/graphic/so-hood-day/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>So Hood (Night)</title>
+      <link>https://dmtavt.com/graphic/so-hood-night/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/graphic/so-hood-night/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What&#39;s Above California?</title>
+      <link>https://dmtavt.com/graphic/whats-above-california/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/graphic/whats-above-california/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The theory of cat teleportation</title>
+      <link>https://dmtavt.com/graphic/cat-teleportation-shirt/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/graphic/cat-teleportation-shirt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
