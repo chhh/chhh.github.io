@@ -311,20 +311,20 @@ forays into C++.&lt;/li&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;http://batmass.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BatMass&lt;/a&gt;
- - Mass spectrometry data visualization and processing (&lt;strong&gt;Java, NetBeans Platform&lt;/strong&gt;).&lt;/li&gt;
+ (&lt;strong&gt;Java, NetBeans Platform&lt;/strong&gt;) - Mass spectrometry data visualization and processing.&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://github.com/chhh/msftbx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSFTBX&lt;/a&gt;
- - Java library for unified mass-spec data access: mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc. Available through Maven Central (&lt;strong&gt;Java, gRPC&lt;/strong&gt;).&lt;/li&gt;
+ (&lt;strong&gt;Java, gRPC, JNA&lt;/strong&gt;) - Java library for unified mass-spec data access: mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc. Available through Maven Central.&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://github.com/nesvilab/fragpipe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FragPipe&lt;/a&gt;
- - Pipelined complete LC/MS proteomic analysis with a graphical interface.
-Peptide/protein search, validation, FDR estimation, quantitation, PTM analysis, spectral library building etc (&lt;strong&gt;Java, Swing&lt;/strong&gt;).&lt;/li&gt;
+ (&lt;strong&gt;Java Swing, JNA&lt;/strong&gt;) - Pipelined complete LC/MS proteomic analysis with a graphical interface.
+Peptide/protein search, validation, FDR estimation, quantitation, PTM analysis, spectral library building etc.&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://msfragger.nesvilab.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSFragger&lt;/a&gt;
- - Ultra-fast proteomics search engine for Closed and Open searches (&lt;strong&gt;Java&lt;/strong&gt;).&lt;/li&gt;
+ (&lt;strong&gt;Java&lt;/strong&gt;) - Ultra-fast proteomics search engine for Closed and Open searches.&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://chhh.github.io/IMTBX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IMTBX+Grppr&lt;/a&gt;
- - A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection (&lt;strong&gt;C#, WinForms, Java&lt;/strong&gt;).&lt;/li&gt;
+ (&lt;strong&gt;C#, WinForms, Java&lt;/strong&gt;) - A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection.&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;http://diaumpire.sourceforge.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DIA-Umpire&lt;/a&gt;
  - Data Independent Acquisition (DIA) data processing tool that doesn&#39;t require a spectral library (Java).&lt;/li&gt;
