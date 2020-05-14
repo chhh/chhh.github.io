@@ -3,27 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dmtavt.com/</loc>
-    <lastmod>2020-01-26T18:34:18-08:00</lastmod>
+    <loc>https://dmtavt.com/tags/arch-linux/</loc>
+    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dmtavt.com/tags/git/</loc>
-    <lastmod>2020-01-26T18:34:18-08:00</lastmod>
+    <loc>https://dmtavt.com/</loc>
+    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/expressvpn/</loc>
+    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://dmtavt.com/tags/howto/</loc>
-    <lastmod>2020-01-26T18:34:18-08:00</lastmod>
+    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/post/2020-05-13-expressvpn-on-manjaro/</loc>
+    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/manjaro/</loc>
+    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://dmtavt.com/post/</loc>
-    <lastmod>2020-01-26T18:34:18-08:00</lastmod>
+    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://dmtavt.com/tags/</loc>
+    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/post/2020-05-13-vmware-player-fix/</loc>
+    <lastmod>2020-05-12T12:00:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/fixme/</loc>
+    <lastmod>2020-05-12T12:00:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/vmware/</loc>
+    <lastmod>2020-05-12T12:00:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/windows/</loc>
+    <lastmod>2020-05-12T12:00:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/git/</loc>
     <lastmod>2020-01-26T18:34:18-08:00</lastmod>
   </url>
   

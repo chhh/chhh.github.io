@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>expressvpn | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tags/expressvpn/</link>
+      <atom:link href="https://dmtavt.com/tags/expressvpn/index.xml" rel="self" type="application/rss+xml" />
+    <description>expressvpn</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Tue, 12 May 2020 12:30:18 -0800</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>expressvpn</title>
+      <link>https://dmtavt.com/tags/expressvpn/</link>
+    </image>
+    
+    <item>
+      <title>Installing ExpressVPN client on Manjaro Linux</title>
+      <link>https://dmtavt.com/post/2020-05-13-expressvpn-on-manjaro/</link>
+      <pubDate>Tue, 12 May 2020 12:30:18 -0800</pubDate>
+      <guid>https://dmtavt.com/post/2020-05-13-expressvpn-on-manjaro/</guid>
+      <description>&lt;h2 id=&#34;solution-origin---awesome-manjaro-forums&#34;&gt;Solution origin - awesome Manjaro forums&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://forum.manjaro.org/t/installing-expressvpn-on-manjaro-how-to/125345/9&#34;&gt;https://forum.manjaro.org/t/installing-expressvpn-on-manjaro-how-to/125345/9&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;h3 id=&#34;remove-old-install-optional&#34;&gt;Remove old install (optional)&lt;/h3&gt;
+&lt;p&gt;Stop and remove old install of expressvpn, if present:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;expressvpn disconnect
+sudo systemctl stop expressvpn
+sudo systemctl disable expressvpn
+sudo pacman -Rns expressvpn
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;install-new-package-from-expressvpn-website&#34;&gt;Install new package from ExpressVPN website&lt;/h3&gt;
+&lt;p&gt;ExpressVPN website provides a package for Arch now. Manjaro is based on Arch, so that&#39;s what we need.&lt;br&gt;
+Download 64 bit &lt;code&gt;.pkg.tar.xz&lt;/code&gt; Arch package: &lt;a href=&#34;https://www.expressvpn.com/setup#linux&#34;&gt;https://www.expressvpn.com/setup#linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;if you have a fresh install of manjaro:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;go to expressvpn and download the Arch 64 bit version and copy the activation code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;install it via pacman&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman -U /path/to/expressvpn.package.tar.xz&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;copy the service scripts to the correct location&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo cp /usr/lib/expressvpn/expressvpn*.service /etc/systemd/system/.&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;enable and start the service&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl enable expressvpn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl start expressvpn&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;activate it with the activation code you copied earlier&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;expressvpn activate&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;connect vpn&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;expressvpn connect smart&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When you connect, expressvpn gives you some valuable infor you might miss:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To check your connection status, type &lt;code&gt;expressvpn status&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If your VPN connection unexpectedly drops, internet traffic will be blocked to protect your privacy.&lt;/li&gt;
+&lt;li&gt;To disable Network Lock, disconnect ExpressVPN then type &amp;lsquo;expressvpn preferences set network_lock off&amp;rsquo;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
