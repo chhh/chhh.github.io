@@ -47,11 +47,11 @@ link&lt;/a&gt;
 power the HDD though, so I bought an powered USB hub (Anker 4-port powered USB
 hub, 
 &lt;a href=&#34;http://a.co/d/bqRz17R&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon link&lt;/a&gt;
-). Haven&#39;t tried it yet, but it&#39;s quite
+). Haven&amp;rsquo;t tried it yet, but it&amp;rsquo;s quite
 possible you can power up to 4 HDDs this way and use them all with a single Pi.&lt;/p&gt;
-&lt;p&gt;Just plug the HDD in the hub, the hub into wall power and the Pi - you&#39;re ready
+&lt;p&gt;Just plug the HDD in the hub, the hub into wall power and the Pi - you&amp;rsquo;re ready
 to go. Reboot the Pi. Go to the web admin console. &lt;code&gt;Storage -&amp;gt; Disks&lt;/code&gt;, check
-that you see the new HDD there, probably as &lt;code&gt;/dev/sda1&lt;/code&gt;.&lt;code&gt;Storage -&amp;gt; File Systems -&amp;gt; +Create&lt;/code&gt; (there&#39;s a button in the top row), create a new &lt;em&gt;ext4&lt;/em&gt; filesystem on
+that you see the new HDD there, probably as &lt;code&gt;/dev/sda1&lt;/code&gt;.&lt;code&gt;Storage -&amp;gt; File Systems -&amp;gt; +Create&lt;/code&gt; (there&amp;rsquo;s a button in the top row), create a new &lt;em&gt;ext4&lt;/em&gt; filesystem on
 the HDD.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-shared-folder-available-from-your-local-network&#34;&gt;Creating a shared folder available from your local network&lt;/h2&gt;
 &lt;p&gt;To enable file sharing using this HDD check that &lt;code&gt;Services -&amp;gt; SMB/CIFS&lt;/code&gt; is
@@ -62,15 +62,15 @@ shared folder.&lt;/p&gt;
 &lt;p&gt;On Windows you can now open Explorer and &lt;code&gt;Map network drive&lt;/code&gt;. Put in an address
 like &lt;code&gt;\\192.168.1.176\my-share&lt;/code&gt;. If all was right, it should ask you for
 login/password. Check the box &lt;em&gt;log in using different credentials&lt;/em&gt; and supply
-the username and password for the user that you&#39;ve just created through OMV
+the username and password for the user that you&amp;rsquo;ve just created through OMV
 admin web page.&lt;/p&gt;
 &lt;h2 id=&#34;setting-up-backup-of-your-cloud-based-storage-to-the-local-hdd-connected-to-pi&#34;&gt;Setting up backup of your cloud-based storage to the local HDD connected to Pi&lt;/h2&gt;
-&lt;p&gt;Log in to RPi from ssh. Install RClone (&lt;a href=&#34;https://rclone.org)&#34;&gt;https://rclone.org)&lt;/a&gt;. Worked fine from
+&lt;p&gt;Log in to RPi from ssh. Install RClone (&lt;a href=&#34;https://rclone.org&#34;&gt;https://rclone.org&lt;/a&gt;). Worked fine from
 the script installation for me. Run &lt;code&gt;rclone configure&lt;/code&gt; to set up Google Drive
 integration. When asked to do &amp;ldquo;interactive&amp;rdquo; setup, say No. Then you can just
 copy the given link and follow it on another computer with an actual browser.
-Lynx won&#39;t do, as the Google authentication page needs javascript.&lt;/p&gt;
-&lt;p&gt;Give it a go while ssh&#39;ed into the Pi. When everything works, you can go to the
+Lynx won&amp;rsquo;t do, as the Google authentication page needs javascript.&lt;/p&gt;
+&lt;p&gt;Give it a go while ssh&amp;rsquo;ed into the Pi. When everything works, you can go to the
 OMV admin panel &lt;code&gt;System -&amp;gt; Scheduled Jobs&lt;/code&gt;, which is basically a UI for adding
 cron jobs, and add your &lt;code&gt;rclone sync&lt;/code&gt; or &lt;code&gt;rclone copy&lt;/code&gt; command to run, e.g.
 every night at 3AM.&lt;/p&gt;

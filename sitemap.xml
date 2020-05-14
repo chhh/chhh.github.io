@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dmtavt.com/tags/arch-linux/</loc>
-    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
+    <loc>https://dmtavt.com/post/2020-05-14-auto-resize-guest-vm-desktop/</loc>
+    <lastmod>2020-05-14T00:23:27-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dmtavt.com/</loc>
+    <loc>https://dmtavt.com/tags/manjaro/</loc>
+    <lastmod>2020-05-14T00:23:27-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/open-vm-tools/</loc>
+    <lastmod>2020-05-14T00:23:27-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/post/</loc>
+    <lastmod>2020-05-14T00:23:27-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/</loc>
+    <lastmod>2020-05-14T00:23:27-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/vmtoolsd/</loc>
+    <lastmod>2020-05-14T00:23:27-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/vmware/</loc>
+    <lastmod>2020-05-14T00:23:27-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/arch-linux/</loc>
     <lastmod>2020-05-12T12:30:18-08:00</lastmod>
   </url>
   
@@ -28,32 +58,12 @@
   </url>
   
   <url>
-    <loc>https://dmtavt.com/tags/manjaro/</loc>
-    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmtavt.com/post/</loc>
-    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmtavt.com/tags/</loc>
-    <lastmod>2020-05-12T12:30:18-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dmtavt.com/post/2020-05-13-vmware-player-fix/</loc>
     <lastmod>2020-05-12T12:00:18-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://dmtavt.com/tags/fixme/</loc>
-    <lastmod>2020-05-12T12:00:18-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmtavt.com/tags/vmware/</loc>
     <lastmod>2020-05-12T12:00:18-08:00</lastmod>
   </url>
   
@@ -94,6 +104,11 @@
   
   <url>
     <loc>https://dmtavt.com/authors/david-j-clark/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   

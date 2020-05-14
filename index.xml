@@ -5,12 +5,46 @@
     <link>https://dmtavt.com/</link>
       <atom:link href="https://dmtavt.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Dmitry Avtonomov</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Tue, 12 May 2020 12:30:18 -0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
       <title>Dmitry Avtonomov</title>
       <link>https://dmtavt.com/</link>
     </image>
+    
+    <item>
+      <title>Auto Resize Guest VM Desktop running under VMWare</title>
+      <link>https://dmtavt.com/post/2020-05-14-auto-resize-guest-vm-desktop/</link>
+      <pubDate>Thu, 14 May 2020 00:23:27 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2020-05-14-auto-resize-guest-vm-desktop/</guid>
+      <description>&lt;h2 id=&#34;symptopms&#34;&gt;Symptopms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;After first reboot of VM destop of guest OS stopped auto-resizing to fill host window.&lt;/li&gt;
+&lt;li&gt;But it was working fine during guest OS install, or while it was running from live cd.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TL;DR;&lt;/h2&gt;
+&lt;p&gt;Restart &lt;code&gt;vmtoolsd&lt;/code&gt; service.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On Manjaro / Arch&lt;/strong&gt;:&lt;br&gt;
+&lt;code&gt;sudo systemctl restart vmtoolsd&lt;/code&gt;&lt;br&gt;
+Has to be done after every boot-up. And sometimes after session locks out as well.&lt;/p&gt;
+&lt;p&gt;Some suggest that delaying the start of the service helps:&lt;br&gt;
+&lt;code&gt;sudo vim /etc/systemd/system/multi-user.target.wants/vmtoolsd.service&lt;/code&gt;&lt;br&gt;
+and add the folowing in [Unit] section:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Unit]
+After=graphical.target
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Didn&amp;rsquo;t help me.&lt;/p&gt;
+&lt;h2 id=&#34;a-bit-more-context&#34;&gt;A bit more context&lt;/h2&gt;
+&lt;p&gt;VMWare Workstation requires you to have &lt;code&gt;open-vm-tools&lt;/code&gt; package service installed, which actually does the resizing.
+I was running Manjaro 20 under VMWare Workstation 15 on Win10 Pro. Open VM Tools was already pre-installed with
+Manjaro distribution.&lt;br&gt;
+However it seems like the service named &lt;code&gt;vmtoolsd&lt;/code&gt; starts too early. On the internet everyone mentions &lt;code&gt;open-vm-tools&lt;/code&gt;,
+but it probably changed name to &lt;code&gt;vmtoolsd&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;possible-solutions&#34;&gt;Possible solutions&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/vmware/open-vm-tools/issues/253&#34;&gt;https://github.com/vmware/open-vm-tools/issues/253&lt;/a&gt;
+&lt;a href=&#34;https://github.com/vmware/open-vm-tools/issues/303&#34;&gt;https://github.com/vmware/open-vm-tools/issues/303&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Installing ExpressVPN client on Manjaro Linux</title>
@@ -29,7 +63,7 @@ sudo pacman -Rns expressvpn
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;install-new-package-from-expressvpn-website&#34;&gt;Install new package from ExpressVPN website&lt;/h3&gt;
-&lt;p&gt;ExpressVPN website provides a package for Arch now. Manjaro is based on Arch, so that&#39;s what we need.&lt;br&gt;
+&lt;p&gt;ExpressVPN website provides a package for Arch now. Manjaro is based on Arch, so that&amp;rsquo;s what we need.&lt;br&gt;
 Download 64 bit &lt;code&gt;.pkg.tar.xz&lt;/code&gt; Arch package: &lt;a href=&#34;https://www.expressvpn.com/setup#linux&#34;&gt;https://www.expressvpn.com/setup#linux&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;if you have a fresh install of manjaro:&lt;/p&gt;
 &lt;ul&gt;
@@ -152,11 +186,11 @@ Add &lt;code&gt;--prefix  subdir-name&lt;/code&gt; to have all files in the arch
       <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
       <guid>https://dmtavt.com/post/2018-11-25-adding-all-git-submodules/</guid>
       <description>&lt;p&gt;You have a git repo (a directory) which contains sub-directories which are git
-repos themselves and now you want them to become submodules. Here&#39;s a quick
+repos themselves and now you want them to become submodules. Here&amp;rsquo;s a quick
 automatic way to add them all.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Remove &lt;code&gt;-maxdepth&lt;/code&gt; if you want to recursively dig deeper than 1 level.&lt;/li&gt;
-&lt;li&gt;Assumes that each submodule has a remote named &lt;code&gt;origin&lt;/code&gt;, uses that remote&#39;s
+&lt;li&gt;Assumes that each submodule has a remote named &lt;code&gt;origin&lt;/code&gt;, uses that remote&amp;rsquo;s
 url.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;preview-command&#34;&gt;Preview command&lt;/h3&gt;
@@ -202,12 +236,12 @@ done
       <link>https://dmtavt.com/post/2018-10-11-custom-colors-in-win-shells/</link>
       <pubDate>Thu, 11 Oct 2018 00:00:00 -0700</pubDate>
       <guid>https://dmtavt.com/post/2018-10-11-custom-colors-in-win-shells/</guid>
-      <description>&lt;p&gt;We&#39;ll be using 
+      <description>&lt;p&gt;We&amp;rsquo;ll be using 
 &lt;a href=&#34;https://scoop.sh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scoop&lt;/a&gt;
  to install the necessary tools.&lt;/p&gt;
 &lt;h2 id=&#34;quickstart-with-scoop&#34;&gt;Quickstart with scoop&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Install &lt;code&gt;git&lt;/code&gt; separately. Here&#39;s the link: &lt;a href=&#34;https://gitforwindows.org&#34;&gt;https://gitforwindows.org&lt;/a&gt;. I recommend the following customizations in the installer:
+&lt;li&gt;Install &lt;code&gt;git&lt;/code&gt; separately. Here&amp;rsquo;s the link: &lt;a href=&#34;https://gitforwindows.org&#34;&gt;https://gitforwindows.org&lt;/a&gt;. I recommend the following customizations in the installer:
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Use Notepad++ as default editor&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Use True Type fonts in all console windows&lt;/em&gt;&lt;/li&gt;
@@ -269,11 +303,11 @@ link&lt;/a&gt;
 power the HDD though, so I bought an powered USB hub (Anker 4-port powered USB
 hub, 
 &lt;a href=&#34;http://a.co/d/bqRz17R&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon link&lt;/a&gt;
-). Haven&#39;t tried it yet, but it&#39;s quite
+). Haven&amp;rsquo;t tried it yet, but it&amp;rsquo;s quite
 possible you can power up to 4 HDDs this way and use them all with a single Pi.&lt;/p&gt;
-&lt;p&gt;Just plug the HDD in the hub, the hub into wall power and the Pi - you&#39;re ready
+&lt;p&gt;Just plug the HDD in the hub, the hub into wall power and the Pi - you&amp;rsquo;re ready
 to go. Reboot the Pi. Go to the web admin console. &lt;code&gt;Storage -&amp;gt; Disks&lt;/code&gt;, check
-that you see the new HDD there, probably as &lt;code&gt;/dev/sda1&lt;/code&gt;.&lt;code&gt;Storage -&amp;gt; File Systems -&amp;gt; +Create&lt;/code&gt; (there&#39;s a button in the top row), create a new &lt;em&gt;ext4&lt;/em&gt; filesystem on
+that you see the new HDD there, probably as &lt;code&gt;/dev/sda1&lt;/code&gt;.&lt;code&gt;Storage -&amp;gt; File Systems -&amp;gt; +Create&lt;/code&gt; (there&amp;rsquo;s a button in the top row), create a new &lt;em&gt;ext4&lt;/em&gt; filesystem on
 the HDD.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-shared-folder-available-from-your-local-network&#34;&gt;Creating a shared folder available from your local network&lt;/h2&gt;
 &lt;p&gt;To enable file sharing using this HDD check that &lt;code&gt;Services -&amp;gt; SMB/CIFS&lt;/code&gt; is
@@ -284,15 +318,15 @@ shared folder.&lt;/p&gt;
 &lt;p&gt;On Windows you can now open Explorer and &lt;code&gt;Map network drive&lt;/code&gt;. Put in an address
 like &lt;code&gt;\\192.168.1.176\my-share&lt;/code&gt;. If all was right, it should ask you for
 login/password. Check the box &lt;em&gt;log in using different credentials&lt;/em&gt; and supply
-the username and password for the user that you&#39;ve just created through OMV
+the username and password for the user that you&amp;rsquo;ve just created through OMV
 admin web page.&lt;/p&gt;
 &lt;h2 id=&#34;setting-up-backup-of-your-cloud-based-storage-to-the-local-hdd-connected-to-pi&#34;&gt;Setting up backup of your cloud-based storage to the local HDD connected to Pi&lt;/h2&gt;
-&lt;p&gt;Log in to RPi from ssh. Install RClone (&lt;a href=&#34;https://rclone.org)&#34;&gt;https://rclone.org)&lt;/a&gt;. Worked fine from
+&lt;p&gt;Log in to RPi from ssh. Install RClone (&lt;a href=&#34;https://rclone.org&#34;&gt;https://rclone.org&lt;/a&gt;). Worked fine from
 the script installation for me. Run &lt;code&gt;rclone configure&lt;/code&gt; to set up Google Drive
 integration. When asked to do &amp;ldquo;interactive&amp;rdquo; setup, say No. Then you can just
 copy the given link and follow it on another computer with an actual browser.
-Lynx won&#39;t do, as the Google authentication page needs javascript.&lt;/p&gt;
-&lt;p&gt;Give it a go while ssh&#39;ed into the Pi. When everything works, you can go to the
+Lynx won&amp;rsquo;t do, as the Google authentication page needs javascript.&lt;/p&gt;
+&lt;p&gt;Give it a go while ssh&amp;rsquo;ed into the Pi. When everything works, you can go to the
 OMV admin panel &lt;code&gt;System -&amp;gt; Scheduled Jobs&lt;/code&gt;, which is basically a UI for adding
 cron jobs, and add your &lt;code&gt;rclone sync&lt;/code&gt; or &lt;code&gt;rclone copy&lt;/code&gt; command to run, e.g.
 every night at 3AM.&lt;/p&gt;
@@ -407,7 +441,7 @@ introducing you to the usefulness of aliases.&lt;/p&gt;
       <link>https://dmtavt.com/post/2018-06-27-command-prompt-here/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
       <guid>https://dmtavt.com/post/2018-06-27-command-prompt-here/</guid>
-      <description>&lt;p&gt;It&#39;s a simple registry hack.&lt;/p&gt;
+      <description>&lt;p&gt;It&amp;rsquo;s a simple registry hack.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Strat registry editor: &lt;em&gt;Run&lt;/em&gt; -&amp;gt; &lt;code&gt;regedit&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
@@ -424,8 +458,8 @@ introducing you to the usefulness of aliases.&lt;/p&gt;
 &lt;li&gt;You are now back in the registry editor. Click the &lt;code&gt;cmd&lt;/code&gt; folder on the left.&lt;/li&gt;
 &lt;li&gt;Look for &lt;code&gt;HideBasedOnVelocityId&lt;/code&gt; key in the right window tab.
 &lt;ul&gt;
-&lt;li&gt;If it&#39;s there, Right-click, &lt;em&gt;Rename&lt;/em&gt; to &lt;code&gt;ShowBasedOnVelocityId&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;If it&#39;s not there, just add the &lt;code&gt;ShowBasedOnVelocityId&lt;/code&gt; key (type &lt;em&gt;DWORD&lt;/em&gt;), value &lt;code&gt;0x00639bc8 (6527944)&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If it&amp;rsquo;s there, Right-click, &lt;em&gt;Rename&lt;/em&gt; to &lt;code&gt;ShowBasedOnVelocityId&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If it&amp;rsquo;s not there, just add the &lt;code&gt;ShowBasedOnVelocityId&lt;/code&gt; key (type &lt;em&gt;DWORD&lt;/em&gt;), value &lt;code&gt;0x00639bc8 (6527944)&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Now try &lt;em&gt;Shift + Right Click&lt;/em&gt; in an Explorer window, you should see the &lt;em&gt;Open command window here&lt;/em&gt; option.&lt;/li&gt;
@@ -450,7 +484,7 @@ redirected to the new custom domain, so your project pages can benefit from this
 automatically. If you already have a project page like
 &lt;code&gt;&amp;lt;username&amp;gt;.github.io/projectname&lt;/code&gt;, this will become &lt;code&gt;&amp;lt;custom.domain&amp;gt;/projectname&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;sequence-of-actions&#34;&gt;Sequence of actions&lt;/h2&gt;
-&lt;p&gt;Let&#39;s say you own &lt;code&gt;domain.com&lt;/code&gt; for the sake of example, and your github username
+&lt;p&gt;Let&amp;rsquo;s say you own &lt;code&gt;domain.com&lt;/code&gt; for the sake of example, and your github username
 is &lt;code&gt;yourname&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;on-github&#34;&gt;On GitHub&lt;/h3&gt;
 &lt;p&gt;Create a repository with name &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; or
@@ -461,7 +495,7 @@ contents to the root directory:&lt;/p&gt;
 www.domain.com
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;If you prefer the name with &lt;em&gt;www&lt;/em&gt; prefix, put it at the top. Commit and push.
-That&#39;s it with github.&lt;/p&gt;
+That&amp;rsquo;s it with github.&lt;/p&gt;
 &lt;h3 id=&#34;at-dns-provider-config&#34;&gt;At DNS provider config&lt;/h3&gt;
 &lt;p&gt;Add an A record:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-yml&#34;&gt;name: @
@@ -514,7 +548,7 @@ Install from powershell (without admin rights):&lt;/p&gt;
 iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Using command &lt;code&gt;scoop export&lt;/code&gt; you can get an importable list of all installed packages.
-Here&#39;s mine currently: 
+Here&amp;rsquo;s mine currently: 
 &lt;a href=&#34;scoop-export.txt&#34;&gt;scoop-export.txt&lt;/a&gt;
 .&lt;/p&gt;
 &lt;h2 id=&#34;tweaks-to-shells&#34;&gt;Tweaks to shells&lt;/h2&gt;
@@ -525,7 +559,7 @@ Here&#39;s mine currently:
 .&lt;/p&gt;
 &lt;h3 id=&#34;conemu&#34;&gt;ConEmu&lt;/h3&gt;
 &lt;p&gt;&lt;kbd&gt;Win + Alt + P&lt;/kbd&gt; to open Properties. &lt;code&gt;Startup -&amp;gt; Tasks&lt;/code&gt; and set shortcuts for
-shells you&#39;ll be using.&lt;/p&gt;
+shells you&amp;rsquo;ll be using.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Alt + C&lt;/code&gt; for &lt;em&gt;cmd.exe&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Alt + Shift + C&lt;/code&gt; for elevated &lt;em&gt;cmd.exe&lt;/em&gt;&lt;/li&gt;
@@ -564,7 +598,7 @@ install apt-cyg /bin
 (Android 8.1.0)  connected to T-Mobile (tethering) and it worked for a while,
 but one day it just broke. Connection would work for 5-10 seconds allowing
 to load one website maybe, but then it threw some DNS errors. Setting DNS
-server manually didn&#39;t help, also &lt;code&gt;ping 8.8.8.8&lt;/code&gt; timed out.&lt;/p&gt;
+server manually didn&amp;rsquo;t help, also &lt;code&gt;ping 8.8.8.8&lt;/code&gt; timed out.&lt;/p&gt;
 &lt;p&gt;The solution (&lt;strong&gt;from elevated cmd prompt&lt;/strong&gt;):&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;netsh int ip reset c:\resetlog.txt
 netsh winsock reset catalog
@@ -604,13 +638,13 @@ ipconfig /flushdns
 of live templates. You type several symbols, press tab (by default) and it
 expands the symbols into full expressions. E.g. you can type &lt;code&gt;fori&lt;/code&gt;, press
 &lt;kbd&gt;Tab&lt;/kbd&gt; and get a full &lt;em&gt;for&lt;/em&gt; loop created for you, or type &lt;code&gt;iter&lt;/code&gt;, press
-&lt;kbd&gt;Tab&lt;/kbd&gt; and if you have &lt;code&gt;iterable&lt;/code&gt;s in scope, you&#39;ll be presented with a
+&lt;kbd&gt;Tab&lt;/kbd&gt; and if you have &lt;code&gt;iterable&lt;/code&gt;s in scope, you&amp;rsquo;ll be presented with a
 choice of available ones to iterate over.&lt;/p&gt;
 &lt;h2 id=&#34;example-slf4j-logger-in-each-class&#34;&gt;Example: slf4j logger in each class&lt;/h2&gt;
-&lt;p&gt;It&#39;s a super common thing to type at the beginning of each class:&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a super common thing to type at the beginning of each class:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(MyClassName.class);
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;pretty tedious even with IDE&#39;s help.&lt;/p&gt;
+&lt;p&gt;pretty tedious even with IDE&amp;rsquo;s help.&lt;/p&gt;
 &lt;p&gt;Live templates to the rescue, you can define your own one to create the whole
 line for you! You&lt;/p&gt;
 &lt;h2 id=&#34;how-to-define-a-live-template&#34;&gt;How to define a live template&lt;/h2&gt;
@@ -638,7 +672,7 @@ template expansion.
 &lt;li&gt;At the very bottom look for text &lt;em&gt;Applicable in&lt;/em&gt; with a link &lt;em&gt;Change&lt;/em&gt; next to
 it, click it. Select &lt;em&gt;Java&lt;/em&gt;-&amp;gt;_declaration_.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Congratulations, you&#39;re done! Just type &lt;code&gt;log&lt;/code&gt; and press &lt;kbd&gt;Tab&lt;/kbd&gt; anywhere
+&lt;p&gt;Congratulations, you&amp;rsquo;re done! Just type &lt;code&gt;log&lt;/code&gt; and press &lt;kbd&gt;Tab&lt;/kbd&gt; anywhere
 in the class declaration.&lt;/p&gt;
 </description>
     </item>
@@ -668,8 +702,8 @@ in the class declaration.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-sonatype-and-why-is-it-needed&#34;&gt;What is Sonatype and why is it needed?&lt;/h2&gt;
 &lt;p&gt;Sonatypeis a company that  provides a staging repository, which performs
 validation and allows to push the builds that pass all checks to the Central
-repo. Without it, basically, you can&#39;t easily publish anything to the Central
-easily, unless you&#39;re an Apache project or similar.&lt;/p&gt;
+repo. Without it, basically, you can&amp;rsquo;t easily publish anything to the Central
+easily, unless you&amp;rsquo;re an Apache project or similar.&lt;/p&gt;
 &lt;h2 id=&#34;getting-started&#34;&gt;Getting started&lt;/h2&gt;
 &lt;p&gt;Follow their getting started
 
@@ -680,15 +714,15 @@ ticket in JIRA to claim your namespace (groupId in Maven terms). If you have a
 github account, for example,
 &lt;strong&gt;
 &lt;a href=&#34;http://github.com/chhh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://github.com/chhh&lt;/a&gt;
-&lt;/strong&gt;, you&#39;ll want to claim
+&lt;/strong&gt;, you&amp;rsquo;ll want to claim
 &lt;strong&gt;com.github.chhh&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;gpg-signing&#34;&gt;GPG signing&lt;/h2&gt;
-&lt;p&gt;You&#39;ll need to set up and publish your GPG key for signing artifacts. This is
+&lt;p&gt;You&amp;rsquo;ll need to set up and publish your GPG key for signing artifacts. This is
 described
 
 &lt;a href=&#34;http://central.sonatype.org/pages/working-with-pgp-signatures.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;
 .&lt;/p&gt;
-&lt;p&gt;In short you&#39;ll need to install gpg or gpg2. I did it on Windows and already had
+&lt;p&gt;In short you&amp;rsquo;ll need to install gpg or gpg2. I did it on Windows and already had
 a working gpg that came with git installation. So I happily used that to
 generate my key with (create it with a passphrase!):&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;gpg --gen-key&lt;/code&gt;&lt;/p&gt;
@@ -716,8 +750,8 @@ sub  2048R/3E123123  created: 2012-01-24  expires: never       usage: E
 [ultimate] (1). Dmitry Avtonomov (chhh) &amp;lt;email@gmail.com&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In this case the &lt;em&gt;sub&lt;/em&gt; key is &lt;em&gt;usage: E&lt;/em&gt;, it&#39;s used for encryption only, so
-we&#39;re good to go, otherwise you&#39;d need to delete or revoke it. Published the key
+&lt;p&gt;In this case the &lt;em&gt;sub&lt;/em&gt; key is &lt;em&gt;usage: E&lt;/em&gt;, it&amp;rsquo;s used for encryption only, so
+we&amp;rsquo;re good to go, otherwise you&amp;rsquo;d need to delete or revoke it. Published the key
 with:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;gpg --keyserver hkp://pool.sks-keyservers.net --send-keys &amp;lt;key-id&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;windows-caveat&#34;&gt;Windows caveat&lt;/h3&gt;
@@ -725,7 +759,7 @@ with:&lt;/p&gt;
 However, when I later installed the native windows gpg from
 
 &lt;a href=&#34;https://www.gnupg.org/download/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.gnupg.org/download/&lt;/a&gt;
- I&#39;ve found
+ I&amp;rsquo;ve found
 that it used a different default path and I could not list the key anymore.
 Addind a new environment variable &lt;code&gt;GNUPGHOME&lt;/code&gt; and set it to
 &lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\.gnupg&lt;/code&gt;. Now the gpg that was installed in windows could
@@ -747,18 +781,18 @@ already have it there. Add the following to &lt;code&gt;&amp;lt;profiles&amp;gt;
     &amp;lt;/profile&amp;gt;
 &amp;lt;/profiles&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;It&#39;s ok to have your passphrase set here as this is your user-specific
-configuration file. If you don&#39;t want to specify that, however, there will be an
+&lt;p&gt;It&amp;rsquo;s ok to have your passphrase set here as this is your user-specific
+configuration file. If you don&amp;rsquo;t want to specify that, however, there will be an
 option for you to provide that passphrase every time you publish.&lt;/p&gt;
 &lt;h2 id=&#34;configuring-maven-to-know-the-credentials-for-sonatype-servers&#34;&gt;Configuring Maven to know the credentials for Sonatype servers&lt;/h2&gt;
-&lt;p&gt;You&#39;ll provide the log-in credentials in the same &lt;code&gt;settings.xml&lt;/code&gt; maven file in
-&lt;code&gt;~/.m2&lt;/code&gt; directory. If you don&#39;t want to provide the actual username and
+&lt;p&gt;You&amp;rsquo;ll provide the log-in credentials in the same &lt;code&gt;settings.xml&lt;/code&gt; maven file in
+&lt;code&gt;~/.m2&lt;/code&gt; directory. If you don&amp;rsquo;t want to provide the actual username and
 password, log in to your account at
 
 &lt;a href=&#34;https://oss.sonatype.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://oss.sonatype.org&lt;/a&gt;
 . In the top right corner
 click &lt;code&gt;Log-In&lt;/code&gt;, then click your username and select &lt;code&gt;Profile&lt;/code&gt;. On the new screen
-there&#39;s a dropdown with two choices: &lt;em&gt;Summary&lt;/em&gt; and &lt;em&gt;User Token&lt;/em&gt;. Select the user
+there&amp;rsquo;s a dropdown with two choices: &lt;em&gt;Summary&lt;/em&gt; and &lt;em&gt;User Token&lt;/em&gt;. Select the user
 token, it will give you the info. In the &lt;code&gt;settings.xml&lt;/code&gt; file add:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;  &amp;lt;servers&amp;gt;
     &amp;lt;server&amp;gt;
@@ -769,21 +803,21 @@ token, it will give you the info. In the &lt;code&gt;settings.xml&lt;/code&gt; f
   &amp;lt;/servers&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;satisfying-requirements-to-pass-all-checks-upon-submission-to-sonatype&#34;&gt;Satisfying requirements to pass all checks upon submission to Sonatype&lt;/h2&gt;
-&lt;p&gt;There&#39;s a lot of meta-info required to satisfy all the requirements. As you will
-be using the same &lt;code&gt;groupId&lt;/code&gt; for all your artifacts, it&#39;s easier to put all the
+&lt;p&gt;There&amp;rsquo;s a lot of meta-info required to satisfy all the requirements. As you will
+be using the same &lt;code&gt;groupId&lt;/code&gt; for all your artifacts, it&amp;rsquo;s easier to put all the
 extra information to a parent POM. You can find an example parent project here:
 
 &lt;a href=&#34;https://github.com/chhh/sonatype-ossrh-parent&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/chhh/sonatype-ossrh-parent&lt;/a&gt;
 .
 This project consists only of the POM file, specifying the credentials, basic
 info and publishing locations. It adds some to the &lt;code&gt;release&lt;/code&gt; target as well.&lt;/p&gt;
-&lt;p&gt;It&#39;s ok to just clone that repo and change the information to what you like.
+&lt;p&gt;It&amp;rsquo;s ok to just clone that repo and change the information to what you like.
 &lt;strong&gt;You will set this POM as the &lt;code&gt;&amp;lt;parent&amp;gt;&lt;/code&gt; of the projects you wish to publish to
 Central.&lt;/strong&gt; As it will be the parent POM, anyone who will want to build your
 artifacts will need to have that POM, so the first thing is to publish this
 project to Central by itself.&lt;/p&gt;
 &lt;h2 id=&#34;publishing-parent-pom-project-to-central&#34;&gt;Publishing parent POM project to Central&lt;/h2&gt;
-&lt;p&gt;We&#39;ll be using maven-release plugin. Make sure that:&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll be using maven-release plugin. Make sure that:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;You have SCM information configured.&lt;/li&gt;
 &lt;li&gt;In this parent POM you set the &lt;code&gt;version&lt;/code&gt; to something like &lt;code&gt;0.1-SNAPSHOT&lt;/code&gt;.&lt;/li&gt;
@@ -829,7 +863,7 @@ directory of your project.&lt;/p&gt;
 &lt;a href=&#34;https://netbeans.org/features/platform/all-docs.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NetBeans Platform&lt;/a&gt;
 .&lt;/p&gt;
 &lt;h2 id=&#34;demo-video&#34;&gt;Demo Video&lt;/h2&gt;
-&lt;p&gt;Here&#39;s a short demo video of BatMass in action.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a short demo video of BatMass in action.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/EY9wvd6ckb0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -840,7 +874,7 @@ directory of your project.&lt;/p&gt;
 &lt;img src=&#34;https://dmtavt.com/img/about-batmass/free-layout.png&#34; alt=&#34;Free window layoyt&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Compare multiple experiments at once. The bottom-middle run in this figure is a blank (no sample was injected), while the other 5 were runs with some sample. Amazing how much stuff comes from the background.
 &lt;img src=&#34;https://dmtavt.com/img/about-batmass/comparison-6-runs-1-blank.png&#34; alt=&#34;Multi experiment comparison in Map2D&#34;&gt;&lt;/p&gt;
-&lt;p&gt;And here are the same runs but zoomed in to a small region of m/z and retentino time. Look at the color-marked regions. Let&#39;s just accept that zero-values are a thing, there is no need to try extracting noise to do gap-filling in data.
+&lt;p&gt;And here are the same runs but zoomed in to a small region of m/z and retentino time. Look at the color-marked regions. Let&amp;rsquo;s just accept that zero-values are a thing, there is no need to try extracting noise to do gap-filling in data.
 &lt;img src=&#34;https://dmtavt.com/img/about-batmass/comparison-6-runs-1-blank-02-zoom-marked.png&#34; alt=&#34;Multi experiment comparison in Map2D zoomed&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
 &lt;ul&gt;
@@ -848,7 +882,7 @@ directory of your project.&lt;/p&gt;
 &lt;p&gt;Support for the open standard &lt;em&gt;mzML&lt;/em&gt; and &lt;em&gt;mzXML&lt;/em&gt; mass spectrometry data types. We are hoping to bring native vendor format support as well.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Viewer synchronization. Link any number of viewers and zooming/panning will be synchronized across them. If you&#39;re viewing MS&lt;sup&gt;1&lt;/sup&gt; data in one view and MS&lt;sup&gt;2&lt;/sup&gt; data in the other the retention time is synchronized, while m/z is not. Open a detected LC/MS feature table or a peptide identification table, a double click on the row will open the corresponding spectrum, or bring you to the corresponding location in a 2D Map viewer.&lt;/p&gt;
+&lt;p&gt;Viewer synchronization. Link any number of viewers and zooming/panning will be synchronized across them. If you&amp;rsquo;re viewing MS&lt;sup&gt;1&lt;/sup&gt; data in one view and MS&lt;sup&gt;2&lt;/sup&gt; data in the other the retention time is synchronized, while m/z is not. Open a detected LC/MS feature table or a peptide identification table, a double click on the row will open the corresponding spectrum, or bring you to the corresponding location in a 2D Map viewer.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Data access layer. For the Java developers out there, the highly optimized mzML/mzXML parsers can be used in any standalone Java program as a simple &lt;em&gt;jar&lt;/em&gt; dependency. Parsing has been manually tuned to produce few garbage objects, thus minimizing time spent in GC (Garbage Collection), the speed is comparable to or better than in C/C++ implementations. The API for LC/MS data files gives access to most of the features supported by mzML/mzXML standards.&lt;/p&gt;
@@ -1068,7 +1102,7 @@ Email: &lt;a href=&#34;mailto:nesvi@umich.edu&#34;&gt;nesvi@umich.edu&lt;/a&gt;&
   
 &lt;/div&gt;
 &lt;p&gt;DeltaMass will plot mass-differences from a proteomic &amp;ldquo;Open Search&amp;rdquo;. An &amp;ldquo;Open Search&amp;rdquo; is any search of fragmentation spectra (MS2) against a protein database when the precursor mass tolerance was set to a high enough value. E.g. not the usual 5-10-20 ppm, but instead 50-100-200 Da. The result of such a search is quite different from the regular one, it might contain a lot of spurious hits, but a lot of hits will still correspond to reasonable matches.&lt;/p&gt;
-&lt;p&gt;The differences in mass between the observed value for a precursor and the theoretical peptide mass from a database might be many Daltons. Nevertheless, you&#39;ll still see lots of similar mass differences, which should correspond to Post Translational Modifications (PTMs) or chemical modifications or other artifacts in the data.&lt;/p&gt;
+&lt;p&gt;The differences in mass between the observed value for a precursor and the theoretical peptide mass from a database might be many Daltons. Nevertheless, you&amp;rsquo;ll still see lots of similar mass differences, which should correspond to Post Translational Modifications (PTMs) or chemical modifications or other artifacts in the data.&lt;/p&gt;
 &lt;p&gt;After performing an Open Search you might want to identify the differences to maybe include them into the variable modifications list of your search engine settings. You might also discover unexpected artifacts, like chemical derivatives of peptides occurring because of your sample preparation protocols etc.&lt;/p&gt;
 &lt;p&gt;This is where this program comes into play.&lt;/p&gt;
 &lt;h1 id=&#34;referencing-work--citing&#34;&gt;Referencing work / Citing&lt;/h1&gt;
@@ -1122,7 +1156,7 @@ Dmitry M. Avtonomov, Andy Kong, and Alexey I. Nesvizhskii, &#34;DeltaMass: Autom
       <guid>https://dmtavt.com/project/dia-umpire/</guid>
       <description>&lt;p&gt;
 &lt;a href=&#34;http://diaumpire.sourceforge.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DIA-Umpire&lt;/a&gt;
- - Data Independent Acquisition (DIA) data processing tool that doens&#39;t require a spectral library. Detects features in MS1 and MS2, correlates precursors to fragments based on elution profile similarity and compiles pseudo-MS/MS spectra from these groups, which can later be searched with standard proteomic search tools.&lt;/p&gt;
+ - Data Independent Acquisition (DIA) data processing tool that doens&amp;rsquo;t require a spectral library. Detects features in MS1 and MS2, correlates precursors to fragments based on elution profile similarity and compiles pseudo-MS/MS spectra from these groups, which can later be searched with standard proteomic search tools.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Efficient calculation of isotopic fine structure up to predefined aggregated probability.&lt;/li&gt;
 &lt;/ul&gt;

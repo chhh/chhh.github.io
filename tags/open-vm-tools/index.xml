@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open-vm-tools | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tags/open-vm-tools/</link>
+      <atom:link href="https://dmtavt.com/tags/open-vm-tools/index.xml" rel="self" type="application/rss+xml" />
+    <description>open-vm-tools</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Thu, 14 May 2020 00:23:27 -0700</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>open-vm-tools</title>
+      <link>https://dmtavt.com/tags/open-vm-tools/</link>
+    </image>
+    
+    <item>
+      <title>Auto Resize Guest VM Desktop running under VMWare</title>
+      <link>https://dmtavt.com/post/2020-05-14-auto-resize-guest-vm-desktop/</link>
+      <pubDate>Thu, 14 May 2020 00:23:27 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2020-05-14-auto-resize-guest-vm-desktop/</guid>
+      <description>&lt;h2 id=&#34;symptopms&#34;&gt;Symptopms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;After first reboot of VM destop of guest OS stopped auto-resizing to fill host window.&lt;/li&gt;
+&lt;li&gt;But it was working fine during guest OS install, or while it was running from live cd.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TL;DR;&lt;/h2&gt;
+&lt;p&gt;Restart &lt;code&gt;vmtoolsd&lt;/code&gt; service.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On Manjaro / Arch&lt;/strong&gt;:&lt;br&gt;
+&lt;code&gt;sudo systemctl restart vmtoolsd&lt;/code&gt;&lt;br&gt;
+Has to be done after every boot-up. And sometimes after session locks out as well.&lt;/p&gt;
+&lt;p&gt;Some suggest that delaying the start of the service helps:&lt;br&gt;
+&lt;code&gt;sudo vim /etc/systemd/system/multi-user.target.wants/vmtoolsd.service&lt;/code&gt;&lt;br&gt;
+and add the folowing in [Unit] section:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Unit]
+After=graphical.target
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Didn&amp;rsquo;t help me.&lt;/p&gt;
+&lt;h2 id=&#34;a-bit-more-context&#34;&gt;A bit more context&lt;/h2&gt;
+&lt;p&gt;VMWare Workstation requires you to have &lt;code&gt;open-vm-tools&lt;/code&gt; package service installed, which actually does the resizing.
+I was running Manjaro 20 under VMWare Workstation 15 on Win10 Pro. Open VM Tools was already pre-installed with
+Manjaro distribution.&lt;br&gt;
+However it seems like the service named &lt;code&gt;vmtoolsd&lt;/code&gt; starts too early. On the internet everyone mentions &lt;code&gt;open-vm-tools&lt;/code&gt;,
+but it probably changed name to &lt;code&gt;vmtoolsd&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;possible-solutions&#34;&gt;Possible solutions&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/vmware/open-vm-tools/issues/253&#34;&gt;https://github.com/vmware/open-vm-tools/issues/253&lt;/a&gt;
+&lt;a href=&#34;https://github.com/vmware/open-vm-tools/issues/303&#34;&gt;https://github.com/vmware/open-vm-tools/issues/303&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
