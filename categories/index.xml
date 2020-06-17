@@ -5,12 +5,28 @@
     <link>https://dmtavt.com/categories/</link>
       <atom:link href="https://dmtavt.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Wed, 17 Jun 2020 10:17:37 -0700</lastBuildDate>
     <image>
       <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
       <title>Categories</title>
       <link>https://dmtavt.com/categories/</link>
     </image>
+    
+    <item>
+      <title>csharp</title>
+      <link>https://dmtavt.com/categories/csharp/</link>
+      <pubDate>Wed, 17 Jun 2020 10:17:37 -0700</pubDate>
+      <guid>https://dmtavt.com/categories/csharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://dmtavt.com/categories/java/</link>
+      <pubDate>Wed, 17 Jun 2020 10:17:37 -0700</pubDate>
+      <guid>https://dmtavt.com/categories/java/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -685,11 +685,11 @@ link</a>
 power the HDD though, so I bought an powered USB hub (Anker 4-port powered USB
 hub, 
 <a href="http://a.co/d/bqRz17R" target="_blank" rel="noopener">Amazon link</a>
-). Haven&rsquo;t tried it yet, but it&rsquo;s quite
+). Haven't tried it yet, but it's quite
 possible you can power up to 4 HDDs this way and use them all with a single Pi.</p>
-<p>Just plug the HDD in the hub, the hub into wall power and the Pi - you&rsquo;re ready
+<p>Just plug the HDD in the hub, the hub into wall power and the Pi - you're ready
 to go. Reboot the Pi. Go to the web admin console. <code>Storage -&gt; Disks</code>, check
-that you see the new HDD there, probably as <code>/dev/sda1</code>.<code>Storage -&gt; File Systems -&gt; +Create</code> (there&rsquo;s a button in the top row), create a new <em>ext4</em> filesystem on
+that you see the new HDD there, probably as <code>/dev/sda1</code>.<code>Storage -&gt; File Systems -&gt; +Create</code> (there's a button in the top row), create a new <em>ext4</em> filesystem on
 the HDD.</p>
 <h2 id="creating-a-shared-folder-available-from-your-local-network">Creating a shared folder available from your local network</h2>
 <p>To enable file sharing using this HDD check that <code>Services -&gt; SMB/CIFS</code> is
@@ -700,15 +700,15 @@ shared folder.</p>
 <p>On Windows you can now open Explorer and <code>Map network drive</code>. Put in an address
 like <code>\\192.168.1.176\my-share</code>. If all was right, it should ask you for
 login/password. Check the box <em>log in using different credentials</em> and supply
-the username and password for the user that you&rsquo;ve just created through OMV
+the username and password for the user that you've just created through OMV
 admin web page.</p>
 <h2 id="setting-up-backup-of-your-cloud-based-storage-to-the-local-hdd-connected-to-pi">Setting up backup of your cloud-based storage to the local HDD connected to Pi</h2>
-<p>Log in to RPi from ssh. Install RClone (<a href="https://rclone.org">https://rclone.org</a>). Worked fine from
+<p>Log in to RPi from ssh. Install RClone (<a href="https://rclone.org)">https://rclone.org)</a>. Worked fine from
 the script installation for me. Run <code>rclone configure</code> to set up Google Drive
 integration. When asked to do &ldquo;interactive&rdquo; setup, say No. Then you can just
 copy the given link and follow it on another computer with an actual browser.
-Lynx won&rsquo;t do, as the Google authentication page needs javascript.</p>
-<p>Give it a go while ssh&rsquo;ed into the Pi. When everything works, you can go to the
+Lynx won't do, as the Google authentication page needs javascript.</p>
+<p>Give it a go while ssh'ed into the Pi. When everything works, you can go to the
 OMV admin panel <code>System -&gt; Scheduled Jobs</code>, which is basically a UI for adding
 cron jobs, and add your <code>rclone sync</code> or <code>rclone copy</code> command to run, e.g.
 every night at 3AM.</p>

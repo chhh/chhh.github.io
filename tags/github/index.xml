@@ -29,7 +29,7 @@ redirected to the new custom domain, so your project pages can benefit from this
 automatically. If you already have a project page like
 &lt;code&gt;&amp;lt;username&amp;gt;.github.io/projectname&lt;/code&gt;, this will become &lt;code&gt;&amp;lt;custom.domain&amp;gt;/projectname&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;sequence-of-actions&#34;&gt;Sequence of actions&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s say you own &lt;code&gt;domain.com&lt;/code&gt; for the sake of example, and your github username
+&lt;p&gt;Let&#39;s say you own &lt;code&gt;domain.com&lt;/code&gt; for the sake of example, and your github username
 is &lt;code&gt;yourname&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;on-github&#34;&gt;On GitHub&lt;/h3&gt;
 &lt;p&gt;Create a repository with name &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; or
@@ -40,7 +40,7 @@ contents to the root directory:&lt;/p&gt;
 www.domain.com
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;If you prefer the name with &lt;em&gt;www&lt;/em&gt; prefix, put it at the top. Commit and push.
-That&amp;rsquo;s it with github.&lt;/p&gt;
+That&#39;s it with github.&lt;/p&gt;
 &lt;h3 id=&#34;at-dns-provider-config&#34;&gt;At DNS provider config&lt;/h3&gt;
 &lt;p&gt;Add an A record:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-yml&#34;&gt;name: @

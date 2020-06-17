@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tags/java/</link>
+      <atom:link href="https://dmtavt.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <description>java</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Wed, 17 Jun 2020 10:17:37 -0700</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <title>java</title>
+      <link>https://dmtavt.com/tags/java/</link>
+    </image>
+    
+    <item>
+      <title>Parallel Producer Consumer Queues</title>
+      <link>https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/</link>
+      <pubDate>Wed, 17 Jun 2020 10:17:37 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/</guid>
+      <description>&lt;h2 id=&#34;preamble&#34;&gt;Preamble&lt;/h2&gt;
+&lt;p&gt;Many programs do some sort of data transform and can be described as
+read/generate some data, process the data, write the output. It&#39;s always beneficial
+if some steps are performed in parallel. E.g. the reader pre-fetches a few data items
+so that when the &amp;lsquo;processing&amp;rsquo; part of the program is ready for a new chunk of data
+the data is already there waiting. Ths post provides two quick solutions for java and
+C#. Java with 
+&lt;a href=&#34;https://projectreactor.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Project Reactor&lt;/a&gt;
+. C# using 
+&lt;a href=&#34;https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/dataflow-task-parallel-library&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TPL Dataflow&lt;/a&gt;
+
+(Task Parallel Library).&lt;/p&gt;
+&lt;h1 id=&#34;c-tpl-dataflow&#34;&gt;C# TPL Dataflow&lt;/h1&gt;
+&lt;p&gt;The example code produces (reads etc.) new items concurrently with processing said items, maintaining a read-ahead buffer. The completion signal is sent to the head of the chain when the &amp;ldquo;producer&amp;rdquo; has no more items. The program also awaits the completion of the whole chain before terminating.&lt;br&gt;
+Posted in 
+&lt;a href=&#34;https://stackoverflow.com/questions/61951466/backpressure-via-bufferblock-not-working-c-tpl-dataflow/62012626#62012626&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this StackOverflow thread&lt;/a&gt;
+ on the topic.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-csharp&#34;&gt;static async Task Main() {
+
+    string Time() =&amp;gt; $&amp;quot;{DateTime.Now:hh:mm:ss.fff}&amp;quot;;
+
+    // the buffer is added to the chain just for demonstration purposes
+    // the chain would work fine using just the built-in input buffer
+    // of the `action` block.
+    var buffer = new BufferBlock&amp;lt;int&amp;gt;(new DataflowBlockOptions {BoundedCapacity = 3});
+
+    var action = new ActionBlock&amp;lt;int&amp;gt;(async i =&amp;gt;
+    {
+        Console.WriteLine($&amp;quot;[{Time()}]: Processing: {i}&amp;quot;);
+        await Task.Delay(500);
+    }, new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = 2, BoundedCapacity = 2});
+
+    // it&#39;s necessary to set `PropagateCompletion` property
+    buffer.LinkTo(action, new DataflowLinkOptions {PropagateCompletion = true});
+
+    //Producer
+    foreach (var i in Enumerable.Range(0, 10))
+    {
+        Console.WriteLine($&amp;quot;[{Time()}]: Ready to send: {i}&amp;quot;);
+        await buffer.SendAsync(i);
+        Console.WriteLine($&amp;quot;[{Time()}]: Sent: {i}&amp;quot;);
+    }
+
+    // we call `.Complete()` on the head of the chain and it&#39;s propagated forward
+    buffer.Complete(); 
+
+    await action.Completion;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;java-project-reactor&#34;&gt;Java, Project Reactor&lt;/h1&gt;
+&lt;p&gt;Reactive processing: async IO producer with prefetch and in-order consumers (Project Reactor 3.x).
+Posted to 
+&lt;a href=&#34;https://stackoverflow.com/questions/61885623/reactive-processing-async-io-producer-with-prefetch-and-in-order-consumers-mwe/61930266#61930266&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this StackOverflow thread&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement:&lt;/h3&gt;
+&lt;p&gt;Do I/O in chunks. Start processing chunks as soon as one becomes available, while further chunks are being read in background (but not more than &lt;em&gt;X&lt;/em&gt; chunks are read ahead). Process chunks in parallel as they are being received. Consume each processed chunk in-order-of-reading, i.e. in original order of the chunk being read.&lt;/p&gt;
+&lt;h3 id=&#34;pseudo-rx-code-explanation-of-what-wed-like-to-achieve&#34;&gt;Pseudo-Rx code explanation of what we&#39;d like to achieve:&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;Flux.fromFile(path, some-function-to-define-chunk)
+   // done with Flux.generate in MWE below
+
+ .prefetchOnIoThread(x-count: int)
+   // at this point we try to maintain a buffer filled with x-count pre-read chunks
+
+ .parallelMapOrdered(n-threads: int, limit-process-ahead: int)
+   // n-threads: are constantly trying to drain the x-count buffer, doing some transformation
+   // limit-process-ahead: as the operation results are needed in order, if we encounter an
+   // input element that takes a while to process, we don&#39;t want the pipeline to run too far
+   // ahead of this problematic element (to not overflow the buffers and use too much memory)
+
+ .consume(TMapped v)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;my-solution&#34;&gt;My solution&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;final int threads = 2;
+final int prefetch = 3;
+
+Flux&amp;lt;Integer&amp;gt; gen = Flux.generate(AtomicInteger::new, (ai, sink) -&amp;gt; {
+  int i = ai.incrementAndGet();
+  if (i &amp;gt; 10) {
+    sink.complete();
+  } else {
+    sink.next(i);
+  }
+  return ai;
+});
+
+gen.parallel(threads, prefetch)             // switch to parallel processing after genrator
+    .runOn(Schedulers.parallel(), prefetch) // if you don&#39;t do this, it won&#39;t run in parallel
+    .map(i -&amp;gt; i + 1000)                     // this is done in parallel
+    .ordered(Integer::compareTo)            // you can do just .sequential(), which is faster
+    .subscribeOn(Schedulers.elastic())      // generator will run on this scheduler (once subscribed)
+    .subscribe(i -&amp;gt; {
+      System.out.printf(&amp;quot;Transformed integer: &amp;quot; + i); // do something with generated and processed item
+    });
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
