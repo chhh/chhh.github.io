@@ -12,21 +12,5 @@
       <link>https://dmtavt.com/categories/</link>
     </image>
     
-    <item>
-      <title>csharp</title>
-      <link>https://dmtavt.com/categories/csharp/</link>
-      <pubDate>Wed, 17 Jun 2020 10:17:37 -0700</pubDate>
-      <guid>https://dmtavt.com/categories/csharp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>https://dmtavt.com/categories/java/</link>
-      <pubDate>Wed, 17 Jun 2020 10:17:37 -0700</pubDate>
-      <guid>https://dmtavt.com/categories/java/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

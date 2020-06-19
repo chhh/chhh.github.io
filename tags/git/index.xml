@@ -33,11 +33,11 @@ Add &lt;code&gt;--prefix  subdir-name&lt;/code&gt; to have all files in the arch
       <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
       <guid>https://dmtavt.com/post/2018-11-25-adding-all-git-submodules/</guid>
       <description>&lt;p&gt;You have a git repo (a directory) which contains sub-directories which are git
-repos themselves and now you want them to become submodules. Here&#39;s a quick
+repos themselves and now you want them to become submodules. Here&amp;rsquo;s a quick
 automatic way to add them all.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Remove &lt;code&gt;-maxdepth&lt;/code&gt; if you want to recursively dig deeper than 1 level.&lt;/li&gt;
-&lt;li&gt;Assumes that each submodule has a remote named &lt;code&gt;origin&lt;/code&gt;, uses that remote&#39;s
+&lt;li&gt;Assumes that each submodule has a remote named &lt;code&gt;origin&lt;/code&gt;, uses that remote&amp;rsquo;s
 url.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;preview-command&#34;&gt;Preview command&lt;/h3&gt;

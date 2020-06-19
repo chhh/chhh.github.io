@@ -21,7 +21,7 @@
 (Android 8.1.0)  connected to T-Mobile (tethering) and it worked for a while,
 but one day it just broke. Connection would work for 5-10 seconds allowing
 to load one website maybe, but then it threw some DNS errors. Setting DNS
-server manually didn&#39;t help, also &lt;code&gt;ping 8.8.8.8&lt;/code&gt; timed out.&lt;/p&gt;
+server manually didn&amp;rsquo;t help, also &lt;code&gt;ping 8.8.8.8&lt;/code&gt; timed out.&lt;/p&gt;
 &lt;p&gt;The solution (&lt;strong&gt;from elevated cmd prompt&lt;/strong&gt;):&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;netsh int ip reset c:\resetlog.txt
 netsh winsock reset catalog

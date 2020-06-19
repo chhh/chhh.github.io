@@ -194,7 +194,7 @@
   
 &lt;/div&gt;
 &lt;p&gt;DeltaMass will plot mass-differences from a proteomic &amp;ldquo;Open Search&amp;rdquo;. An &amp;ldquo;Open Search&amp;rdquo; is any search of fragmentation spectra (MS2) against a protein database when the precursor mass tolerance was set to a high enough value. E.g. not the usual 5-10-20 ppm, but instead 50-100-200 Da. The result of such a search is quite different from the regular one, it might contain a lot of spurious hits, but a lot of hits will still correspond to reasonable matches.&lt;/p&gt;
-&lt;p&gt;The differences in mass between the observed value for a precursor and the theoretical peptide mass from a database might be many Daltons. Nevertheless, you&#39;ll still see lots of similar mass differences, which should correspond to Post Translational Modifications (PTMs) or chemical modifications or other artifacts in the data.&lt;/p&gt;
+&lt;p&gt;The differences in mass between the observed value for a precursor and the theoretical peptide mass from a database might be many Daltons. Nevertheless, you&amp;rsquo;ll still see lots of similar mass differences, which should correspond to Post Translational Modifications (PTMs) or chemical modifications or other artifacts in the data.&lt;/p&gt;
 &lt;p&gt;After performing an Open Search you might want to identify the differences to maybe include them into the variable modifications list of your search engine settings. You might also discover unexpected artifacts, like chemical derivatives of peptides occurring because of your sample preparation protocols etc.&lt;/p&gt;
 &lt;p&gt;This is where this program comes into play.&lt;/p&gt;
 &lt;h1 id=&#34;referencing-work--citing&#34;&gt;Referencing work / Citing&lt;/h1&gt;
@@ -248,7 +248,7 @@ Dmitry M. Avtonomov, Andy Kong, and Alexey I. Nesvizhskii, &#34;DeltaMass: Autom
       <guid>https://dmtavt.com/project/dia-umpire/</guid>
       <description>&lt;p&gt;
 &lt;a href=&#34;http://diaumpire.sourceforge.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DIA-Umpire&lt;/a&gt;
- - Data Independent Acquisition (DIA) data processing tool that doens&#39;t require a spectral library. Detects features in MS1 and MS2, correlates precursors to fragments based on elution profile similarity and compiles pseudo-MS/MS spectra from these groups, which can later be searched with standard proteomic search tools.&lt;/p&gt;
+ - Data Independent Acquisition (DIA) data processing tool that doens&amp;rsquo;t require a spectral library. Detects features in MS1 and MS2, correlates precursors to fragments based on elution profile similarity and compiles pseudo-MS/MS spectra from these groups, which can later be searched with standard proteomic search tools.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Efficient calculation of isotopic fine structure up to predefined aggregated probability.&lt;/li&gt;
 &lt;/ul&gt;

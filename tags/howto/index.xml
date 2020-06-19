@@ -29,7 +29,7 @@ sudo pacman -Rns expressvpn
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;install-new-package-from-expressvpn-website&#34;&gt;Install new package from ExpressVPN website&lt;/h3&gt;
-&lt;p&gt;ExpressVPN website provides a package for Arch now. Manjaro is based on Arch, so that&#39;s what we need.&lt;br&gt;
+&lt;p&gt;ExpressVPN website provides a package for Arch now. Manjaro is based on Arch, so that&amp;rsquo;s what we need.&lt;br&gt;
 Download 64 bit &lt;code&gt;.pkg.tar.xz&lt;/code&gt; Arch package: &lt;a href=&#34;https://www.expressvpn.com/setup#linux&#34;&gt;https://www.expressvpn.com/setup#linux&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;if you have a fresh install of manjaro:&lt;/p&gt;
 &lt;ul&gt;
@@ -136,11 +136,11 @@ Add &lt;code&gt;--prefix  subdir-name&lt;/code&gt; to have all files in the arch
       <pubDate>Sun, 25 Nov 2018 00:00:00 -0800</pubDate>
       <guid>https://dmtavt.com/post/2018-11-25-adding-all-git-submodules/</guid>
       <description>&lt;p&gt;You have a git repo (a directory) which contains sub-directories which are git
-repos themselves and now you want them to become submodules. Here&#39;s a quick
+repos themselves and now you want them to become submodules. Here&amp;rsquo;s a quick
 automatic way to add them all.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Remove &lt;code&gt;-maxdepth&lt;/code&gt; if you want to recursively dig deeper than 1 level.&lt;/li&gt;
-&lt;li&gt;Assumes that each submodule has a remote named &lt;code&gt;origin&lt;/code&gt;, uses that remote&#39;s
+&lt;li&gt;Assumes that each submodule has a remote named &lt;code&gt;origin&lt;/code&gt;, uses that remote&amp;rsquo;s
 url.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;preview-command&#34;&gt;Preview command&lt;/h3&gt;

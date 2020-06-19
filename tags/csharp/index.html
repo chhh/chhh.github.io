@@ -555,7 +555,7 @@
     
     
     <div>
-      <h2><a href="/post/2020-06-17_parallel-producer-consumer-queues/" >Parallel Producer Consumer Queues</a></h2>
+      <h2><a href="/post/2020-06-17_parallel-producer-consumer-queues/" >Parallel producer-consumer queues with nice backpressure support</a></h2>
       <div class="article-style">
         
           Many programs do some sort of data transform and can be described as read/generate some data, process the data, write the output. It's always beneficial if some steps are performed in parallel. E.g. the reader pre-fetches a few data items so that when the 'processing' part of the program is ready for a new chunk of data the data is already there waiting. Ths post provides two quick solutions for java and C#. Java with Project Reactor. C# using TPL Dataflow (Task Parallel Library).

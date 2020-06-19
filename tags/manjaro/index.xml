@@ -33,7 +33,7 @@ and add the folowing in [Unit] section:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;[Unit]
 After=graphical.target
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Didn&#39;t help me.&lt;/p&gt;
+&lt;p&gt;Didn&amp;rsquo;t help me.&lt;/p&gt;
 &lt;h2 id=&#34;a-bit-more-context&#34;&gt;A bit more context&lt;/h2&gt;
 &lt;p&gt;VMWare Workstation requires you to have &lt;code&gt;open-vm-tools&lt;/code&gt; package service installed, which actually does the resizing.
 I was running Manjaro 20 under VMWare Workstation 15 on Win10 Pro. Open VM Tools was already pre-installed with
@@ -63,7 +63,7 @@ sudo pacman -Rns expressvpn
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;install-new-package-from-expressvpn-website&#34;&gt;Install new package from ExpressVPN website&lt;/h3&gt;
-&lt;p&gt;ExpressVPN website provides a package for Arch now. Manjaro is based on Arch, so that&#39;s what we need.&lt;br&gt;
+&lt;p&gt;ExpressVPN website provides a package for Arch now. Manjaro is based on Arch, so that&amp;rsquo;s what we need.&lt;br&gt;
 Download 64 bit &lt;code&gt;.pkg.tar.xz&lt;/code&gt; Arch package: &lt;a href=&#34;https://www.expressvpn.com/setup#linux&#34;&gt;https://www.expressvpn.com/setup#linux&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;if you have a fresh install of manjaro:&lt;/p&gt;
 &lt;ul&gt;
