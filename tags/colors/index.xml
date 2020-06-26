@@ -17,12 +17,12 @@
       <link>https://dmtavt.com/post/2018-10-11-custom-colors-in-win-shells/</link>
       <pubDate>Thu, 11 Oct 2018 00:00:00 -0700</pubDate>
       <guid>https://dmtavt.com/post/2018-10-11-custom-colors-in-win-shells/</guid>
-      <description>&lt;p&gt;We&amp;rsquo;ll be using 
+      <description>&lt;p&gt;We&#39;ll be using 
 &lt;a href=&#34;https://scoop.sh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scoop&lt;/a&gt;
  to install the necessary tools.&lt;/p&gt;
 &lt;h2 id=&#34;quickstart-with-scoop&#34;&gt;Quickstart with scoop&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Install &lt;code&gt;git&lt;/code&gt; separately. Here&amp;rsquo;s the link: &lt;a href=&#34;https://gitforwindows.org&#34;&gt;https://gitforwindows.org&lt;/a&gt;. I recommend the following customizations in the installer:
+&lt;li&gt;Install &lt;code&gt;git&lt;/code&gt; separately. Here&#39;s the link: &lt;a href=&#34;https://gitforwindows.org&#34;&gt;https://gitforwindows.org&lt;/a&gt;. I recommend the following customizations in the installer:
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Use Notepad++ as default editor&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Use True Type fonts in all console windows&lt;/em&gt;&lt;/li&gt;

@@ -13,13 +13,13 @@
     </image>
     
     <item>
-      <title>Parallel producer-consumer queues with nice backpressure support</title>
+      <title>Parallel Producer Consumer Queues</title>
       <link>https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/</link>
       <pubDate>Wed, 17 Jun 2020 10:17:37 -0700</pubDate>
       <guid>https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/</guid>
       <description>&lt;h2 id=&#34;preamble&#34;&gt;Preamble&lt;/h2&gt;
 &lt;p&gt;Many programs do some sort of data transform and can be described as
-read/generate some data, process the data, write the output. It&amp;rsquo;s always beneficial
+read/generate some data, process the data, write the output. It&#39;s always beneficial
 if some steps are performed in parallel. E.g. the reader pre-fetches a few data items
 so that when the &amp;lsquo;processing&amp;rsquo; part of the program is ready for a new chunk of data
 the data is already there waiting. Ths post provides two quick solutions for java and
@@ -73,7 +73,7 @@ Posted to
 .&lt;/p&gt;
 &lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement:&lt;/h3&gt;
 &lt;p&gt;Do I/O in chunks. Start processing chunks as soon as one becomes available, while further chunks are being read in background (but not more than &lt;em&gt;X&lt;/em&gt; chunks are read ahead). Process chunks in parallel as they are being received. Consume each processed chunk in-order-of-reading, i.e. in original order of the chunk being read.&lt;/p&gt;
-&lt;h3 id=&#34;pseudo-rx-code-explanation-of-what-wed-like-to-achieve&#34;&gt;Pseudo-Rx code explanation of what we&amp;rsquo;d like to achieve:&lt;/h3&gt;
+&lt;h3 id=&#34;pseudo-rx-code-explanation-of-what-wed-like-to-achieve&#34;&gt;Pseudo-Rx code explanation of what we&#39;d like to achieve:&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;Flux.fromFile(path, some-function-to-define-chunk)
    // done with Flux.generate in MWE below
 

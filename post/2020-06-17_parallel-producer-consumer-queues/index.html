@@ -268,7 +268,7 @@
   
   <meta property="og:site_name" content="Dmitry Avtonomov">
   <meta property="og:url" content="https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/">
-  <meta property="og:title" content="Parallel producer-consumer queues with nice backpressure support | Dmitry Avtonomov">
+  <meta property="og:title" content="Parallel Producer Consumer Queues | Dmitry Avtonomov">
   <meta property="og:description" content="Many programs do some sort of data transform and can be described as read/generate some data, process the data, write the output. It&#39;s always beneficial if some steps are performed in parallel. E.g. the reader pre-fetches a few data items so that when the &#39;processing&#39; part of the program is ready for a new chunk of data the data is already there waiting. Ths post provides two quick solutions for java and C#. Java with Project Reactor. C# using TPL Dataflow (Task Parallel Library)."><meta property="og:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png">
   <meta property="twitter:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png"><meta property="og:locale" content="en-us">
   
@@ -303,7 +303,7 @@
     "@type": "WebPage",
     "@id": "https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/"
   },
-  "headline": "Parallel producer-consumer queues with nice backpressure support",
+  "headline": "Parallel Producer Consumer Queues",
   
   "datePublished": "2020-06-17T10:17:37-07:00",
   "dateModified": "2020-06-17T10:17:37-07:00",
@@ -339,7 +339,7 @@
 
 
 
-  <title>Parallel producer-consumer queues with nice backpressure support | Dmitry Avtonomov</title>
+  <title>Parallel Producer Consumer Queues | Dmitry Avtonomov</title>
 
 </head>
 
@@ -585,7 +585,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Parallel producer-consumer queues with nice backpressure support</h1>
+  <h1>Parallel Producer Consumer Queues</h1>
 
   
   <p class="page-subtitle">In java and C#</p>
@@ -657,7 +657,7 @@
     <div class="article-style">
       <h2 id="preamble">Preamble</h2>
 <p>Many programs do some sort of data transform and can be described as
-read/generate some data, process the data, write the output. It&rsquo;s always beneficial
+read/generate some data, process the data, write the output. It's always beneficial
 if some steps are performed in parallel. E.g. the reader pre-fetches a few data items
 so that when the &lsquo;processing&rsquo; part of the program is ready for a new chunk of data
 the data is already there waiting. Ths post provides two quick solutions for java and
@@ -711,7 +711,7 @@ Posted to
 .</p>
 <h3 id="problem-statement">Problem statement:</h3>
 <p>Do I/O in chunks. Start processing chunks as soon as one becomes available, while further chunks are being read in background (but not more than <em>X</em> chunks are read ahead). Process chunks in parallel as they are being received. Consume each processed chunk in-order-of-reading, i.e. in original order of the chunk being read.</p>
-<h3 id="pseudo-rx-code-explanation-of-what-wed-like-to-achieve">Pseudo-Rx code explanation of what we&rsquo;d like to achieve:</h3>
+<h3 id="pseudo-rx-code-explanation-of-what-wed-like-to-achieve">Pseudo-Rx code explanation of what we'd like to achieve:</h3>
 <pre><code class="language-java">Flux.fromFile(path, some-function-to-define-chunk)
    // done with Flux.generate in MWE below
 
@@ -770,8 +770,6 @@ gen.parallel(threads, prefetch)             // switch to parallel processing aft
   
   <a class="badge badge-light" href="/tags/reactive/">reactive</a>
   
-  <a class="badge badge-light" href="/tags/backpressure/">backpressure</a>
-  
 </div>
 
 
@@ -787,7 +785,7 @@ gen.parallel(threads, prefetch)             // switch to parallel processing aft
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/&amp;text=Parallel%20producer-consumer%20queues%20with%20nice%20backpressure%20support" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/&amp;text=Parallel%20Producer%20Consumer%20Queues" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -800,7 +798,7 @@ gen.parallel(threads, prefetch)             // switch to parallel processing aft
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/&amp;t=Parallel%20producer-consumer%20queues%20with%20nice%20backpressure%20support" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/&amp;t=Parallel%20Producer%20Consumer%20Queues" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -813,7 +811,7 @@ gen.parallel(threads, prefetch)             // switch to parallel processing aft
       
       
       <li>
-        <a href="mailto:?subject=Parallel%20producer-consumer%20queues%20with%20nice%20backpressure%20support&amp;body=https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Parallel%20Producer%20Consumer%20Queues&amp;body=https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -826,7 +824,7 @@ gen.parallel(threads, prefetch)             // switch to parallel processing aft
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/&amp;title=Parallel%20producer-consumer%20queues%20with%20nice%20backpressure%20support" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/&amp;title=Parallel%20Producer%20Consumer%20Queues" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -839,7 +837,7 @@ gen.parallel(threads, prefetch)             // switch to parallel processing aft
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=Parallel%20producer-consumer%20queues%20with%20nice%20backpressure%20support%20https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Parallel%20Producer%20Consumer%20Queues%20https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -852,7 +850,7 @@ gen.parallel(threads, prefetch)             // switch to parallel processing aft
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/&amp;title=Parallel%20producer-consumer%20queues%20with%20nice%20backpressure%20support" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://dmtavt.com/post/2020-06-17_parallel-producer-consumer-queues/&amp;title=Parallel%20Producer%20Consumer%20Queues" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>

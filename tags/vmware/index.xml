@@ -33,7 +33,7 @@ and add the folowing in [Unit] section:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;[Unit]
 After=graphical.target
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Didn&amp;rsquo;t help me.&lt;/p&gt;
+&lt;p&gt;Didn&#39;t help me.&lt;/p&gt;
 &lt;h2 id=&#34;a-bit-more-context&#34;&gt;A bit more context&lt;/h2&gt;
 &lt;p&gt;VMWare Workstation requires you to have &lt;code&gt;open-vm-tools&lt;/code&gt; package service installed, which actually does the resizing.
 I was running Manjaro 20 under VMWare Workstation 15 on Win10 Pro. Open VM Tools was already pre-installed with

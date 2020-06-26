@@ -23,13 +23,13 @@
 of live templates. You type several symbols, press tab (by default) and it
 expands the symbols into full expressions. E.g. you can type &lt;code&gt;fori&lt;/code&gt;, press
 &lt;kbd&gt;Tab&lt;/kbd&gt; and get a full &lt;em&gt;for&lt;/em&gt; loop created for you, or type &lt;code&gt;iter&lt;/code&gt;, press
-&lt;kbd&gt;Tab&lt;/kbd&gt; and if you have &lt;code&gt;iterable&lt;/code&gt;s in scope, you&amp;rsquo;ll be presented with a
+&lt;kbd&gt;Tab&lt;/kbd&gt; and if you have &lt;code&gt;iterable&lt;/code&gt;s in scope, you&#39;ll be presented with a
 choice of available ones to iterate over.&lt;/p&gt;
 &lt;h2 id=&#34;example-slf4j-logger-in-each-class&#34;&gt;Example: slf4j logger in each class&lt;/h2&gt;
-&lt;p&gt;It&amp;rsquo;s a super common thing to type at the beginning of each class:&lt;/p&gt;
+&lt;p&gt;It&#39;s a super common thing to type at the beginning of each class:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(MyClassName.class);
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;pretty tedious even with IDE&amp;rsquo;s help.&lt;/p&gt;
+&lt;p&gt;pretty tedious even with IDE&#39;s help.&lt;/p&gt;
 &lt;p&gt;Live templates to the rescue, you can define your own one to create the whole
 line for you! You&lt;/p&gt;
 &lt;h2 id=&#34;how-to-define-a-live-template&#34;&gt;How to define a live template&lt;/h2&gt;
@@ -57,7 +57,7 @@ template expansion.
 &lt;li&gt;At the very bottom look for text &lt;em&gt;Applicable in&lt;/em&gt; with a link &lt;em&gt;Change&lt;/em&gt; next to
 it, click it. Select &lt;em&gt;Java&lt;/em&gt;-&amp;gt;_declaration_.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Congratulations, you&amp;rsquo;re done! Just type &lt;code&gt;log&lt;/code&gt; and press &lt;kbd&gt;Tab&lt;/kbd&gt; anywhere
+&lt;p&gt;Congratulations, you&#39;re done! Just type &lt;code&gt;log&lt;/code&gt; and press &lt;kbd&gt;Tab&lt;/kbd&gt; anywhere
 in the class declaration.&lt;/p&gt;
 </description>
     </item>
