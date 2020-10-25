@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Dmitry Avtonomov&#39;s personal website">
+  <meta name="description" content="Symptoms of the problem: internet connection is fast and a torrent download of Ubuntu can go at 10MB/s, but git clone gets &#39;stuck&#39; at 500-600KB/s.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://dmtavt.com/tags/shell/">
+  <link rel="alternate" hreflang="en-us" href="https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/">
 
   
 
@@ -248,14 +248,12 @@
 
 
   
-  <link rel="alternate" href="/tags/shell/index.xml" type="application/rss+xml" title="Dmitry Avtonomov">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_32x32_fill_gaussian_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_192x192_fill_gaussian_center_2.png">
 
-  <link rel="canonical" href="https://dmtavt.com/tags/shell/">
+  <link rel="canonical" href="https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/">
 
   
   
@@ -269,18 +267,65 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Dmitry Avtonomov">
-  <meta property="og:url" content="https://dmtavt.com/tags/shell/">
-  <meta property="og:title" content="shell | Dmitry Avtonomov">
-  <meta property="og:description" content="Dmitry Avtonomov&#39;s personal website"><meta property="og:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png">
+  <meta property="og:url" content="https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/">
+  <meta property="og:title" content="If it feels `git clone` is throttled on Windows... | Dmitry Avtonomov">
+  <meta property="og:description" content="Symptoms of the problem: internet connection is fast and a torrent download of Ubuntu can go at 10MB/s, but git clone gets &#39;stuck&#39; at 500-600KB/s."><meta property="og:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png">
   <meta property="twitter:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2018-10-11T00:00:00-07:00">
+    
+      <meta property="article:published_time" content="2020-10-25T00:07:15-07:00">
+    
+    <meta property="article:modified_time" content="2020-10-25T00:07:15-07:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/"
+  },
+  "headline": "If it feels `git clone` is throttled on Windows...",
+  
+  "datePublished": "2020-10-25T00:07:15-07:00",
+  "dateModified": "2020-10-25T00:07:15-07:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dmitry Avtonomov"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dmitry Avtonomov",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img/https://dmtavt.com/"
+    }
+  },
+  "description": "Symptoms of the problem: internet connection is fast and a torrent download of Ubuntu can go at 10MB/s, but git clone gets 'stuck' at 500-600KB/s."
+}
+</script>
+
+  
 
   
 
@@ -288,10 +333,13 @@
   
 
 
+  
 
 
 
-  <title>shell | Dmitry Avtonomov</title>
+
+
+  <title>If it feels `git clone` is throttled on Windows... | Dmitry Avtonomov</title>
 
 </head>
 
@@ -410,7 +458,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/post"><span>Posts</span></a>
+          <a class="nav-link  active" href="/post"><span>Posts</span></a>
         </li>
 
         
@@ -516,74 +564,403 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1>If it feels `git clone` is throttled on Windows...</h1>
+
+  
+  <p class="page-subtitle">Try changing automated packet size selection</p>
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>shell</h1>
+
+
+<div class="article-metadata">
 
   
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/chhh/">Dmitry Avtonomov</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 25, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2018-10-11-custom-colors-in-win-shells/" >Custom nice colors in Windows shells</a></h2>
-      <div class="article-style">
-        
-          
-Wouldn't it be nice if you had completion and nice colors in cmd.exe
-just like what you get out of the box on most Linuxes?
+    <div class="article-style">
+      <h2 id="symptoms-of-the-problem">Symptoms of the problem</h2>
+<ul>
+<li>Internet connection is fast and a torrent download of Ubuntu can go at 10MB/s,
+but git clone gets &lsquo;stuck&rsquo; at 500-600KB/s.</li>
+<li>Connecting through VPN helps a bit sometimes, increasing the speed, but not to
+it's full potential.</li>
+<li>Another computer using the same network (wired or wireless) gets full download
+speed when cloning, so you know it's not the connection at fault.</li>
+</ul>
+<pre><code class="language-bat">netsh interface tcp show global
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-yaml">Querying active state...
 
-        
-      </div>
+TCP Global Parameters
+----------------------------------------------
+Receive-Side Scaling State          : disabled
+Receive Window Auto-Tuning Level    : disabled
+Add-On Congestion Control Provider  : default
+ECN Capability                      : disabled
+RFC 1323 Timestamps                 : disabled
+Initial RTO                         : 1000
+Receive Segment Coalescing State    : enabled
+Non Sack Rtt Resiliency             : disabled
+Max SYN Retransmissions             : 4
+Fast Open                           : enabled
+Fast Open Fallback                  : enabled
+HyStart                             : enabled
+Proportional Rate Reduction         : enabled
+Pacing Profile                      : off
+</code></pre>
+<p>The problem is this line: <code>Receive Window Auto-Tuning Level    : disabled</code>.</p>
+<h2 id="solution">Solution</h2>
+<p>Change <code>Receive Window Auto-Tuning Level</code> to <code>normal</code> (from elevated cmd/powershell):</p>
+<pre><code class="language-bat">netsh int tcp set global autotuninglevel=normal
+</code></pre>
+<p>After this my <code>git clone</code> speeds went up to the bandwidth of my internet connection.</p>
+
     </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2018-03-07-shells-on-windows/" >Using multiple different shells/subsystems on Windows</a></h2>
-      <div class="article-style">
-        
-          
-Configuring various shells and convenient dev environments on Windows with ConEmu.
 
-        
-      </div>
-    </div>
-  
+    
 
-  
 
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/git/">git</a>
+  
+  <a class="badge badge-light" href="/tags/windows/">windows</a>
+  
+  <a class="badge badge-light" href="/tags/troubleshooting/">troubleshooting</a>
+  
 </div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/&amp;text=If%20it%20feels%20%60git%20clone%60%20is%20throttled%20on%20Windows..." target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/&amp;t=If%20it%20feels%20%60git%20clone%60%20is%20throttled%20on%20Windows..." target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=If%20it%20feels%20%60git%20clone%60%20is%20throttled%20on%20Windows...&amp;body=https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/&amp;title=If%20it%20feels%20%60git%20clone%60%20is%20throttled%20on%20Windows..." target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=If%20it%20feels%20%60git%20clone%60%20is%20throttled%20on%20Windows...%20https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/&amp;title=If%20it%20feels%20%60git%20clone%60%20is%20throttled%20on%20Windows..." target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/chhh/avatar_hu0471d97dc9367ea1a8930d15eb089c72_901098_270x270_fill_q100_gaussian_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://dmtavt.com/">Dmitry Avtonomov</a></h5>
+      <h6 class="card-subtitle">Software Engineer</h6>
+      <p class="card-text">My main research interests are data visualization and processing for mass spectrometry.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:davtonomov@proteinmetrics.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/dmitry-avtonomov-91aab02b/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=UJL1jgQAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/chhh" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.designbyhumans.com/shop/chhh/" target="_blank" rel="noopener">
+        <i class="fa fa-tshirt"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020-05-13-vmware-player-fix/">Fixing VMWare Workstation `Device/Credential Guard are not compatible` and `64-bit Guest OS can&#39;t run on 32-bit host` errors</a></li>
+      
+      <li><a href="/post/2020-01-26-zipping-git-repo/">Zipping all relevant files in a git repo</a></li>
+      
+      <li><a href="/post/2018-11-25-adding-all-git-submodules/">Adding all existing submodules to a git repo</a></li>
+      
+      <li><a href="/post/2018-09-07-p4merge-as-git-merge-tool/">Use p4merge from Perforce as default git mergetool</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
 
       
 

@@ -5,12 +5,60 @@
     <link>https://dmtavt.com/authors/</link>
       <atom:link href="https://dmtavt.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Sun, 25 Oct 2020 00:07:15 -0700</lastBuildDate>
     <image>
       <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
       <title>Authors</title>
       <link>https://dmtavt.com/authors/</link>
     </image>
+    
+    <item>
+      <title></title>
+      <link>https://dmtavt.com/authors/chhh/</link>
+      <pubDate>Sun, 25 Oct 2020 00:07:15 -0700</pubDate>
+      <guid>https://dmtavt.com/authors/chhh/</guid>
+      <description>&lt;p&gt;Best way to describe myself would be:
+a software engineer with a lot of hands on experience in mass-spectrometry
+(liquid and gas chromatography, ion mobility).&lt;/p&gt;
+&lt;p&gt;Usual course of action - acquire new data, explore it with visualizations,
+come up with a suitable processing algorithm. In most cases this results in
+desktop GUI applications for the viz part and CLI programs to perform batch
+data processing.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prefer writing code in Java or C#, with occasional
+forays into C++.&lt;/li&gt;
+&lt;li&gt;Contributing to Open Source projects like
+
+&lt;a href=&#34;https://netbeans.apache.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache NetBeans&lt;/a&gt;
+.&lt;/li&gt;
+&lt;li&gt;Sharing love through Maven Central.&lt;/li&gt;
+&lt;li&gt;Daily drivers: Java, Gradle, Maven, C# (NET Standard 2.0), Git, SQL&lt;/li&gt;
+&lt;li&gt;Occasional usage: R, Python, Nodejs, React, Hugo, Gatsby and much more&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some project links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://batmass.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BatMass&lt;/a&gt;
+ (&lt;strong&gt;Java, NetBeans Platform&lt;/strong&gt;) - Mass spectrometry data visualization and processing.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/chhh/msftbx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSFTBX&lt;/a&gt;
+ (&lt;strong&gt;Java, gRPC, JNA&lt;/strong&gt;) - Java library for unified mass-spec data access: mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc. Available through Maven Central.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/nesvilab/fragpipe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FragPipe&lt;/a&gt;
+ (&lt;strong&gt;Java Swing, JNA&lt;/strong&gt;) - Pipelined complete LC/MS proteomic analysis with a graphical interface.
+Peptide/protein search, validation, FDR estimation, quantitation, PTM analysis, spectral library building etc.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://msfragger.nesvilab.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSFragger&lt;/a&gt;
+ (&lt;strong&gt;Java&lt;/strong&gt;) - Ultra-fast proteomics search engine for Closed and Open searches.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://chhh.github.io/IMTBX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IMTBX+Grppr&lt;/a&gt;
+ (&lt;strong&gt;C#, WinForms, Java&lt;/strong&gt;) - A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://diaumpire.sourceforge.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DIA-Umpire&lt;/a&gt;
+ - Data Independent Acquisition (DIA) data processing tool that doesn&#39;t require a spectral library (Java).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title> others</title>
@@ -282,54 +330,6 @@
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
       <guid>https://dmtavt.com/authors/sa-moshkovsky/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://dmtavt.com/authors/chhh/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/authors/chhh/</guid>
-      <description>&lt;p&gt;Best way to describe myself would be:
-a software engineer with a lot of hands on experience in mass-spectrometry
-(liquid and gas chromatography, ion mobility).&lt;/p&gt;
-&lt;p&gt;Usual course of action - acquire new data, explore it with visualizations,
-come up with a suitable processing algorithm. In most cases this results in
-desktop GUI applications for the viz part and CLI programs to perform batch
-data processing.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Prefer writing code in Java or C#, with occasional
-forays into C++.&lt;/li&gt;
-&lt;li&gt;Contributing to Open Source projects like
-
-&lt;a href=&#34;https://netbeans.apache.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache NetBeans&lt;/a&gt;
-.&lt;/li&gt;
-&lt;li&gt;Sharing love through Maven Central.&lt;/li&gt;
-&lt;li&gt;Daily drivers: Java, Gradle, Maven, C# (NET Standard 2.0), Git, SQL&lt;/li&gt;
-&lt;li&gt;Occasional usage: R, Python, Nodejs, React, Hugo, Gatsby and much more&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Some project links:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;http://batmass.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BatMass&lt;/a&gt;
- (&lt;strong&gt;Java, NetBeans Platform&lt;/strong&gt;) - Mass spectrometry data visualization and processing.&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://github.com/chhh/msftbx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSFTBX&lt;/a&gt;
- (&lt;strong&gt;Java, gRPC, JNA&lt;/strong&gt;) - Java library for unified mass-spec data access: mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc. Available through Maven Central.&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://github.com/nesvilab/fragpipe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FragPipe&lt;/a&gt;
- (&lt;strong&gt;Java Swing, JNA&lt;/strong&gt;) - Pipelined complete LC/MS proteomic analysis with a graphical interface.
-Peptide/protein search, validation, FDR estimation, quantitation, PTM analysis, spectral library building etc.&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://msfragger.nesvilab.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSFragger&lt;/a&gt;
- (&lt;strong&gt;Java&lt;/strong&gt;) - Ultra-fast proteomics search engine for Closed and Open searches.&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://chhh.github.io/IMTBX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IMTBX+Grppr&lt;/a&gt;
- (&lt;strong&gt;C#, WinForms, Java&lt;/strong&gt;) - A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection.&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;http://diaumpire.sourceforge.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DIA-Umpire&lt;/a&gt;
- - Data Independent Acquisition (DIA) data processing tool that doesn&#39;t require a spectral library (Java).&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
   </channel>

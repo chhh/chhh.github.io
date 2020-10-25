@@ -5,12 +5,57 @@
     <link>https://dmtavt.com/</link>
       <atom:link href="https://dmtavt.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Dmitry Avtonomov</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Mon, 03 Aug 2020 11:49:38 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Sun, 25 Oct 2020 00:07:15 -0700</lastBuildDate>
     <image>
       <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
       <title>Dmitry Avtonomov</title>
       <link>https://dmtavt.com/</link>
     </image>
+    
+    <item>
+      <title>If it feels `git clone` is throttled on Windows...</title>
+      <link>https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/</link>
+      <pubDate>Sun, 25 Oct 2020 00:07:15 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/</guid>
+      <description>&lt;h2 id=&#34;symptoms-of-the-problem&#34;&gt;Symptoms of the problem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Internet connection is fast and a torrent download of Ubuntu can go at 10MB/s,
+but git clone gets &amp;lsquo;stuck&amp;rsquo; at 500-600KB/s.&lt;/li&gt;
+&lt;li&gt;Connecting through VPN helps a bit sometimes, increasing the speed, but not to
+it&#39;s full potential.&lt;/li&gt;
+&lt;li&gt;Another computer using the same network (wired or wireless) gets full download
+speed when cloning, so you know it&#39;s not the connection at fault.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bat&#34;&gt;netsh interface tcp show global
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Output:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;Querying active state...
+
+TCP Global Parameters
+----------------------------------------------
+Receive-Side Scaling State          : disabled
+Receive Window Auto-Tuning Level    : disabled
+Add-On Congestion Control Provider  : default
+ECN Capability                      : disabled
+RFC 1323 Timestamps                 : disabled
+Initial RTO                         : 1000
+Receive Segment Coalescing State    : enabled
+Non Sack Rtt Resiliency             : disabled
+Max SYN Retransmissions             : 4
+Fast Open                           : enabled
+Fast Open Fallback                  : enabled
+HyStart                             : enabled
+Proportional Rate Reduction         : enabled
+Pacing Profile                      : off
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The problem is this line: &lt;code&gt;Receive Window Auto-Tuning Level    : disabled&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;Change &lt;code&gt;Receive Window Auto-Tuning Level&lt;/code&gt; to &lt;code&gt;normal&lt;/code&gt; (from elevated cmd/powershell):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bat&#34;&gt;netsh int tcp set global autotuninglevel=normal
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After this my &lt;code&gt;git clone&lt;/code&gt; speeds went up to the bandwidth of my internet connection.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Automatically starting ssh-agent when powershell or git-bash are started</title>

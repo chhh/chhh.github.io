@@ -3,17 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dmtavt.com/post/2020-08-03-ssh-agent-powershell/</loc>
-    <lastmod>2020-08-03T11:49:38-07:00</lastmod>
+    <loc>https://dmtavt.com/authors/chhh/</loc>
+    <lastmod>2020-10-25T00:07:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/authors/</loc>
+    <lastmod>2020-10-25T00:07:15-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://dmtavt.com/</loc>
-    <lastmod>2020-08-03T11:49:38-07:00</lastmod>
+    <lastmod>2020-10-25T00:07:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/git/</loc>
+    <lastmod>2020-10-25T00:07:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/</loc>
+    <lastmod>2020-10-25T00:07:15-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://dmtavt.com/post/</loc>
+    <lastmod>2020-10-25T00:07:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/</loc>
+    <lastmod>2020-10-25T00:07:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/troubleshooting/</loc>
+    <lastmod>2020-10-25T00:07:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/tags/windows/</loc>
+    <lastmod>2020-10-25T00:07:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/post/2020-08-03-ssh-agent-powershell/</loc>
     <lastmod>2020-08-03T11:49:38-07:00</lastmod>
   </url>
   
@@ -33,11 +68,6 @@
   </url>
   
   <url>
-    <loc>https://dmtavt.com/tags/</loc>
-    <lastmod>2020-08-03T11:49:38-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dmtavt.com/categories/</loc>
     <lastmod>2020-06-17T10:17:37-07:00</lastmod>
   </url>
@@ -53,12 +83,12 @@
   </url>
   
   <url>
-    <loc>https://dmtavt.com/categories/java/</loc>
+    <loc>https://dmtavt.com/tags/java/</loc>
     <lastmod>2020-06-17T10:17:37-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dmtavt.com/tags/java/</loc>
+    <loc>https://dmtavt.com/categories/java/</loc>
     <lastmod>2020-06-17T10:17:37-07:00</lastmod>
   </url>
   
@@ -138,16 +168,6 @@
   </url>
   
   <url>
-    <loc>https://dmtavt.com/tags/windows/</loc>
-    <lastmod>2020-05-12T12:00:18-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmtavt.com/tags/git/</loc>
-    <lastmod>2020-01-26T18:34:18-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dmtavt.com/post/2020-01-26-zipping-git-repo/</loc>
     <lastmod>2020-01-26T18:34:18-08:00</lastmod>
   </url>
@@ -159,11 +179,6 @@
   
   <url>
     <loc>https://dmtavt.com/publication_types/2/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmtavt.com/authors/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -685,10 +700,6 @@
   <url>
     <loc>https://dmtavt.com/authors/sa-moshkovsky/</loc>
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmtavt.com/authors/chhh/</loc>
   </url>
   
   <url>

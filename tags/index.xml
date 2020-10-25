@@ -5,12 +5,36 @@
     <link>https://dmtavt.com/tags/</link>
       <atom:link href="https://dmtavt.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Mon, 03 Aug 2020 11:49:38 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Sun, 25 Oct 2020 00:07:15 -0700</lastBuildDate>
     <image>
       <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
       <title>Tags</title>
       <link>https://dmtavt.com/tags/</link>
     </image>
+    
+    <item>
+      <title>git</title>
+      <link>https://dmtavt.com/tags/git/</link>
+      <pubDate>Sun, 25 Oct 2020 00:07:15 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>troubleshooting</title>
+      <link>https://dmtavt.com/tags/troubleshooting/</link>
+      <pubDate>Sun, 25 Oct 2020 00:07:15 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/troubleshooting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://dmtavt.com/tags/windows/</link>
+      <pubDate>Sun, 25 Oct 2020 00:07:15 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/windows/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>powershell</title>
@@ -137,22 +161,6 @@
       <link>https://dmtavt.com/tags/fixme/</link>
       <pubDate>Tue, 12 May 2020 12:00:18 -0800</pubDate>
       <guid>https://dmtavt.com/tags/fixme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>windows</title>
-      <link>https://dmtavt.com/tags/windows/</link>
-      <pubDate>Tue, 12 May 2020 12:00:18 -0800</pubDate>
-      <guid>https://dmtavt.com/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://dmtavt.com/tags/git/</link>
-      <pubDate>Sun, 26 Jan 2020 18:34:18 -0800</pubDate>
-      <guid>https://dmtavt.com/tags/git/</guid>
       <description></description>
     </item>
     
