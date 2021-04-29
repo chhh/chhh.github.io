@@ -5,12 +5,189 @@
     <link>https://dmtavt.com/post/</link>
       <atom:link href="https://dmtavt.com/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Sun, 25 Oct 2020 00:07:15 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Thu, 29 Apr 2021 00:25:35 -0700</lastBuildDate>
     <image>
       <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
       <title>Posts</title>
       <link>https://dmtavt.com/post/</link>
     </image>
+    
+    <item>
+      <title>How to find large files in Git history: a one-liner</title>
+      <link>https://dmtavt.com/post/2021-04-29_howto-find-large-files-in-git-history/</link>
+      <pubDate>Thu, 29 Apr 2021 00:25:35 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2021-04-29_howto-find-large-files-in-git-history/</guid>
+      <description>&lt;p&gt;One liner:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;git rev-list --objects --all \
+| git cat-file --batch-check=&#39;%(objecttype) %(objectname) %(objectsize) %(rest)&#39; \
+| sed -n &#39;s/^blob //p&#39; \
+| sort --numeric-sort --key=2 \
+| cut -c 1-12,41- \
+| $(command -v gnumfmt || echo numfmt) --field=2 --to=iec-i --suffix=B --padding=7 --round=nearest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;Credit SO: &lt;a href=&#34;https://stackoverflow.com/a/42544963/88814&#34;&gt;https://stackoverflow.com/a/42544963/88814&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to view Git changes on a single branch since its creation</title>
+      <link>https://dmtavt.com/post/2021-04-29_howto-view-git-changes-on-a-single-branch-since-its-creation/</link>
+      <pubDate>Thu, 29 Apr 2021 00:20:37 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2021-04-29_howto-view-git-changes-on-a-single-branch-since-its-creation/</guid>
+      <description>&lt;p&gt;The command:
+&lt;code&gt;git log --oneline master..feature/some-branch&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Will show commits on feature branch since it was forked off master.&lt;/p&gt;
+&lt;p&gt;Suppose you have a repo that looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;base  -  A  -  B  -  C  -  D   (master)
+                \
+                 \-  X  -  Y  -  Z   (myBranch)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Verify the repo status:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;&amp;gt; git checkout master
+Already on &#39;master&#39;
+&amp;gt; git status ; git log --oneline
+On branch master
+nothing to commit, working directory clean
+d9addce D
+110a9ab C
+5f3f8db B
+0f26e69 A
+e764ffa base
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and for myBranch:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;&amp;gt; git checkout myBranch
+&amp;gt; git status ; git log --oneline
+On branch myBranch
+nothing to commit, working directory clean
+3bc0d40 Z
+917ac8d Y
+3e65f72 X
+5f3f8db B
+0f26e69 A
+e764ffa base
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Suppose you are on myBranch, and you want only changes &lt;strong&gt;SINCE&lt;/strong&gt; master. Use the two-dot version:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;&amp;gt; git log --oneline master..myBranch
+3bc0d40 Z
+917ac8d Y
+3e65f72 X
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The three-dot version gives all changes from the tip of master to the tip of myBranch. However, note that the common commit B is not included:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;&amp;gt; git log --oneline master...myBranch
+d9addce D
+110a9ab C
+3bc0d40 Z
+917ac8d Y
+3e65f72 X
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;Credits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SO question: &lt;a href=&#34;https://stackoverflow.com/questions/9725531/show-commits-since-branch-creation&#34;&gt;https://stackoverflow.com/questions/9725531/show-commits-since-branch-creation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SO answer: &lt;a href=&#34;https://stackoverflow.com/a/24769534/88814&#34;&gt;https://stackoverflow.com/a/24769534/88814&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to remove &#34;other search engines&#34; from Chrome</title>
+      <link>https://dmtavt.com/post/2021-04-29_howto-remove-other-search-engines-from-chrome/</link>
+      <pubDate>Thu, 29 Apr 2021 00:15:51 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2021-04-29_howto-remove-other-search-engines-from-chrome/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open the Chrome search engine settings page: 
+&lt;a href=&#34;chrome://settings/searchEngines&#34;&gt;chrome://settings/searchEngines&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Selector for topmost &amp;ldquo;Remove search engine&amp;rdquo; button in &amp;ldquo;Other search engines&amp;rdquo; list:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;document.querySelector(&amp;quot;body &amp;gt; settings-ui&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#main&amp;quot;).shadowRoot
+.querySelector(&amp;quot;settings-basic-page&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#basicPage &amp;gt; settings-section.expanded &amp;gt; settings-search-page&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#pages &amp;gt; settings-subpage &amp;gt; settings-search-engines-page&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#otherEngines&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#frb0&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#delete&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;You can repeatedly call the selector and &amp;ldquo;click()&amp;rdquo; on the button.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;document.querySelector(&amp;quot;body &amp;gt; settings-ui&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#main&amp;quot;).shadowRoot
+.querySelector(&amp;quot;settings-basic-page&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#basicPage &amp;gt; settings-section.expanded &amp;gt; settings-search-page&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#pages &amp;gt; settings-subpage &amp;gt; settings-search-engines-page&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#otherEngines&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#frb0&amp;quot;).shadowRoot
+.querySelector(&amp;quot;#delete&amp;quot;)
+.click();  
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How-to: Git clean up .orig files generated after conflict resolution</title>
+      <link>https://dmtavt.com/post/2021-04-29_howto-git-clean-up-orig-files/</link>
+      <pubDate>Thu, 29 Apr 2021 00:02:34 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2021-04-29_howto-git-clean-up-orig-files/</guid>
+      <description>&lt;h2 id=&#34;preamble&#34;&gt;Preamble&lt;/h2&gt;
+&lt;p&gt;After a merge conflict resolution you&#39;re often left with files ending
+with &lt;code&gt;.orig&lt;/code&gt; extension. I have them added to my global &lt;code&gt;.gitignore&lt;/code&gt;.
+Hence I can&#39;t easily get rid of them with regular:
+&lt;code&gt;git clean -fd&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;git clean&lt;/code&gt; has &lt;code&gt;-e&lt;/code&gt; argument for a regular expression to match files.
+To preview what will happen:&lt;br&gt;
+&lt;code&gt;git clean -e &#39;!*.orig&#39; --dry-run&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To actually delete the files:&lt;br&gt;
+&lt;code&gt;git clean -e &#39;!*.orig&#39; -f&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It&#39;s that simple.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing WSL2 on Windows 10</title>
+      <link>https://dmtavt.com/post/2021-04-28_installing-wsl2-on-windows-10/</link>
+      <pubDate>Wed, 28 Apr 2021 23:48:48 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2021-04-28_installing-wsl2-on-windows-10/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;From elevated PowerShell (Run as Administrator):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Now reboot.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download and install the Linux kernel update package:
+&lt;a href=&#34;https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi&#34;&gt;https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set WSL 2 as your default version:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;wsl --set-default-version 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You&#39;re basically done.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;From Windows Store do a search for &lt;code&gt;WSL&lt;/code&gt;.
+A bunch of distros will come up - I went for Ubuntu 20.04 as the simplest
+to manage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You don&#39;t have to install the distro from the Windows Store though!
+For example, here&#39;s a gist covering how to run &lt;strong&gt;Arch on WSL2&lt;/strong&gt;:
+&lt;a href=&#34;https://gist.github.com/chhh/8458a41de99d9127c3364b5f3561a6e2&#34;&gt;https://gist.github.com/chhh/8458a41de99d9127c3364b5f3561a6e2&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Instructions taken from: &lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/install-win10&#34;&gt;https://docs.microsoft.com/en-us/windows/wsl/install-win10&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>If it feels `git clone` is throttled on Windows...</title>

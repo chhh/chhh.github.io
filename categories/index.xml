@@ -5,12 +5,20 @@
     <link>https://dmtavt.com/categories/</link>
       <atom:link href="https://dmtavt.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Wed, 17 Jun 2020 10:17:37 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Thu, 29 Apr 2021 00:25:35 -0700</lastBuildDate>
     <image>
       <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
       <title>Categories</title>
       <link>https://dmtavt.com/categories/</link>
     </image>
+    
+    <item>
+      <title>howto</title>
+      <link>https://dmtavt.com/categories/howto/</link>
+      <pubDate>Thu, 29 Apr 2021 00:25:35 -0700</pubDate>
+      <guid>https://dmtavt.com/categories/howto/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>csharp</title>

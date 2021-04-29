@@ -5,7 +5,7 @@
     <link>https://dmtavt.com/tags/</link>
       <atom:link href="https://dmtavt.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Sun, 25 Oct 2020 00:07:15 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Thu, 29 Apr 2021 00:25:35 -0700</lastBuildDate>
     <image>
       <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
       <title>Tags</title>
@@ -15,8 +15,56 @@
     <item>
       <title>git</title>
       <link>https://dmtavt.com/tags/git/</link>
-      <pubDate>Sun, 25 Oct 2020 00:07:15 -0700</pubDate>
+      <pubDate>Thu, 29 Apr 2021 00:25:35 -0700</pubDate>
       <guid>https://dmtavt.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>howto</title>
+      <link>https://dmtavt.com/tags/howto/</link>
+      <pubDate>Thu, 29 Apr 2021 00:25:35 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chrome</title>
+      <link>https://dmtavt.com/tags/chrome/</link>
+      <pubDate>Thu, 29 Apr 2021 00:15:51 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://dmtavt.com/tags/linux/</link>
+      <pubDate>Wed, 28 Apr 2021 23:48:48 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://dmtavt.com/tags/windows/</link>
+      <pubDate>Wed, 28 Apr 2021 23:48:48 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wsl</title>
+      <link>https://dmtavt.com/tags/wsl/</link>
+      <pubDate>Wed, 28 Apr 2021 23:48:48 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/wsl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wsl2</title>
+      <link>https://dmtavt.com/tags/wsl2/</link>
+      <pubDate>Wed, 28 Apr 2021 23:48:48 -0700</pubDate>
+      <guid>https://dmtavt.com/tags/wsl2/</guid>
       <description></description>
     </item>
     
@@ -25,14 +73,6 @@
       <link>https://dmtavt.com/tags/troubleshooting/</link>
       <pubDate>Sun, 25 Oct 2020 00:07:15 -0700</pubDate>
       <guid>https://dmtavt.com/tags/troubleshooting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>windows</title>
-      <link>https://dmtavt.com/tags/windows/</link>
-      <pubDate>Sun, 25 Oct 2020 00:07:15 -0700</pubDate>
-      <guid>https://dmtavt.com/tags/windows/</guid>
       <description></description>
     </item>
     
@@ -145,14 +185,6 @@
       <link>https://dmtavt.com/tags/expressvpn/</link>
       <pubDate>Tue, 12 May 2020 12:30:18 -0800</pubDate>
       <guid>https://dmtavt.com/tags/expressvpn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>howto</title>
-      <link>https://dmtavt.com/tags/howto/</link>
-      <pubDate>Tue, 12 May 2020 12:30:18 -0800</pubDate>
-      <guid>https://dmtavt.com/tags/howto/</guid>
       <description></description>
     </item>
     

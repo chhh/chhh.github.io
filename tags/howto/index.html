@@ -274,7 +274,7 @@
   <meta property="og:description" content="Dmitry Avtonomov&#39;s personal website"><meta property="og:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png">
   <meta property="twitter:image" content="https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-05-12T12:30:18-08:00">
+    <meta property="og:updated_time" content="2021-04-29T00:25:35-07:00">
   
 
   
@@ -550,6 +550,77 @@
   
 
   
+  
+    
+    
+    
+    <div>
+      <h2><a href="/post/2021-04-29_howto-find-large-files-in-git-history/" >How to find large files in Git history: a one-liner</a></h2>
+      <div class="article-style">
+        
+          One liner:
+git rev-list --objects --all \ | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' \ | sed -n 's/^blob //p' \ | sort --numeric-sort --key=2 \ | cut -c 1-12,41- \ | $(command -v gnumfmt || echo numfmt) --field=2 --to=iec-i --suffix=B --padding=7 --round=nearest   Credit SO: https://stackoverflow.com/a/42544963/88814
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/post/2021-04-29_howto-view-git-changes-on-a-single-branch-since-its-creation/" >How to view Git changes on a single branch since its creation</a></h2>
+      <div class="article-style">
+        
+          The command: git log --oneline master..feature/some-branch
+Will show commits on feature branch since it was forked off master.
+Suppose you have a repo that looks like this:
+base - A - B - C - D (master) \ \- X - Y - Z (myBranch)  Verify the repo status:
+&gt; git checkout master Already on 'master' &gt; git status ; git log --oneline On branch master nothing to commit, working directory clean d9addce D 110a9ab C 5f3f8db B 0f26e69 A e764ffa base  and for myBranch:
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/post/2021-04-29_howto-remove-other-search-engines-from-chrome/" >How to remove &#34;other search engines&#34; from Chrome</a></h2>
+      <div class="article-style">
+        
+          Open the Chrome search engine settings page: chrome://settings/searchEngines   Selector for topmost &ldquo;Remove search engine&rdquo; button in &ldquo;Other search engines&rdquo; list:
+  document.querySelector(&quot;body &gt; settings-ui&quot;).shadowRoot .querySelector(&quot;#main&quot;).shadowRoot .querySelector(&quot;settings-basic-page&quot;).shadowRoot .querySelector(&quot;#basicPage &gt; settings-section.expanded &gt; settings-search-page&quot;).shadowRoot .querySelector(&quot;#pages &gt; settings-subpage &gt; settings-search-engines-page&quot;).shadowRoot .querySelector(&quot;#otherEngines&quot;).shadowRoot .querySelector(&quot;#frb0&quot;).shadowRoot .querySelector(&quot;#delete&quot;);   You can repeatedly call the selector and &ldquo;click()&rdquo; on the button.  document.querySelector(&quot;body &gt; settings-ui&quot;).shadowRoot .querySelector(&quot;#main&quot;).shadowRoot .querySelector(&quot;settings-basic-page&quot;).shadowRoot .querySelector(&quot;#basicPage &gt; settings-section.expanded &gt; settings-search-page&quot;).shadowRoot .querySelector(&quot;#pages &gt; settings-subpage &gt; settings-search-engines-page&quot;).
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/post/2021-04-29_howto-git-clean-up-orig-files/" >How-to: Git clean up .orig files generated after conflict resolution</a></h2>
+      <div class="article-style">
+        
+          Preamble After a merge conflict resolution you're often left with files ending with .orig extension. I have them added to my global .gitignore. Hence I can't easily get rid of them with regular: git clean -fd.
+Solution git clean has -e argument for a regular expression to match files. To preview what will happen:
+git clean -e '!*.orig' --dry-run
+To actually delete the files:
+git clean -e '!*.orig' -f
+It's that simple.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/post/2020-05-14-auto-resize-guest-vm-desktop/" >Auto Resize Guest VM Desktop running under VMWare</a></h2>
+      <div class="article-style">
+        
+          In VMWare Workstation guest OS desktop doesn't auto-resize to fill host OS window after first reboot. Solution.
+        
+      </div>
+    </div>
   
     
     
