@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dmtavt.com/authors/chhh/</loc>
+    <lastmod>2021-04-29T00:25:35-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dmtavt.com/authors/</loc>
+    <lastmod>2021-04-29T00:25:35-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dmtavt.com/categories/</loc>
     <lastmod>2021-04-29T00:25:35-07:00</lastmod>
   </url>
@@ -23,12 +33,12 @@
   </url>
   
   <url>
-    <loc>https://dmtavt.com/tags/howto/</loc>
+    <loc>https://dmtavt.com/categories/howto/</loc>
     <lastmod>2021-04-29T00:25:35-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dmtavt.com/categories/howto/</loc>
+    <loc>https://dmtavt.com/tags/howto/</loc>
     <lastmod>2021-04-29T00:25:35-07:00</lastmod>
   </url>
   
@@ -45,16 +55,6 @@
   <url>
     <loc>https://dmtavt.com/post/2021-04-29_howto-view-git-changes-on-a-single-branch-since-its-creation/</loc>
     <lastmod>2021-04-29T00:20:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmtavt.com/authors/chhh/</loc>
-    <lastmod>2021-04-29T00:15:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dmtavt.com/authors/</loc>
-    <lastmod>2021-04-29T00:15:51-07:00</lastmod>
   </url>
   
   <url>
