@@ -5,99 +5,30 @@
     <link>https://dmtavt.com/publication/</link>
       <atom:link href="https://dmtavt.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2016-present Dmitry Avtonomov</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dmtavt.com/images/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_gaussian_center_2.png</url>
+      <url>https://dmtavt.com/media/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://dmtavt.com/publication/</link>
     </image>
     
     <item>
-      <title>Integrated proteogenomic characterization of clear cell renal cell carcinoma</title>
-      <link>https://dmtavt.com/publication/clark-2019-integrated/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/publication/clark-2019-integrated/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DeltaMass: Automated Detection and Visualization of Mass Shifts in Proteomic Open-Search Results</title>
-      <link>https://dmtavt.com/publication/avtonomov-2018-deltamass/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/publication/avtonomov-2018-deltamass/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IMTBX and Grppr: Software for Top-Down Proteomics Utilizing Ion Mobility-Mass Spectrometry</title>
-      <link>https://dmtavt.com/publication/avtonomov-2018-imtbx/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/publication/avtonomov-2018-imtbx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MSFragger: ultrafast and comprehensive peptide identification in mass spectrometry--based proteomics</title>
-      <link>https://dmtavt.com/publication/kong-2017-msfragger/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/publication/kong-2017-msfragger/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BatMass: a Java software platform for LC--MS data visualization in proteomics and metabolomics</title>
-      <link>https://dmtavt.com/publication/avtonomov-2016-batmass/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/publication/avtonomov-2016-batmass/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DIA-Umpire: comprehensive computational framework for data-independent acquisition proteomics</title>
-      <link>https://dmtavt.com/publication/tsou-2015-dia/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/publication/tsou-2015-dia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>LuciPHOr2: site localization of generic post-translational modifications from tandem mass spectrometry data</title>
-      <link>https://dmtavt.com/publication/fermin-2015-luciphor-2/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/publication/fermin-2015-luciphor-2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A new method for normalization of the peptide retention times in chromatographic/mass-spectrometric experiments</title>
-      <link>https://dmtavt.com/publication/avtonomov-2011-new/</link>
-      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/publication/avtonomov-2011-new/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data filtration for more robust alignment of chromatograms of complex peptide mixtures</title>
-      <link>https://dmtavt.com/publication/avtonomov-2011-data/</link>
-      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/publication/avtonomov-2011-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Accurate mass tag retention time database for urine proteome analysis by chromatography-mass spectrometry</title>
-      <link>https://dmtavt.com/publication/agron-2010-accurate/</link>
-      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/publication/agron-2010-accurate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Database of accurate mass-timestamp for gas chromatography-mass spectrometry analysis of urine proteome</title>
-      <link>https://dmtavt.com/publication/agron-2010-database/</link>
-      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>https://dmtavt.com/publication/agron-2010-database/</guid>
-      <description></description>
+      <title>An example conference paper</title>
+      <link>https://dmtavt.com/publication/example/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/publication/example/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

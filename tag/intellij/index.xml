@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>intellij | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tag/intellij/</link>
+      <atom:link href="https://dmtavt.com/tag/intellij/index.xml" rel="self" type="application/rss+xml" />
+    <description>intellij</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/media/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_lanczos_center_3.png</url>
+      <title>intellij</title>
+      <link>https://dmtavt.com/tag/intellij/</link>
+    </image>
+    
+    <item>
+      <title>Intellij IDEA live templates</title>
+      <link>https://dmtavt.com/post/2017-01-26-intellij-idea-live-templates-slf4j/</link>
+      <pubDate>Thu, 26 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/post/2017-01-26-intellij-idea-live-templates-slf4j/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/features/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intellij IDEA&lt;/a&gt; IDE has a nice feature
+of live templates. You type several symbols, press tab (by default) and it
+expands the symbols into full expressions. E.g. you can type &lt;code&gt;fori&lt;/code&gt;, press
+&lt;kbd&gt;Tab&lt;/kbd&gt; and get a full &lt;em&gt;for&lt;/em&gt; loop created for you, or type &lt;code&gt;iter&lt;/code&gt;, press
+&lt;kbd&gt;Tab&lt;/kbd&gt; and if you have &lt;code&gt;iterable&lt;/code&gt;s in scope, you&amp;rsquo;ll be presented with a
+choice of available ones to iterate over.&lt;/p&gt;
+&lt;h2 id=&#34;example-slf4j-logger-in-each-class&#34;&gt;Example: slf4j logger in each class&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s a super common thing to type at the beginning of each class:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;org&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;slf4j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;Logger&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;logger&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;org&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;slf4j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;LoggerFactory&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getLogger&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MyClassName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;pretty tedious even with IDE&amp;rsquo;s help.&lt;/p&gt;
+&lt;p&gt;Live templates to the rescue, you can define your own one to create the whole
+line for you! You&lt;/p&gt;
+&lt;h2 id=&#34;how-to-define-a-live-template&#34;&gt;How to define a live template&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;em&gt;File&lt;/em&gt;-&amp;gt;&lt;em&gt;Settings&lt;/em&gt;-&amp;gt;&lt;em&gt;Editor&lt;/em&gt;-&amp;gt;&lt;em&gt;Live Templates&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;In the right panel tree select category &lt;em&gt;other&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;plus&lt;/em&gt; (+) sign on the top right, select &lt;em&gt;Live Template&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Set
+&lt;ul&gt;
+&lt;li&gt;Abbreviation: &lt;code&gt;log&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Description: &lt;code&gt;Inserts private static Logger for slf4j&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Template text: &lt;code&gt;private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger($CLASS_NAME$.class);$END$&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Now click the &lt;em&gt;Edit Variables&lt;/em&gt; button, we will tell the IDE what
+&lt;code&gt;$CLASS_NAME$&lt;/code&gt; means here. &lt;code&gt;$END$&lt;/code&gt; means where to place the cursor after
+template expansion.
+&lt;ul&gt;
+&lt;li&gt;Name: &lt;code&gt;CLASS_NAME&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Expression: &lt;code&gt;className()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Default value: leave empty&lt;/li&gt;
+&lt;li&gt;Skip if defined: true (check the checkbox)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;At the very bottom look for text &lt;em&gt;Applicable in&lt;/em&gt; with a link &lt;em&gt;Change&lt;/em&gt; next to
+it, click it. Select &lt;em&gt;Java&lt;/em&gt;-&amp;gt;&lt;em&gt;declaration&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Congratulations, you&amp;rsquo;re done! Just type &lt;code&gt;log&lt;/code&gt; and press &lt;kbd&gt;Tab&lt;/kbd&gt; anywhere
+in the class declaration.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

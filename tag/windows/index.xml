@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tag/windows/</link>
+      <atom:link href="https://dmtavt.com/tag/windows/index.xml" rel="self" type="application/rss+xml" />
+    <description>windows</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 28 Apr 2021 23:48:48 -0700</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/media/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_lanczos_center_3.png</url>
+      <title>windows</title>
+      <link>https://dmtavt.com/tag/windows/</link>
+    </image>
+    
+    <item>
+      <title>Installing WSL2 on Windows 10</title>
+      <link>https://dmtavt.com/post/2021-04-28_installing-wsl2-on-windows-10/</link>
+      <pubDate>Wed, 28 Apr 2021 23:48:48 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2021-04-28_installing-wsl2-on-windows-10/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;From elevated PowerShell (Run as Administrator):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dism&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exe&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;online&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;enable-feature&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;featurename&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;Microsoft-Windows&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-Subsystem-Linux&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;all&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;norestart&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dism&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exe&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;online&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;enable-feature&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;featurename&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VirtualMachinePlatform&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;all&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;norestart&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Now reboot.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download and install the Linux kernel update package:
+&lt;a href=&#34;https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set WSL 2 as your default version:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;wsl&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-set-default-version&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You&amp;rsquo;re basically done.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;From Windows Store do a search for &lt;code&gt;WSL&lt;/code&gt;.
+A bunch of distros will come up - I went for Ubuntu 20.04 as the simplest
+to manage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You don&amp;rsquo;t have to install the distro from the Windows Store though!
+For example, here&amp;rsquo;s a gist covering how to run &lt;strong&gt;Arch on WSL2&lt;/strong&gt;:
+&lt;a href=&#34;https://gist.github.com/chhh/8458a41de99d9127c3364b5f3561a6e2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gist.github.com/chhh/8458a41de99d9127c3364b5f3561a6e2&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Instructions taken from: &lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/install-win10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.microsoft.com/en-us/windows/wsl/install-win10&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>If it feels `git clone` is throttled on Windows...</title>
+      <link>https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/</link>
+      <pubDate>Sun, 25 Oct 2020 00:07:15 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2020-10-25_throttled-git-clone-on-windows/</guid>
+      <description>&lt;h2 id=&#34;symptoms-of-the-problem&#34;&gt;Symptoms of the problem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Internet connection is fast and a torrent download of Ubuntu can go at 10MB/s,
+but git clone gets &amp;lsquo;stuck&amp;rsquo; at 500-600KB/s.&lt;/li&gt;
+&lt;li&gt;Connecting through VPN helps a bit sometimes, increasing the speed, but not to
+it&amp;rsquo;s full potential.&lt;/li&gt;
+&lt;li&gt;Another computer using the same network (wired or wireless) gets full download
+speed when cloning, so you know it&amp;rsquo;s not the connection at fault.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netsh interface tcp show global
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;l&#34;&gt;Querying active state...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TCP Global Parameters&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;-------------------------------------------&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Receive-Side Scaling State          &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;disabled&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Receive Window Auto-Tuning Level    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;disabled&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Add-On Congestion Control Provider  &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;default&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ECN Capability                      &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;disabled&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;RFC 1323 Timestamps                 &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;disabled&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Initial RTO                         &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1000&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Receive Segment Coalescing State    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;enabled&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Non Sack Rtt Resiliency             &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;disabled&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Max SYN Retransmissions             &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Fast Open                           &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;enabled&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Fast Open Fallback                  &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;enabled&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;HyStart                             &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;enabled&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Proportional Rate Reduction         &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;enabled&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Pacing Profile                      &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;off&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The problem is this line: &lt;code&gt;Receive Window Auto-Tuning Level    : disabled&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;Change &lt;code&gt;Receive Window Auto-Tuning Level&lt;/code&gt; to &lt;code&gt;normal&lt;/code&gt; (from elevated cmd/powershell):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netsh int tcp set global autotuninglevel=normal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After this my &lt;code&gt;git clone&lt;/code&gt; speeds went up to the bandwidth of my internet connection.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fixing VMWare Workstation `Device/Credential Guard are not compatible` and `64-bit Guest OS can&#39;t run on 32-bit host` errors</title>
+      <link>https://dmtavt.com/post/2020-05-13-vmware-player-fix/</link>
+      <pubDate>Tue, 12 May 2020 12:00:18 -0800</pubDate>
+      <guid>https://dmtavt.com/post/2020-05-13-vmware-player-fix/</guid>
+      <description>&lt;h2 id=&#34;symptoms&#34;&gt;Symptoms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;VMWare Wrokstation Player shows a warning when you try to create a new 64-bit VM on a 64-bit host (Win10 Pro host in my case)&lt;/li&gt;
+&lt;li&gt;VMWare Wrokstation Player just starts the vm, shows black screen and then an error message pops up, saying: 
+&lt;code&gt;VMWare Workstation and Device/Credential Guard are not compatible.&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TL;DR;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Disable &lt;code&gt;Hyper-V&lt;/code&gt; and &lt;code&gt;Windows Sandbox&lt;/code&gt; in &lt;em&gt;Windows Features&lt;/em&gt; (&lt;em&gt;Control Panel -&amp;gt; Programs -&amp;gt; Turn Windows Features On or Off&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;Enable processor virtualization in BIOS&lt;/li&gt;
+&lt;li&gt;From elevated CMD (run as administrator):
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bcdedit /set hypervisorlaunchtype off
+shutdown /r /t 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;some-details-of-what-might-be-wrong&#34;&gt;Some details of what might be wrong&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure vitualization is turned on for the processor in BIOS (this step varies by BIOS manufacturer)&lt;/li&gt;
+&lt;li&gt;In Windows&amp;rsquo; features check that &lt;code&gt;Hyper-V&lt;/code&gt; and &lt;code&gt;Windows Sandbox&lt;/code&gt; are not enabled.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;my-experience&#34;&gt;My experience&lt;/h2&gt;
+&lt;p&gt;I had &lt;code&gt;Windows Sandbox&lt;/code&gt; enabled in the first place. This was causing VMWare Workstation 15.5.2 to show the warning about 64-bit guest
+on 32-bit host. Even though the host was 64-bit in fact. I then uninstalled &lt;code&gt;Windows Sandbox&lt;/code&gt; via &lt;code&gt;Add/Remove Windows Features&lt;/code&gt; menu.
+Then I started getting the more common &lt;em&gt;Device/Credential Guard are not compatible&lt;/em&gt; error message.&lt;br&gt;
+Running from elevated CMD:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    bcdedit /set hypervisorlaunchtype off
+    shutdown /r /t 0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Did the final trick.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

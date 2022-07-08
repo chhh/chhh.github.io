@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lc-ms | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tag/lc-ms/</link>
+      <atom:link href="https://dmtavt.com/tag/lc-ms/index.xml" rel="self" type="application/rss+xml" />
+    <description>lc-ms</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/media/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_lanczos_center_3.png</url>
+      <title>lc-ms</title>
+      <link>https://dmtavt.com/tag/lc-ms/</link>
+    </image>
+    
+    <item>
+      <title>BatMass: mass-spec data visualization</title>
+      <link>https://dmtavt.com/project/batmass/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/project/batmass/</guid>
+      <description>&lt;p&gt;BatMass is a mass-spectrometry data visualization tool, with the main focus on being fast and interactive while providing comprehensive visualizations without any parameter tweaking. It is written in Java and built on top of the &lt;a href=&#34;https://netbeans.org/features/platform/all-docs.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NetBeans Platform&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;demo-video&#34;&gt;Demo Video&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s a short demo video of BatMass in action.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/EY9wvd6ckb0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;some-examples&#34;&gt;Some Examples&lt;/h2&gt;
+&lt;p&gt;The layout of windows is free and customizable by dragging.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://dmtavt.com/img/about-batmass/free-layout.png&#34; alt=&#34;Free window layoyt&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Compare multiple experiments at once. The bottom-middle run in this figure is a blank (no sample was injected), while the other 5 were runs with some sample. Amazing how much stuff comes from the background.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://dmtavt.com/img/about-batmass/comparison-6-runs-1-blank.png&#34; alt=&#34;Multi experiment comparison in Map2D&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;And here are the same runs but zoomed in to a small region of m/z and retentino time. Look at the color-marked regions. Let&amp;rsquo;s just accept that zero-values are a thing, there is no need to try extracting noise to do gap-filling in data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://dmtavt.com/img/about-batmass/comparison-6-runs-1-blank-02-zoom-marked.png&#34; alt=&#34;Multi experiment comparison in Map2D zoomed&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Support for the open standard &lt;em&gt;mzML&lt;/em&gt; and &lt;em&gt;mzXML&lt;/em&gt; mass spectrometry data types. We are hoping to bring native vendor format support as well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Viewer synchronization. Link any number of viewers and zooming/panning will be synchronized across them. If you&amp;rsquo;re viewing MS&lt;sup&gt;1&lt;/sup&gt; data in one view and MS&lt;sup&gt;2&lt;/sup&gt; data in the other the retention time is synchronized, while m/z is not. Open a detected LC/MS feature table or a peptide identification table, a double click on the row will open the corresponding spectrum, or bring you to the corresponding location in a 2D Map viewer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data access layer. For the Java developers out there, the highly optimized mzML/mzXML parsers can be used in any standalone Java program as a simple &lt;em&gt;jar&lt;/em&gt; dependency. Parsing has been manually tuned to produce few garbage objects, thus minimizing time spent in GC (Garbage Collection), the speed is comparable to or better than in C/C++ implementations. The API for LC/MS data files gives access to most of the features supported by mzML/mzXML standards.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;referencing-the-work&#34;&gt;Referencing the work&lt;/h3&gt;
+&lt;p&gt;If you use BatMass for your research or work, please cite the following paper:&lt;br&gt;
+&lt;strong&gt;&lt;a href=&#34;https://dx.doi.org/10.1021/acs.jproteome.6b00021&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Avtonomov D.M. et al:
+J. Proteome Res. June 16, 2016.
+DOI: 10.1021/acs.jproteome.6b00021.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;contacts&#34;&gt;Contacts&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;The author and maintainer of the project&lt;/strong&gt;&lt;br&gt;
+Dmitry Avtonomov, Ph.D.&lt;br&gt;
+University of Michigan, Ann Arbor&lt;br&gt;
+Email: {{ config.params.name }}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;General inquiries&lt;/strong&gt;&lt;br&gt;
+Alexey Nesvizhskii, Ph.D.&lt;br&gt;
+University of Michigan, Ann Arbor&lt;br&gt;
+Email: &lt;a href=&#34;mailto:nesvi@umich.edu&#34;&gt;nesvi@umich.edu&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.nesvilab.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.nesvilab.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Please use the &lt;a href=&#34;https://github.com/chhh/batmass/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bug tracker&lt;/a&gt; to ask questions, submit feature requests and bug reports.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MSFTBX: MS File Toolbox</title>
+      <link>https://dmtavt.com/project/msftbx/</link>
+      <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/project/msftbx/</guid>
+      <description>&lt;p&gt;A fast Java library for mass spectrometry data files access (mzML, mzXML, pepXML, protXML, mzId, mzIdentML, etc). Writers for some formats are also available. Available on &lt;a href=&#34;http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22msftbx%22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FragPipe: Proteomics 0-60 in 5 seconds</title>
+      <link>https://dmtavt.com/project/fragpipe/</link>
+      <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/project/fragpipe/</guid>
+      <description>&lt;h2 id=&#34;fragpipe&#34;&gt;FragPipe:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://msfragger.nesvilab.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSFragger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://philosopher.nesvilab.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Philosopher&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nesvilab.org/Crystal-C/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Crystal-C&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Nesvilab/PTM-Shepherd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PTM-Shepherd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;FragPipe is a Java Graphical User Interface (GUI) for a suite of computational tools enabling comprehensive analysis of mass spectrometry-based proteomics data. It is powered by &lt;a href=&#34;https://msfragger.nesvilab.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSFragger&lt;/a&gt; - an ultrafast proteomic search engine suitable for both conventional and &amp;ldquo;open&amp;rdquo; (wide precursor mass tolerance) peptide identification. FragPipe also includes the &lt;a href=&#34;https://nesvilab.github.io/philosopher/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Philosopher&lt;/a&gt; toolkit for downstream post-processing of MSFragger search results (PeptideProphet, iProphet, ProteinProphet), FDR filtering, label-free quantification, and multi-experiment summary report generation. &lt;a href=&#34;https://www.nesvilab.org/Crystal-C/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Crystal-C&lt;/a&gt; and &lt;a href=&#34;https://github.com/Nesvilab/PTM-Shepherd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PTM-Shepherd&lt;/a&gt; are included to aid interpretation of open search results. Also included in FragPipe binary are SpectraST-based spectral library building module, and DIA-Umpire SE module for direct analysis of data independent acquisition (DIA) data.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+    
+    
+    
+    
+    
+    &lt;a data-fancybox=&#34;gallery-fragpipe-screens&#34; href=&#34;https://dmtavt.com/media/albums/fragpipe-screens/fragpipe-01-conf.PNG&#34; &gt;
+      &lt;img src=&#34;https://dmtavt.com/media/albums/fragpipe-screens/fragpipe-01-conf_hub0a4fa4a6202e32ba0c2b66a7d6ef2ec_42820_0x190_resize_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;fragpipe-01-conf.PNG&#34; width=&#34;186&#34; height=&#34;190&#34;&gt;
+    &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    &lt;a data-fancybox=&#34;gallery-fragpipe-screens&#34; href=&#34;https://dmtavt.com/media/albums/fragpipe-screens/fragpipe-04-msfragger.PNG&#34; &gt;
+      &lt;img src=&#34;https://dmtavt.com/media/albums/fragpipe-screens/fragpipe-04-msfragger_hu2092b6ee594f4dd6d39e13cbdea60780_38031_0x190_resize_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;fragpipe-04-msfragger.PNG&#34; width=&#34;186&#34; height=&#34;190&#34;&gt;
+    &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    &lt;a data-fancybox=&#34;gallery-fragpipe-screens&#34; href=&#34;https://dmtavt.com/media/albums/fragpipe-screens/fragpipe-07-run.PNG&#34; &gt;
+      &lt;img src=&#34;https://dmtavt.com/media/albums/fragpipe-screens/fragpipe-07-run_huf8a82ec956013031169ffbb8f9410705_61365_0x190_resize_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;fragpipe-07-run.PNG&#34; width=&#34;186&#34; height=&#34;190&#34;&gt;
+    &lt;/a&gt;
+  
+
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>IMTBX&#43;Grppr: Ion Mobility Toolbox &#43; Isotopic Grouping</title>
+      <link>https://dmtavt.com/project/imtbx/</link>
+      <pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/project/imtbx/</guid>
+      <description>&lt;p&gt;A suite of tools for extracting signals from Ion Mobility (IM) data (IM-MS, LC-IM-MS) and performing isotopic envelopes detection.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

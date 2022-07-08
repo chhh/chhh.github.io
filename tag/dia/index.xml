@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dia | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tag/dia/</link>
+      <atom:link href="https://dmtavt.com/tag/dia/index.xml" rel="self" type="application/rss+xml" />
+    <description>dia</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 23 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/media/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_lanczos_center_3.png</url>
+      <title>dia</title>
+      <link>https://dmtavt.com/tag/dia/</link>
+    </image>
+    
+    <item>
+      <title>DIA-Umpire</title>
+      <link>https://dmtavt.com/project/dia-umpire/</link>
+      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dmtavt.com/project/dia-umpire/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://diaumpire.sourceforge.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DIA-Umpire&lt;/a&gt; - Data Independent Acquisition (DIA) data processing tool that doens&amp;rsquo;t require a spectral library. Detects features in MS1 and MS2, correlates precursors to fragments based on elution profile similarity and compiles pseudo-MS/MS spectra from these groups, which can later be searched with standard proteomic search tools.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficient calculation of isotopic fine structure up to predefined aggregated probability.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

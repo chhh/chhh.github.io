@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vmware | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tag/vmware/</link>
+      <atom:link href="https://dmtavt.com/tag/vmware/index.xml" rel="self" type="application/rss+xml" />
+    <description>vmware</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 14 May 2020 00:23:27 -0700</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/media/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_lanczos_center_3.png</url>
+      <title>vmware</title>
+      <link>https://dmtavt.com/tag/vmware/</link>
+    </image>
+    
+    <item>
+      <title>Auto Resize Guest VM Desktop running under VMWare</title>
+      <link>https://dmtavt.com/post/2020-05-14-auto-resize-guest-vm-desktop/</link>
+      <pubDate>Thu, 14 May 2020 00:23:27 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2020-05-14-auto-resize-guest-vm-desktop/</guid>
+      <description>&lt;h2 id=&#34;symptopms&#34;&gt;Symptopms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;After first reboot of VM destop of guest OS stopped auto-resizing to fill host window.&lt;/li&gt;
+&lt;li&gt;But it was working fine during guest OS install, or while it was running from live cd.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TL;DR;&lt;/h2&gt;
+&lt;p&gt;Restart &lt;code&gt;vmtoolsd&lt;/code&gt; service.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On Manjaro / Arch&lt;/strong&gt;:&lt;br&gt;
+&lt;code&gt;sudo systemctl restart vmtoolsd&lt;/code&gt;&lt;br&gt;
+Has to be done after every boot-up. And sometimes after session locks out as well.&lt;/p&gt;
+&lt;p&gt;Some suggest that delaying the start of the service helps:&lt;br&gt;
+&lt;code&gt;sudo vim /etc/systemd/system/multi-user.target.wants/vmtoolsd.service&lt;/code&gt;&lt;br&gt;
+and add the folowing in [Unit] section:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Unit]
+After=graphical.target
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Didn&amp;rsquo;t help me.&lt;/p&gt;
+&lt;h2 id=&#34;a-bit-more-context&#34;&gt;A bit more context&lt;/h2&gt;
+&lt;p&gt;VMWare Workstation requires you to have &lt;code&gt;open-vm-tools&lt;/code&gt; package service installed, which actually does the resizing.
+I was running Manjaro 20 under VMWare Workstation 15 on Win10 Pro. Open VM Tools was already pre-installed with
+Manjaro distribution.&lt;br&gt;
+However it seems like the service named &lt;code&gt;vmtoolsd&lt;/code&gt; starts too early. On the internet everyone mentions &lt;code&gt;open-vm-tools&lt;/code&gt;, 
+but it probably changed name to &lt;code&gt;vmtoolsd&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;possible-solutions&#34;&gt;Possible solutions&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/vmware/open-vm-tools/issues/253&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/vmware/open-vm-tools/issues/253&lt;/a&gt;
+&lt;a href=&#34;https://github.com/vmware/open-vm-tools/issues/303&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/vmware/open-vm-tools/issues/303&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fixing VMWare Workstation `Device/Credential Guard are not compatible` and `64-bit Guest OS can&#39;t run on 32-bit host` errors</title>
+      <link>https://dmtavt.com/post/2020-05-13-vmware-player-fix/</link>
+      <pubDate>Tue, 12 May 2020 12:00:18 -0800</pubDate>
+      <guid>https://dmtavt.com/post/2020-05-13-vmware-player-fix/</guid>
+      <description>&lt;h2 id=&#34;symptoms&#34;&gt;Symptoms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;VMWare Wrokstation Player shows a warning when you try to create a new 64-bit VM on a 64-bit host (Win10 Pro host in my case)&lt;/li&gt;
+&lt;li&gt;VMWare Wrokstation Player just starts the vm, shows black screen and then an error message pops up, saying: 
+&lt;code&gt;VMWare Workstation and Device/Credential Guard are not compatible.&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TL;DR;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Disable &lt;code&gt;Hyper-V&lt;/code&gt; and &lt;code&gt;Windows Sandbox&lt;/code&gt; in &lt;em&gt;Windows Features&lt;/em&gt; (&lt;em&gt;Control Panel -&amp;gt; Programs -&amp;gt; Turn Windows Features On or Off&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;Enable processor virtualization in BIOS&lt;/li&gt;
+&lt;li&gt;From elevated CMD (run as administrator):
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bcdedit /set hypervisorlaunchtype off
+shutdown /r /t 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;some-details-of-what-might-be-wrong&#34;&gt;Some details of what might be wrong&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure vitualization is turned on for the processor in BIOS (this step varies by BIOS manufacturer)&lt;/li&gt;
+&lt;li&gt;In Windows&amp;rsquo; features check that &lt;code&gt;Hyper-V&lt;/code&gt; and &lt;code&gt;Windows Sandbox&lt;/code&gt; are not enabled.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;my-experience&#34;&gt;My experience&lt;/h2&gt;
+&lt;p&gt;I had &lt;code&gt;Windows Sandbox&lt;/code&gt; enabled in the first place. This was causing VMWare Workstation 15.5.2 to show the warning about 64-bit guest
+on 32-bit host. Even though the host was 64-bit in fact. I then uninstalled &lt;code&gt;Windows Sandbox&lt;/code&gt; via &lt;code&gt;Add/Remove Windows Features&lt;/code&gt; menu.
+Then I started getting the more common &lt;em&gt;Device/Credential Guard are not compatible&lt;/em&gt; error message.&lt;br&gt;
+Running from elevated CMD:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    bcdedit /set hypervisorlaunchtype off
+    shutdown /r /t 0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Did the final trick.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

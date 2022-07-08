@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wsl | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tag/wsl/</link>
+      <atom:link href="https://dmtavt.com/tag/wsl/index.xml" rel="self" type="application/rss+xml" />
+    <description>wsl</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 28 Apr 2021 23:48:48 -0700</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/media/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_lanczos_center_3.png</url>
+      <title>wsl</title>
+      <link>https://dmtavt.com/tag/wsl/</link>
+    </image>
+    
+    <item>
+      <title>Installing WSL2 on Windows 10</title>
+      <link>https://dmtavt.com/post/2021-04-28_installing-wsl2-on-windows-10/</link>
+      <pubDate>Wed, 28 Apr 2021 23:48:48 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2021-04-28_installing-wsl2-on-windows-10/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;From elevated PowerShell (Run as Administrator):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dism&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exe&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;online&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;enable-feature&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;featurename&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;Microsoft-Windows&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-Subsystem-Linux&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;all&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;norestart&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dism&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exe&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;online&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;enable-feature&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;featurename&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VirtualMachinePlatform&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;all&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;norestart&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Now reboot.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download and install the Linux kernel update package:
+&lt;a href=&#34;https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set WSL 2 as your default version:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;wsl&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-set-default-version&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You&amp;rsquo;re basically done.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;From Windows Store do a search for &lt;code&gt;WSL&lt;/code&gt;.
+A bunch of distros will come up - I went for Ubuntu 20.04 as the simplest
+to manage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You don&amp;rsquo;t have to install the distro from the Windows Store though!
+For example, here&amp;rsquo;s a gist covering how to run &lt;strong&gt;Arch on WSL2&lt;/strong&gt;:
+&lt;a href=&#34;https://gist.github.com/chhh/8458a41de99d9127c3364b5f3561a6e2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gist.github.com/chhh/8458a41de99d9127c3364b5f3561a6e2&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Instructions taken from: &lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/install-win10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.microsoft.com/en-us/windows/wsl/install-win10&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

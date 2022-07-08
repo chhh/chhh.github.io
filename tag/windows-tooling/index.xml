@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows-tooling | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tag/windows-tooling/</link>
+      <atom:link href="https://dmtavt.com/tag/windows-tooling/index.xml" rel="self" type="application/rss+xml" />
+    <description>windows-tooling</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Jun 2018 00:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/media/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_lanczos_center_3.png</url>
+      <title>windows-tooling</title>
+      <link>https://dmtavt.com/tag/windows-tooling/</link>
+    </image>
+    
+    <item>
+      <title>Bring back &#34;Open command window here&#34; context menu item in Windows</title>
+      <link>https://dmtavt.com/post/2018-06-27-command-prompt-here/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2018-06-27-command-prompt-here/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s a simple registry hack.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Strat registry editor: &lt;em&gt;Run&lt;/em&gt; -&amp;gt; &lt;code&gt;regedit&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;code&gt;HKEY_CLASSES_ROOT\Directory\shell\cmd&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Right-click the &lt;em&gt;cmd&lt;/em&gt; (folder) key, and click &lt;em&gt;Permissions&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Advanced&lt;/em&gt; button.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Advanced Security Settings&lt;/em&gt; dialog will open, at the top next to &lt;em&gt;Owner&lt;/em&gt; click &lt;em&gt;Change&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Put in your account name, click &lt;em&gt;Check Names&lt;/em&gt; to make sure domain etc is set up correctly, click &lt;em&gt;OK&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Check the &lt;em&gt;Replace owner on subcontainers and objects&lt;/em&gt; check box near &lt;em&gt;Owner&lt;/em&gt; field.&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Apply&lt;/em&gt;, &lt;em&gt;OK&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;In the now open &lt;em&gt;Premissions&lt;/em&gt; dialog, select &lt;strong&gt;Administrators&lt;/strong&gt;, check &lt;strong&gt;Full Control&lt;/strong&gt; checkbox below.&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Apply&lt;/em&gt;, &lt;em&gt;OK&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;You are now back in the registry editor. Click the &lt;code&gt;cmd&lt;/code&gt; folder on the left.&lt;/li&gt;
+&lt;li&gt;Look for &lt;code&gt;HideBasedOnVelocityId&lt;/code&gt; key in the right window tab.
+&lt;ul&gt;
+&lt;li&gt;If it&amp;rsquo;s there, Right-click, &lt;em&gt;Rename&lt;/em&gt; to &lt;code&gt;ShowBasedOnVelocityId&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If it&amp;rsquo;s not there, just add the &lt;code&gt;ShowBasedOnVelocityId&lt;/code&gt; key (type &lt;em&gt;DWORD&lt;/em&gt;), value &lt;code&gt;0x00639bc8 (6527944)&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Now try &lt;em&gt;Shift + Right Click&lt;/em&gt; in an Explorer window, you should see the &lt;em&gt;Open command window here&lt;/em&gt; option.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using multiple different shells/subsystems on Windows</title>
+      <link>https://dmtavt.com/post/2018-03-07-shells-on-windows/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 -0800</pubDate>
+      <guid>https://dmtavt.com/post/2018-03-07-shells-on-windows/</guid>
+      <description>&lt;p&gt;Shells to be used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cmd.exe&lt;/li&gt;
+&lt;li&gt;MINGW from &lt;a href=&#34;https://git-scm.com/download/win&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cygwin.com/install.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cygwin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Optionally &lt;a href=&#34;http://www.msys2.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSYS2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of the above are managed through one shell manager -
+&lt;a href=&#34;https://conemu.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ConEmu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;First install all the shells, then ConEmu.&lt;/p&gt;
+&lt;h2 id=&#34;easy-installation-of-useful-dev-tools&#34;&gt;Easy installation of useful dev tools&lt;/h2&gt;
+&lt;p&gt;Use &lt;a href=&#34;http://scoop.sh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scoop&lt;/a&gt; to install basic utilities and languages.
+Install from powershell (without admin rights):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Set-ExecutionPolicy&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RemoteSigned&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-scope&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;CurrentUser&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;iex &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;new-object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;net&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;webclient&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;downloadstring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;https://get.scoop.sh&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Using command &lt;code&gt;scoop export&lt;/code&gt; you can get an importable list of all installed packages.
+Here&amp;rsquo;s mine currently: &lt;a href=&#34;scoop-export.txt&#34;&gt;scoop-export.txt&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;tweaks-to-shells&#34;&gt;Tweaks to shells&lt;/h2&gt;
+&lt;h3 id=&#34;cmdexe&#34;&gt;cmd.exe&lt;/h3&gt;
+&lt;p&gt;To get auto-completion support similar to what you get in &lt;em&gt;bash&lt;/em&gt;, install
+&lt;a href=&#34;https://mridgers.github.io/clink/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;clink&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;conemu&#34;&gt;ConEmu&lt;/h3&gt;
+&lt;p&gt;&lt;kbd&gt;Win + Alt + P&lt;/kbd&gt; to open Properties. &lt;code&gt;Startup -&amp;gt; Tasks&lt;/code&gt; and set shortcuts for
+shells you&amp;rsquo;ll be using.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Alt + C&lt;/code&gt; for &lt;em&gt;cmd.exe&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + Shift + C&lt;/code&gt; for elevated &lt;em&gt;cmd.exe&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + W&lt;/code&gt; for &lt;em&gt;MINGW&lt;/em&gt; from &lt;em&gt;git&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + Y&lt;/code&gt; for &lt;em&gt;Cygwin&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The full config is &lt;a href=&#34;ConEmu_chhh-2018-03-07.xml&#34;&gt;here&lt;/a&gt;, can be imported at installation time.&lt;/p&gt;
+&lt;h3 id=&#34;cygwin&#34;&gt;Cygwin&lt;/h3&gt;
+&lt;p&gt;Basic packages to install throught &lt;em&gt;setup.exe&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wget&lt;/li&gt;
+&lt;li&gt;curl&lt;/li&gt;
+&lt;li&gt;lynx&lt;/li&gt;
+&lt;li&gt;zip&lt;/li&gt;
+&lt;li&gt;unzip&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is little known package manager that can be used from inside cygwin without having
+to run &lt;em&gt;setup.exe&lt;/em&gt; all the time: &lt;a href=&#34;https://github.com/transcode-open/apt-cyg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;apt-cyg&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Installation&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg &amp;gt; apt-cyg
+install apt-cyg /bin
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

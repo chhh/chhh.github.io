@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gitconfig | Dmitry Avtonomov</title>
+    <link>https://dmtavt.com/tag/gitconfig/</link>
+      <atom:link href="https://dmtavt.com/tag/gitconfig/index.xml" rel="self" type="application/rss+xml" />
+    <description>gitconfig</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 07 Sep 2018 00:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://dmtavt.com/media/icon_hua06b220db3e60330d8fb3c0279ba5942_14310_512x512_fill_lanczos_center_3.png</url>
+      <title>gitconfig</title>
+      <link>https://dmtavt.com/tag/gitconfig/</link>
+    </image>
+    
+    <item>
+      <title>Use p4merge from Perforce as default git mergetool</title>
+      <link>https://dmtavt.com/post/2018-09-07-p4merge-as-git-merge-tool/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
+      <guid>https://dmtavt.com/post/2018-09-07-p4merge-as-git-merge-tool/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;p4merge-conflict-resolution-screenshot&#34; srcset=&#34;
+               /media/p4merge-conflict-resolution_hu19571810bc6161186b3cc9ed2738d9c4_40776_aac17faca5349aec38d0b9a98e4c73c8.webp 400w,
+               /media/p4merge-conflict-resolution_hu19571810bc6161186b3cc9ed2738d9c4_40776_2a11cb59ab2ab1914203141fed1480fc.webp 760w,
+               /media/p4merge-conflict-resolution_hu19571810bc6161186b3cc9ed2738d9c4_40776_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://dmtavt.com/media/p4merge-conflict-resolution_hu19571810bc6161186b3cc9ed2738d9c4_40776_aac17faca5349aec38d0b9a98e4c73c8.webp&#34;
+               width=&#34;563&#34;
+               height=&#34;657&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;A while ago this took more effort as described &lt;a href=&#34;https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;in this
+link&lt;/a&gt; (scroll
+to section  &amp;lsquo;External Merge and Diff Tools&amp;rsquo;).&lt;/p&gt;
+&lt;p&gt;Not anymore. Now git natively supports p4merge. So you only need to modify your
+global git config (&lt;code&gt;~/.gitconfig&lt;/code&gt;):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[merge]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;na&#34;&gt;tool&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;p4merge&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[mergetool &amp;#34;p4merge&amp;#34;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;na&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;p4merge.exe&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[diff]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;na&#34;&gt;tool&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;p4merge&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[difftool &amp;#34;p4merge&amp;#34;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;na&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;p4merge.exe&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can provide the absolute path to the p4merge binary, but I have it on PATH
+because I installed it with &lt;a href=&#34;https://scoop.sh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scoop&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;install-p4merge-with-scoop&#34;&gt;Install p4merge with scoop&lt;/h2&gt;
+&lt;p&gt;To get scoop, from the PowerShell execute:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Set-ExecutionPolicy&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RemoteSigned&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-scope&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;CurrentUser&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;iex &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;new-object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;net&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;webclient&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;downloadstring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;https://get.scoop.sh&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;p4merge&lt;/em&gt; is in the &lt;a href=&#34;https://github.com/lukesampson/scoop-extras&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;extras&lt;/strong&gt;
+scoop bucket&lt;/a&gt;, add the bucket first
+to be able to install it easily:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scoop bucket add extras
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;then you can install p4merge&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scoop update
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scoop search p4merge
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scoop install p4merge
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To list all you installed scoop apps with PowerShell:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;scoop&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;sls &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;^  (\w+)&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|%&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;matches&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;groups&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;full-gitconfig&#34;&gt;Full .gitconfig&lt;/h2&gt;
+&lt;p&gt;My full &lt;code&gt;.gitconfig&lt;/code&gt; is below. It &lt;code&gt;[include]&lt;/code&gt;s two paths &lt;code&gt;.gitaliases&lt;/code&gt; and
+&lt;code&gt;.gitmorealiases&lt;/code&gt;, they are both just text files in my home directory, i.e.
+they are siblings of my global &lt;code&gt;.gitconfig&lt;/code&gt; file. They contain, you guessed
+it, &lt;strong&gt;git aliases&lt;/strong&gt;.
+A large collection of aliases is &lt;a href=&#34;https://github.com/GitAlias/gitalias&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available
+here&lt;/a&gt;. And &lt;a href=&#34;https://haacked.com/archive/2014/07/28/github-flow-aliases/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here is a very useful blog
+post / tutorial&lt;/a&gt;
+introducing you to the usefulness of aliases.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/chhh/c226cd37725ee6deb7a0.js&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
